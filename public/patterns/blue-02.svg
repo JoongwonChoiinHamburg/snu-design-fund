@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #4db7ff;
+      }
+
+      .cls-2 {
+        stroke: #ddd;
+        stroke-miterlimit: 10;
+        stroke-width: 7px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="0" y="0" width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <rect class="cls-3" x="0" y="0" width="512" height="512"/>
+  <g class="cls-4">
+    <path class="cls-2" d="M-92.96,521.99c146.9,0,265.99-119.09,265.99-265.99S53.94-9.99-92.96-9.99"/>
+    <path class="cls-2" d="M80.33,521.99c146.9,0,265.99-119.09,265.99-265.99S227.23-9.99,80.33-9.99"/>
+    <path class="cls-2" d="M238.88,521.99c146.9,0,265.99-119.09,265.99-265.99S385.78-9.99,238.88-9.99"/>
+  </g>
+</svg>
