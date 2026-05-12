@@ -1,37 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
     <style>
-      .cls-1, .cls-2 {
+      .cls-1 {
         fill: none;
       }
 
       .cls-2 {
-        stroke: #ddd;
-        stroke-miterlimit: 10;
-        stroke-width: 6.4px;
+        fill: #aaafc4;
       }
 
       .cls-3 {
-        fill: #f53;
+        clip-path: url(#clippath-1);
       }
 
       .cls-4 {
+        fill: #294236;
+      }
+
+      .cls-5 {
+        fill: #1c5127;
+      }
+
+      .cls-6 {
+        fill: #bbf9f9;
+      }
+
+      .cls-7 {
         clip-path: url(#clippath);
       }
     </style>
     <clipPath id="clippath">
-      <rect class="cls-1" x="0" y="0" width="512" height="512"/>
+      <rect class="cls-1" x="624.88" y="-609.99" width="512" height="512"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="624.88" y="622.83" width="512" height="512"/>
     </clipPath>
   </defs>
-  <rect class="cls-3" x="0" y="0" width="512" height="512"/>
-  <g class="cls-4">
-    <g>
-      <rect class="cls-2" x="86.9" y="86.9" width="338.21" height="338.21" transform="translate(512 0) rotate(90)"/>
-      <rect class="cls-2" x="-251.31" y="-251.31" width="338.21" height="338.21" transform="translate(-164.41 0) rotate(90)"/>
-      <rect class="cls-2" x="425.1" y="-251.31" width="338.21" height="338.21" transform="translate(512 -676.41) rotate(90)"/>
-      <rect class="cls-2" x="-251.31" y="426.93" width="338.21" height="338.21" transform="translate(513.83 678.24) rotate(90)"/>
-      <rect class="cls-2" x="425.1" y="426.93" width="338.21" height="338.21" transform="translate(1190.24 1.83) rotate(90)"/>
-    </g>
+  <rect class="cls-4" width="512" height="512"/>
+  <g>
+    <polygon class="cls-5" points="512 358.4 512 409.6 0 358.4 0 307.2 512 358.4"/>
+    <polygon class="cls-5" points="512 256 512 307.2 0 256 0 204.8 512 256"/>
+    <polygon class="cls-5" points="512 153.6 512 204.8 0 153.6 0 102.4 512 153.6"/>
+    <polygon class="cls-5" points="512 51.2 512 102.4 0 51.2 0 0 512 51.2"/>
+    <polygon class="cls-5" points="512 460.8 512 512 0 460.8 0 409.6 512 460.8"/>
+  </g>
+  <g class="cls-7">
+    <path class="cls-6" d="M714.98,158.35h-344.61V-186.26h344.61V158.35ZM376.78,151.95h331.8V-179.86h-331.8V151.95Z"/>
+  </g>
+  <g class="cls-3">
+    <path class="cls-2" d="M714.98,712.93h-344.61v-344.61h344.61v344.61ZM376.78,706.53h331.8v-331.8h-331.8v331.8Z"/>
   </g>
 </svg>

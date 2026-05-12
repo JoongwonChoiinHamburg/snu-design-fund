@@ -1,33 +1,268 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #ddd;
+        fill: none;
       }
 
       .cls-2 {
-        fill: #f53;
+        fill: #aaafc4;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-17);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-19);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-11);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-16);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-18);
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath-13);
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath-14);
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath-12);
+      }
+
+      .cls-11 {
+        clip-path: url(#clippath-21);
+      }
+
+      .cls-12 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-13 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-14 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-15 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-16 {
+        clip-path: url(#clippath-7);
+      }
+
+      .cls-17 {
+        clip-path: url(#clippath-6);
+      }
+
+      .cls-18 {
+        clip-path: url(#clippath-9);
+      }
+
+      .cls-19 {
+        clip-path: url(#clippath-8);
+      }
+
+      .cls-20 {
+        fill: #365444;
+      }
+
+      .cls-21 {
+        fill: #294236;
+      }
+
+      .cls-22 {
+        fill: #bbf9f9;
+      }
+
+      .cls-23 {
+        clip-path: url(#clippath);
       }
     </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="-644.61" y="-609.99" width="512" height="512"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="-644.61" y="622.83" width="512" height="512"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-1" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-1" y="0" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <rect class="cls-1" y="0" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-6">
+      <rect class="cls-1" y="0" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-7">
+      <rect class="cls-1" x="255.32" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-8">
+      <rect class="cls-1" x="255.32" y="0" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-9">
+      <rect class="cls-1" x="255.32" y="0" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-11">
+      <rect class="cls-1" x="255.32" y="0" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-12">
+      <rect class="cls-1" y="255.32" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-13">
+      <rect class="cls-1" y="255.32" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-14">
+      <rect class="cls-1" y="255.32" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-16">
+      <rect class="cls-1" y="255.32" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-17">
+      <rect class="cls-1" x="255.32" y="255.32" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-18">
+      <rect class="cls-1" x="255.32" y="255.32" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-19">
+      <rect class="cls-1" x="255.32" y="255.32" width="256.92" height="256.92"/>
+    </clipPath>
+    <clipPath id="clippath-21">
+      <rect class="cls-1" x="255.32" y="255.32" width="256.92" height="256.92"/>
+    </clipPath>
   </defs>
-  <rect class="cls-2" x="0" y="0" width="512" height="512"/>
-  <rect class="cls-1" x="0" y="0" width="85.33" height="85.33" transform="translate(85.33 0) rotate(90)"/>
-  <rect class="cls-1" x="170.67" y="0" width="85.33" height="85.33" transform="translate(256 -170.67) rotate(90)"/>
-  <rect class="cls-1" x="85.33" y="85.33" width="85.33" height="85.33" transform="translate(256 0) rotate(90)"/>
-  <rect class="cls-1" x="426.67" y="85.33" width="85.33" height="85.33" transform="translate(597.33 -341.33) rotate(90)"/>
-  <rect class="cls-1" x="341.33" y="0" width="85.33" height="85.33" transform="translate(426.67 -341.33) rotate(90)"/>
-  <rect class="cls-1" x="256" y="85.33" width="85.33" height="85.33" transform="translate(426.67 -170.67) rotate(90)"/>
-  <rect class="cls-1" x="0" y="170.67" width="85.33" height="85.33" transform="translate(256 170.67) rotate(90)"/>
-  <rect class="cls-1" x="170.67" y="170.67" width="85.33" height="85.33" transform="translate(426.67 0) rotate(90)"/>
-  <rect class="cls-1" x="85.33" y="256" width="85.33" height="85.33" transform="translate(426.67 170.67) rotate(90)"/>
-  <rect class="cls-1" x="426.67" y="256" width="85.33" height="85.33" transform="translate(768 -170.67) rotate(90)"/>
-  <rect class="cls-1" x="341.33" y="170.67" width="85.33" height="85.33" transform="translate(597.33 -170.67) rotate(90)"/>
-  <rect class="cls-1" x="256" y="256" width="85.33" height="85.33" transform="translate(597.33 0) rotate(90)"/>
-  <rect class="cls-1" x="0" y="341.33" width="85.33" height="85.33" transform="translate(426.67 341.33) rotate(90)"/>
-  <rect class="cls-1" x="170.67" y="341.33" width="85.33" height="85.33" transform="translate(597.33 170.67) rotate(90)"/>
-  <rect class="cls-1" x="85.33" y="426.67" width="85.33" height="85.33" transform="translate(597.33 341.33) rotate(90)"/>
-  <rect class="cls-1" x="426.67" y="426.67" width="85.33" height="85.33" transform="translate(938.67 0) rotate(90)"/>
-  <rect class="cls-1" x="341.33" y="341.33" width="85.33" height="85.33" transform="translate(768 0) rotate(90)"/>
-  <rect class="cls-1" x="256" y="426.67" width="85.33" height="85.33" transform="translate(768 170.67) rotate(90)"/>
+  <rect class="cls-21" width="512" height="512"/>
+  <g class="cls-23">
+    <path class="cls-22" d="M121.9,158.35H-222.71V-186.26H121.9V158.35ZM-216.31,151.95H115.5V-179.86H-216.31V151.95Z"/>
+  </g>
+  <g class="cls-12">
+    <path class="cls-2" d="M121.9,712.93H-222.71v-344.61H121.9v344.61ZM-216.31,706.53H115.5v-331.8H-216.31v331.8Z"/>
+  </g>
+  <g>
+    <g class="cls-15">
+      <g>
+        <circle class="cls-20" cx="169.25" cy="7.12" r="19.02"/>
+        <circle class="cls-20" cx="-11.82" cy="69.95" r="19.02"/>
+        <circle class="cls-20" cx="256.92" cy="176.59" r="19.02"/>
+        <circle class="cls-20" cx="86.45" cy="-7.86" r="19.02"/>
+        <circle class="cls-20" cx="48.48" cy="95.26" r="19.02"/>
+        <circle class="cls-20" cx="114.88" cy="73.34" r="19.02"/>
+        <circle class="cls-20" cx="70.82" cy="198.37" r="19.02"/>
+        <circle class="cls-20" cx="29.46" cy="38.2" r="19.02"/>
+        <circle class="cls-20" cx="172.06" cy="95.26" r="19.02"/>
+        <circle class="cls-20" cx="138.81" cy="170.22" r="19.02"/>
+        <circle class="cls-20" cx="231.06" cy="231.52" r="19.02"/>
+        <rect class="cls-1" width="256.92" height="256.92"/>
+        <g class="cls-13">
+          <circle class="cls-20" cx="0" cy="176.59" r="19.02"/>
+        </g>
+        <g class="cls-14">
+          <circle class="cls-20" cx="169.25" cy="264.04" r="19.02"/>
+          <circle class="cls-20" cx="86.45" cy="249.06" r="19.02"/>
+        </g>
+        <g class="cls-17">
+          <circle class="cls-20" cx="245.1" cy="69.95" r="19.02"/>
+        </g>
+      </g>
+    </g>
+    <g class="cls-16">
+      <g>
+        <circle class="cls-20" cx="424.57" cy="7.12" r="19.02"/>
+        <circle class="cls-20" cx="243.51" cy="69.95" r="19.02"/>
+        <circle class="cls-20" cx="512.24" cy="176.59" r="19.02"/>
+        <circle class="cls-20" cx="341.77" cy="-7.86" r="19.02"/>
+        <circle class="cls-20" cx="303.8" cy="95.26" r="19.02"/>
+        <circle class="cls-20" cx="350.13" cy="129.49" r="19.02"/>
+        <circle class="cls-20" cx="383.78" cy="57.22" r="19.02"/>
+        <circle class="cls-20" cx="326.14" cy="198.37" r="19.02"/>
+        <circle class="cls-20" cx="407.84" cy="162.59" r="19.02"/>
+        <circle class="cls-20" cx="284.79" cy="38.2" r="19.02"/>
+        <circle class="cls-20" cx="427.38" cy="95.26" r="19.02"/>
+        <circle class="cls-20" cx="486.38" cy="231.52" r="19.02"/>
+        <rect class="cls-1" x="255.32" width="256.92" height="256.92"/>
+        <g class="cls-19">
+          <circle class="cls-20" cx="255.32" cy="176.59" r="19.02"/>
+        </g>
+        <g class="cls-18">
+          <circle class="cls-20" cx="424.57" cy="264.04" r="19.02"/>
+          <circle class="cls-20" cx="341.77" cy="249.06" r="19.02"/>
+        </g>
+        <g class="cls-5">
+          <circle class="cls-20" cx="500.42" cy="69.95" r="19.02"/>
+        </g>
+      </g>
+    </g>
+    <g class="cls-10">
+      <g>
+        <circle class="cls-20" cx="169.25" cy="262.45" r="19.02"/>
+        <circle class="cls-20" cx="-11.82" cy="325.27" r="19.02"/>
+        <circle class="cls-20" cx="256.92" cy="431.92" r="19.02"/>
+        <circle class="cls-20" cx="86.45" cy="247.46" r="19.02"/>
+        <circle class="cls-20" cx="48.48" cy="350.58" r="19.02"/>
+        <circle class="cls-20" cx="128.46" cy="312.54" r="19.02"/>
+        <circle class="cls-20" cx="197.37" cy="365.42" r="19.02"/>
+        <circle class="cls-20" cx="70.82" cy="453.7" r="19.02"/>
+        <circle class="cls-20" cx="29.46" cy="293.53" r="19.02"/>
+        <circle class="cls-20" cx="155.93" cy="399.8" r="19.02"/>
+        <circle class="cls-20" cx="231.06" cy="486.85" r="19.02"/>
+        <rect class="cls-1" y="255.32" width="256.92" height="256.92"/>
+        <g class="cls-8">
+          <circle class="cls-20" cx="0" cy="431.92" r="19.02"/>
+        </g>
+        <g class="cls-9">
+          <circle class="cls-20" cx="169.25" cy="519.36" r="19.02"/>
+          <circle class="cls-20" cx="86.45" cy="504.38" r="19.02"/>
+        </g>
+        <g class="cls-6">
+          <circle class="cls-20" cx="245.1" cy="325.27" r="19.02"/>
+        </g>
+      </g>
+    </g>
+    <g class="cls-3">
+      <g>
+        <circle class="cls-20" cx="424.57" cy="262.45" r="19.02"/>
+        <circle class="cls-20" cx="243.51" cy="325.27" r="19.02"/>
+        <circle class="cls-20" cx="512.24" cy="431.92" r="19.02"/>
+        <circle class="cls-20" cx="341.77" cy="247.46" r="19.02"/>
+        <circle class="cls-20" cx="303.8" cy="350.58" r="19.02"/>
+        <circle class="cls-20" cx="383.78" cy="312.54" r="19.02"/>
+        <circle class="cls-20" cx="385.48" cy="393.17" r="19.02"/>
+        <circle class="cls-20" cx="326.14" cy="453.7" r="19.02"/>
+        <circle class="cls-20" cx="284.79" cy="293.53" r="19.02"/>
+        <circle class="cls-20" cx="427.38" cy="350.58" r="19.02"/>
+        <circle class="cls-20" cx="447.75" cy="415.93" r="19.02"/>
+        <circle class="cls-20" cx="486.38" cy="486.85" r="19.02"/>
+        <rect class="cls-1" x="255.32" y="255.32" width="256.92" height="256.92"/>
+        <g class="cls-7">
+          <circle class="cls-20" cx="255.32" cy="431.92" r="19.02"/>
+        </g>
+        <g class="cls-4">
+          <circle class="cls-20" cx="424.57" cy="519.36" r="19.02"/>
+          <circle class="cls-20" cx="341.77" cy="504.38" r="19.02"/>
+        </g>
+        <g class="cls-11">
+          <circle class="cls-20" cx="500.42" cy="325.27" r="19.02"/>
+        </g>
+      </g>
+    </g>
+    <circle class="cls-20" cx="229.97" cy="126.66" r="19.02"/>
+  </g>
 </svg>

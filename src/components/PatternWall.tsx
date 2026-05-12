@@ -65,6 +65,8 @@ export default function PatternWall({
   const [density, setDensity] =
     useState<Density>("normal");
 const [useRandomPattern, setUseRandomPattern] = useState(false);
+const [useVariablePatternSize, setUseVariablePatternSize] =
+  useState(true);
   const [selectedBlock, setSelectedBlock] =
     useState<DonorBlock | null>(null);
 const [patternSeed, setPatternSeed] = useState(0);
@@ -226,20 +228,37 @@ const positionedBlocks = useMemo(() => {
         ? "bg-black text-white"
         : "bg-gray-200 text-black"
     }`}
-  onClick={() => {
+onClick={() => {
   setUseRandomPattern((prev) => !prev);
-  setPatternSeed(Date.now());
+
+  const seed = Date.now();
+
+  setPatternSeed(seed);
+  setLayoutSeed(seed);
 }}
   >
     패턴 랜덤
   </button>
+
+<button
+  type="button"
+  className={`rounded px-3 py-2 text-xs ${
+    useVariablePatternSize
+      ? "bg-black text-white"
+      : "bg-gray-200 text-black"
+  }`}
+  onClick={() => setUseVariablePatternSize((prev) => !prev)}
+>
+  패턴 크기 {useVariablePatternSize ? "변동" : "고정"}
+</button>
+
 </div>
         </div>
 
         {/* wall */}
         <div
           ref={containerRef}
-          className="mx-auto w-full max-w-[1800px] overflow-hidden border bg-[#f4f4f0]"
+          className="mx-auto w-full max-w-[1800px] overflow-hidden "
         >
           <div
             className="relative"
@@ -250,16 +269,15 @@ const positionedBlocks = useMemo(() => {
           >
             {positionedBlocks.map(
               ({ block, x, y }) => (
-                <PatternBlock
-                  key={block.id}
-                  block={block}
-                  cellSize={cellSize}
-                  x={x}
-                  y={y}
-                  onClick={() =>
-                    setSelectedBlock(block)
-                  }
-                />
+              <PatternBlock
+  key={block.id}
+  block={block}
+  cellSize={cellSize}
+  x={x}
+  y={y}
+  onClick={() => setSelectedBlock(block)}
+  useVariablePatternSize={useVariablePatternSize}
+/>
               )
             )}
           </div>
