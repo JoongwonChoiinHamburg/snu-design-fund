@@ -3,15 +3,20 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #b169f7;
+        fill: #3d52ff;
       }
 
       .cls-2 {
-        fill: #9ffaff;
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #5fd9ff;
       }
     </style>
   </defs>
-  <rect class="cls-2" width="512" height="512"/>
+  <rect class="cls-2" x="-3577.03" y="-194.92" width="6772.16" height="2680.76"/>
+  <rect class="cls-3" width="512" height="512"/>
   <g>
     <g>
       <rect class="cls-1" x="170.16" y="341.97" width="85.08" height="84.87"/>

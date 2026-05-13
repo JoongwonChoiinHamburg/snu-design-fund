@@ -3,17 +3,22 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #ff8;
+        fill: #fff;
       }
 
       .cls-2 {
         fill: #ffc436;
       }
+
+      .cls-3 {
+        fill: #ffe9b3;
+      }
     </style>
   </defs>
+  <rect class="cls-1" x="-3577.03" y="-785.65" width="6772.16" height="2680.76"/>
   <rect class="cls-2" y="0" width="512" height="512"/>
-  <polygon class="cls-1" points="0 256.13 256.1 256.13 0 .25 0 256.13"/>
-  <polygon class="cls-1" points="255.24 .25 255.24 256.13 511.34 .25 255.24 .25"/>
-  <polygon class="cls-1" points="0 512 256.1 512 0 256.13 0 512"/>
-  <polygon class="cls-1" points="255.24 256.13 255.24 512 511.34 256.13 255.24 256.13"/>
+  <polygon class="cls-3" points="0 256.13 256.1 256.13 0 .25 0 256.13"/>
+  <polygon class="cls-3" points="255.24 .25 255.24 256.13 511.34 .25 255.24 .25"/>
+  <polygon class="cls-3" points="0 512 256.1 512 0 256.13 0 512"/>
+  <polygon class="cls-3" points="255.24 256.13 255.24 512 511.34 256.13 255.24 256.13"/>
 </svg>

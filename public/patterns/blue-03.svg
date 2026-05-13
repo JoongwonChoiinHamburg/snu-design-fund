@@ -10,13 +10,20 @@
       }
 
       .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
         fill: #9102ff;
       }
     </style>
   </defs>
-  <rect class="cls-2" x="0" width="512" height="512"/>
-  <line class="cls-1" x1="0" y1="341.33" x2="512" y2="341.33"/>
-  <line class="cls-1" x1="0" y1="170.67" x2="512" y2="170.67"/>
-  <line class="cls-1" x1="341.33" y1="0" x2="341.33" y2="512"/>
-  <line class="cls-1" x1="170.67" y1="0" x2="170.67" y2="512"/>
+  <rect class="cls-2" x="-4792.98" y="-194.92" width="6772.16" height="2680.76"/>
+  <g>
+    <rect class="cls-3" x="0" width="512" height="512"/>
+    <line class="cls-1" x1="0" y1="341.33" x2="512" y2="341.33"/>
+    <line class="cls-1" x1="0" y1="170.67" x2="512" y2="170.67"/>
+    <line class="cls-1" x1="341.33" y1="0" x2="341.33" y2="512"/>
+    <line class="cls-1" x1="170.67" y1="0" x2="170.67" y2="512"/>
+  </g>
 </svg>

@@ -9,8 +9,13 @@
       .cls-2 {
         fill: #ffa039;
       }
+
+      .cls-3 {
+        fill: #fff;
+      }
     </style>
   </defs>
+  <rect class="cls-3" x="-4168.1" y="-785.65" width="6772.16" height="2680.76"/>
   <rect class="cls-2" width="512" height="512"/>
   <g>
     <polygon class="cls-1" points="153.6 512 102.4 512 153.6 0 204.8 0 153.6 512"/>

@@ -10,11 +10,16 @@
       }
 
       .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
         fill: #ffc436;
       }
     </style>
   </defs>
-  <rect class="cls-2" x="0" width="512" height="512"/>
+  <rect class="cls-2" x="-4792.98" y="-785.65" width="6772.16" height="2680.76"/>
+  <rect class="cls-3" x="0" width="512" height="512"/>
   <line class="cls-1" x1="90.14" y1="0" x2="90.14" y2="512"/>
   <line class="cls-1" x1="421.86" y1="0" x2="421.86" y2="512"/>
   <line class="cls-1" x1="512" y1="90.14" x2="0" y2="90.14"/>
