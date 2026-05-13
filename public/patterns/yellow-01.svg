@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #938087;
+        fill: #ff8;
       }
 
       .cls-2 {
@@ -11,35 +11,9 @@
       }
     </style>
   </defs>
-  <rect class="cls-2" width="512" height="512"/>
-  <g>
-    <g>
-      <rect class="cls-1" x="170.16" y="341.97" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="85.08" y="426.84" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="85.08" y="257.1" width="85.08" height="84.87"/>
-      <rect class="cls-1" y="341.97" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="170.16" y="170.99" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="85.08" y="255.86" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="85.08" y="86.12" width="85.08" height="84.87"/>
-      <rect class="cls-1" y="170.99" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="170.16" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="85.08" y="84.87" width="85.08" height="84.87"/>
-      <rect class="cls-1" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="85.08" y="426.84" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="256.5" y="255.86" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="256.5" y="84.87" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="256.5" y="426.84" width="85.08" height="84.87"/>
-    </g>
-    <g>
-      <rect class="cls-1" x="426.85" y="426.84" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="426.85" y="257.1" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="341.77" y="341.97" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="426.85" y="255.86" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="426.85" y="86.12" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="341.77" y="170.99" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="426.85" y="84.87" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="341.77" width="85.08" height="84.87"/>
-      <rect class="cls-1" x="426.85" y="426.84" width="85.08" height="84.87"/>
-    </g>
-  </g>
+  <rect class="cls-2" y="0" width="512" height="512"/>
+  <polygon class="cls-1" points="0 256.13 256.1 256.13 0 .25 0 256.13"/>
+  <polygon class="cls-1" points="255.24 .25 255.24 256.13 511.34 .25 255.24 .25"/>
+  <polygon class="cls-1" points="0 512 256.1 512 0 256.13 0 512"/>
+  <polygon class="cls-1" points="255.24 256.13 255.24 512 511.34 256.13 255.24 256.13"/>
 </svg>
