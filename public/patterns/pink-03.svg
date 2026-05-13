@@ -3,18 +3,20 @@
   <defs>
     <style>
       .cls-1 {
-        fill: none;
-        stroke: #ffbbb0;
-        stroke-miterlimit: 10;
-        stroke-width: 6px;
+        fill: #ff508c;
       }
 
       .cls-2 {
-        fill: #ff5a81;
+        fill: none;
+        stroke: #ffe1de;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
       }
     </style>
   </defs>
-  <rect class="cls-2" width="512" height="512"/>
-  <line class="cls-1" x1="512" y1="512"/>
-  <line class="cls-1" x1="0" y1="512" x2="512" y2="0"/>
+  <rect class="cls-1" width="512" height="512"/>
+  <g>
+    <line class="cls-2" x1="512" y1="512"/>
+    <line class="cls-2" x1="0" y1="512" x2="512" y2="0"/>
+  </g>
 </svg>

@@ -7,7 +7,7 @@
       }
 
       .cls-2 {
-        fill: #ff4d5e;
+        fill: #ff4053;
       }
 
       .cls-3 {
@@ -19,16 +19,16 @@
       }
     </style>
     <clipPath id="clippath">
-      <rect class="cls-1" x="-.68" y="-.14" width="512" height="512"/>
+      <rect class="cls-1" y="0" width="512" height="512"/>
     </clipPath>
   </defs>
-  <rect class="cls-2" x="-.68" y="-.14" width="512" height="512"/>
+  <rect class="cls-2" y="0" width="512" height="512"/>
   <g class="cls-4">
     <g>
-      <circle class="cls-3" cx="-.68" cy="249.75" r="20"/>
-      <circle class="cls-3" cx="255.32" cy="511.86" r="20"/>
-      <circle class="cls-3" cx="511.32" cy="249.75" r="20"/>
-      <circle class="cls-3" cx="255.32" cy="1.33" r="20"/>
+      <circle class="cls-3" cx="0" cy="249.9" r="20"/>
+      <circle class="cls-3" cx="256" cy="512" r="20"/>
+      <circle class="cls-3" cx="512" cy="249.9" r="20"/>
+      <circle class="cls-3" cx="256" cy="1.47" r="20"/>
     </g>
   </g>
 </svg>
