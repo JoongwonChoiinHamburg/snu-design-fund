@@ -1,22 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #336dff;
+        fill: none;
       }
 
       .cls-2 {
-        fill: #5fd9ff;
+        fill: #2234fc;
+      }
+
+      .cls-3 {
+        fill: #bbf9f9;
+      }
+
+      .cls-4 {
+        fill: #122dd8;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
       }
     </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="597.93" y="590.73" width="512" height="512"/>
+    </clipPath>
   </defs>
-  <rect class="cls-2" y="0" width="512" height="512"/>
+  <rect class="cls-2" width="512" height="512"/>
   <g>
-    <polygon class="cls-1" points="512 358.4 512 409.6 0 358.4 0 307.2 512 358.4"/>
-    <polygon class="cls-1" points="512 256 512 307.2 0 256 0 204.8 512 256"/>
-    <polygon class="cls-1" points="512 153.6 512 204.8 0 153.6 0 102.4 512 153.6"/>
-    <polygon class="cls-1" points="512 51.2 512 102.4 0 51.2 0 0 512 51.2"/>
-    <polygon class="cls-1" points="512 460.8 512 512 0 460.8 0 409.6 512 460.8"/>
+    <polygon class="cls-4" points="512 358.4 512 409.6 0 358.4 0 307.2 512 358.4"/>
+    <polygon class="cls-4" points="512 256 512 307.2 0 256 0 204.8 512 256"/>
+    <polygon class="cls-4" points="512 153.6 512 204.8 0 153.6 0 102.4 512 153.6"/>
+    <polygon class="cls-4" points="512 51.2 512 102.4 0 51.2 0 0 512 51.2"/>
+    <polygon class="cls-4" points="512 460.8 512 512 0 460.8 0 409.6 512 460.8"/>
+  </g>
+  <g class="cls-5">
+    <path class="cls-3" d="M688.03,680.83h-344.61v-344.61h344.61v344.61ZM349.82,674.42h331.8v-331.8h-331.8v331.8Z"/>
   </g>
 </svg>
