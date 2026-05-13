@@ -3,20 +3,20 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #ffa039;
+        fill: #ff6700;
       }
 
       .cls-2 {
-        fill: #f2680a;
+        fill: #ffa039;
       }
     </style>
   </defs>
-  <rect class="cls-1" width="512" height="512"/>
+  <rect class="cls-2" width="512" height="512"/>
   <g>
-    <polygon class="cls-2" points="153.6 512 102.4 512 153.6 0 204.8 0 153.6 512"/>
-    <polygon class="cls-2" points="256 512 204.8 512 256 0 307.2 0 256 512"/>
-    <polygon class="cls-2" points="358.4 512 307.2 512 358.4 0 409.6 0 358.4 512"/>
-    <polygon class="cls-2" points="460.8 512 409.6 512 460.8 0 512 0 460.8 512"/>
-    <polygon class="cls-2" points="51.2 512 0 512 51.2 0 102.4 0 51.2 512"/>
+    <polygon class="cls-1" points="153.6 512 102.4 512 153.6 0 204.8 0 153.6 512"/>
+    <polygon class="cls-1" points="256 512 204.8 512 256 0 307.2 0 256 512"/>
+    <polygon class="cls-1" points="358.4 512 307.2 512 358.4 0 409.6 0 358.4 512"/>
+    <polygon class="cls-1" points="460.8 512 409.6 512 460.8 0 512 0 460.8 512"/>
+    <polygon class="cls-1" points="51.2 512 0 512 51.2 0 102.4 0 51.2 512"/>
   </g>
 </svg>

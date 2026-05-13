@@ -15,5 +15,6 @@
     </style>
   </defs>
   <rect class="cls-2" width="512" height="512"/>
-  <line class="cls-1" x1="256" y1="0" x2="256" y2="512"/>
+  <line class="cls-1" x1="255.29" y1="0" x2="255.29" y2="512"/>
+  <line class="cls-1" x1="512" y1="256" x2="0" y2="256"/>
 </svg>
