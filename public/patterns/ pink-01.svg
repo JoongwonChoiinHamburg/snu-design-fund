@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff508c;
+      }
+
+      .cls-2 {
+        fill: #8ee887;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="512" height="512"/>
+  <g>
+    <g>
+      <rect class="cls-2" x="170.16" y="341.97" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="85.08" y="426.84" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="85.08" y="257.1" width="85.08" height="84.87"/>
+      <rect class="cls-2" y="341.97" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="170.16" y="170.99" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="85.08" y="255.86" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="85.08" y="86.12" width="85.08" height="84.87"/>
+      <rect class="cls-2" y="170.99" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="170.16" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="85.08" y="84.87" width="85.08" height="84.87"/>
+      <rect class="cls-2" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="85.08" y="426.84" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="256.5" y="255.86" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="256.5" y="84.87" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="256.5" y="426.84" width="85.08" height="84.87"/>
+    </g>
+    <g>
+      <rect class="cls-2" x="426.85" y="426.84" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="426.85" y="257.1" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="341.77" y="341.97" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="426.85" y="255.86" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="426.85" y="86.12" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="341.77" y="170.99" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="426.85" y="84.87" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="341.77" width="85.08" height="84.87"/>
+      <rect class="cls-2" x="426.85" y="426.84" width="85.08" height="84.87"/>
+    </g>
+  </g>
+</svg>
