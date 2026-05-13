@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #336dff;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #294236;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        fill: #5fd9ff;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" y="-.14" width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <rect class="cls-3" x="-5437.59" y="-194.92" width="6772.16" height="2680.76"/>
+  <rect class="cls-4" y="-.14" width="512" height="512"/>
+  <rect class="cls-2" y="-.14" width="512" height="512"/>
+  <g class="cls-5">
+    <g>
+      <rect class="cls-6" x="228.7" y="126.33" width="27.62" height="27.62" transform="translate(170.13 -130.44) rotate(45)"/>
+      <rect class="cls-6" x="298.85" y="56.19" width="27.62" height="27.62" transform="translate(141.07 -200.58) rotate(45)"/>
+      <rect class="cls-6" x="139.74" y="64.18" width="27.62" height="27.62" transform="translate(100.12 -85.73) rotate(45)"/>
+      <rect class="cls-6" x="66.45" y="137.47" width="27.62" height="27.62" transform="translate(130.48 -12.44) rotate(45)"/>
+      <rect class="cls-6" x="242.19" y="-8.42" width="27.62" height="27.62" transform="translate(78.79 -179.44) rotate(45)"/>
+      <rect class="cls-6" x="154.1" y="194.65" width="27.62" height="27.62" transform="translate(196.58 -57.68) rotate(45)"/>
+      <rect class="cls-6" x="258.62" y="202.48" width="27.62" height="27.62" transform="translate(232.73 -129.29) rotate(45)"/>
+      <rect class="cls-6" x="97.03" y="292.14" width="27.62" height="27.62" transform="translate(248.8 11.24) rotate(45)"/>
+      <rect class="cls-6" x="422.57" y="330.72" width="27.62" height="27.62" transform="translate(371.43 -207.65) rotate(45)"/>
+      <rect class="cls-6" x="442.1" y="205.48" width="27.62" height="27.62" transform="translate(288.59 -258.15) rotate(45)"/>
+      <rect class="cls-6" x="357.43" y="149.16" width="27.62" height="27.62" transform="translate(223.97 -214.78) rotate(45)"/>
+      <rect class="cls-6" x="242.79" y="319.38" width="27.62" height="27.62" transform="translate(310.76 -83.86) rotate(45)"/>
+      <rect class="cls-6" x="337.91" y="253.23" width="27.62" height="27.62" transform="translate(291.84 -170.48) rotate(45)"/>
+      <rect class="cls-6" x="388.56" y="53.19" width="27.62" height="27.62" transform="translate(165.23 -264.9) rotate(45)"/>
+      <rect class="cls-6" x="22.95" y="242.05" width="27.62" height="27.62" transform="translate(191.68 48.95) rotate(45)"/>
+      <rect class="cls-6" x="34.38" y="411.2" width="27.62" height="27.62" transform="translate(314.64 90.41) rotate(45)"/>
+      <rect class="cls-6" x="498.19" y="126.33" width="27.62" height="27.62" transform="translate(249.06 -320.99) rotate(45)"/>
+      <rect class="cls-6" x="332.68" y="348.76" width="27.62" height="27.62" transform="translate(357.86 -138.81) rotate(45)"/>
+      <rect class="cls-6" x="422.57" y="435.2" width="27.62" height="27.62" transform="translate(445.31 -177.06) rotate(45)"/>
+      <rect class="cls-6" x="466.1" y="352.59" width="27.62" height="27.62" transform="translate(399.65 -232.03) rotate(45)"/>
+      <rect class="cls-6" x="455.4" y="486.69" width="27.62" height="27.62" transform="translate(491.34 -185.18) rotate(45)"/>
+      <rect class="cls-6" x="275.81" y="459.32" width="27.62" height="27.62" transform="translate(419.38 -66.21) rotate(45)"/>
+      <rect class="cls-6" x="165.8" y="372.12" width="27.62" height="27.62" transform="translate(325.5 -13.97) rotate(45)"/>
+      <rect class="cls-6" x="207.86" y="253.23" width="27.62" height="27.62" transform="translate(253.75 -78.53) rotate(45)"/>
+      <rect class="cls-6" x="-26.37" y="278.62" width="27.62" height="27.62" transform="translate(203.1 94.53) rotate(45)"/>
+      <rect class="cls-6" x="66.01" y="471.91" width="27.62" height="27.62" transform="translate(366.83 85.82) rotate(45)"/>
+      <polygon class="cls-6" points="0 120.61 0 159.67 19.53 140.14 0 120.61"/>
+      <rect class="cls-6" x="-2.05" y="38.49" width="27.62" height="27.62" transform="translate(40.43 7) rotate(45)"/>
+      <g>
+        <polygon class="cls-6" points="512 44.53 504.23 52.3 512 60.07 512 44.53"/>
+        <polygon class="cls-6" points="512 285.46 499.44 272.9 479.91 292.43 499.44 311.96 512 299.4 512 285.46"/>
+      </g>
+      <polygon class="cls-6" points="270 511.86 256 497.86 242 511.86 270 511.86"/>
+      <polygon class="cls-6" points="461.03 -.14 469.21 8.03 477.38 -.14 461.03 -.14"/>
+    </g>
+  </g>
+</svg>
