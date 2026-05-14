@@ -61,7 +61,8 @@ export default function PatternWall({
 }: Props) {
   const [mode, setMode] =
     useState<Mode>("overlap");
-
+const [hoveredBlock, setHoveredBlock] =
+  useState<DonorBlock | null>(null);
   const [density, setDensity] =
     useState<Density>("normal");
 const [useRandomPattern, setUseRandomPattern] = useState(false);
@@ -70,8 +71,11 @@ const [useVariablePatternSize, setUseVariablePatternSize] =
   const [selectedBlock, setSelectedBlock] =
     useState<DonorBlock | null>(null);
 const [patternSeed, setPatternSeed] = useState(0);
+const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 });
 
 const [layoutSeed, setLayoutSeed] = useState<number | null>(null);
+const [tooltipPosition, setTooltipPosition] =
+  useState({ x: 0, y: 0 });
 
   const containerRef =
     useRef<HTMLDivElement>(null);
@@ -103,7 +107,39 @@ const [layoutSeed, setLayoutSeed] = useState<number | null>(null);
       );
     };
   }, []);
+useEffect(() => {
+  function handleMouseMove(event: MouseEvent) {
+    if (mode !== "overlap") return;
 
+    const x =
+      event.clientX / window.innerWidth - 0.5;
+
+    const y =
+      event.clientY / window.innerHeight - 0.5;
+
+    setMouseOffset({
+      x: x * 40,
+      y: y * 40,
+    });
+
+    setTooltipPosition({
+      x: event.clientX,
+      y: event.clientY,
+    });
+  }
+
+  window.addEventListener(
+    "mousemove",
+    handleMouseMove
+  );
+
+  return () => {
+    window.removeEventListener(
+      "mousemove",
+      handleMouseMove
+    );
+  };
+}, [mode]);
   const zoom =
     mode === "overlap"
       ? getZoom(blocks)
@@ -259,6 +295,7 @@ onClick={() => {
         <div
           ref={containerRef}
           className="mx-auto w-full max-w-[1800px] overflow-hidden "
+         
         >
           <div
             className="relative"
@@ -269,14 +306,18 @@ onClick={() => {
           >
             {positionedBlocks.map(
               ({ block, x, y }) => (
-              <PatternBlock
+<PatternBlock
   key={block.id}
   block={block}
   cellSize={cellSize}
   x={x}
   y={y}
   onClick={() => setSelectedBlock(block)}
+  onHover={setHoveredBlock}
   useVariablePatternSize={useVariablePatternSize}
+  offsetX={mode === "overlap" ? mouseOffset.x : 0}
+  offsetY={mode === "overlap" ? mouseOffset.y : 0}
+  depth={getBlockDepth(block.size)}
 />
               )
             )}
@@ -303,6 +344,25 @@ onClick={() => {
         </div>
       </section>
 
+{hoveredBlock && (
+  <div
+    className="pointer-events-none fixed z-[9999] border border-black bg-white px-3 py-2 text-xs leading-tight text-black shadow-sm"
+    style={{
+      left: tooltipPosition.x + 14,
+      top:
+        tooltipPosition.y > window.innerHeight - 90
+          ? tooltipPosition.y - 70
+          : tooltipPosition.y + 14,
+    }}
+  >
+    <div className="font-semibold">
+      {hoveredBlock.displayName}
+    </div>
+    <div>
+      {hoveredBlock.amount.toLocaleString()}원
+    </div>
+  </div>
+)}
       {/* popup */}
       <LayerPopup
         open={!!selectedBlock}
@@ -393,6 +453,26 @@ function createOverlapLayout(
     };
   });
 }
+
+function getBlockDepth(size: number) {
+  switch (size) {
+    case 1:
+      return 1.2;
+    case 2:
+      return 0.9;
+    case 3:
+      return 0.65;
+    case 4:
+      return 0.45;
+    case 6:
+      return 0.25;
+    case 8:
+      return 0.12;
+    default:
+      return 0.5;
+  }
+}
+
 
 function createStackLayout(
   blocks: DonorBlock[],
