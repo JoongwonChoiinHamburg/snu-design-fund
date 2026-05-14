@@ -19,18 +19,34 @@
       }
 
       .cls-5 {
-        fill: url(#_무제_그라디언트_190-5);
+        fill: url(#_무제_그라디언트_190-7);
       }
 
       .cls-6 {
-        fill: url(#_무제_그라디언트_190);
+        fill: url(#_무제_그라디언트_190-5);
       }
 
       .cls-7 {
+        fill: url(#_무제_그라디언트_190-9);
+      }
+
+      .cls-8 {
+        fill: url(#_무제_그라디언트_190-8);
+      }
+
+      .cls-9 {
+        fill: url(#_무제_그라디언트_190);
+      }
+
+      .cls-10 {
         fill: #c0ffab;
       }
+
+      .cls-11 {
+        fill: url(#_무제_그라디언트_190-10);
+      }
     </style>
-    <linearGradient id="_무제_그라디언트_190" data-name="무제 그라디언트 190" x1="0" y1="26.75" x2="512" y2="26.75" gradientUnits="userSpaceOnUse">
+    <linearGradient id="_무제_그라디언트_190" data-name="무제 그라디언트 190" x1="0" y1="25.6" x2="256" y2="25.6" gradientUnits="userSpaceOnUse">
       <stop offset=".08" stop-color="#7f6bf2"/>
       <stop offset=".17" stop-color="#7f6bf2" stop-opacity=".86"/>
       <stop offset=".32" stop-color="#7f6bf2" stop-opacity=".66"/>
@@ -40,17 +56,25 @@
       <stop offset=".88" stop-color="#7f6bf2" stop-opacity=".22"/>
       <stop offset="1" stop-color="#7f6bf2" stop-opacity=".2"/>
     </linearGradient>
-    <linearGradient id="_무제_그라디언트_190-2" data-name="무제 그라디언트 190" x1="0" y1="415.65" x2="512" y2="415.65" gradientTransform="translate(0 39.1)" xlink:href="#_무제_그라디언트_190"/>
-    <linearGradient id="_무제_그라디언트_190-3" data-name="무제 그라디언트 190" x1="0" y1="102.69" x2="512" y2="102.69" gradientTransform="translate(0 9.66)" xlink:href="#_무제_그라디언트_190"/>
-    <linearGradient id="_무제_그라디언트_190-4" data-name="무제 그라디언트 190" y1="197.95" y2="197.95" xlink:href="#_무제_그라디언트_190"/>
-    <linearGradient id="_무제_그라디언트_190-5" data-name="무제 그라디언트 190" y1="369.15" y2="369.15" xlink:href="#_무제_그라디언트_190"/>
-    <linearGradient id="_무제_그라디언트_190-6" data-name="무제 그라디언트 190" x1="0" y1="259.17" x2="512" y2="259.17" gradientTransform="translate(0 24.38)" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-2" data-name="무제 그라디언트 190" x1="256.07" y1="76.8" x2="512.07" y2="76.8" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-3" data-name="무제 그라디언트 190" y1="128" y2="128" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-4" data-name="무제 그라디언트 190" x1="256.07" y1="179.2" x2="512.07" y2="179.2" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-5" data-name="무제 그라디언트 190" y1="230.4" y2="230.4" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-6" data-name="무제 그라디언트 190" x1="256.07" y1="281.6" x2="512.07" y2="281.6" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-7" data-name="무제 그라디언트 190" y1="332.8" y2="332.8" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-8" data-name="무제 그라디언트 190" x1="256.07" y1="384" x2="512.07" y2="384" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-9" data-name="무제 그라디언트 190" y1="435.2" y2="435.2" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-10" data-name="무제 그라디언트 190" x1="256.07" y1="486.4" x2="512.07" y2="486.4" xlink:href="#_무제_그라디언트_190"/>
   </defs>
-  <rect class="cls-7" x="0" width="512" height="512"/>
-  <rect class="cls-6" x="0" width="512" height="53.5"/>
-  <rect class="cls-1" x="0" y="428" width="512" height="53.5" transform="translate(512 909.5) rotate(180)"/>
-  <rect class="cls-3" x="0" y="85.6" width="512" height="53.5" transform="translate(512 224.7) rotate(180)"/>
-  <rect class="cls-4" x="0" y="171.2" width="512" height="53.5"/>
-  <rect class="cls-5" x="0" y="342.4" width="512" height="53.5"/>
-  <rect class="cls-2" x="0" y="256.8" width="512" height="53.5" transform="translate(512 567.1) rotate(180)"/>
+  <rect class="cls-10" x="0" width="512" height="512"/>
+  <rect class="cls-9" x="0" width="256" height="51.2"/>
+  <rect class="cls-1" x="256.07" y="51.2" width="256" height="51.2"/>
+  <rect class="cls-3" x="0" y="102.4" width="256" height="51.2"/>
+  <rect class="cls-4" x="256.07" y="153.6" width="256" height="51.2"/>
+  <rect class="cls-6" x="0" y="204.8" width="256" height="51.2"/>
+  <rect class="cls-2" x="256.07" y="256" width="256" height="51.2"/>
+  <rect class="cls-5" x="0" y="307.2" width="256" height="51.2"/>
+  <rect class="cls-8" x="256.07" y="358.4" width="256" height="51.2"/>
+  <rect class="cls-7" x="0" y="409.6" width="256" height="51.2"/>
+  <rect class="cls-11" x="256.07" y="460.8" width="256" height="51.2"/>
 </svg>

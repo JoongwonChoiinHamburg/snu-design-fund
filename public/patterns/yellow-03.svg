@@ -31,32 +31,36 @@
       }
 
       .cls-8 {
+        fill: #fffcad;
+      }
+
+      .cls-9 {
         fill: #e6cfff;
       }
     </style>
-    <linearGradient id="_무제_그라디언트_821" data-name="무제 그라디언트 821" x1="0" y1="487.96" x2="512" y2="487.96" gradientUnits="userSpaceOnUse">
+    <linearGradient id="_무제_그라디언트_821" data-name="무제 그라디언트 821" x1="256.02" y1="342.19" x2="256.02" y2="512.89" gradientUnits="userSpaceOnUse">
       <stop offset=".16" stop-color="#9f73e5"/>
       <stop offset=".83" stop-color="#9f73e5" stop-opacity=".2"/>
     </linearGradient>
-    <linearGradient id="_무제_그라디언트_821-2" data-name="무제 그라디언트 821" x1="256.02" y1="309.28" x2="256.02" y2="510.9" xlink:href="#_무제_그라디언트_821"/>
-    <linearGradient id="_무제_그라디언트_821-3" data-name="무제 그라디언트 821" y1="178.68" y2="178.68" xlink:href="#_무제_그라디언트_821"/>
-    <linearGradient id="_무제_그라디언트_821-4" data-name="무제 그라디언트 821" x1="256.02" y1="0" x2="256.02" y2="201.62" xlink:href="#_무제_그라디언트_821"/>
-    <linearGradient id="_무제_그라디언트_821-5" data-name="무제 그라디언트 821" y1="333.32" y2="333.32" xlink:href="#_무제_그라디언트_821"/>
-    <linearGradient id="_무제_그라디언트_821-6" data-name="무제 그라디언트 821" x1="256.02" y1="154.64" x2="256.02" y2="356.26" xlink:href="#_무제_그라디언트_821"/>
+    <linearGradient id="_무제_그라디언트_821-2" data-name="무제 그라디언트 821" x1="0" y1="27.34" x2="512" y2="27.34" xlink:href="#_무제_그라디언트_821"/>
+    <linearGradient id="_무제_그라디언트_821-3" data-name="무제 그라디언트 821" x1="0" y1="368.73" x2="512" y2="368.73" xlink:href="#_무제_그라디언트_821"/>
+    <linearGradient id="_무제_그라디언트_821-4" data-name="무제 그라디언트 821" x1="256.02" y1="171.5" x2="256.02" y2="394.06" xlink:href="#_무제_그라디언트_821"/>
+    <linearGradient id="_무제_그라디언트_821-5" data-name="무제 그라디언트 821" x1="0" y1="198.04" x2="512" y2="198.04" xlink:href="#_무제_그라디언트_821"/>
+    <linearGradient id="_무제_그라디언트_821-6" data-name="무제 그라디언트 821" x1="256.02" y1=".8" x2="256.02" y2="223.36" xlink:href="#_무제_그라디언트_821"/>
   </defs>
+  <polygon class="cls-9" points="-.04 .8 0 512.89 512.04 512.89 512.04 .8 -.04 .8"/>
   <polygon class="cls-8" points="-.04 .8 0 512.89 512.04 512.89 512.04 .8 -.04 .8"/>
-  <polygon class="cls-1" points="-.04 .8 0 512.89 512.04 512.89 512.04 .8 -.04 .8"/>
   <g>
-    <rect class="cls-7" x="0" y="463.92" width="512" height="48.08"/>
-    <polygon class="cls-2" points="0 487.32 7.55 510.9 512.04 360.92 512.04 309.28 0 461.51 0 487.32"/>
+    <polygon class="cls-7" points="512.04 342.19 0 512.89 165.59 512.89 512.04 399.2 512.04 342.19"/>
+    <rect class="cls-2" x="0" y=".8" width="512" height="53.07"/>
+    <g>
+      <rect class="cls-5" x="0" y="342.19" width="512" height="53.07"/>
+      <polygon class="cls-4" points="0 368.02 7.55 394.06 512.04 228.5 512.04 171.5 0 342.19 0 368.02"/>
+    </g>
+    <g>
+      <rect class="cls-6" x="0" y="171.5" width="512" height="53.07"/>
+      <polygon class="cls-3" points="0 197.33 7.55 223.36 512.04 57.81 512.04 .8 0 171.5 0 197.33"/>
+    </g>
   </g>
-  <g>
-    <rect class="cls-5" x="0" y="154.64" width="512" height="48.08"/>
-    <polygon class="cls-4" points="0 178.04 7.55 201.62 512.04 51.64 512.04 0 0 152.23 0 178.04"/>
-  </g>
-  <polygon class="cls-1" points="-.04 161.25 0 673.33 512.04 673.33 512.04 161.25 -.04 161.25"/>
-  <g>
-    <rect class="cls-6" x="0" y="309.28" width="512" height="48.08"/>
-    <polygon class="cls-3" points="0 332.68 7.55 356.26 512.04 206.28 512.04 154.64 0 306.87 0 332.68"/>
-  </g>
+  <polyline class="cls-1" points="512.04 161.25 -.04 161.25 0 673.33 512.04 673.33"/>
 </svg>
