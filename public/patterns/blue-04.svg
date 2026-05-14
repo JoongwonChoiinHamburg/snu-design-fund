@@ -3,14 +3,14 @@
   <defs>
     <style>
       .cls-1 {
+        fill: #8effab;
+      }
+
+      .cls-2 {
         fill: none;
         stroke: url(#_무제_그라디언트_304);
         stroke-miterlimit: 10;
         stroke-width: 6px;
-      }
-
-      .cls-2 {
-        fill: #c0ffab;
       }
     </style>
     <radialGradient id="_무제_그라디언트_304" data-name="무제 그라디언트 304" cx="256" cy="256" fx="256" fy="256" r="256" gradientTransform="translate(512) rotate(90)" gradientUnits="userSpaceOnUse">
@@ -29,6 +29,6 @@
       <stop offset=".83" stop-color="#7f6bf2"/>
     </radialGradient>
   </defs>
-  <rect class="cls-2" x="0" y="0" width="512" height="512"/>
-  <path class="cls-1" d="M170.67,0v512M341.33,0v512M512,341.33H0M512,170.67H0"/>
+  <rect class="cls-1" x="0" y="0" width="512" height="512"/>
+  <path class="cls-2" d="M170.67,0v512M341.33,0v512M512,341.33H0M512,170.67H0"/>
 </svg>
