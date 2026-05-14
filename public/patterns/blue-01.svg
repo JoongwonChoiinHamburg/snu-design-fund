@@ -3,44 +3,44 @@
   <defs>
     <style>
       .cls-1 {
-        fill: url(#_무제_그라디언트_4);
+        fill: url(#_무제_그라디언트_190-2);
       }
 
       .cls-2 {
-        fill: #7f6bf2;
+        fill: url(#_무제_그라디언트_190-3);
       }
 
       .cls-3 {
-        fill: url(#_무제_그라디언트_4-3);
+        fill: url(#_무제_그라디언트_190-4);
       }
 
       .cls-4 {
-        fill: url(#_무제_그라디언트_4-2);
+        fill: url(#_무제_그라디언트_190);
       }
 
       .cls-5 {
-        fill: url(#_무제_그라디언트_4-4);
+        fill: #b8ffbf;
       }
     </style>
-    <linearGradient id="_무제_그라디언트_4" data-name="무제 그라디언트 4" x1="-25.01" y1="1166.4" x2="-25.01" y2="1678.4" gradientTransform="translate(358.99 1678.4) rotate(-180)" gradientUnits="userSpaceOnUse">
-      <stop offset=".08" stop-color="#b8ffbf"/>
-      <stop offset=".19" stop-color="#b8ffbf" stop-opacity=".83"/>
-      <stop offset=".33" stop-color="#b8ffbf" stop-opacity=".64"/>
-      <stop offset=".48" stop-color="#b8ffbf" stop-opacity=".48"/>
-      <stop offset=".62" stop-color="#b8ffbf" stop-opacity=".36"/>
-      <stop offset=".76" stop-color="#b8ffbf" stop-opacity=".27"/>
-      <stop offset=".88" stop-color="#b8ffbf" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#b8ffbf" stop-opacity=".2"/>
+    <linearGradient id="_무제_그라디언트_190" data-name="무제 그라디언트 190" x1=".89" y1="128.19" x2="256.99" y2="128.19" gradientUnits="userSpaceOnUse">
+      <stop offset=".08" stop-color="#7f6bf2"/>
+      <stop offset=".17" stop-color="#7f6bf2" stop-opacity=".86"/>
+      <stop offset=".32" stop-color="#7f6bf2" stop-opacity=".66"/>
+      <stop offset=".46" stop-color="#7f6bf2" stop-opacity=".5"/>
+      <stop offset=".61" stop-color="#7f6bf2" stop-opacity=".37"/>
+      <stop offset=".75" stop-color="#7f6bf2" stop-opacity=".27"/>
+      <stop offset=".88" stop-color="#7f6bf2" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#7f6bf2" stop-opacity=".2"/>
     </linearGradient>
-    <linearGradient id="_무제_그라디언트_4-2" data-name="무제 그라디언트 4" x1="179.11" y1="1.61" x2="179.11" y2="513.61" gradientTransform="translate(204.89 -1.61)" xlink:href="#_무제_그라디언트_4"/>
-    <linearGradient id="_무제_그라디언트_4-3" data-name="무제 그라디언트 4" x1="230.99" x2="230.99" xlink:href="#_무제_그라디언트_4"/>
-    <linearGradient id="_무제_그라디언트_4-4" data-name="무제 그라디언트 4" x1="-76.89" y1="1.61" x2="-76.89" y2="513.61" gradientTransform="translate(204.89 -1.61)" xlink:href="#_무제_그라디언트_4"/>
+    <linearGradient id="_무제_그라디언트_190-2" data-name="무제 그라디언트 190" x1="256.13" y1="128.19" x2="512.23" y2="128.19" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-3" data-name="무제 그라디언트 190" y1="384.06" y2="384.06" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-4" data-name="무제 그라디언트 190" x1="256.13" y1="384.06" x2="512.23" y2="384.06" xlink:href="#_무제_그라디언트_190"/>
   </defs>
-  <rect class="cls-2" x="-.04" y=".8" width="512.09" height="512.09"/>
+  <rect class="cls-5" x="-.23" y="0" width="512" height="512"/>
   <g>
-    <polygon class="cls-1" points="512 512 256 512 256 0 512 512"/>
-    <polygon class="cls-4" points="256 0 512 0 512 512 256 0"/>
-    <polygon class="cls-3" points="256 512 0 512 0 0 256 512"/>
-    <polygon class="cls-5" points="0 0 256 0 256 512 0 0"/>
+    <polygon class="cls-4" points=".89 256.13 256.99 256.13 .89 .25 .89 256.13"/>
+    <polygon class="cls-1" points="256.13 .25 256.13 256.13 512.23 .25 256.13 .25"/>
+    <polygon class="cls-2" points=".89 512 256.99 512 .89 256.13 .89 512"/>
+    <polygon class="cls-3" points="256.13 256.13 256.13 512 512.23 256.13 256.13 256.13"/>
   </g>
 </svg>

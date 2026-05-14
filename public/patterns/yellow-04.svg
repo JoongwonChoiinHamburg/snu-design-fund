@@ -3,25 +3,32 @@
   <defs>
     <style>
       .cls-1 {
-        fill: url(#_무제_그라디언트_765);
+        fill: url(#_무제_그라디언트_889);
       }
 
       .cls-2 {
-        fill: url(#_무제_그라디언트_766);
+        fill: url(#_무제_그라디언트_890);
       }
     </style>
-    <linearGradient id="_무제_그라디언트_766" data-name="무제 그라디언트 766" x1="635.31" y1="-1575.59" x2="1147.35" y2="-1575.59" gradientTransform="translate(-635.35 1830.91)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#62c27a"/>
-      <stop offset=".5" stop-color="#feffac"/>
-      <stop offset=".65" stop-color="#cfec9c"/>
-      <stop offset="1" stop-color="#62c27a"/>
+    <linearGradient id="_무제_그라디언트_890" data-name="무제 그라디언트 890" x1="635.31" y1="-1575.59" x2="1147.35" y2="-1575.59" gradientTransform="translate(-635.35 1830.91)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22753c"/>
+      <stop offset=".5" stop-color="#fff3ac"/>
+      <stop offset=".75" stop-color="#8eb373"/>
+      <stop offset="1" stop-color="#22753c"/>
     </linearGradient>
-    <linearGradient id="_무제_그라디언트_765" data-name="무제 그라디언트 765" x1="255.98" y1=".7" x2="255.98" y2="512.7" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#feffac"/>
-      <stop offset=".5" stop-color="#62c27a"/>
-      <stop offset=".73" stop-color="#b1e193"/>
-      <stop offset=".91" stop-color="#e8f6a5"/>
-      <stop offset="1" stop-color="#feffac"/>
+    <linearGradient id="_무제_그라디언트_889" data-name="무제 그라디언트 889" x1="255.98" y1=".7" x2="255.98" y2="512.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff3ac"/>
+      <stop offset=".1" stop-color="#bdcd8a"/>
+      <stop offset=".21" stop-color="#85ad6e"/>
+      <stop offset=".3" stop-color="#5a9558"/>
+      <stop offset=".38" stop-color="#3b8349"/>
+      <stop offset=".45" stop-color="#28783f"/>
+      <stop offset=".5" stop-color="#22753c"/>
+      <stop offset=".55" stop-color="#2c7b41"/>
+      <stop offset=".63" stop-color="#498b50"/>
+      <stop offset=".74" stop-color="#78a667"/>
+      <stop offset=".87" stop-color="#b8ca88"/>
+      <stop offset="1" stop-color="#fff3ac"/>
     </linearGradient>
   </defs>
   <rect class="cls-2" x="-.04" y="-.7" width="512.04" height="512.04" transform="translate(511.3 -.65) rotate(90)"/>
