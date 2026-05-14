@@ -3,23 +3,23 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #0bda73;
+        fill: #ebcfff;
       }
 
       .cls-2 {
-        fill: #69ffbb;
+        fill: #7c55a8;
       }
     </style>
   </defs>
-  <rect class="cls-2" y="0" width="512" height="512"/>
+  <rect class="cls-1" y="0" width="512" height="512"/>
   <g>
-    <rect class="cls-1" x="256" y="448.42" width="256" height="6.07"/>
-    <rect class="cls-1" x="0" y="384.42" width="256" height="6.07"/>
-    <rect class="cls-1" x="256" y="320.42" width="256" height="6.07"/>
-    <rect class="cls-1" x="0" y="256.42" width="256" height="6.07"/>
-    <rect class="cls-1" x="256" y="192.42" width="256" height="6.07"/>
-    <rect class="cls-1" x="0" y="128.42" width="256" height="6.07"/>
-    <rect class="cls-1" x="256" y="64.42" width="256" height="6.07"/>
-    <rect class="cls-1" x="0" y=".42" width="256" height="6.07"/>
+    <rect class="cls-2" x="374.14" y="448.42" width="137.86" height="6.07"/>
+    <rect class="cls-2" x="0" y="384.42" width="374.14" height="6.07"/>
+    <rect class="cls-2" x="374.14" y="320.42" width="137.86" height="6.07"/>
+    <rect class="cls-2" x="0" y="256.42" width="374.14" height="6.07"/>
+    <rect class="cls-2" x="374.14" y="192.42" width="137.86" height="6.07"/>
+    <rect class="cls-2" x="0" y="128.42" width="374.14" height="6.07"/>
+    <rect class="cls-2" x="374.14" y="64.42" width="137.86" height="6.07"/>
+    <rect class="cls-2" x="0" y=".42" width="374.14" height="6.07"/>
   </g>
 </svg>

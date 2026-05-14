@@ -3,23 +3,44 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #7f6bf2;
+        fill: url(#_무제_그라디언트_190-2);
       }
 
       .cls-2 {
-        fill: url(#_무제_그라디언트_507);
+        fill: url(#_무제_그라디언트_190-3);
+      }
+
+      .cls-3 {
+        fill: url(#_무제_그라디언트_190-4);
+      }
+
+      .cls-4 {
+        fill: url(#_무제_그라디언트_190);
+      }
+
+      .cls-5 {
+        fill: #c0ffab;
       }
     </style>
-    <radialGradient id="_무제_그라디언트_507" data-name="무제 그라디언트 507" cx="256" cy="256" fx="256" fy="256" r="427.41" gradientUnits="userSpaceOnUse">
-      <stop offset=".24" stop-color="#c0ffab"/>
-      <stop offset=".34" stop-color="#c0ffab" stop-opacity=".82"/>
-      <stop offset=".53" stop-color="#c0ffab" stop-opacity=".53"/>
-      <stop offset=".69" stop-color="#c0ffab" stop-opacity=".3"/>
-      <stop offset=".83" stop-color="#c0ffab" stop-opacity=".14"/>
-      <stop offset=".94" stop-color="#c0ffab" stop-opacity=".04"/>
-      <stop offset="1" stop-color="#c0ffab" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="_무제_그라디언트_190" data-name="무제 그라디언트 190" x1="1.12" y1="128.19" x2="257.22" y2="128.19" gradientUnits="userSpaceOnUse">
+      <stop offset=".08" stop-color="#7f6bf2"/>
+      <stop offset=".17" stop-color="#7f6bf2" stop-opacity=".86"/>
+      <stop offset=".32" stop-color="#7f6bf2" stop-opacity=".66"/>
+      <stop offset=".46" stop-color="#7f6bf2" stop-opacity=".5"/>
+      <stop offset=".61" stop-color="#7f6bf2" stop-opacity=".37"/>
+      <stop offset=".75" stop-color="#7f6bf2" stop-opacity=".27"/>
+      <stop offset=".88" stop-color="#7f6bf2" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#7f6bf2" stop-opacity=".2"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_190-2" data-name="무제 그라디언트 190" x1="256.36" y1="128.19" x2="512.46" y2="128.19" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-3" data-name="무제 그라디언트 190" y1="384.06" y2="384.06" xlink:href="#_무제_그라디언트_190"/>
+    <linearGradient id="_무제_그라디언트_190-4" data-name="무제 그라디언트 190" x1="256.36" y1="384.06" x2="512.46" y2="384.06" xlink:href="#_무제_그라디언트_190"/>
   </defs>
-  <rect class="cls-1" x="0" y="0" width="512" height="512"/>
-  <path class="cls-2" d="M170.72,0v170.67H0V0h170.72ZM511.83,170.67h.17V0h-170.72v170.67h-170.55v170.67h170.55v170.67h170.72v-170.67h-170.55v-170.67h170.38ZM.17,341.33H0v170.67h170.72v-170.67H.17Z"/>
+  <rect class="cls-5" x="0" y="0" width="512" height="512"/>
+  <g>
+    <polygon class="cls-4" points="1.12 256.13 257.22 256.13 1.12 .25 1.12 256.13"/>
+    <polygon class="cls-1" points="256.36 .25 256.36 256.13 512.46 .25 256.36 .25"/>
+    <polygon class="cls-2" points="1.12 512 257.22 512 1.12 256.13 1.12 512"/>
+    <polygon class="cls-3" points="256.36 256.13 256.36 512 512.46 256.13 256.36 256.13"/>
+  </g>
 </svg>
