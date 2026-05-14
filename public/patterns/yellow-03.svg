@@ -7,35 +7,41 @@
       }
 
       .cls-2 {
-        fill: #b5b6ff;
+        fill: url(#_무제_그라디언트_821-2);
       }
 
       .cls-3 {
-        fill: url(#_무제_그라디언트_730-2);
+        fill: url(#_무제_그라디언트_821-3);
       }
 
       .cls-4 {
-        fill: url(#_무제_그라디언트_730);
+        fill: #d1c0ff;
       }
 
       .cls-5 {
+        fill: url(#_무제_그라디언트_821);
+      }
+
+      .cls-6 {
         clip-path: url(#clippath);
       }
     </style>
     <clipPath id="clippath">
-      <rect class="cls-1" x="-.04" y=".8" width="512.09" height="512.09"/>
+      <polygon class="cls-1" points="-.04 .8 0 512.89 512.04 512.89 512.04 .8 -.04 .8"/>
     </clipPath>
-    <linearGradient id="_무제_그라디언트_730" data-name="무제 그라디언트 730" x1="-1194.9" y1="5373.31" x2="-1194.9" y2="5885.31" gradientTransform="translate(-885.05 5886.16) rotate(-180)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#7e61a8"/>
-      <stop offset="1" stop-color="#7e61a8" stop-opacity="0"/>
+    <linearGradient id="_무제_그라디언트_821" data-name="무제 그라디언트 821" x1="269.3" y1="-25.76" x2="269.3" y2="184.31" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#9f73e5"/>
+      <stop offset=".83" stop-color="#9f73e5" stop-opacity=".2"/>
     </linearGradient>
-    <linearGradient id="_무제_그라디언트_730-2" data-name="무제 그라디언트 730" x1="-2164.77" y1="511.15" x2="-2164.77" y2="-.85" gradientTransform="translate(-1906.11 512) rotate(-180)" xlink:href="#_무제_그라디언트_730"/>
+    <linearGradient id="_무제_그라디언트_821-2" data-name="무제 그라디언트 821" y1="138.53" y2="348.6" xlink:href="#_무제_그라디언트_821"/>
+    <linearGradient id="_무제_그라디언트_821-3" data-name="무제 그라디언트 821" y1="302.82" y2="512.89" xlink:href="#_무제_그라디언트_821"/>
   </defs>
-  <rect class="cls-2" x="-.04" y=".8" width="512.09" height="512.09"/>
-  <g class="cls-5">
+  <polygon class="cls-4" points="-.04 .8 0 512.89 512.04 512.89 512.04 .8 -.04 .8"/>
+  <g class="cls-6">
     <g>
-      <path class="cls-4" d="M463.46.85h51.2l-51.2,512h-51.2L463.46.85ZM309.86,512.85h51.2L412.26.85h-51.2l-51.2,512ZM207.46,512.85h51.2L309.86.85h-51.2l-51.2,512ZM105.06,512.85h51.2L207.46.85h-51.2l-51.2,512ZM514.66,512.85h51.2L617.06.85h-51.2l-51.2,512ZM2.66,512.85h51.2L105.06.85h-51.2L2.66,512.85Z"/>
-      <path class="cls-3" d="M105.06,512.85h-51.2L105.06.85h51.2l-51.2,512ZM258.66.85h-51.2l-51.2,512h51.2L258.66.85ZM361.06.85h-51.2l-51.2,512h51.2L361.06.85ZM463.46.85h-51.2l-51.2,512h51.2L463.46.85ZM53.86.85H2.66l-51.2,512H2.66L53.86.85ZM565.86.85h-51.2l-51.2,512h51.2L565.86.85Z"/>
+      <polygon class="cls-5" points="533 184.31 0 184.31 0 144.92 525.32 -25.76 538.61 12.59 129.37 143.88 533 143.88 533 184.31"/>
+      <polygon class="cls-2" points="533 348.6 0 348.6 0 309.21 525.32 138.53 538.61 176.88 129.37 308.17 533 308.17 533 348.6"/>
+      <polygon class="cls-3" points="533 512.89 0 512.89 0 473.5 525.32 302.82 538.61 341.17 129.36 472.47 533 472.47 533 512.89"/>
     </g>
   </g>
 </svg>
