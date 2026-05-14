@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #bbfbff;
+        fill: url(#_무제_그라디언트_424-4);
+      }
+
+      .cls-2 {
+        fill: url(#_무제_그라디언트_424-2);
+      }
+
+      .cls-3 {
+        fill: url(#_무제_그라디언트_424-3);
+      }
+
+      .cls-4 {
+        fill: url(#_무제_그라디언트_424);
+      }
+
+      .cls-5 {
+        fill: #69ffbb;
       }
     </style>
+    <linearGradient id="_무제_그라디언트_424" data-name="무제 그라디언트 424" x1="103.49" y1="0" x2="103.49" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00df78"/>
+      <stop offset="1" stop-color="#0bda73" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_424-2" data-name="무제 그라디언트 424" x1="356.61" x2="356.61" xlink:href="#_무제_그라디언트_424"/>
+    <linearGradient id="_무제_그라디언트_424-3" data-name="무제 그라디언트 424" x1="149.54" y1="256" x2="149.54" y2="512" xlink:href="#_무제_그라디언트_424"/>
+    <linearGradient id="_무제_그라디언트_424-4" data-name="무제 그라디언트 424" x1="408.46" y1="256" x2="408.46" y2="512" xlink:href="#_무제_그라디언트_424"/>
   </defs>
-  <rect class="cls-1" x="-.04" y=".8" width="512.09" height="512.09"/>
+  <rect class="cls-5" x="-.04" y=".8" width="512.09" height="512.09"/>
+  <polygon class="cls-4" points="127.96 256 -.04 256 79.03 0 207.03 0 127.96 256"/>
+  <polygon class="cls-2" points="381.08 256 253.08 256 332.15 0 460.15 0 381.08 256"/>
+  <polygon class="cls-3" points="174 512 46 512 125.08 256 253.08 256 174 512"/>
+  <polygon class="cls-1" points="432.92 512 304.92 512 384 256 512 256 432.92 512"/>
 </svg>

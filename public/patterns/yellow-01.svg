@@ -1,11 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #3ffcab;
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-7);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-6);
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath-5);
+      }
+
+      .cls-9 {
+        fill: #69ffbb;
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath);
       }
     </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="384" y="256.06" width="128" height="256"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="256" y="256.06" width="128" height="256"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-1" x="128" y="256.06" width="128" height="256"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-1" x="0" y="256.06" width="128" height="256"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <rect class="cls-1" x="384" y="0" width="128" height="256"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <rect class="cls-1" x="256" y="0" width="128" height="256"/>
+    </clipPath>
+    <clipPath id="clippath-6">
+      <rect class="cls-1" x="128" y="0" width="128" height="256"/>
+    </clipPath>
+    <clipPath id="clippath-7">
+      <rect class="cls-1" x="0" y="0" width="128" height="256"/>
+    </clipPath>
+    <image id="image" width="132" height="260" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAAEECAYAAAAGQff1AAAACXBIWXMAAAsSAAALEgHS3X78AAACkklEQVR4nO3dQUrDUBSG0dviRtylS3CX3YlxUpLAVyg4eQHPGYmjgB//6MqbAXjntv/0+NoWfgerfX7vLXycfi0KZkYUvCAKQhSEKAhREKIgREGIghAFIQpij+Imin/t/Me3FIQoCFEQoiBEQYiCEAUhCkIUhCgIURCiIERBHFFsmyiYGUvBC6IgREGIghAFIQpCFIQoCCf+zIwTf94QBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCFEQoiBEQYiCEAUhCkIUhCgIURBO/AlLQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREGIgvBcFGEpCFEQoiCc+BOWghAFIQpCFIQoCFEQoiBEQYiCEAUhCkIUhCgIURCiIERBiIIQBXGO4mfZV3AploIQBSEKwok/YSkIURCiIERBiIIQBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCFEQoiBEQYiCEAVxnPh7GYgnS0HcV38A12MpCFEQoiBEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREGIghAF4b0PwlIQoiBEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREGIghAFIQrCiT9hKQhREKIgjii8IcaTpSBEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREE48ScsBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCFEQoiDuqz+A67EUhCgIURCiIERBiIIQBeHEn7AUhCgIURCiIERBiIIQBSEKQhSEN8QIS0GIghAFIQpCFIQoCFEQoiBEQYiCEAUhCkIUhP/7ICwFIQpCFIQoCFEQoiBEQYiCEAUhCgD+4Beezw8K+nhYCQAAAABJRU5ErkJggg=="/>
+    <image id="image-2" width="132" height="260" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAAEFCAYAAADNHSRQAAAACXBIWXMAAAsSAAALEgHS3X78AAACk0lEQVR4nO3dQUrDUBSG0dviRtylS3CX3YlxUpLAV+hEeAHPGYmjgB//6MqbAXjntv/0+NoWfgerfX7vLXycfi0KZkYUvCAKQhSEKAhREKIgREGIghAFIQpij+Imin/t/Me3FIQoCFEQoiBEQYiCEAUhCkIUhCgIURCiIERBHFFsmyiYGUvBC6IgREGIghAFIQpCFIQoCCf+zIwTf94QBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCFEQoiBEQYiCEAUhCkIUhCgIURBO/AlLQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREGIgvBcFGEpCFEQoiCc+BOWghAFIQpCFIQoCFEQoiBEQYiCEAUhCkIUhCgIURCiIERBiIIQBXGO4mfZV3AploIQBSEKwok/YSkIURCiIERBiIIQBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCFEQoiBEQYiCEAVxnPh7GYgnS0HcV38A12MpCFEQoiBEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREGIghAF4b0PwlIQoiBEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREGIghAFIQrCiT9hKQhREKIgjii8IcaTpSBEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREE48ScsBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCFEQoiDuqz+A67EUhCgIURCiIERBiIIQBeHEn7AUhCgIURCiIERBiIIQBSEKQhSEN8QIS0GIghAFIQpCFIQoCFEQoiBEQYiCEAUhCkIUhP/7ICwFIQpCFIQoCFEQoiBEQYiCEAUhCgDgL/wC8HIPCjOvL+wAAAAASUVORK5CYII="/>
+    <image id="image-3" width="132" height="260" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAAEECAYAAAAGQff1AAAACXBIWXMAAAsSAAALEgHS3X78AAACjklEQVR4nO3dMQ4BUQBF0T+isw8btA4btA81zTCSi4SGcE41EcUUN6/6kz8GALxsujxsDrvp2R/5bcft/nR5Xt/8Lor/JgoeEwUhCkIUhCgIURCiIERBiIK4RnESBTNLQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhTEEsU0iYIxhqXgDlEQoiBEQYiCEAUhCkIUhCgI330QloIQBSEKQhSEKAhREKIgVp9+Ab6PpSBEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEI/6EpSBEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREG4Q4ywFIQoCFEQjvgTloIQBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCFEQoiBEQYiCEAUhCkIUhCgIURCO+BOWghAFIQpCFIQoCFEQoiBEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKtPvwDfx1IQy8dA7hBjZikIURCiIERBiIIQBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCFEQoiBEQYiCEAXhvg/CUhCiIERB3EbhY2PGGJaCO0RBiIIQBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCFEQoiBEQTjiT1gKQhSEKIglCjcDMbMUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCEf8CUtBiIIQBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCFEQoiBEQYiCEAUhCkIUhCgIR/wJS0GIghAFIQpCFIQoCFEQoiBcF0VYCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgHPEnLAUhCkIUhCgIURCiIERBiIIQBSEKAN5wBnc8FPGKNW8QAAAAAElFTkSuQmCC"/>
+    <image id="image-4" width="132" height="260" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAAEFCAYAAADNHSRQAAAACXBIWXMAAAsSAAALEgHS3X78AAACj0lEQVR4nO3dMQ4BUQBF0T+isw8btA4btA81zTCSi0QiIZxTTUShuHmaP/ljAMDLpsvD5rCbnn2R33bc7k+X5/XN56L4b6LgMVEQoiBEQYiCEAUhCkIUhCiIaxQnUTCzFIQoCFEQoiBEQYiCEAUhCkIUhCgIURCiIERBLFFMkygYY1gK7hAFIQpCFIQoCFEQoiBEQYiC8N4HYSkIURCiIERBiIIQBSEKYvXpH8D3sRSEKAhREKIgREGIghAFIQpCFIQoCFEQoiBEQYiCcMSfsBSEKAhREKIgREGIghAFIQpCFIQoCFEQoiBEQYiCEAUhCkIUhCgId4gRloIQBSEKwhF/wlIQoiBEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREGIghAFIQrCEX/CUhCiIERBiIIQBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCFEQoiBEQYiCEAUhCkIUxOrTP4Dvs7wM5A4xZv4+CFEQoiBEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREGIghAF4b4PwlIQoiBEQdxG4b1SxhiWgjtEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREE44k9YCkIUhCiIJQo3AzGzFIQoCFEQoiBEQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhH/AlLQYiCEAUhCkIUhCgIURCiIERBiIIQBSEKQhSEKAhREKIgREGIghAFIQpCFIQoCEf8CUtBiIIQBSEKQhSEKAhREKIgXBdFWApCFIQoCFEQoiBEQYiCEAUhCkIUhCgIURCiIBzxJywFIQpCFIQoCFEQoiBEQYiCEAUhCgDgHc4Z1BTxpcd2GwAAAABJRU5ErkJggg=="/>
   </defs>
-  <rect class="cls-1" x="0" width="512" height="512"/>
+  <rect class="cls-9" x="0" width="512" height="512"/>
+  <g>
+    <g class="cls-10">
+      <use transform="translate(382 254.06)" xlink:href="#image-2"/>
+    </g>
+    <g class="cls-2">
+      <use transform="translate(254 254.06)" xlink:href="#image-4"/>
+    </g>
+  </g>
+  <g>
+    <g class="cls-5">
+      <use transform="translate(126 254.06)" xlink:href="#image-2"/>
+    </g>
+    <g class="cls-3">
+      <use transform="translate(-2 254.06)" xlink:href="#image-4"/>
+    </g>
+  </g>
+  <g>
+    <g class="cls-4">
+      <use transform="translate(382 -2)" xlink:href="#image"/>
+    </g>
+    <g class="cls-8">
+      <use transform="translate(254 -2)" xlink:href="#image-3"/>
+    </g>
+  </g>
+  <g>
+    <g class="cls-7">
+      <use transform="translate(126 -2)" xlink:href="#image"/>
+    </g>
+    <g class="cls-6">
+      <use transform="translate(-2 -2)" xlink:href="#image-3"/>
+    </g>
+  </g>
 </svg>

@@ -3,30 +3,23 @@
   <defs>
     <style>
       .cls-1 {
-        fill: url(#_무제_그라디언트_190-2);
+        fill: #7f6bf2;
       }
 
       .cls-2 {
-        fill: url(#_무제_그라디언트_190);
-      }
-
-      .cls-3 {
-        fill: #c0ffab;
+        fill: url(#_무제_그라디언트_507);
       }
     </style>
-    <linearGradient id="_무제_그라디언트_190" data-name="무제 그라디언트 190" x1="256" y1="256" x2="256" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset=".08" stop-color="#7f6bf2"/>
-      <stop offset=".17" stop-color="#7f6bf2" stop-opacity=".86"/>
-      <stop offset=".32" stop-color="#7f6bf2" stop-opacity=".66"/>
-      <stop offset=".46" stop-color="#7f6bf2" stop-opacity=".5"/>
-      <stop offset=".61" stop-color="#7f6bf2" stop-opacity=".37"/>
-      <stop offset=".75" stop-color="#7f6bf2" stop-opacity=".27"/>
-      <stop offset=".88" stop-color="#7f6bf2" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#7f6bf2" stop-opacity=".2"/>
-    </linearGradient>
-    <linearGradient id="_무제_그라디언트_190-2" data-name="무제 그라디언트 190" y1="512" y2="256" xlink:href="#_무제_그라디언트_190"/>
+    <radialGradient id="_무제_그라디언트_507" data-name="무제 그라디언트 507" cx="256" cy="256" fx="256" fy="256" r="427.41" gradientUnits="userSpaceOnUse">
+      <stop offset=".24" stop-color="#c0ffab"/>
+      <stop offset=".34" stop-color="#c0ffab" stop-opacity=".82"/>
+      <stop offset=".53" stop-color="#c0ffab" stop-opacity=".53"/>
+      <stop offset=".69" stop-color="#c0ffab" stop-opacity=".3"/>
+      <stop offset=".83" stop-color="#c0ffab" stop-opacity=".14"/>
+      <stop offset=".94" stop-color="#c0ffab" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#c0ffab" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect class="cls-3" x="0" width="512" height="512"/>
-  <path class="cls-2" d="M0,0C0,141.38,114.62,256,256,256S512,141.38,512,0"/>
-  <path class="cls-1" d="M0,256C0,397.38,114.62,512,256,512s256-114.62,256-256"/>
+  <rect class="cls-1" x="0" y="0" width="512" height="512"/>
+  <path class="cls-2" d="M170.72,0v170.67H0V0h170.72ZM511.83,170.67h.17V0h-170.72v170.67h-170.55v170.67h170.55v170.67h170.72v-170.67h-170.55v-170.67h170.38ZM.17,341.33H0v170.67h170.72v-170.67H.17Z"/>
 </svg>
