@@ -1,50 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: none;
+        fill: url(#_무제_그라디언트_765);
       }
 
       .cls-2 {
-        fill: #a47ae6;
-      }
-
-      .cls-3 {
-        fill: #bbe0ff;
+        fill: url(#_무제_그라디언트_766);
       }
     </style>
+    <linearGradient id="_무제_그라디언트_766" data-name="무제 그라디언트 766" x1="635.31" y1="-1575.59" x2="1147.35" y2="-1575.59" gradientTransform="translate(-635.35 1830.91)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#62c27a"/>
+      <stop offset=".5" stop-color="#feffac"/>
+      <stop offset=".65" stop-color="#cfec9c"/>
+      <stop offset="1" stop-color="#62c27a"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_765" data-name="무제 그라디언트 765" x1="255.98" y1=".7" x2="255.98" y2="512.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#feffac"/>
+      <stop offset=".5" stop-color="#62c27a"/>
+      <stop offset=".73" stop-color="#b1e193"/>
+      <stop offset=".91" stop-color="#e8f6a5"/>
+      <stop offset="1" stop-color="#feffac"/>
+    </linearGradient>
   </defs>
-  <rect class="cls-3" y="0" width="512" height="512"/>
-  <g>
-    <rect class="cls-2" x="248.45" y="150.96" width="263.55" height="8.12"/>
-    <rect class="cls-2" x="248.45" y="107.95" width="263.55" height="8.12"/>
-    <rect class="cls-2" x="248.45" y="64.94" width="263.55" height="8.12"/>
-    <rect class="cls-2" x="248.45" y="21.93" width="263.55" height="8.12"/>
-    <rect class="cls-2" x="0" y="129.46" width="248.45" height="8.12"/>
-    <rect class="cls-2" x="0" y="86.44" width="248.45" height="8.12"/>
-    <rect class="cls-2" x="0" y="43.43" width="248.45" height="8.12"/>
-    <rect class="cls-2" x="0" y=".42" width="248.45" height="8.12"/>
-  </g>
-  <g>
-    <rect class="cls-2" x="248.45" y="319.86" width="263.55" height="8.12"/>
-    <rect class="cls-2" x="248.45" y="276.85" width="263.55" height="8.12"/>
-    <rect class="cls-2" x="248.45" y="233.84" width="263.55" height="8.12"/>
-    <rect class="cls-2" x="248.45" y="190.83" width="263.55" height="8.12"/>
-    <rect class="cls-2" x="0" y="298.35" width="248.45" height="8.12"/>
-    <rect class="cls-2" x="0" y="255.34" width="248.45" height="8.12"/>
-    <rect class="cls-2" x="0" y="212.33" width="248.45" height="8.12"/>
-    <rect class="cls-2" x="0" y="169.32" width="248.45" height="8.12"/>
-  </g>
-  <g>
-    <rect class="cls-2" x="248.45" y="488.76" width="263.55" height="8.12"/>
-    <rect class="cls-2" x="248.45" y="445.75" width="263.55" height="8.12"/>
-    <rect class="cls-2" x="248.45" y="402.74" width="263.55" height="8.12"/>
-    <rect class="cls-2" x="248.45" y="359.73" width="263.55" height="8.12"/>
-    <rect class="cls-2" x="0" y="467.25" width="248.45" height="8.12"/>
-    <rect class="cls-2" x="0" y="424.24" width="248.45" height="8.12"/>
-    <rect class="cls-2" x="0" y="381.23" width="248.45" height="8.12"/>
-    <rect class="cls-2" x="0" y="338.22" width="248.45" height="8.12"/>
-  </g>
-  <polyline class="cls-1" points="512.04 -492.61 -.04 -492.61 0 19.48 512.04 19.48"/>
+  <rect class="cls-2" x="-.04" y="-.7" width="512.04" height="512.04" transform="translate(511.3 -.65) rotate(90)"/>
+  <path class="cls-1" d="M106.7.7l-42.58,256,42.58,256h42.58l42.58-256L149.28.7h-42.58ZM234.64.7l-42.58,256,42.58,256h42.58l42.58-256L277.22.7h-42.58ZM362.57.7l-42.58,256,42.58,256h42.58l42.58-256L405.15.7h-42.58ZM490.75.7l-42.58,256,42.58,256h21.25V.7h-21.25ZM-.04.7L0,256.7v256h21.25l42.58-256L21.25.7H-.04Z"/>
 </svg>

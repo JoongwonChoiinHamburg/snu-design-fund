@@ -25,11 +25,11 @@
     <clipPath id="clippath">
       <rect class="cls-1" x="-.04" y=".8" width="512.09" height="512.09"/>
     </clipPath>
-    <linearGradient id="_무제_그라디언트_143" data-name="무제 그라디언트 143" x1="1277.06" y1="5374.16" x2="1277.06" y2="5886.16" gradientTransform="translate(1533.06 5886.16) rotate(-180)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="_무제_그라디언트_143" data-name="무제 그라디언트 143" x1="133.06" y1="5374.16" x2="133.06" y2="5886.16" gradientTransform="translate(389.06 5886.16) rotate(-180)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#f286df" stop-opacity="0"/>
       <stop offset="1" stop-color="#f286df"/>
     </linearGradient>
-    <linearGradient id="_무제_그라디언트_143-2" data-name="무제 그라디언트 143" x1="307.2" y1="512" x2="307.2" y2="0" gradientTransform="translate(512 512) rotate(-180)" xlink:href="#_무제_그라디언트_143"/>
+    <linearGradient id="_무제_그라디언트_143-2" data-name="무제 그라디언트 143" x1="-836.8" y1="512" x2="-836.8" y2="0" gradientTransform="translate(-632 512) rotate(-180)" xlink:href="#_무제_그라디언트_143"/>
   </defs>
   <rect class="cls-3" x="0" y="0" width="512" height="512"/>
   <g class="cls-5">
