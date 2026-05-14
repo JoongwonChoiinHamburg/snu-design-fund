@@ -3,108 +3,111 @@
   <defs>
     <style>
       .cls-1 {
-        fill: url(#_무제_그라디언트_597-9);
+        fill: #b5b6ff;
       }
 
       .cls-2 {
-        fill: url(#_무제_그라디언트_597-7);
+        fill: url(#_무제_그라디언트_585-5);
       }
 
       .cls-3 {
-        fill: url(#_무제_그라디언트_597-8);
+        fill: url(#_무제_그라디언트_585-8);
       }
 
       .cls-4 {
-        fill: url(#_무제_그라디언트_597-5);
+        fill: url(#_무제_그라디언트_585-7);
       }
 
       .cls-5 {
-        fill: url(#_무제_그라디언트_597-6);
+        fill: url(#_무제_그라디언트_585-2);
       }
 
       .cls-6 {
-        fill: url(#_무제_그라디언트_597-2);
+        fill: url(#_무제_그라디언트_585-6);
       }
 
       .cls-7 {
-        fill: url(#_무제_그라디언트_597-3);
+        fill: url(#_무제_그라디언트_585-4);
       }
 
       .cls-8 {
-        fill: url(#_무제_그라디언트_597-4);
+        fill: url(#_무제_그라디언트_585-3);
       }
 
       .cls-9 {
-        fill: url(#_무제_그라디언트_597);
+        fill: url(#_무제_그라디언트_729-8);
       }
 
       .cls-10 {
-        fill: #cbecff;
+        fill: url(#_무제_그라디언트_729-7);
       }
 
       .cls-11 {
-        fill: url(#_무제_그라디언트_597-11);
+        fill: url(#_무제_그라디언트_729-6);
       }
 
       .cls-12 {
-        fill: url(#_무제_그라디언트_597-15);
+        fill: url(#_무제_그라디언트_729-4);
       }
 
       .cls-13 {
-        fill: url(#_무제_그라디언트_597-13);
+        fill: url(#_무제_그라디언트_729-2);
       }
 
       .cls-14 {
-        fill: url(#_무제_그라디언트_597-16);
+        fill: url(#_무제_그라디언트_729-3);
       }
 
       .cls-15 {
-        fill: url(#_무제_그라디언트_597-12);
+        fill: url(#_무제_그라디언트_729-5);
       }
 
       .cls-16 {
-        fill: url(#_무제_그라디언트_597-14);
+        fill: url(#_무제_그라디언트_585);
       }
 
       .cls-17 {
-        fill: url(#_무제_그라디언트_597-10);
+        fill: url(#_무제_그라디언트_729);
       }
     </style>
-    <linearGradient id="_무제_그라디언트_597" data-name="무제 그라디언트 597" x1="193.4" y1="134.56" x2="193.4" y2="263" gradientTransform="translate(0 391.41) scale(1 -1)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#04c"/>
-      <stop offset="1" stop-color="#04c" stop-opacity="0"/>
+    <linearGradient id="_무제_그라디언트_585" data-name="무제 그라디언트 585" x1="193.4" y1="134.56" x2="193.4" y2="263" gradientTransform="translate(0 391.41) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7c55a8"/>
+      <stop offset="1" stop-color="#7c55a8" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="_무제_그라디언트_597-2" data-name="무제 그라디언트 597" x1="331.76" y1="134.56" x2="331.76" y2="263" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-3" data-name="무제 그라디언트 597" x1="456.99" y1="134.56" x2="456.99" y2="263" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-4" data-name="무제 그라디언트 597" x1="55.05" y1="134.56" x2="55.05" y2="263" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-5" data-name="무제 그라디언트 597" x1="193.4" y1="244.49" x2="193.4" y2="372.94" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-6" data-name="무제 그라디언트 597" x1="331.76" y1="244.49" x2="331.76" y2="372.94" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-7" data-name="무제 그라디언트 597" x1="456.99" y1="244.49" x2="456.99" y2="372.94" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-8" data-name="무제 그라디언트 597" x1="55.05" y1="244.49" x2="55.05" y2="372.94" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-9" data-name="무제 그라디언트 597" y1="-121.46" y2="6.98" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-10" data-name="무제 그라디언트 597" x1="331.76" y1="-121.46" x2="331.76" y2="6.98" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-11" data-name="무제 그라디언트 597" x1="456.99" y1="-121.46" x2="456.99" y2="6.98" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-12" data-name="무제 그라디언트 597" x1="55.05" y1="-121.46" x2="55.05" y2="6.98" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-13" data-name="무제 그라디언트 597" x1="193.4" y1="500.51" x2="193.4" y2="628.96" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-14" data-name="무제 그라디언트 597" x1="331.76" y1="500.51" x2="331.76" y2="628.96" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-15" data-name="무제 그라디언트 597" x1="456.99" y1="500.51" x2="456.99" y2="628.96" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_597"/>
-    <linearGradient id="_무제_그라디언트_597-16" data-name="무제 그라디언트 597" x1="55.05" y1="500.51" x2="55.05" y2="628.96" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_597"/>
+    <linearGradient id="_무제_그라디언트_729" data-name="무제 그라디언트 729" x1="331.76" y1="134.56" x2="331.76" y2="263" gradientTransform="translate(0 391.41) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7e61a8"/>
+      <stop offset="1" stop-color="#7e61a8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_729-2" data-name="무제 그라디언트 729" x1="456.99" y1="134.56" x2="456.99" y2="263" xlink:href="#_무제_그라디언트_729"/>
+    <linearGradient id="_무제_그라디언트_585-2" data-name="무제 그라디언트 585" x1="55.05" y1="134.56" x2="55.05" y2="263" xlink:href="#_무제_그라디언트_585"/>
+    <linearGradient id="_무제_그라디언트_585-3" data-name="무제 그라디언트 585" x1="193.4" y1="244.49" x2="193.4" y2="372.94" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_585"/>
+    <linearGradient id="_무제_그라디언트_729-3" data-name="무제 그라디언트 729" x1="331.76" y1="244.49" x2="331.76" y2="372.94" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_729"/>
+    <linearGradient id="_무제_그라디언트_729-4" data-name="무제 그라디언트 729" x1="456.99" y1="244.49" x2="456.99" y2="372.94" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_729"/>
+    <linearGradient id="_무제_그라디언트_585-4" data-name="무제 그라디언트 585" x1="55.05" y1="244.49" x2="55.05" y2="372.94" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_585"/>
+    <linearGradient id="_무제_그라디언트_585-5" data-name="무제 그라디언트 585" y1="-121.46" y2="6.98" xlink:href="#_무제_그라디언트_585"/>
+    <linearGradient id="_무제_그라디언트_729-5" data-name="무제 그라디언트 729" y1="-121.46" y2="6.98" xlink:href="#_무제_그라디언트_729"/>
+    <linearGradient id="_무제_그라디언트_729-6" data-name="무제 그라디언트 729" x1="456.99" y1="-121.46" x2="456.99" y2="6.98" xlink:href="#_무제_그라디언트_729"/>
+    <linearGradient id="_무제_그라디언트_585-6" data-name="무제 그라디언트 585" x1="55.05" y1="-121.46" x2="55.05" y2="6.98" xlink:href="#_무제_그라디언트_585"/>
+    <linearGradient id="_무제_그라디언트_585-7" data-name="무제 그라디언트 585" x1="193.4" y1="500.51" x2="193.4" y2="628.96" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_585"/>
+    <linearGradient id="_무제_그라디언트_729-7" data-name="무제 그라디언트 729" x1="331.76" y1="500.51" x2="331.76" y2="628.96" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_729"/>
+    <linearGradient id="_무제_그라디언트_729-8" data-name="무제 그라디언트 729" x1="456.99" y1="500.51" x2="456.99" y2="628.96" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_729"/>
+    <linearGradient id="_무제_그라디언트_585-8" data-name="무제 그라디언트 585" x1="55.05" y1="500.51" x2="55.05" y2="628.96" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_585"/>
   </defs>
-  <rect class="cls-10" x="-.04" y=".8" width="512.09" height="512.09"/>
-  <polygon class="cls-9" points="206.41 128.4 138.35 128.4 180.4 256.85 248.45 256.85 206.41 128.4"/>
-  <polygon class="cls-6" points="344.76 128.4 276.71 128.4 318.75 256.85 386.81 256.85 344.76 128.4"/>
-  <polygon class="cls-7" points="470 128.4 401.95 128.4 443.99 256.85 512.04 256.85 470 128.4"/>
-  <polygon class="cls-8" points="68.05 128.4 0 128.4 42.04 256.85 110.1 256.85 68.05 128.4"/>
-  <polygon class="cls-4" points="206.41 128.4 138.35 128.4 180.4 -.04 248.45 -.04 206.41 128.4"/>
-  <polygon class="cls-5" points="344.76 128.4 276.71 128.4 318.75 -.04 386.81 -.04 344.76 128.4"/>
-  <polygon class="cls-2" points="470 128.4 401.95 128.4 443.99 -.04 512.04 -.04 470 128.4"/>
-  <polygon class="cls-3" points="68.05 128.4 0 128.4 42.04 -.04 110.1 -.04 68.05 128.4"/>
-  <polygon class="cls-1" points="206.41 384.42 138.35 384.42 180.4 512.87 248.45 512.87 206.41 384.42"/>
-  <polygon class="cls-17" points="344.76 384.42 276.71 384.42 318.75 512.87 386.81 512.87 344.76 384.42"/>
+  <rect class="cls-1" x="-.04" y=".8" width="512.09" height="512.09"/>
+  <polygon class="cls-16" points="206.41 128.4 138.35 128.4 180.4 256.85 248.45 256.85 206.41 128.4"/>
+  <polygon class="cls-17" points="344.76 128.4 276.71 128.4 318.75 256.85 386.81 256.85 344.76 128.4"/>
+  <polygon class="cls-13" points="470 128.4 401.95 128.4 443.99 256.85 512.04 256.85 470 128.4"/>
+  <polygon class="cls-5" points="68.05 128.4 0 128.4 42.04 256.85 110.1 256.85 68.05 128.4"/>
+  <polygon class="cls-8" points="206.41 128.4 138.35 128.4 180.4 -.04 248.45 -.04 206.41 128.4"/>
+  <polygon class="cls-14" points="344.76 128.4 276.71 128.4 318.75 -.04 386.81 -.04 344.76 128.4"/>
+  <polygon class="cls-12" points="470 128.4 401.95 128.4 443.99 -.04 512.04 -.04 470 128.4"/>
+  <polygon class="cls-7" points="68.05 128.4 0 128.4 42.04 -.04 110.1 -.04 68.05 128.4"/>
+  <polygon class="cls-2" points="206.41 384.42 138.35 384.42 180.4 512.87 248.45 512.87 206.41 384.42"/>
+  <polygon class="cls-15" points="344.76 384.42 276.71 384.42 318.75 512.87 386.81 512.87 344.76 384.42"/>
   <polygon class="cls-11" points="470 384.42 401.95 384.42 443.99 512.87 512.04 512.87 470 384.42"/>
-  <polygon class="cls-15" points="68.05 384.42 0 384.42 42.04 512.87 110.1 512.87 68.05 384.42"/>
-  <polygon class="cls-13" points="206.41 384.42 138.35 384.42 180.4 255.98 248.45 255.98 206.41 384.42"/>
-  <polygon class="cls-16" points="344.76 384.42 276.71 384.42 318.75 255.98 386.81 255.98 344.76 384.42"/>
-  <polygon class="cls-12" points="470 384.42 401.95 384.42 443.99 255.98 512.04 255.98 470 384.42"/>
-  <polygon class="cls-14" points="68.05 384.42 0 384.42 42.04 255.98 110.1 255.98 68.05 384.42"/>
+  <polygon class="cls-6" points="68.05 384.42 0 384.42 42.04 512.87 110.1 512.87 68.05 384.42"/>
+  <polygon class="cls-4" points="206.41 384.42 138.35 384.42 180.4 255.98 248.45 255.98 206.41 384.42"/>
+  <polygon class="cls-10" points="344.76 384.42 276.71 384.42 318.75 255.98 386.81 255.98 344.76 384.42"/>
+  <polygon class="cls-9" points="470 384.42 401.95 384.42 443.99 255.98 512.04 255.98 470 384.42"/>
+  <polygon class="cls-3" points="68.05 384.42 0 384.42 42.04 255.98 110.1 255.98 68.05 384.42"/>
 </svg>
