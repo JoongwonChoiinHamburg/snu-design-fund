@@ -3,31 +3,130 @@
   <defs>
     <style>
       .cls-1 {
-        fill: none;
+        fill: url(#_무제_그라디언트_306-5);
       }
 
       .cls-2 {
-        fill: url(#_무제_그라디언트_879);
+        fill: url(#_무제_그라디언트_306-4);
       }
 
       .cls-3 {
-        fill: #fffcad;
+        fill: url(#_무제_그라디언트_306-3);
       }
 
       .cls-4 {
-        clip-path: url(#clippath);
+        fill: url(#_무제_그라디언트_306-2);
+      }
+
+      .cls-5 {
+        fill: url(#_무제_그라디언트_306-9);
+      }
+
+      .cls-6 {
+        fill: url(#_무제_그라디언트_306-8);
+      }
+
+      .cls-7 {
+        fill: url(#_무제_그라디언트_306-7);
+      }
+
+      .cls-8 {
+        fill: url(#_무제_그라디언트_306-6);
+      }
+
+      .cls-9 {
+        fill: url(#_무제_그라디언트_306);
+      }
+
+      .cls-10 {
+        fill: #fffcad;
+      }
+
+      .cls-11 {
+        fill: url(#_무제_그라디언트_306-14);
+      }
+
+      .cls-12 {
+        fill: url(#_무제_그라디언트_306-15);
+      }
+
+      .cls-13 {
+        fill: url(#_무제_그라디언트_306-16);
+      }
+
+      .cls-14 {
+        fill: url(#_무제_그라디언트_306-13);
+      }
+
+      .cls-15 {
+        fill: url(#_무제_그라디언트_306-12);
+      }
+
+      .cls-16 {
+        fill: url(#_무제_그라디언트_306-10);
+      }
+
+      .cls-17 {
+        fill: url(#_무제_그라디언트_306-11);
       }
     </style>
-    <clipPath id="clippath">
-      <rect class="cls-1" width="512" height="512"/>
-    </clipPath>
-    <linearGradient id="_무제_그라디언트_879" data-name="무제 그라디언트 879" x1="256.48" y1="0" x2="256.48" y2="512" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f27807" stop-opacity=".2"/>
-      <stop offset=".67" stop-color="#f27829"/>
+    <linearGradient id="_무제_그라디언트_306" data-name="무제 그라디언트 306" x1="63.96" y1="1300.2" x2="63.96" y2="1428.2" gradientTransform="translate(0 1556.2) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f27831"/>
+      <stop offset=".15" stop-color="#f27826" stop-opacity=".76"/>
+      <stop offset=".32" stop-color="#f2781d" stop-opacity=".53"/>
+      <stop offset=".48" stop-color="#f27815" stop-opacity=".34"/>
+      <stop offset=".63" stop-color="#f2780f" stop-opacity=".19"/>
+      <stop offset=".77" stop-color="#f2780a" stop-opacity=".09"/>
+      <stop offset=".9" stop-color="#f27807" stop-opacity=".02"/>
+      <stop offset="1" stop-color="#f27807" stop-opacity="0"/>
     </linearGradient>
+    <linearGradient id="_무제_그라디언트_306-2" data-name="무제 그라디언트 306" x1="63.96" y1="244.53" x2="63.96" y2="372.53" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-3" data-name="무제 그라디언트 306" x1="1267.64" y1="-120.29" x2="1267.64" y2="7.71" gradientTransform="translate(1331.61 375.98) rotate(-180) scale(1 -1)" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-4" data-name="무제 그라디언트 306" x1="1267.64" y1="1665.02" x2="1267.64" y2="1793.02" gradientTransform="translate(1331.61 2176.71) rotate(-180)" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-5" data-name="무제 그라디언트 306" x1="191.97" x2="191.97" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-6" data-name="무제 그라디언트 306" x1="191.97" y1="244.53" x2="191.97" y2="372.53" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-7" data-name="무제 그라디언트 306" x1="1139.63" y1="-120.29" x2="1139.63" y2="7.71" gradientTransform="translate(1331.61 375.98) rotate(-180) scale(1 -1)" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-8" data-name="무제 그라디언트 306" x1="1139.63" y1="1665.02" x2="1139.63" y2="1793.02" gradientTransform="translate(1331.61 2176.71) rotate(-180)" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-9" data-name="무제 그라디언트 306" x1="319.98" x2="319.98" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-10" data-name="무제 그라디언트 306" x1="319.98" y1="244.53" x2="319.98" y2="372.53" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-11" data-name="무제 그라디언트 306" x1="1011.62" y1="-120.29" x2="1011.62" y2="7.71" gradientTransform="translate(1331.61 375.98) rotate(-180) scale(1 -1)" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-12" data-name="무제 그라디언트 306" x1="1011.62" y1="1665.02" x2="1011.62" y2="1793.02" gradientTransform="translate(1331.61 2176.71) rotate(-180)" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-13" data-name="무제 그라디언트 306" x1="447.99" x2="447.99" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-14" data-name="무제 그라디언트 306" x1="447.99" y1="244.53" x2="447.99" y2="372.53" gradientTransform="translate(0 -244.53)" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-15" data-name="무제 그라디언트 306" x1="883.61" y1="-120.29" x2="883.61" y2="7.71" gradientTransform="translate(1331.61 375.98) rotate(-180) scale(1 -1)" xlink:href="#_무제_그라디언트_306"/>
+    <linearGradient id="_무제_그라디언트_306-16" data-name="무제 그라디언트 306" x1="883.61" y1="1665.02" x2="883.61" y2="1793.02" gradientTransform="translate(1331.61 2176.71) rotate(-180)" xlink:href="#_무제_그라디언트_306"/>
   </defs>
-  <rect class="cls-3" width="512" height="512"/>
-  <g class="cls-4">
-    <path class="cls-2" d="M256,385.88l-125.72-127.09,125.72-127.09,125.72,127.09-125.72,127.09ZM381.72,0h-251.45l125.72,127.09L381.72,0ZM633.17,0h-251.45l125.72,127.09L633.17,0ZM131.24,0H-120.21L5.52,127.09,131.24,0ZM381.72,512l-125.72-127.09-125.72,127.09h251.45ZM633.17,512l-125.72-127.09-125.72,127.09h251.45ZM131.24,512L5.52,384.91l-125.72,127.09h251.45Z"/>
+  <rect class="cls-10" width="512" height="512"/>
+  <g>
+    <polygon class="cls-9" points="63.95 128 -.04 128 63.98 256 127.97 256 63.95 128"/>
+    <polygon class="cls-4" points="63.95 128 -.04 128 63.98 0 127.97 0 63.95 128"/>
+  </g>
+  <g>
+    <polygon class="cls-3" points="63.98 383.69 127.97 383.69 63.95 255.69 -.04 255.69 63.98 383.69"/>
+    <polygon class="cls-2" points="63.98 383.69 127.97 383.69 63.95 511.69 -.04 511.69 63.98 383.69"/>
+  </g>
+  <g>
+    <polygon class="cls-1" points="191.96 128 127.97 128 191.99 256 255.98 256 191.96 128"/>
+    <polygon class="cls-8" points="191.96 128 127.97 128 191.99 0 255.98 0 191.96 128"/>
+  </g>
+  <g>
+    <polygon class="cls-7" points="191.99 383.69 255.98 383.69 191.96 255.69 127.97 255.69 191.99 383.69"/>
+    <polygon class="cls-6" points="191.99 383.69 255.98 383.69 191.96 511.69 127.97 511.69 191.99 383.69"/>
+  </g>
+  <g>
+    <polygon class="cls-5" points="319.97 128 255.98 128 320 256 383.99 256 319.97 128"/>
+    <polygon class="cls-16" points="319.97 128 255.98 128 320 0 383.99 0 319.97 128"/>
+  </g>
+  <g>
+    <polygon class="cls-17" points="320 383.69 383.99 383.69 319.97 255.69 255.98 255.69 320 383.69"/>
+    <polygon class="cls-15" points="320 383.69 383.99 383.69 319.97 511.69 255.98 511.69 320 383.69"/>
+  </g>
+  <g>
+    <polygon class="cls-14" points="447.98 128 383.99 128 448.01 256 512 256 447.98 128"/>
+    <polygon class="cls-11" points="447.98 128 383.99 128 448.01 0 512 0 447.98 128"/>
+  </g>
+  <g>
+    <polygon class="cls-12" points="448.01 383.69 512 383.69 447.98 255.69 383.99 255.69 448.01 383.69"/>
+    <polygon class="cls-13" points="448.01 383.69 512 383.69 447.98 511.69 383.99 511.69 448.01 383.69"/>
   </g>
 </svg>

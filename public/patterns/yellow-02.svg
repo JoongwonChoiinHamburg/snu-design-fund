@@ -35,39 +35,39 @@
       }
 
       .cls-9 {
-        fill: #d1c0ff;
-      }
-
-      .cls-10 {
         fill: url(#_무제_그라디언트_792);
       }
 
-      .cls-11 {
+      .cls-10 {
         fill: url(#_무제_그라디언트_792-16);
       }
 
-      .cls-12 {
+      .cls-11 {
         fill: url(#_무제_그라디언트_792-14);
       }
 
-      .cls-13 {
+      .cls-12 {
         fill: url(#_무제_그라디언트_792-13);
       }
 
-      .cls-14 {
+      .cls-13 {
         fill: url(#_무제_그라디언트_792-11);
       }
 
-      .cls-15 {
+      .cls-14 {
         fill: url(#_무제_그라디언트_792-10);
       }
 
-      .cls-16 {
+      .cls-15 {
         fill: url(#_무제_그라디언트_792-15);
       }
 
-      .cls-17 {
+      .cls-16 {
         fill: url(#_무제_그라디언트_792-12);
+      }
+
+      .cls-17 {
+        fill: #e6cfff;
       }
     </style>
     <linearGradient id="_무제_그라디언트_792" data-name="무제 그라디언트 792" x1="63.96" y1="135.41" x2="63.96" y2="263.41" gradientTransform="translate(0 391.41) scale(1 -1)" gradientUnits="userSpaceOnUse">
@@ -90,9 +90,9 @@
     <linearGradient id="_무제_그라디언트_792-15" data-name="무제 그라디언트 792" x1="-311.95" y1="-120.29" x2="-311.95" y2="7.71" gradientTransform="translate(136.04 375.98) rotate(-180) scale(1 -1)" xlink:href="#_무제_그라디언트_792"/>
     <linearGradient id="_무제_그라디언트_792-16" data-name="무제 그라디언트 792" x1="-311.95" y1="500.23" x2="-311.95" y2="628.23" gradientTransform="translate(136.04 1011.92) rotate(-180)" xlink:href="#_무제_그라디언트_792"/>
   </defs>
-  <rect class="cls-9" x="-.04" y=".8" width="512.09" height="512.09"/>
+  <rect class="cls-17" x="-.04" y="-.54" width="512.09" height="512.09"/>
   <g>
-    <polygon class="cls-10" points="63.95 128 -.04 128 63.98 256 127.97 256 63.95 128"/>
+    <polygon class="cls-9" points="63.95 128 -.04 128 63.98 256 127.97 256 63.95 128"/>
     <polygon class="cls-6" points="63.95 128 -.04 128 63.98 0 127.97 0 63.95 128"/>
   </g>
   <g>
@@ -109,18 +109,18 @@
   </g>
   <g>
     <polygon class="cls-1" points="319.97 128 255.98 128 320 256 383.99 256 319.97 128"/>
-    <polygon class="cls-15" points="319.97 128 255.98 128 320 0 383.99 0 319.97 128"/>
+    <polygon class="cls-14" points="319.97 128 255.98 128 320 0 383.99 0 319.97 128"/>
   </g>
   <g>
-    <polygon class="cls-14" points="320 383.69 383.99 383.69 319.97 255.69 255.98 255.69 320 383.69"/>
-    <polygon class="cls-17" points="320 383.69 383.99 383.69 319.97 511.69 255.98 511.69 320 383.69"/>
+    <polygon class="cls-13" points="320 383.69 383.99 383.69 319.97 255.69 255.98 255.69 320 383.69"/>
+    <polygon class="cls-16" points="320 383.69 383.99 383.69 319.97 511.69 255.98 511.69 320 383.69"/>
   </g>
   <g>
-    <polygon class="cls-13" points="447.98 128 383.99 128 448.01 256 512 256 447.98 128"/>
-    <polygon class="cls-12" points="447.98 128 383.99 128 448.01 0 512 0 447.98 128"/>
+    <polygon class="cls-12" points="447.98 128 383.99 128 448.01 256 512 256 447.98 128"/>
+    <polygon class="cls-11" points="447.98 128 383.99 128 448.01 0 512 0 447.98 128"/>
   </g>
   <g>
-    <polygon class="cls-16" points="448.01 383.69 512 383.69 447.98 255.69 383.99 255.69 448.01 383.69"/>
-    <polygon class="cls-11" points="448.01 383.69 512 383.69 447.98 511.69 383.99 511.69 448.01 383.69"/>
+    <polygon class="cls-15" points="448.01 383.69 512 383.69 447.98 255.69 383.99 255.69 448.01 383.69"/>
+    <polygon class="cls-10" points="448.01 383.69 512 383.69 447.98 511.69 383.99 511.69 448.01 383.69"/>
   </g>
 </svg>
