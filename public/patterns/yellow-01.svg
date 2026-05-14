@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: url(#_무제_그라디언트_165);
-      }
-
-      .cls-2 {
-        fill: url(#_무제_그라디언트_169);
-      }
-
-      .cls-3 {
         fill: #3ffcab;
       }
     </style>
-    <linearGradient id="_무제_그라디언트_165" data-name="무제 그라디언트 165" x1="0" y1="256" x2="512" y2="256" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#18bf00"/>
-      <stop offset=".02" stop-color="#18bf00" stop-opacity=".98"/>
-      <stop offset=".28" stop-color="#18bf00" stop-opacity=".63"/>
-      <stop offset=".52" stop-color="#18bf00" stop-opacity=".36"/>
-      <stop offset=".73" stop-color="#18bf00" stop-opacity=".16"/>
-      <stop offset=".89" stop-color="#18bf00" stop-opacity=".04"/>
-      <stop offset="1" stop-color="#18bf00" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="_무제_그라디언트_169" data-name="무제 그라디언트 169" x1="0" y1="256" x2="512" y2="256" gradientTransform="translate(512 512) rotate(-180)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#18bf00"/>
-      <stop offset=".02" stop-color="#18bf00" stop-opacity=".98"/>
-      <stop offset=".28" stop-color="#18bf00" stop-opacity=".63"/>
-      <stop offset=".52" stop-color="#18bf00" stop-opacity=".36"/>
-      <stop offset=".73" stop-color="#18bf00" stop-opacity=".16"/>
-      <stop offset=".89" stop-color="#18bf00" stop-opacity=".04"/>
-      <stop offset="1" stop-color="#18bf00" stop-opacity="0"/>
-    </linearGradient>
   </defs>
-  <rect class="cls-3" x="0" width="512" height="512"/>
-  <polygon class="cls-1" points="0 512 512 512 512 0 0 512"/>
-  <polygon class="cls-2" points="512 0 0 0 0 512 512 0"/>
+  <rect class="cls-1" x="0" width="512" height="512"/>
 </svg>
