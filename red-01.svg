@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        mask: url(#mask);
+      }
+
+      .cls-3 {
+        filter: url(#luminosity-invert);
+      }
+
+      .cls-4 {
+        filter: url(#luminosity-invert-5);
+      }
+
+      .cls-5 {
+        filter: url(#luminosity-invert-2);
+      }
+
+      .cls-6 {
+        filter: url(#luminosity-invert-4);
+      }
+
+      .cls-7 {
+        filter: url(#luminosity-invert-3);
+      }
+
+      .cls-8 {
+        fill: url(#_무제_그라디언트_387-5);
+      }
+
+      .cls-9 {
+        fill: url(#_무제_그라디언트_387-4);
+      }
+
+      .cls-10 {
+        fill: url(#_무제_그라디언트_387-2);
+      }
+
+      .cls-11 {
+        fill: url(#_무제_그라디언트_387-3);
+      }
+
+      .cls-12 {
+        fill: #c1c0ff;
+      }
+
+      .cls-13 {
+        mask: url(#mask-2);
+      }
+
+      .cls-14 {
+        mask: url(#mask-3);
+      }
+
+      .cls-15 {
+        mask: url(#mask-4);
+      }
+
+      .cls-16 {
+        mask: url(#mask-1);
+      }
+
+      .cls-17 {
+        fill: #7f6bf2;
+      }
+
+      .cls-18 {
+        fill: url(#_무제_그라디언트_387);
+      }
+
+      .cls-19 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" y="0" width="512" height="512"/>
+    </clipPath>
+    <filter id="luminosity-invert" x="201.52" y="195.41" width="108.97" height="108.97" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <radialGradient id="_무제_그라디언트_387" data-name="무제 그라디언트 387" cx="256" cy="249.9" fx="256" fy="249.9" r="54.48" gradientUnits="userSpaceOnUse">
+      <stop offset=".23" stop-color="#000"/>
+      <stop offset=".75" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="mask" x="201.52" y="195.41" width="108.97" height="108.97" maskUnits="userSpaceOnUse">
+      <g class="cls-3">
+        <circle class="cls-18" cx="256" cy="249.9" r="54.48"/>
+      </g>
+    </mask>
+    <filter id="luminosity-invert-2" x="-54.48" y="195.41" width="108.97" height="108.97" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <radialGradient id="_무제_그라디언트_387-2" data-name="무제 그라디언트 387" cx="0" fx="0" r="54.48" xlink:href="#_무제_그라디언트_387"/>
+    <mask id="mask-1" x="-54.48" y="195.41" width="108.97" height="108.97" maskUnits="userSpaceOnUse">
+      <g class="cls-5">
+        <circle class="cls-10" cx="0" cy="249.9" r="54.48"/>
+      </g>
+    </mask>
+    <filter id="luminosity-invert-3" x="457.52" y="195.41" width="108.97" height="108.97" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <radialGradient id="_무제_그라디언트_387-3" data-name="무제 그라디언트 387" cx="512" fx="512" r="54.48" xlink:href="#_무제_그라디언트_387"/>
+    <mask id="mask-2" x="457.52" y="195.41" width="108.97" height="108.97" maskUnits="userSpaceOnUse">
+      <g class="cls-7">
+        <circle class="cls-11" cx="512" cy="249.9" r="54.48"/>
+      </g>
+    </mask>
+    <filter id="luminosity-invert-4" x="201.52" y="-54.48" width="108.97" height="108.97" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <radialGradient id="_무제_그라디언트_387-4" data-name="무제 그라디언트 387" cy="0" fy="0" xlink:href="#_무제_그라디언트_387"/>
+    <mask id="mask-3" x="201.52" y="-54.48" width="108.97" height="108.97" maskUnits="userSpaceOnUse">
+      <g class="cls-6">
+        <circle class="cls-9" cx="256" cy="0" r="54.48"/>
+      </g>
+    </mask>
+    <filter id="luminosity-invert-5" x="201.52" y="457.52" width="108.97" height="108.97" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <radialGradient id="_무제_그라디언트_387-5" data-name="무제 그라디언트 387" cx="256" cy="512" fx="256" fy="512" r="54.48" xlink:href="#_무제_그라디언트_387"/>
+    <mask id="mask-4" x="201.52" y="457.52" width="108.97" height="108.97" maskUnits="userSpaceOnUse">
+      <g class="cls-4">
+        <circle class="cls-8" cx="256" cy="512" r="54.48"/>
+      </g>
+    </mask>
+  </defs>
+  <rect class="cls-12" y="0" width="512" height="512"/>
+  <g class="cls-19">
+    <g>
+      <g class="cls-2">
+        <circle class="cls-17" cx="256" cy="249.9" r="54.48"/>
+      </g>
+      <g class="cls-16">
+        <circle class="cls-17" cx="0" cy="249.9" r="54.48"/>
+      </g>
+      <g class="cls-13">
+        <circle class="cls-17" cx="512" cy="249.9" r="54.48"/>
+      </g>
+      <g class="cls-14">
+        <circle class="cls-17" cx="256" cy="0" r="54.48"/>
+      </g>
+      <g class="cls-15">
+        <circle class="cls-17" cx="256" cy="512" r="54.48"/>
+      </g>
+    </g>
+  </g>
+</svg>
