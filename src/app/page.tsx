@@ -2,11 +2,52 @@ import { getDonors, getSeats } from "@/lib/csv";
 import { donorsToBlocks } from "@/lib/pattern";
 import PatternWall from "@/components/PatternWall";
 import SeatMap from "@/components/SeatMap";
+import RenderingSlider from "@/components/RenderingSlider";
+import VideoGrid from "@/components/VideoGrid";
+import DonationPrograms from "@/components/DonationPrograms";
+import DonationBenefits from "@/components/DonationBenefits";
+import Footer from "@/components/Footer";
+import DonateFloatingButton from "@/components/DonateFloatingButton";
 
 export default async function Home() {
   const donors = await getDonors();
   const seats = await getSeats();
   const blocks = donorsToBlocks(donors);
+const renderSlides = [
+  {
+    image: "/renderings/render-01.jpg",
+    title: "디자인연구동 리모델링 조감도",
+    description: "새롭게 조성될 디자인연구동의 주요 공간 이미지입니다.",
+  },
+  {
+    image: "/renderings/render-02.jpg",
+    title: "창의 실험 공간",
+    description: "학생들이 머물고 실험하며 협업할 수 있는 공간을 상상합니다.",
+  },
+  {
+    image: "/renderings/render-03.jpg",
+    title: "전시와 공유의 공간",
+    description: "작업의 결과가 다시 배움으로 이어지는 열린 공간입니다.",
+  },
+];
+
+const interviewVideos = [
+  {
+    title: "디자인연구동 리모델링 인터뷰 1",
+    youtubeId: "여기에_유튜브_ID",
+  },
+  {
+    title: "디자인연구동 리모델링 인터뷰 2",
+    youtubeId: "여기에_유튜브_ID",
+  },
+  {
+    title: "디자인연구동 리모델링 인터뷰 3",
+    youtubeId: "여기에_유튜브_ID",
+  },
+];
+
+
+
 
   return (
     <main className="min-h-screen bg-white px-6 py-10 text-black">
@@ -34,13 +75,25 @@ export default async function Home() {
 
     </section>
 
+<section className="mx-auto mt-24 max-w-[1200px]">
+  <h2 className="mb-8 font-display text-2xl font-bold">
+    디자인연구동 리모델링
+  </h2>
 
+<RenderingSlider slides={renderSlides} />
+</section>
 
-      <section className="mx-auto mt-24 max-w-[1200px]">
-        <h2 className="mb-8 text-2xl font-bold">좌석 기부</h2>
+<section className="mx-auto mt-24 max-w-[1200px]">
+  <h2 className="mb-8 font-display text-2xl font-bold">
+    인터뷰 영상
+  </h2>
 
-        <SeatMap seats={seats} />
-      </section>
+    <VideoGrid videos={interviewVideos} />
+</section>
+<DonationPrograms seats={seats} />
+<DonationBenefits />
+<Footer />
+<DonateFloatingButton />
     </main>
   );
 }
