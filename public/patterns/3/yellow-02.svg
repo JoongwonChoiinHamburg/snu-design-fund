@@ -3,30 +3,21 @@
   <defs>
     <style>
       .cls-1 {
-        fill: none;
-        stroke: #d1c0a7;
-        stroke-miterlimit: 10;
-        stroke-width: 6px;
-      }
-
-      .cls-2 {
         fill: #d1c0a7;
       }
 
-      .cls-3 {
+      .cls-2 {
         fill: #ff6;
       }
     </style>
   </defs>
-  <rect class="cls-3" width="512" height="512"/>
+  <rect class="cls-2" width="512" height="512"/>
   <g>
-    <rect class="cls-2" x="95.44" y="90.66" width="80.68" height="80.68" transform="translate(132.4 -57.64) rotate(45)"/>
-    <rect class="cls-2" x="335.87" y="90.66" width="80.68" height="80.68" transform="translate(202.82 -227.66) rotate(45)"/>
-    <rect class="cls-2" x="95.44" y="340.66" width="80.68" height="80.68" transform="translate(309.18 15.58) rotate(45)"/>
-    <rect class="cls-2" x="335.87" y="340.66" width="80.68" height="80.68" transform="translate(379.6 -154.43) rotate(45)"/>
+    <rect class="cls-1" x="95.44" y="90.66" width="80.68" height="80.68" transform="translate(132.4 -57.64) rotate(45)"/>
+    <rect class="cls-1" x="335.87" y="90.66" width="80.68" height="80.68" transform="translate(202.82 -227.66) rotate(45)"/>
+    <rect class="cls-1" x="95.44" y="340.66" width="80.68" height="80.68" transform="translate(309.18 15.58) rotate(45)"/>
+    <rect class="cls-1" x="335.87" y="340.66" width="80.68" height="80.68" transform="translate(379.6 -154.43) rotate(45)"/>
   </g>
-  <line class="cls-1" x1="-59.77" y1="131" x2="520.18" y2="131"/>
-  <line class="cls-1" x1="-59.77" y1="381" x2="520.18" y2="381"/>
-  <rect class="cls-3" x="356.52" y="111.31" width="39.39" height="39.39" transform="translate(202.82 -227.66) rotate(45)"/>
-  <rect class="cls-3" x="116.09" y="361.3" width="39.39" height="39.39" transform="translate(309.18 15.58) rotate(45)"/>
+  <rect class="cls-2" x="356.52" y="111.31" width="39.39" height="39.39" transform="translate(202.82 -227.66) rotate(45)"/>
+  <rect class="cls-2" x="116.09" y="361.3" width="39.39" height="39.39" transform="translate(309.18 15.58) rotate(45)"/>
 </svg>
