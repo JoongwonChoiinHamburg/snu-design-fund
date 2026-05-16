@@ -3,18 +3,39 @@
   <defs>
     <style>
       .cls-1 {
-        fill: url(#_무제_그라디언트_69);
+        fill: none;
       }
 
       .cls-2 {
+        fill: url(#_무제_그라디언트_69);
+      }
+
+      .cls-3 {
         fill: #ff6;
       }
+
+      .cls-4 {
+        fill: #bbf9f9;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
     </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="-678.46" width="512" height="512"/>
+    </clipPath>
     <radialGradient id="_무제_그라디언트_69" data-name="무제 그라디언트 69" cx="256" cy="506.08" fx="256" fy="506.08" r="256" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#ff931e"/>
       <stop offset="1" stop-color="#ff931e" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect class="cls-2" width="512" height="512"/>
-  <rect class="cls-1" x="0" y="250.08" width="512" height="512"/>
+  <g class="cls-5">
+    <g>
+      <path class="cls-4" d="M88.04,90.1h-344.61V-254.51H88.04V90.1ZM-250.16,83.7H81.64V-248.11H-250.16V83.7Z"/>
+      <path class="cls-4" d="M88.04,768.34h-344.61v-344.61H88.04v344.61ZM-250.16,761.94H81.64v-331.8H-250.16v331.8Z"/>
+    </g>
+  </g>
+  <rect class="cls-3" width="512" height="512"/>
+  <rect class="cls-2" x="0" y="250.08" width="512" height="512"/>
 </svg>

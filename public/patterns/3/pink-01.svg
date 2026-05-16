@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
@@ -7,15 +7,44 @@
       }
 
       .cls-2 {
-        fill: url(#_무제_그라디언트_152);
+        fill: #00c6b7;
       }
     </style>
-    <radialGradient id="_무제_그라디언트_152" data-name="무제 그라디언트 152" cx="258.77" cy="512" fx="258.77" fy="512" r="256" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0086cb"/>
-      <stop offset="0" stop-color="#0386c9" stop-opacity="1"/>
-      <stop offset="1" stop-color="#0986c5" stop-opacity="0"/>
-    </radialGradient>
   </defs>
-  <rect class="cls-1" y="0" width="512" height="512"/>
-  <rect class="cls-2" x="2.77" y="256" width="512" height="512"/>
+  <rect class="cls-2" y=".4" width="512" height="512"/>
+  <g>
+    <rect class="cls-1" x="-24.04" y="-23.64" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="103.96" y="-23.64" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="231.96" y="-23.64" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="359.96" y="-23.64" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="487.96" y="-23.64" width="48.09" height="48.09"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="-24.04" y="104.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="103.96" y="104.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="231.96" y="104.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="359.96" y="104.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="487.96" y="104.36" width="48.09" height="48.09"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="-24.04" y="232.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="103.96" y="232.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="231.96" y="232.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="359.96" y="232.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="487.96" y="232.36" width="48.09" height="48.09"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="-24.04" y="360.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="103.96" y="360.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="231.96" y="360.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="359.96" y="360.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="487.96" y="360.36" width="48.09" height="48.09"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="-24.04" y="488.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="103.96" y="488.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="231.96" y="488.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="359.96" y="488.36" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="487.96" y="488.36" width="48.09" height="48.09"/>
+  </g>
 </svg>

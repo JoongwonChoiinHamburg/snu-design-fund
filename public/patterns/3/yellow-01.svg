@@ -3,18 +3,33 @@
   <defs>
     <style>
       .cls-1 {
-        fill: url(#_무제_그라디언트_69);
+        fill: none;
       }
 
       .cls-2 {
-        fill: #ff6;
+        fill: #ffc436;
+      }
+
+      .cls-3 {
+        fill: #bbf9f9;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
       }
     </style>
-    <radialGradient id="_무제_그라디언트_69" data-name="무제 그라디언트 69" cx="256" cy="506.08" fx="256" fy="506.08" r="256" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ff931e"/>
-      <stop offset="1" stop-color="#ff931e" stop-opacity="0"/>
-    </radialGradient>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="0" y="0" width="512" height="512"/>
+    </clipPath>
   </defs>
-  <rect class="cls-2" width="512" height="512"/>
-  <rect class="cls-1" x="0" y="250.08" width="512" height="512"/>
+  <rect class="cls-2" x="0" y="0" width="512" height="512"/>
+  <g class="cls-4">
+    <g>
+      <path class="cls-3" d="M428.3,428.3H83.7V83.7h344.61v344.61ZM90.1,421.9h331.8V90.1H90.1v331.8Z"/>
+      <path class="cls-3" d="M90.1,90.1H-254.51V-254.51H90.1V90.1ZM-248.11,83.7H83.7V-248.11H-248.11V83.7Z"/>
+      <path class="cls-3" d="M766.51,90.1h-344.61V-254.51h344.61V90.1ZM428.3,83.7h331.8V-248.11h-331.8V83.7Z"/>
+      <path class="cls-3" d="M90.1,768.34H-254.51v-344.61H90.1v344.61ZM-248.11,761.94H83.7v-331.8H-248.11v331.8Z"/>
+      <path class="cls-3" d="M766.51,768.34h-344.61v-344.61h344.61v344.61ZM428.3,761.94h331.8v-331.8h-331.8v331.8Z"/>
+    </g>
+  </g>
 </svg>

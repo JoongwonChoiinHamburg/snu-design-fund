@@ -1,38 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #ff5cf3;
+        fill: #59b6ef;
       }
 
       .cls-2 {
-        fill: url(#_무제_그라디언트_102-2);
+        fill: #9e5aed;
       }
 
       .cls-3 {
-        fill: url(#_무제_그라디언트_102-3);
-      }
-
-      .cls-4 {
-        fill: url(#_무제_그라디언트_102-4);
-      }
-
-      .cls-5 {
-        fill: url(#_무제_그라디언트_102);
+        fill: #ff9a6e;
       }
     </style>
-    <linearGradient id="_무제_그라디언트_102" data-name="무제 그라디언트 102" x1="-9995.49" y1="-2461.16" x2="-9995.49" y2="-1949.19" gradientTransform="translate(10059.4854 2461.1632)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ebe92f"/>
-      <stop offset=".18" stop-color="#ebe92f" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="_무제_그라디언트_102-2" data-name="무제 그라디언트 102" x1="-10271.81" x2="-10271.81" gradientTransform="translate(10612.1392 2461.1632)" xlink:href="#_무제_그라디언트_102"/>
-    <linearGradient id="_무제_그라디언트_102-3" data-name="무제 그라디언트 102" x1="-10076.52" y1="-2644.28" x2="-10076.52" y2="-2132.31" gradientTransform="translate(10523.8125 2644.2985)" xlink:href="#_무제_그라디언트_102"/>
-    <linearGradient id="_무제_그라디언트_102-4" data-name="무제 그라디언트 102" x1="-10352.85" y1="-2644.28" x2="-10352.85" y2="-2132.31" gradientTransform="translate(10523.8125 2644.2985)" xlink:href="#_무제_그라디언트_102"/>
   </defs>
-  <rect class="cls-1" x="0" y="0" width="512" height="512"/>
-  <rect class="cls-5" width="128" height="511.97" transform="translate(128 511.97) rotate(-180)"/>
-  <rect class="cls-2" x="276.33" width="128" height="511.97" transform="translate(680.65 511.97) rotate(-180)"/>
-  <rect class="cls-3" x="383.29" y=".02" width="128" height="511.97"/>
-  <rect class="cls-4" x="106.97" y=".02" width="128" height="511.97"/>
+  <rect class="cls-2" x="0" y="-.02" width="512" height="512"/>
+  <rect class="cls-3" x="0" y="-.02" width="55.03" height="512"/>
+  <rect class="cls-3" x="128.06" y="-.02" width="55.03" height="512"/>
+  <rect class="cls-3" x="256.11" y="-.02" width="55.03" height="512"/>
+  <rect class="cls-3" x="384.17" y="-.02" width="55.03" height="512"/>
+  <rect class="cls-1" x="0" y="-.02" width="55.03" height="182.27"/>
+  <rect class="cls-1" x="128.06" y="-.02" width="55.03" height="182.27"/>
+  <rect class="cls-1" x="256.11" y="-.02" width="55.03" height="182.27"/>
+  <rect class="cls-1" x="384.17" y="-.02" width="55.03" height="182.27"/>
 </svg>

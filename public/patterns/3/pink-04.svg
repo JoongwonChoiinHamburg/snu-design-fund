@@ -10,11 +10,11 @@
         fill: url(#_무제_그라디언트_143);
       }
     </style>
-    <linearGradient id="_무제_그라디언트_143" data-name="무제 그라디언트 143" x1="-619.84" y1="-2596.62" x2="-431.51" y2="-2596.62" gradientTransform="translate(781.674 3013.2079)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="_무제_그라디언트_143" data-name="무제 그라디언트 143" x1="-728.68" y1="-2596.62" x2="-431.51" y2="-2596.62" gradientTransform="translate(836.0932 2958.7888)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#e58bda" stop-opacity="0"/>
       <stop offset="1" stop-color="#e58bda"/>
     </linearGradient>
   </defs>
   <rect class="cls-1" x="0" y="0" width="512" height="512"/>
-  <rect class="cls-2" x="161.84" y="160.59" width="188.33" height="512" transform="translate(672.59 160.59) rotate(90)"/>
+  <rect class="cls-2" x="107.42" y="106.17" width="297.17" height="512" transform="translate(618.17 106.17) rotate(90)"/>
 </svg>
