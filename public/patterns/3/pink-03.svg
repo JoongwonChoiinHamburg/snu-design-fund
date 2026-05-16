@@ -5,7 +5,12 @@
       .cls-1 {
         fill: #ff8c52;
       }
+
+      .cls-2 {
+        fill: #49b28a;
+      }
     </style>
   </defs>
   <rect class="cls-1" width="512" height="512"/>
+  <rect class="cls-2" y="256" width="512" height="256"/>
 </svg>

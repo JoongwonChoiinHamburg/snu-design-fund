@@ -11,6 +11,6 @@
       }
     </style>
   </defs>
-  <rect class="cls-1" width="512" height="512"/>
-  <path class="cls-2" d="M512,512l-256-256h256s0,261.24,0,256Z"/>
+  <rect class="cls-2" width="512" height="512"/>
+  <rect class="cls-1" x="185.8" y="185.8" width="140.41" height="140.41" transform="translate(256 -106.04) rotate(45)"/>
 </svg>

@@ -13,7 +13,12 @@
   </defs>
   <rect class="cls-2" width="512" height="512"/>
   <circle class="cls-1" cx="44.46" cy="42.02" r="8.38"/>
+  <circle class="cls-1" cx="256" cy="42.02" r="8.38"/>
+  <circle class="cls-1" cx="256" cy="472.65" r="8.38"/>
   <circle class="cls-1" cx="468.65" cy="42.02" r="8.38"/>
   <circle class="cls-1" cx="44.46" cy="472.65" r="8.38"/>
   <circle class="cls-1" cx="468.65" cy="472.65" r="8.38"/>
+  <circle class="cls-1" cx="256" cy="256" r="8.38"/>
+  <circle class="cls-1" cx="44.46" cy="256" r="8.38"/>
+  <circle class="cls-1" cx="468.65" cy="256" r="8.38"/>
 </svg>

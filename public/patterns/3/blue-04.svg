@@ -3,9 +3,17 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #59b6ef;
+        fill: #2234fc;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #9e5aed;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
       }
     </style>
   </defs>
   <rect class="cls-1" width="512" height="512"/>
+  <line class="cls-2" x2="512" y2="512"/>
 </svg>

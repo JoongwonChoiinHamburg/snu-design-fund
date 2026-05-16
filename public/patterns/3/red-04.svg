@@ -3,14 +3,9 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #ff5cf3;
-      }
-
-      .cls-2 {
         fill: #9e5aed;
       }
     </style>
   </defs>
-  <rect class="cls-2" width="512" height="512"/>
-  <path class="cls-1" d="M256,344.13c0-51.75-44.06-95.81-95.81-95.81,51.75,0,95.81-44.06,95.81-95.81,0,51.75,44.06,95.81,95.81,95.81-51.75,0-95.81,44.06-95.81,95.81Z"/>
+  <rect class="cls-1" width="512" height="512"/>
 </svg>
