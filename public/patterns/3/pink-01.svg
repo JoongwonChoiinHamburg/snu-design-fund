@@ -3,16 +3,27 @@
   <defs>
     <style>
       .cls-1 {
+        stroke: #ff8c52;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-3 {
         fill: #30e593;
       }
 
       .cls-2 {
-        fill: #49b28a;
+        stroke: #f1ee6e;
       }
     </style>
   </defs>
-  <rect class="cls-1" width="512" height="512"/>
-  <path class="cls-2" d="M0,512.24C0,229.34,38.21,0,85.33,0s85.33,229.34,85.33,512.24"/>
-  <path class="cls-2" d="M170.67,512.24C170.67,229.34,208.87,0,256,0s85.33,229.34,85.33,512.24"/>
-  <path class="cls-2" d="M341.33,512.24C341.33,229.34,379.54,0,426.67,0s85.33,229.34,85.33,512.24"/>
+  <rect class="cls-3" width="512" height="512"/>
+  <line class="cls-2" y1="256" x2="512" y2="256"/>
+  <line class="cls-2" x1="256" y1="512" x2="256" y2="0"/>
+  <line class="cls-1" x1="-.35" y1="512.35" x2="512" y2="0"/>
+  <line class="cls-2" x1="-.35" y1="0" x2="512" y2="512.35"/>
 </svg>

@@ -3,25 +3,28 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #ff8c52;
+        stroke: #2234fc;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-3 {
+        fill: #e2d7c5;
       }
 
       .cls-2 {
-        fill: #2234fc;
+        stroke: #59b6ef;
       }
     </style>
   </defs>
-  <rect class="cls-2" width="512" height="512"/>
-  <circle class="cls-1" cx="93.31" cy="113.86" r="15.83"/>
-  <circle class="cls-1" cx="44.76" cy="338.94" r="15.83"/>
-  <circle class="cls-1" cx="180.05" cy="45.35" r="15.83"/>
-  <circle class="cls-1" cx="348.15" cy="61.18" r="15.83"/>
-  <circle class="cls-1" cx="289.35" cy="483.34" r="15.83"/>
-  <circle class="cls-1" cx="431.02" cy="29.52" r="15.83"/>
-  <circle class="cls-1" cx="469.96" cy="411.02" r="15.83"/>
-  <circle class="cls-1" cx="195.88" cy="411.02" r="15.83"/>
-  <circle class="cls-1" cx="305.18" cy="271.83" r="15.83"/>
-  <circle class="cls-1" cx="0" cy="271.83" r="15.83"/>
-  <circle class="cls-1" cx="512" cy="271.83" r="15.83"/>
-  <circle class="cls-1" cx="229.54" cy="145.52" r="15.83"/>
+  <rect class="cls-3" width="512" height="512"/>
+  <g>
+    <line class="cls-1" x1="94.36" y1="512" x2="94.36" y2="0"/>
+    <line class="cls-1" x1="417.64" y1="512" x2="417.64" y2="0"/>
+  </g>
+  <line class="cls-2" x1="512" y1="56.95" y2="56.95"/>
 </svg>

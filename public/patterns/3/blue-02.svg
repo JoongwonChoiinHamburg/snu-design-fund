@@ -3,17 +3,17 @@
   <defs>
     <style>
       .cls-1 {
-        stroke-width: 3px;
+        stroke: #ff5cf3;
       }
 
       .cls-1, .cls-2 {
         fill: none;
-        stroke: #f1ee6e;
         stroke-miterlimit: 10;
+        stroke-width: 5.96px;
       }
 
       .cls-2 {
-        stroke-width: 17.86px;
+        stroke: #f1ee6e;
       }
 
       .cls-3 {
@@ -22,18 +22,8 @@
     </style>
   </defs>
   <rect class="cls-3" width="512" height="512"/>
-  <line class="cls-1" x1="32.36" y1="0" x2="32.36" y2="103.73"/>
-  <line class="cls-1" x1="101.93" y1="0" x2="101.93" y2="133.73"/>
-  <line class="cls-1" x1="171.5" y1="0" x2="171.5" y2="163.73"/>
-  <line class="cls-1" x1="241.08" y1="0" x2="241.08" y2="193.74"/>
-  <line class="cls-1" x1="310.65" y1="0" x2="310.65" y2="223.74"/>
-  <line class="cls-1" x1="380.22" y1="0" x2="380.22" y2="253.74"/>
-  <line class="cls-1" x1="449.79" y1="0" x2="449.79" y2="283.75"/>
-  <line class="cls-2" x1="42.24" y1="103.73" x2="42.24" y2="512.34"/>
-  <line class="cls-2" x1="111.81" y1="133.73" x2="111.81" y2="512.34"/>
-  <line class="cls-2" x1="181.38" y1="163.73" x2="181.38" y2="512.34"/>
-  <line class="cls-2" x1="250.95" y1="193.74" x2="250.95" y2="512.34"/>
-  <line class="cls-2" x1="320.53" y1="223.74" x2="320.53" y2="512.34"/>
-  <line class="cls-2" x1="390.1" y1="253.74" x2="390.1" y2="512.34"/>
-  <line class="cls-2" x1="459.67" y1="283.75" x2="459.67" y2="512.34"/>
+  <line class="cls-1" x2="252.64" y2="512"/>
+  <line class="cls-2" x1="252.64" y1="512" x2="252.64"/>
+  <line class="cls-1" x1="252.64" x2="505.28" y2="512"/>
+  <line class="cls-2" x1="505.28" y1="512" x2="505.28"/>
 </svg>

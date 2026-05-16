@@ -3,9 +3,27 @@
   <defs>
     <style>
       .cls-1 {
+        stroke: #ff8c52;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 5.96px;
+      }
+
+      .cls-3 {
         fill: #30e593;
+      }
+
+      .cls-2 {
+        stroke: #f1ee6e;
       }
     </style>
   </defs>
-  <rect class="cls-1" x="0" y=".12" width="512" height="512"/>
+  <rect class="cls-3" x="0" y=".12" width="512" height="512"/>
+  <line class="cls-1" x2="252.64" y2="512"/>
+  <line class="cls-2" x1="252.64" y1="512" x2="252.64"/>
+  <line class="cls-1" x1="252.64" x2="505.28" y2="512"/>
+  <line class="cls-2" x1="505.28" y1="512" x2="505.28"/>
 </svg>

@@ -12,8 +12,10 @@
     </style>
   </defs>
   <rect class="cls-1" x="0" y="0" width="512" height="512"/>
-  <circle class="cls-2" cx="0" cy="0" r="73.57"/>
-  <circle class="cls-2" cx="512" cy="0" r="73.57"/>
-  <circle class="cls-2" cx="512" cy="512" r="73.57"/>
-  <circle class="cls-2" cx="0" cy="512" r="73.57"/>
+  <g>
+    <circle class="cls-2" cx="0" cy="0" r="73.57"/>
+    <circle class="cls-2" cx="512" cy="0" r="73.57"/>
+    <circle class="cls-2" cx="512" cy="512" r="73.57"/>
+    <circle class="cls-2" cx="0" cy="512" r="73.57"/>
+  </g>
 </svg>
