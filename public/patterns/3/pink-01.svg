@@ -9,7 +9,7 @@
       .cls-1, .cls-2 {
         fill: none;
         stroke-miterlimit: 10;
-        stroke-width: 6px;
+        stroke-width: 15px;
       }
 
       .cls-3 {

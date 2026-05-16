@@ -9,15 +9,15 @@
       .cls-1, .cls-2 {
         fill: none;
         stroke-miterlimit: 10;
-        stroke-width: 6px;
-      }
-
-      .cls-3 {
-        fill: #e2d7c5;
+        stroke-width: 15px;
       }
 
       .cls-2 {
         stroke: #59b6ef;
+      }
+
+      .cls-3 {
+        fill: #e2d7c5;
       }
     </style>
   </defs>

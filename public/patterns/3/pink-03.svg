@@ -11,10 +11,10 @@
       }
     </style>
   </defs>
-  <rect class="cls-1" width="512" height="512"/>
-  <polygon class="cls-2" points="512 56.12 0 153.06 0 102.28 512 5.35 512 56.12"/>
-  <polygon class="cls-2" points="512 -72.55 0 24.39 0 -26.39 512 -123.32 512 -72.55"/>
-  <polygon class="cls-2" points="512 184.79 0 281.73 0 230.95 512 134.02 512 184.79"/>
-  <polygon class="cls-2" points="512 313.46 0 410.4 0 359.62 512 262.69 512 313.46"/>
-  <polygon class="cls-2" points="512 442.13 0 539.07 0 488.29 512 391.36 512 442.13"/>
+  <rect class="cls-1" x="-1" y=".12" width="512" height="512" transform="translate(511.12 1.12) rotate(90)"/>
+  <polygon class="cls-2" points="55.12 512.12 152.06 .12 101.28 .12 4.35 512.12 55.12 512.12"/>
+  <polygon class="cls-2" points="-73.55 512.12 23.39 .12 -27.39 .12 -124.32 512.12 -73.55 512.12"/>
+  <polygon class="cls-2" points="183.79 512.12 280.73 .12 229.95 .12 133.02 512.12 183.79 512.12"/>
+  <polygon class="cls-2" points="312.46 512.12 409.4 .12 358.62 .12 261.69 512.12 312.46 512.12"/>
+  <polygon class="cls-2" points="441.13 512.12 538.07 .12 487.29 .12 390.36 512.12 441.13 512.12"/>
 </svg>
