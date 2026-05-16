@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #f45253;
+        fill: none;
+        stroke: #ff8c52;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
       }
 
       .cls-2 {
-        fill: none;
-      }
-
-      .cls-3 {
-        fill: #aaafc4;
-      }
-
-      .cls-4 {
-        clip-path: url(#clippath);
+        fill: #ff485a;
       }
     </style>
-    <clipPath id="clippath">
-      <rect class="cls-2" x="-.23" y="-.02" width="512" height="512"/>
-    </clipPath>
   </defs>
-  <rect class="cls-1" x="-.23" y="-.02" width="512" height="512"/>
-  <g class="cls-4">
+  <rect class="cls-2" x="-.23" y="-.02" width="512" height="512"/>
+  <g>
     <g>
-      <path class="cls-3" d="M428.07,428.29H83.47V83.68h344.61v344.61ZM89.87,421.89h331.8V90.08H89.87v331.8Z"/>
-      <path class="cls-3" d="M89.87,90.08H-254.74V-254.52H89.87V90.08ZM-248.34,83.68H83.47V-248.12H-248.34V83.68Z"/>
-      <path class="cls-3" d="M766.28,90.08h-344.61V-254.52h344.61V90.08ZM428.07,83.68h331.8V-248.12h-331.8V83.68Z"/>
-      <path class="cls-3" d="M89.87,768.32H-254.74v-344.61H89.87v344.61ZM-248.34,761.92H83.47v-331.8H-248.34v331.8Z"/>
-      <path class="cls-3" d="M766.28,768.32h-344.61v-344.61h344.61v344.61ZM428.07,761.92h331.8v-331.8h-331.8v331.8Z"/>
+      <line class="cls-1" x1="73.72" y1="1.1" x2="73.72" y2="513.1"/>
+      <line class="cls-1" x1="438.28" y1="1.1" x2="438.28" y2="513.1"/>
+    </g>
+    <g>
+      <line class="cls-1" x1="0" y1="439.38" x2="512" y2="439.38"/>
+      <line class="cls-1" x1="0" y1="74.82" x2="512" y2="74.82"/>
     </g>
   </g>
 </svg>

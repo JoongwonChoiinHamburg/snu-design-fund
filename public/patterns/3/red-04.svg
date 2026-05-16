@@ -22,7 +22,7 @@
         fill: url(#_무제_그라디언트_164);
       }
     </style>
-    <linearGradient id="_무제_그라디언트_161" data-name="무제 그라디언트 161" x1="-11284.7" y1="-2461.16" x2="-11284.7" y2="-1949.19" gradientTransform="translate(11348.7049 2461.1632)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="_무제_그라디언트_161" data-name="무제 그라디언트 161" x1="-11556.04" y1="-2461.16" x2="-11556.04" y2="-1949.19" gradientTransform="translate(11620.0381 2461.1632)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#ebe92f"/>
       <stop offset=".47" stop-color="#ebe92f" stop-opacity="0"/>
     </linearGradient>
@@ -30,7 +30,7 @@
       <stop offset="0" stop-color="#ebe92f"/>
       <stop offset=".49" stop-color="#ebe92f" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="_무제_그라디언트_161-2" data-name="무제 그라디언트 161" x1="-11540.7" x2="-11540.7" gradientTransform="translate(11860.7049 2461.1632)" xlink:href="#_무제_그라디언트_161"/>
+    <linearGradient id="_무제_그라디언트_161-2" data-name="무제 그라디언트 161" x1="-11812.04" x2="-11812.04" gradientTransform="translate(12132.0381 2461.1632)" xlink:href="#_무제_그라디언트_161"/>
     <linearGradient id="_무제_그라디언트_164-2" data-name="무제 그라디언트 164" x1="-10075.81" x2="-10075.81" xlink:href="#_무제_그라디언트_164"/>
   </defs>
   <rect class="cls-1" x="0" y="0" width="512" height="512"/>
