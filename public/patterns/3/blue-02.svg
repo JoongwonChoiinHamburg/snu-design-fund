@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #11ffbd;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-4 {
+        fill: #82ff95;
+      }
+
+      .cls-5 {
+        fill: #34c462;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="-26.96" y="590.73" width="512" height="512"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="-26.96" y="590.73" width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g>
+    <rect class="cls-2" x="0" y="0" width="512" height="512"/>
+    <polygon class="cls-5" points="153.6 512 102.4 512 153.6 0 204.8 0 153.6 512"/>
+    <polygon class="cls-5" points="256 512 204.8 512 256 0 307.2 0 256 512"/>
+    <polygon class="cls-5" points="358.4 512 307.2 512 358.4 0 409.6 0 358.4 512"/>
+    <polygon class="cls-5" points="460.8 512 409.6 512 460.8 0 512 0 460.8 512"/>
+    <polygon class="cls-5" points="51.2 512 0 512 51.2 0 102.4 0 51.2 512"/>
+  </g>
+  <g class="cls-6">
+    <g class="cls-3">
+      <path class="cls-4" d="M221.45,778.66c90.84-108.34,76.65-269.81-31.7-360.65l-32.9,39.23c41.92,35.15,67.64,84.51,72.43,139.01,4.79,54.49-11.93,107.59-47.08,149.51l39.23,32.9Z"/>
+    </g>
+  </g>
+</svg>

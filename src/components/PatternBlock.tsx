@@ -15,6 +15,7 @@ type Props = {
   offsetX: number;
   offsetY: number;
   depth: number;
+  patternVersion: string;
 };
 
 export default function PatternBlock({
@@ -27,7 +28,7 @@ export default function PatternBlock({
   useVariablePatternSize,
   offsetX,
   offsetY,
-  depth,
+  depth,patternVersion,
 }: Props) {
   const sizePx = block.size * cellSize;
 const [isHovered, setIsHovered] = useState(false);
@@ -60,7 +61,7 @@ onMouseLeave={() => {
   style={{
     outline: isHovered ? "3px solid black" : "none",
     outlineOffset: "-1px",
-    backgroundImage: `url('/patterns/${block.patternKey}.svg')`,
+  backgroundImage: `url('/patterns/${patternVersion}/${block.patternKey}.svg')`,
     backgroundSize: `${patternTileSize}px ${patternTileSize}px`,
     backgroundRepeat: "repeat",
     backgroundPosition: "top left",

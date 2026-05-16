@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #85ff7d;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-7 {
+        fill: #82ff95;
+      }
+
+      .cls-8 {
+        fill: #3563f2;
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="0" y="0" width="512" height="512"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="0" y="622.83" width="512" height="512"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-1" x="0" y="622.83" width="512" height="512"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-1" x="-624.88" y="-609.99" width="512" height="512"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <rect class="cls-1" x="-624.88" y="-609.99" width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <rect class="cls-8" x="0" y="0" width="512" height="512"/>
+  <g class="cls-9">
+    <g>
+      <path class="cls-7" d="M428.3,428.3H83.7V83.7h344.61v344.61ZM90.1,421.9h331.8V90.1H90.1v331.8Z"/>
+      <path class="cls-7" d="M90.1,90.1H-254.51V-254.51H90.1V90.1ZM-248.11,83.7H83.7V-248.11H-248.11V83.7Z"/>
+      <path class="cls-7" d="M766.51,90.1h-344.61V-254.51h344.61V90.1ZM428.3,83.7h331.8V-248.11h-331.8V83.7Z"/>
+      <path class="cls-7" d="M90.1,768.34H-254.51v-344.61H90.1v344.61ZM-248.11,761.94H83.7v-331.8H-248.11v331.8Z"/>
+      <path class="cls-7" d="M766.51,768.34h-344.61v-344.61h344.61v344.61ZM428.3,761.94h331.8v-331.8h-331.8v331.8Z"/>
+    </g>
+  </g>
+  <g class="cls-3">
+    <g>
+      <g class="cls-6">
+        <line class="cls-2" x1="588.44" y1="464" x2="199.86" y2="852.59"/>
+        <line class="cls-2" x1="101.23" y1="770.72" x2="-287.35" y2="382.14"/>
+      </g>
+      <line class="cls-2" x1="333.28" y1="792.3" x2="-55.3" y2="403.71"/>
+    </g>
+  </g>
+  <g class="cls-4">
+    <g class="cls-5">
+      <path class="cls-7" d="M-263.08-163.86C-254.84-22.72-133.73,85.02,7.41,76.78l-2.98-51.11c-54.61,3.19-107.2-15.08-148.07-51.44-40.87-36.36-65.14-86.46-68.32-141.07l-51.11,2.98Z"/>
+    </g>
+  </g>
+</svg>

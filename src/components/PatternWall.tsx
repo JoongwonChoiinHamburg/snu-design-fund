@@ -70,6 +70,8 @@ const [useVariablePatternSize, setUseVariablePatternSize] =
   useState(true);
   const [selectedBlock, setSelectedBlock] =
     useState<DonorBlock | null>(null);
+    const [patternVersion, setPatternVersion] =
+  useState("1");
 const [patternSeed, setPatternSeed] = useState(0);
 const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 });
 
@@ -239,7 +241,15 @@ const positionedBlocks = useMemo(() => {
               쌓기
             </button>
           </div>
-
+<select
+  value={patternVersion}
+  onChange={(event) => setPatternVersion(event.target.value)}
+  className="border border-black bg-white px-3 py-2 text-xs text-black"
+>
+  <option value="1">패턴 1</option>
+  <option value="2">패턴 2</option>
+  <option value="3">패턴 3</option>
+</select>
           {/* density */}
       <div className="flex gap-2">
   {(["compact", "normal", "spacious"] as Density[]).map((item) => (
@@ -318,6 +328,7 @@ onClick={() => {
   offsetX={mode === "overlap" ? mouseOffset.x : 0}
   offsetY={mode === "overlap" ? mouseOffset.y : 0}
   depth={getBlockDepth(block.size)}
+  patternVersion={patternVersion}
 />
               )
             )}

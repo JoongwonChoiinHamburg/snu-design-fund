@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #c357d1;
+      }
+
+      .cls-2 {
+        stroke: #85ff7d;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-7 {
+        fill: #82ff95;
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-9 {
+        fill: #ad70ff;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="624.88" y="-622.83" width="512" height="512"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="624.88" y="0" width="512" height="512"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-1" x="624.88" width="512" height="512"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-1" x="624.88" y="0" width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g class="cls-8">
+    <path class="cls-7" d="M714.98,145.51h-344.61V-199.1h344.61V145.51ZM376.78,139.11h331.8V-192.7h-331.8V139.11Z"/>
+  </g>
+  <g class="cls-4">
+    <g>
+      <g class="cls-6">
+        <line class="cls-2" x1="726.12" y1="147.89" x2="337.54" y2="-240.69"/>
+      </g>
+      <line class="cls-2" x1="826.4" y1="187.33" x2="384.13" y2="187.33"/>
+      <line class="cls-2" x1="998.21" y1="366.56" x2="454.03" y2="443.16"/>
+      <g class="cls-5">
+        <line class="cls-2" x1="856.51" y1="443.16" x2="467.93" y2="54.58"/>
+        <line class="cls-2" x1="779.65" y1="166.79" x2="246.68" y2="32.85"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <rect class="cls-9" y="127.22" width="256" height="128.78"/>
+    <polygon class="cls-3" points="0 221.15 64 254.65 128 221.15 192 254.65 256 221.15 256 128.78 192 162.28 128 128.78 64 162.28 0 128.78 0 221.15"/>
+    <rect class="cls-9" x="256" y="127.22" width="256" height="128.78"/>
+    <polygon class="cls-3" points="256 221.15 320 254.65 384 221.15 448 254.65 512 221.15 512 128.78 448 162.28 384 128.78 320 162.28 256 128.78 256 221.15"/>
+    <rect class="cls-9" width="256" height="128.78"/>
+    <polygon class="cls-3" points="0 93.93 64 127.43 128 93.93 192 127.43 256 93.93 256 1.56 192 35.06 128 1.56 64 35.06 0 1.56 0 93.93"/>
+    <rect class="cls-9" x="256" width="256" height="128.78"/>
+    <polygon class="cls-3" points="256 93.93 320 127.43 384 93.93 448 127.43 512 93.93 512 1.56 448 35.06 384 1.56 320 35.06 256 1.56 256 93.93"/>
+    <rect class="cls-9" y="383.22" width="256" height="128.78"/>
+    <polygon class="cls-3" points="0 477.15 64 510.65 128 477.15 192 510.65 256 477.15 256 384.78 192 418.28 128 384.78 64 418.28 0 384.78 0 477.15"/>
+    <rect class="cls-9" x="256" y="383.22" width="256" height="128.78"/>
+    <polygon class="cls-3" points="256 477.15 320 510.65 384 477.15 448 510.65 512 477.15 512 384.78 448 418.28 384 384.78 320 418.28 256 384.78 256 477.15"/>
+    <rect class="cls-9" y="256" width="256" height="128.78"/>
+    <polygon class="cls-3" points="0 349.93 64 383.43 128 349.93 192 383.43 256 349.93 256 257.56 192 291.06 128 257.56 64 291.06 0 257.56 0 349.93"/>
+    <rect class="cls-9" x="256" y="256" width="256" height="128.78"/>
+    <polygon class="cls-3" points="256 349.93 320 383.43 384 349.93 448 383.43 512 349.93 512 257.56 448 291.06 384 257.56 320 291.06 256 257.56 256 349.93"/>
+  </g>
+</svg>

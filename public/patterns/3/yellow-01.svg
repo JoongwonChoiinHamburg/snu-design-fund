@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #efe556;
+      }
+
+      .cls-3 {
+        fill: #85e843;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-5 {
+        fill: #82ff95;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="591.06" y="0" width="512" height="512"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="590.13" y="0" width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g class="cls-6">
+    <g class="cls-4">
+      <g>
+        <path class="cls-5" d="M397.91,371.09c133.81,45.66,279.3-25.8,324.96-159.61l-48.46-16.54c-17.67,51.77-54.44,93.57-103.54,117.68-49.1,24.12-104.65,27.67-156.43,10l-16.54,48.46Z"/>
+        <path class="cls-5" d="M439.93-65.87c8.24,141.14,129.34,248.88,270.49,240.64l-2.98-51.11c-54.61,3.19-107.2-15.08-148.07-51.44-40.87-36.36-65.14-86.46-68.32-141.07l-51.11,2.98Z"/>
+      </g>
+    </g>
+  </g>
+  <rect class="cls-3" x="0" y="0" width="512" height="512"/>
+  <g>
+    <g>
+      <rect class="cls-2" x="171.87" y="174.91" width="53.6" height="53.6" transform="translate(-84.44 199.56) rotate(-45)"/>
+      <rect class="cls-2" x="171.87" y="408.12" width="53.6" height="53.6" transform="translate(-249.35 267.87) rotate(-45)"/>
+    </g>
+    <g>
+      <rect class="cls-2" x="401.17" y="174.91" width="53.6" height="53.6" transform="translate(-17.28 361.7) rotate(-45)"/>
+      <rect class="cls-2" x="401.17" y="408.12" width="53.6" height="53.6" transform="translate(-182.18 430.01) rotate(-45)"/>
+    </g>
+    <g>
+      <rect class="cls-2" x="286.52" y="58.3" width="53.6" height="53.6" transform="translate(31.59 246.48) rotate(-45)"/>
+      <rect class="cls-2" x="286.52" y="291.52" width="53.6" height="53.6" transform="translate(-133.31 314.79) rotate(-45)"/>
+    </g>
+    <g>
+      <rect class="cls-2" x="57.23" y="58.3" width="53.6" height="53.6" transform="translate(-35.57 84.34) rotate(-45)"/>
+      <rect class="cls-2" x="57.23" y="291.52" width="53.6" height="53.6" transform="translate(-200.47 152.65) rotate(-45)"/>
+    </g>
+  </g>
+</svg>
