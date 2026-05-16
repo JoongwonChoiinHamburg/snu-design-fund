@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        stroke: #ff8c52;
-      }
-
-      .cls-1, .cls-2 {
-        fill: none;
-        stroke-miterlimit: 10;
-        stroke-width: 15px;
-      }
-
-      .cls-3 {
         fill: #30e593;
       }
 
       .cls-2 {
-        stroke: #f1ee6e;
+        fill: url(#_무제_그라디언트_152);
       }
     </style>
+    <radialGradient id="_무제_그라디언트_152" data-name="무제 그라디언트 152" cx="258.77" cy="512" fx="258.77" fy="512" r="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0086cb"/>
+      <stop offset="0" stop-color="#0386c9" stop-opacity="1"/>
+      <stop offset="1" stop-color="#0986c5" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect class="cls-3" x="0" y=".12" width="512" height="512"/>
-  <line class="cls-1" x2="252.64" y2="512"/>
-  <line class="cls-2" x1="252.64" y1="512" x2="252.64"/>
-  <line class="cls-1" x1="252.64" x2="505.28" y2="512"/>
-  <line class="cls-2" x1="505.28" y1="512" x2="505.28"/>
+  <rect class="cls-1" width="512" height="512"/>
+  <rect class="cls-2" x="2.77" y="256" width="512" height="512"/>
 </svg>

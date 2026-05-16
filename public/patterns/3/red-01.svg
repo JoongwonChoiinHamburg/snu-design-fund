@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #ff8c52;
+        fill: #964dff;
       }
 
       .cls-2 {
-        fill: #964dff;
+        fill: url(#_무제_그라디언트_143);
       }
     </style>
+    <linearGradient id="_무제_그라디언트_143" data-name="무제 그라디언트 143" x1="484.26" y1="417.84" x2="672.59" y2="417.84" gradientTransform="translate(-322.43 -1.24)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e58bda" stop-opacity="0"/>
+      <stop offset="1" stop-color="#e58bda"/>
+    </linearGradient>
   </defs>
-  <rect class="cls-2" width="512" height="512"/>
-  <g>
-    <polygon class="cls-1" points="581.84 98.96 -91.56 226.8 -91.56 159.84 581.84 32.01 581.84 98.96"/>
-    <polygon class="cls-1" points="581.84 -70.72 -91.56 57.11 -91.56 -9.85 581.84 -137.68 581.84 -70.72"/>
-    <polygon class="cls-1" points="581.84 268.65 -91.56 396.48 -91.56 329.52 581.84 201.69 581.84 268.65"/>
-    <polygon class="cls-1" points="581.84 438.34 -91.56 566.17 -91.56 499.21 581.84 371.38 581.84 438.34"/>
-  </g>
+  <rect class="cls-1" y="0" width="512" height="512"/>
+  <rect class="cls-2" x="161.84" y="160.59" width="188.33" height="512" transform="translate(672.59 160.59) rotate(90)"/>
 </svg>

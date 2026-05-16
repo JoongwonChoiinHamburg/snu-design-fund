@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #59b6ef;
+        fill: #964dff;
       }
 
       .cls-2 {
-        fill: #9e5aed;
-      }
-
-      .cls-3 {
-        fill: #ff9a6e;
+        fill: url(#_무제_그라디언트_143);
       }
     </style>
+    <linearGradient id="_무제_그라디언트_143" data-name="무제 그라디언트 143" x1="-192.95" y1="-260.63" x2="-4.63" y2="-260.63" gradientTransform="translate(354.79 678.46)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e58bda" stop-opacity="0"/>
+      <stop offset="1" stop-color="#e58bda"/>
+    </linearGradient>
   </defs>
-  <rect class="cls-2" width="512" height="512"/>
-  <rect class="cls-3" y="0" width="55.03" height="512"/>
-  <rect class="cls-3" x="128.06" y="0" width="55.03" height="512"/>
-  <rect class="cls-3" x="256.11" y="0" width="55.03" height="512"/>
-  <rect class="cls-3" x="384.17" y="0" width="55.03" height="512"/>
-  <rect class="cls-1" y="0" width="55.03" height="182.27"/>
-  <rect class="cls-1" x="128.06" y="0" width="55.03" height="182.27"/>
-  <rect class="cls-1" x="256.11" y="0" width="55.03" height="182.27"/>
-  <rect class="cls-1" x="384.17" y="0" width="55.03" height="182.27"/>
+  <rect class="cls-1" width="512" height="512"/>
+  <rect class="cls-2" x="161.84" y="161.84" width="188.33" height="512" transform="translate(673.84 161.84) rotate(90)"/>
 </svg>
