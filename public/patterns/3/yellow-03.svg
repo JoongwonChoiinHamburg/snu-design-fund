@@ -9,13 +9,15 @@
       .cls-2 {
         fill: #ff6;
       }
+
+      .cls-3 {
+        fill: #ffad5c;
+      }
     </style>
   </defs>
   <rect class="cls-2" x="0" y="0" width="512" height="512"/>
-  <g>
-    <circle class="cls-1" cx="0" cy="0" r="73.57"/>
-    <circle class="cls-1" cx="512" cy="0" r="73.57"/>
-    <circle class="cls-1" cx="512" cy="512" r="73.57"/>
-    <circle class="cls-1" cx="0" cy="512" r="73.57"/>
-  </g>
+  <circle class="cls-1" cx="0" cy="0" r="73.57"/>
+  <circle class="cls-3" cx="512" cy="0" r="73.57"/>
+  <circle class="cls-1" cx="512" cy="512" r="73.57"/>
+  <circle class="cls-3" cx="0" cy="512" r="73.57"/>
 </svg>

@@ -3,9 +3,29 @@
   <defs>
     <style>
       .cls-1 {
+        fill: #59b6ef;
+      }
+
+      .cls-2 {
         fill: #9e5aed;
+      }
+
+      .cls-3 {
+        fill: #ff9a6e;
       }
     </style>
   </defs>
-  <rect class="cls-1" width="512" height="512"/>
+  <rect class="cls-2" width="512" height="512"/>
+  <rect class="cls-3" y="0" width="55.03" height="512"/>
+  <rect class="cls-3" x="128.06" y="0" width="55.03" height="512"/>
+  <rect class="cls-3" x="256.11" y="0" width="55.03" height="512"/>
+  <rect class="cls-3" x="384.17" y="0" width="55.03" height="512"/>
+  <rect class="cls-1" y="0" width="55.03" height="27.18"/>
+  <rect class="cls-1" x="128.06" y="0" width="55.03" height="27.18"/>
+  <rect class="cls-1" x="256.11" y="0" width="55.03" height="27.18"/>
+  <rect class="cls-1" x="384.17" y="0" width="55.03" height="27.18"/>
+  <rect class="cls-1" x="55.03" y="484.82" width="55.03" height="27.18"/>
+  <rect class="cls-1" x="183.09" y="484.82" width="55.03" height="27.18"/>
+  <rect class="cls-1" x="311.14" y="484.82" width="55.03" height="27.18"/>
+  <rect class="cls-1" x="439.2" y="484.82" width="55.03" height="27.18"/>
 </svg>

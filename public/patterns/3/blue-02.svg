@@ -19,6 +19,10 @@
       .cls-3 {
         fill: #2234fc;
       }
+
+      .cls-4 {
+        fill: #ffad5c;
+      }
     </style>
   </defs>
   <rect class="cls-3" width="512" height="512"/>
@@ -26,4 +30,6 @@
   <line class="cls-2" x1="252.64" y1="512" x2="252.64"/>
   <line class="cls-1" x1="252.64" x2="505.28" y2="512"/>
   <line class="cls-2" x1="505.28" y1="512" x2="505.28"/>
+  <rect class="cls-4" x="244.56" width="15.2" height="97.97"/>
+  <rect class="cls-4" x="497.67" width="15.2" height="97.97"/>
 </svg>

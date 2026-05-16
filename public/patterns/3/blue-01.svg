@@ -13,11 +13,15 @@
       }
 
       .cls-3 {
-        fill: #2234fc;
+        fill: #2626f7;
       }
 
       .cls-2 {
         stroke: #ff6;
+      }
+
+      .cls-4 {
+        fill: #ffad5c;
       }
     </style>
   </defs>
@@ -25,4 +29,5 @@
   <line class="cls-1" y1="506.45" x2="512" y2="506.45"/>
   <line class="cls-1" x1="505.98" y1="512" x2="505.98" y2="0"/>
   <line class="cls-2" x1="-.35" y1="0" x2="512" y2="512.35"/>
+  <circle class="cls-4" cx="512" cy="512" r="51.47"/>
 </svg>
