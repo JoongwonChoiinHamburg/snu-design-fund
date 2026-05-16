@@ -12,10 +12,9 @@
     </style>
   </defs>
   <rect class="cls-1" width="512" height="512"/>
-  <g>
-    <circle class="cls-2" cx="0" cy="0" r="73.57"/>
-    <circle class="cls-2" cx="512" cy="0" r="73.57"/>
-    <circle class="cls-2" cx="512" cy="512" r="73.57"/>
-    <circle class="cls-2" cx="0" cy="512" r="73.57"/>
-  </g>
+  <polygon class="cls-2" points="512 56.12 0 153.06 0 102.28 512 5.35 512 56.12"/>
+  <polygon class="cls-2" points="512 -72.55 0 24.39 0 -26.39 512 -123.32 512 -72.55"/>
+  <polygon class="cls-2" points="512 184.79 0 281.73 0 230.95 512 134.02 512 184.79"/>
+  <polygon class="cls-2" points="512 313.46 0 410.4 0 359.62 512 262.69 512 313.46"/>
+  <polygon class="cls-2" points="512 442.13 0 539.07 0 488.29 512 391.36 512 442.13"/>
 </svg>

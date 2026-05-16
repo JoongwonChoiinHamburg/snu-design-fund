@@ -18,23 +18,18 @@
     <rect class="cls-1" x="341.56" width="88.16" height="88.16"/>
   </g>
   <g>
-    <rect class="cls-1" x="82.28" y="105.28" width="88.16" height="88.16"/>
-    <rect class="cls-1" x="253.06" y="105.28" width="88.16" height="88.16"/>
-    <rect class="cls-1" x="423.84" y="105.28" width="88.16" height="88.16"/>
+    <rect class="cls-1" x="82.28" y="141.28" width="88.16" height="88.16"/>
+    <rect class="cls-1" x="253.06" y="141.28" width="88.16" height="88.16"/>
+    <rect class="cls-1" x="423.84" y="141.28" width="88.16" height="88.16"/>
   </g>
   <g>
-    <rect class="cls-1" y="210.57" width="88.16" height="88.16"/>
-    <rect class="cls-1" x="170.78" y="210.57" width="88.16" height="88.16"/>
-    <rect class="cls-1" x="341.56" y="210.57" width="88.16" height="88.16"/>
+    <rect class="cls-1" y="282.56" width="88.16" height="88.16"/>
+    <rect class="cls-1" x="170.78" y="282.56" width="88.16" height="88.16"/>
+    <rect class="cls-1" x="341.56" y="282.56" width="88.16" height="88.16"/>
   </g>
   <g>
-    <rect class="cls-1" x="82.28" y="315.85" width="88.16" height="88.16"/>
-    <rect class="cls-1" x="253.06" y="315.85" width="88.16" height="88.16"/>
-    <rect class="cls-1" x="423.84" y="315.85" width="88.16" height="88.16"/>
-  </g>
-  <g>
-    <rect class="cls-1" y="421.14" width="88.16" height="88.16"/>
-    <rect class="cls-1" x="170.78" y="421.14" width="88.16" height="88.16"/>
-    <rect class="cls-1" x="341.56" y="421.14" width="88.16" height="88.16"/>
+    <rect class="cls-1" x="82.28" y="423.84" width="88.16" height="88.16"/>
+    <rect class="cls-1" x="253.06" y="423.84" width="88.16" height="88.16"/>
+    <rect class="cls-1" x="423.84" y="423.84" width="88.16" height="88.16"/>
   </g>
 </svg>
