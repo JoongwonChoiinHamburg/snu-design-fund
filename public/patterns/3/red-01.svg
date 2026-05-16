@@ -12,8 +12,9 @@
     </style>
   </defs>
   <rect class="cls-2" width="512" height="512"/>
-  <polygon class="cls-1" points="512 24.19 0 121.12 0 70.35 512 -26.59 512 24.19"/>
-  <polygon class="cls-1" points="512 163.5 0 260.44 0 209.66 512 112.73 512 163.5"/>
-  <polygon class="cls-1" points="512 302.82 0 399.75 0 348.98 512 252.04 512 302.82"/>
+  <polygon class="cls-1" points="512 56.12 0 153.06 0 102.28 512 5.35 512 56.12"/>
+  <polygon class="cls-1" points="512 -72.55 0 24.39 0 -26.39 512 -123.32 512 -72.55"/>
+  <polygon class="cls-1" points="512 184.79 0 281.73 0 230.95 512 134.02 512 184.79"/>
+  <polygon class="cls-1" points="512 313.46 0 410.4 0 359.62 512 262.69 512 313.46"/>
   <polygon class="cls-1" points="512 442.13 0 539.07 0 488.29 512 391.36 512 442.13"/>
 </svg>

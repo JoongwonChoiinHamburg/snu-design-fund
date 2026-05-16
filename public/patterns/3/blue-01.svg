@@ -6,11 +6,11 @@
         fill: none;
         stroke: #f1ee6e;
         stroke-miterlimit: 10;
-        stroke-width: 3px;
+        stroke-width: 4px;
       }
 
       .cls-2 {
-        fill: #3bf;
+        fill: #2234fc;
       }
     </style>
   </defs>

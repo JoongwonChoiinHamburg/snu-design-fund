@@ -3,9 +3,48 @@
   <defs>
     <style>
       .cls-1 {
+        fill: #ff8c52;
+      }
+
+      .cls-2 {
         fill: #ff5cf3;
       }
     </style>
   </defs>
-  <rect class="cls-1" width="512" height="512"/>
+  <rect class="cls-2" width="512" height="512"/>
+  <g>
+    <rect class="cls-1" x="-24.04" y="-24.04" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="103.96" y="-24.04" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="231.96" y="-24.04" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="359.96" y="-24.04" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="487.96" y="-24.04" width="48.09" height="48.09"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="-24.04" y="103.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="103.96" y="103.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="231.96" y="103.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="359.96" y="103.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="487.96" y="103.96" width="48.09" height="48.09"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="-24.04" y="231.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="103.96" y="231.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="231.96" y="231.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="359.96" y="231.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="487.96" y="231.96" width="48.09" height="48.09"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="-24.04" y="359.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="103.96" y="359.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="231.96" y="359.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="359.96" y="359.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="487.96" y="359.96" width="48.09" height="48.09"/>
+  </g>
+  <g>
+    <rect class="cls-1" x="-24.04" y="487.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="103.96" y="487.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="231.96" y="487.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="359.96" y="487.96" width="48.09" height="48.09"/>
+    <rect class="cls-1" x="487.96" y="487.96" width="48.09" height="48.09"/>
+  </g>
 </svg>
