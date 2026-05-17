@@ -14,10 +14,15 @@ export default function SeatMap({ seats }: Props) {
 
   return (
     <>
-      <div className="flex flex-col items-start gap-2">
+<div className="flex flex-col items-center gap-2">
   {rows.map((row) => (
-    <div key={row.label} className="flex items-center gap-2">
-      <div className="w-6 text-xs text-gray-500">{row.label}</div>
+    <div
+      key={row.label}
+      className="flex items-center justify-center gap-2"
+    >
+      <div className="w-6 text-xs text-gray-500">
+        {row.label}
+      </div>
 
       <div className="flex gap-1.5">
         {row.seats.map((seat) => (
@@ -40,7 +45,7 @@ export default function SeatMap({ seats }: Props) {
           <div className="space-y-3 text-sm">
             {selectedSeat.status === "available" && (
               <>
-                <h3 className="text-lg font-bold">{selectedSeat.id}</h3>
+                <h3 className="text-lg ">{selectedSeat.id}</h3>
                 <p>이 좌석을 기부하시려면 디자인학부 과사무실로 문의해주세요.</p>
                 <div className="rounded bg-gray-100 p-3 text-xs leading-5">
                   <p>이메일: 여기에_과사메일</p>

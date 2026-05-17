@@ -16,7 +16,7 @@ export default function DonationPrograms({ seats }: Props) {
     <>
     <section className="mx-auto mt-24 max-w-[1200px]">
       <div className="mb-10">
-        <h2 className="font-display text-4xl font-bold">
+        <h2 className="font-display text-4xl ">
           기부 프로그램
         </h2>
       </div>
@@ -33,9 +33,7 @@ export default function DonationPrograms({ seats }: Props) {
           </div>
 
           <h3 className=" text-xl font-bold leading-snug">
-            공간 네이밍
-            <br />
-            기부 프로그램
+            공간 네이밍 기부 프로그램
           </h3>
 
           <div className="mt-5 space-y-3  text-normal  leading-relaxed">
@@ -61,9 +59,7 @@ export default function DonationPrograms({ seats }: Props) {
           </div>
 
           <h3 className=" text-xl font-bold leading-snug">
-            강의홀 좌석
-            <br />
-            기부 프로그램
+            강의홀 좌석 기부 프로그램
           </h3>
 
           <div className="mt-5 space-y-3  text-normal  leading-relaxed">
@@ -103,9 +99,7 @@ export default function DonationPrograms({ seats }: Props) {
           </div>
 
           <h3 className=" text-xl font-bold leading-snug">
-            49동 곳곳
-            <br />
-            기부 프로그램
+            49동 곳곳 기부 프로그램
           </h3>
 
           <div className="mt-5 space-y-3 text-normal leading-relaxed">
@@ -130,15 +124,16 @@ export default function DonationPrograms({ seats }: Props) {
   onClose={() => setOpenSeatMap(false)}
 >
   <div className="max-h-[80vh] overflow-auto text-black">
-    <div className="mb-6 flex items-start justify-between gap-6">
-      <div>
-        <h3 className="font-display text-2xl font-bold">
-          강의홀 좌석 기부
-        </h3>
-        <p className="mt-2 text-sm">
-          원하는 좌석을 선택해 상태와 기부 정보를 확인할 수 있습니다.
-        </p>
-      </div>
+    <div className="mb-6 flex text-center items-start justify-between gap-6">
+ <div className="mb-10 w-full text-center">
+  <h3 className="font-display text-3xl">
+    강의홀 좌석 기부
+  </h3>
+
+  <p className="mt-2 text-lg">
+    원하는 좌석을 선택해 상태와 기부 정보를 확인할 수 있습니다.
+  </p>
+</div>
 
 
     </div>

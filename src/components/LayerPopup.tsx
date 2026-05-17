@@ -15,7 +15,7 @@ export default function LayerPopup({ open, onClose, children }: Props) {
       onClick={onClose}
     >
       <div
-          className="w-[320px] rounded-lg bg-white p-6 shadow-lg text-gray-900"
+          className="w-[820px] rounded-lg bg-white p-6 shadow-lg text-gray-900"
         onClick={(e) => e.stopPropagation()}
       >
         {children}

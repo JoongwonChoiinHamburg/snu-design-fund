@@ -65,14 +65,14 @@ export default function PatternWall({
 const [hoveredBlock, setHoveredBlock] =
   useState<DonorBlock | null>(null);
   const [density, setDensity] =
-    useState<Density>("normal");
+    useState<Density>("spacious");
 const [useRandomPattern, setUseRandomPattern] = useState(false);
 const [useVariablePatternSize, setUseVariablePatternSize] =
-  useState(true);
+  useState(false);
   const [selectedBlock, setSelectedBlock] =
     useState<DonorBlock | null>(null);
     const [patternVersion, setPatternVersion] =
-  useState("1");
+  useState("2");
 const [patternSeed, setPatternSeed] = useState(0);
 const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 });
 
@@ -367,6 +367,7 @@ onClick={() => {
   depth={getBlockDepth(block.size)}
   patternVersion={patternVersion}
   patternScale={patternScale}
+  isFloating={mode === "overlap"}
 />
               )
             )}
@@ -374,30 +375,22 @@ onClick={() => {
         </div>
 
      {/* progress */}
-<div className="mx-auto mt-12 max-w-[1200px] px-6 text-center">
-  <p className="text-sm uppercase tracking-[0.1em] text-black/40">
-    Current Donation Progress
-  </p>
+<div className="mx-auto mt-12 text-center">
 
-  <div className="mt-4 font-display text-5xl leading-none md:text-5xl">
+ <section className="mx-auto pt-30 bg-[var(--color-cream)]">
+
+    <div className="mt-4 font-display text-5xl mb-leading-none md:text-5xl">
+       <span className="mr-5 text-2xl md:text-3xl">
+      모금액
+    </span>
     {totalAmount.toLocaleString()}
-    <span className="ml-3 text-2xl md:text-3xl">
+    <span className="ml-5 text-2xl md:text-3xl">
       원
     </span>
   </div>
 
-  <div className="mt-6 flex items-center justify-center gap-3">
+ </section>
 
-
-    <p className="text-lg text-black/70">
-      목표 3,000,000,000원 대비{" "}
-      <strong className="text-black">
-        {progressPercent.toFixed(1)}%
-      </strong>
-    </p>
-
-
-  </div>
 </div>
       </section>
 

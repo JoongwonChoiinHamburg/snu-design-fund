@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+:root {
+  --color-orange: #ff5a00;
+  --color-black: #111111;
+  --color-grey: #665c53;
+  --color-cream: #efeee8;
+
+}
+
 @font-face {
   font-family: "Cafe24ProSlim";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/Cafe24PROSlim-Light.woff2")
@@ -8,22 +16,20 @@
   font-display: swap;
 }
 
+
 @font-face {
-  font-family: "Cafe24ProSlim";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/Cafe24PROSlim-Regular.woff2")
-    format("woff2");
-  font-weight: 400;
-  font-display: swap;
+    font-family: 'Seongang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SOGANGUNIVERSITYTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Cafe24ProSlim";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/Cafe24PROSlim-Bold.woff2")
-    format("woff2");
-  font-weight: 700;
-  font-display: swap;
+    font-family: 'SuseongBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/SuseongBatang.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
 }
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -43,6 +49,50 @@
   }
 }
 
+@keyframes float-slow {
+  0% {
+    translate: 0 0;
+  }
+
+  12% {
+    translate: 0 0;
+  }
+
+  23% {
+    translate: var(--float-x-1) var(--float-y-1);
+  }
+
+  38% {
+    translate: var(--float-x-1) var(--float-y-1);
+  }
+
+  49% {
+    translate: var(--float-x-2) var(--float-y-2);
+  }
+
+  63% {
+    translate: var(--float-x-2) var(--float-y-2);
+  }
+
+  78% {
+    translate: var(--float-x-3) var(--float-y-3);
+  }
+
+  91% {
+    translate: var(--float-x-3) var(--float-y-3);
+  }
+
+  100% {
+    translate: 0 0;
+  }
+}
+
+.animate-float-slow {
+  animation-name: float-slow;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  animation-iteration-count: infinite;
+}
+
 .font-body {
   font-family:
     var(--font-asta),
@@ -50,7 +100,7 @@
 }
 
 .font-display {
-  font-family: "Cafe24ProSlim", sans-serif !important;
+  font-family: "Seongang", serif !important;
 }
 
 body {
@@ -58,3 +108,5 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+

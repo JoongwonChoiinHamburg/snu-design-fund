@@ -1,8 +1,7 @@
 "use client";
 
 import { DonorBlock } from "@/lib/pattern";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 
 type Props = {
   block: DonorBlock;
@@ -18,6 +17,7 @@ type Props = {
   patternVersion: string;
   patternScale: number;
   renderSize?: number;
+  isFloating: boolean;
 };
 
 export default function PatternBlock({
@@ -33,10 +33,12 @@ export default function PatternBlock({
   depth,patternVersion,
   patternScale,
   renderSize,
+  isFloating,
 }: Props) {
   const effectiveSize = renderSize ?? block.size;
 const sizePx = effectiveSize * cellSize;
 const [isHovered, setIsHovered] = useState(false);
+const [time, setTime] = useState(0);
 
 
 const basePatternTileSize = useVariablePatternSize
@@ -52,17 +54,45 @@ const patternTileSize =
   randomDensityScale *
   patternScale;
 
+useEffect(() => {
+  let frame: number;
+
+  function animate() {
+    setTime(performance.now() * 0.001);
+    frame = requestAnimationFrame(animate);
+  }
+
+  frame = requestAnimationFrame(animate);
+
+  return () => cancelAnimationFrame(frame);
+}, []);
+
+const floating = isFloating
+  ? getFloatingOffset(block.id, time)
+  : { x: 0, y: 0 };
+
 
   return (
     <button
-      className="group absolute overflow-visible"
-      style={{
-        left: x,
-        top: y,
-        width: sizePx,
-        height: sizePx,
-        transform: `translate3d(${offsetX * depth}px, ${offsetY * depth}px, 0)`,
-      }}
+className="group absolute overflow-visible"
+   style={
+  {
+    left: x,
+    top: y,
+    width: sizePx,
+    height: sizePx,
+  transform: `
+  translate3d(
+    ${offsetX * depth + floating.x}px,
+    ${offsetY * depth + floating.y}px,
+    0
+  )
+`,
+
+  } as React.CSSProperties
+}
+
+
       onClick={onClick}
       onMouseEnter={() => {
   setIsHovered(true);
@@ -87,6 +117,14 @@ onMouseLeave={() => {
     </button>
   );
 }
+
+function getFloatValue(id: string, salt: number) {
+  const value = seededRandom(hashString(`${id}-${salt}`));
+
+  // -8px ~ 8px
+  return Math.round((value - 0.5) * 16);
+}
+
 
 function getRandomDensityScale(id: string) {
   const value = seededRandom(hashString(id));
@@ -138,4 +176,39 @@ function getPatternTileSize(size: number) {
     default:
       return 96;
   }
+}
+
+function getFloatingOffset(
+  id: string,
+  time: number
+) {
+  const seed = hashString(id);
+
+  const speed1 =
+    0.25 + seededRandom(seed) * 0.35;
+
+  const speed2 =
+    0.12 + seededRandom(seed + 1) * 0.28;
+
+  const ampX =
+    2 + seededRandom(seed + 2) * 10;
+
+  const ampY =
+    2 + seededRandom(seed + 3) * 10;
+
+  const phase1 =
+    seededRandom(seed + 4) * Math.PI * 2;
+
+  const phase2 =
+    seededRandom(seed + 5) * Math.PI * 2;
+
+  return {
+    x:
+      Math.sin(time * speed1 + phase1) *
+      ampX,
+
+    y:
+      Math.cos(time * speed2 + phase2) *
+      ampY,
+  };
 }

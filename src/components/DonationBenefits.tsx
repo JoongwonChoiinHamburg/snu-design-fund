@@ -28,7 +28,7 @@ export default function DonationBenefits() {
   return (
     <section className="mx-auto mt-24 max-w-[980px]">
       <div className="mb-10">
-        <h2 className="font-display text-4xl font-bold">
+        <h2 className="font-display text-4xl ">
           기부자 혜택
         </h2>
       </div>
