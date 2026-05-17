@@ -1,58 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: none;
+        fill: #59b6ef;
       }
 
       .cls-2 {
-        fill: #f27913;
+        fill: #9e5aed;
       }
 
       .cls-3 {
-        fill: url(#_무제_그라디언트_3);
-      }
-
-      .cls-4 {
-        clip-path: url(#clippath-1);
-      }
-
-      .cls-5 {
-        fill: url(#_무제_그라디언트_969);
-      }
-
-      .cls-6 {
-        clip-path: url(#clippath);
+        fill: #ff9a6e;
       }
     </style>
-    <clipPath id="clippath">
-      <rect class="cls-1" x="-.04" y=".8" width="512.09" height="512.09"/>
-    </clipPath>
-    <linearGradient id="_무제_그라디언트_969" data-name="무제 그라디언트 969" x1="-.04" y1="256" x2="513.63" y2="256" gradientUnits="userSpaceOnUse">
-      <stop offset=".09" stop-color="#fffcad"/>
-      <stop offset=".11" stop-color="#fffcad" stop-opacity=".94"/>
-      <stop offset=".17" stop-color="#fffcad" stop-opacity=".62"/>
-      <stop offset=".23" stop-color="#fffcad" stop-opacity=".4"/>
-      <stop offset=".27" stop-color="#fffcad" stop-opacity=".25"/>
-      <stop offset=".29" stop-color="#fffcad" stop-opacity=".2"/>
-      <stop offset=".5" stop-color="#fffcad"/>
-      <stop offset=".7" stop-color="#fffcad" stop-opacity=".2"/>
-      <stop offset=".88" stop-color="#fffcad"/>
-    </linearGradient>
-    <clipPath id="clippath-1">
-      <rect class="cls-1" x="597.74" y=".8" width="512.09" height="512.09"/>
-    </clipPath>
-    <linearGradient id="_무제_그라디언트_3" data-name="무제 그라디언트 3" x1="-2657.13" y1="512" x2="-2657.13" y2="0" gradientTransform="translate(-1854.55 512) rotate(-180)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff7bb" stop-opacity="0"/>
-      <stop offset="1" stop-color="#fff7bb"/>
-    </linearGradient>
   </defs>
-  <rect class="cls-2" x="-.04" y=".8" width="512.09" height="512.09"/>
-  <g class="cls-6">
-    <path class="cls-5" d="M513.63,560.68l-51.37-49.58-51.37,49.58-51.37-49.58-51.37,49.58-51.37-49.58-51.37,49.58-51.37-49.58-51.37,49.58-51.37-49.58L-.04,560.68v-47.79l51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58v47.79ZM513.63,384.9l-51.37-49.58-51.37,49.58-51.37-49.58-51.37,49.58-51.37-49.58-51.37,49.58-51.37-49.58-51.37,49.58-51.37-49.58L-.04,384.9v47.79l51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58v-47.79ZM513.63,256.9l-51.37-49.58-51.37,49.58-51.37-49.58-51.37,49.58-51.37-49.58-51.37,49.58-51.37-49.58-51.37,49.58-51.37-49.58L-.04,256.9v47.79l51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58v-47.79ZM513.63.9l-51.37-49.58L410.89.9l-51.37-49.58L308.16.9l-51.37-49.58L205.42.9l-51.37-49.58L102.69.9l-51.37-49.58L-.04.9v47.79L51.32-.9l51.37,49.58L154.06-.9l51.37,49.58L256.79-.9l51.37,49.58L359.52-.9l51.37,49.58L462.26-.9l51.37,49.58V.9ZM513.63,128.9l-51.37-49.58-51.37,49.58-51.37-49.58-51.37,49.58-51.37-49.58-51.37,49.58-51.37-49.58-51.37,49.58-51.37-49.58L-.04,128.9v47.79l51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58,51.37-49.58,51.37,49.58v-47.79Z"/>
-  </g>
-  <g class="cls-4">
-    <path class="cls-3" d="M648.98,512h-51.2L648.98,0h51.2l-51.2,512ZM802.58,0h-51.2l-51.2,512h51.2L802.58,0ZM904.98,0h-51.2l-51.2,512h51.2L904.98,0ZM1007.38,0h-51.2l-51.2,512h51.2L1007.38,0ZM597.78,0h-51.2l-51.2,512h51.2L597.78,0ZM1109.78,0h-51.2l-51.2,512h51.2L1109.78,0Z"/>
-  </g>
+  <rect class="cls-2" x="0" y="-.02" width="512" height="512"/>
+  <rect class="cls-3" x="0" y="-.02" width="55.03" height="512"/>
+  <rect class="cls-3" x="128.06" y="-.02" width="55.03" height="512"/>
+  <rect class="cls-3" x="256.11" y="-.02" width="55.03" height="512"/>
+  <rect class="cls-3" x="384.17" y="-.02" width="55.03" height="512"/>
+  <rect class="cls-1" x="0" y="-.02" width="55.03" height="182.27"/>
+  <rect class="cls-1" x="128.06" y="-.02" width="55.03" height="182.27"/>
+  <rect class="cls-1" x="256.11" y="-.02" width="55.03" height="182.27"/>
+  <rect class="cls-1" x="384.17" y="-.02" width="55.03" height="182.27"/>
 </svg>

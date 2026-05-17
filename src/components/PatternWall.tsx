@@ -38,7 +38,7 @@ const RANDOM_PATTERNS = [
   "yellow-04",
 ];
 
-type Mode = "overlap" | "stack";
+type Mode = "overlap" | "stack" | "center";
 
 type Density =
   | "compact"
@@ -51,7 +51,7 @@ type PositionedBlock = {
   block: DonorBlock;
   x: number;
   y: number;
-
+ renderSize?: number;
 };
 
 const WALL_HEIGHT = 720;
@@ -59,6 +59,7 @@ const WALL_HEIGHT = 720;
 export default function PatternWall({
   blocks,
 }: Props) {
+  const [showDevPanel, setShowDevPanel] = useState(false);
   const [mode, setMode] =
     useState<Mode>("overlap");
 const [hoveredBlock, setHoveredBlock] =
@@ -109,49 +110,42 @@ const [tooltipPosition, setTooltipPosition] =
       );
     };
   }, []);
+  
 useEffect(() => {
   function handleMouseMove(event: MouseEvent) {
+    setTooltipPosition({
+      x: event.clientX,
+      y: event.clientY,
+    });
+
     if (mode !== "overlap") return;
 
-    const x =
-      event.clientX / window.innerWidth - 0.5;
-
-    const y =
-      event.clientY / window.innerHeight - 0.5;
+    const x = event.clientX / window.innerWidth - 0.5;
+    const y = event.clientY / window.innerHeight - 0.5;
 
     setMouseOffset({
       x: x * 40,
       y: y * 40,
     });
-
-    setTooltipPosition({
-      x: event.clientX,
-      y: event.clientY,
-    });
   }
 
-  window.addEventListener(
-    "mousemove",
-    handleMouseMove
-  );
+  window.addEventListener("mousemove", handleMouseMove);
 
   return () => {
-    window.removeEventListener(
-      "mousemove",
-      handleMouseMove
-    );
+    window.removeEventListener("mousemove", handleMouseMove);
   };
 }, [mode]);
-  const zoom =
-    mode === "overlap"
-      ? getZoom(blocks)
-      : 1;
 
-  const cellSize = getCellSize(
-    wallWidth,
-    density,
-    zoom
-  );
+
+const zoom = mode === "overlap" ? getZoom(blocks) : 1;
+
+const cellSize =
+  mode === "center"
+    ? getTrueScaleCellSize(wallWidth)
+    : getCellSize(wallWidth, density, zoom);
+
+
+const patternScale = wallWidth / 1200;
 
   const totalAmount = blocks.reduce(
     (sum, block) => sum + block.amount,
@@ -182,15 +176,24 @@ const displayBlocks = useMemo(() => {
   });
 }, [blocks, useRandomPattern, patternSeed]);
 
+
 const positionedBlocks = useMemo(() => {
   if (mode === "overlap") {
     if (layoutSeed === null) return [];
 
     return createOverlapLayout(
-  displayBlocks,
-  wallWidth,
-  cellSize,
-  layoutSeed
+      displayBlocks,
+      wallWidth,
+      cellSize,
+      layoutSeed
+    );
+  }
+
+  if (mode === "center") {
+    return createCenterLayout(
+      displayBlocks,
+      wallWidth,
+      cellSize
     );
   }
 
@@ -211,7 +214,19 @@ const positionedBlocks = useMemo(() => {
     <>
       <section className="relative left-1/2 w-screen -translate-x-1/2 space-y-6">
         {/* controls */}
-        <div className="mx-auto flex max-w-[1800px] items-center justify-between px-6">
+        <div className="mx-auto mb-3 flex max-w-[1800px] justify-end px-6">
+  <button
+    type="button"
+    onClick={() =>
+      setShowDevPanel((prev) => !prev)
+    }
+    className="border border-black px-2 py-1 text-[10px] uppercase tracking-wide text-black/60 hover:bg-black hover:text-white"
+  >
+    Dev
+  </button>
+</div>
+{showDevPanel && (
+  <div className="mx-auto flex max-w-[1800px] items-center justify-between px-6">
           <div className="flex gap-2">
             <button
               type="button"
@@ -240,6 +255,17 @@ const positionedBlocks = useMemo(() => {
             >
               쌓기
             </button>
+            <button
+  type="button"
+  className={`rounded px-4 py-2 text-sm ${
+    mode === "center"
+      ? "bg-black text-white"
+      : "bg-gray-200 text-black"
+  }`}
+  onClick={() => setMode("center")}
+>
+  중앙에 모으기
+</button>
           </div>
 <select
   value={patternVersion}
@@ -300,7 +326,7 @@ onClick={() => {
 
 </div>
         </div>
-
+)}
         {/* wall */}
         <div
           ref={containerRef}
@@ -308,17 +334,28 @@ onClick={() => {
          
         >
           <div
-            className="relative"
-            style={{
-              width: wallWidth,
-              height: WALL_HEIGHT,
-            }}
-          >
-            {positionedBlocks.map(
-              ({ block, x, y }) => (
+  className="relative"
+  style={{
+    width: wallWidth,
+    height: WALL_HEIGHT,
+    backgroundImage:
+      mode === "center"
+        ? `
+          linear-gradient(to right, rgba(0,0,0,0.12) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0,0,0,0.12) 1px, transparent 1px)
+        `
+        : "none",
+    backgroundSize:
+      mode === "center"
+        ? `${cellSize}px ${cellSize}px`
+        : undefined,
+  }}
+>
+       {positionedBlocks.map(({ block, x, y, renderSize }) => (
 <PatternBlock
   key={block.id}
   block={block}
+      renderSize={renderSize}
   cellSize={cellSize}
   x={x}
   y={y}
@@ -329,30 +366,39 @@ onClick={() => {
   offsetY={mode === "overlap" ? mouseOffset.y : 0}
   depth={getBlockDepth(block.size)}
   patternVersion={patternVersion}
+  patternScale={patternScale}
 />
               )
             )}
           </div>
         </div>
 
-        {/* progress */}
-        <div className="mx-auto flex max-w-[1800px] items-baseline justify-between px-6 text-sm text-gray-900">
-          <p>
-            현재{" "}
-            <strong className="text-lg">
-              {totalAmount.toLocaleString()}
-              원
-            </strong>
-            이 모였습니다.
-          </p>
+     {/* progress */}
+<div className="mx-auto mt-12 max-w-[1200px] px-6 text-center">
+  <p className="text-sm uppercase tracking-[0.1em] text-black/40">
+    Current Donation Progress
+  </p>
 
-          <p>
-            목표 3,000,000,000원 대비{" "}
-            <strong>
-              {progressPercent.toFixed(1)}%
-            </strong>
-          </p>
-        </div>
+  <div className="mt-4 font-display text-5xl leading-none md:text-5xl">
+    {totalAmount.toLocaleString()}
+    <span className="ml-3 text-2xl md:text-3xl">
+      원
+    </span>
+  </div>
+
+  <div className="mt-6 flex items-center justify-center gap-3">
+
+
+    <p className="text-lg text-black/70">
+      목표 3,000,000,000원 대비{" "}
+      <strong className="text-black">
+        {progressPercent.toFixed(1)}%
+      </strong>
+    </p>
+
+
+  </div>
+</div>
       </section>
 
 {hoveredBlock && (
@@ -414,12 +460,174 @@ onClick={() => {
   );
 }
 
+
+function createCenterLayout(
+  blocks: DonorBlock[],
+  wallWidth: number,
+  cellSize: number
+): PositionedBlock[] {
+  const sorted = [...blocks].sort((a, b) => b.area - a.area);
+  const positioned: PositionedBlock[] = [];
+
+  const gridCols = Math.floor(wallWidth / cellSize);
+  const gridRows = Math.floor(WALL_HEIGHT / cellSize);
+
+  const occupied = Array.from({ length: gridRows }, () =>
+    Array(gridCols).fill(false)
+  );
+
+  const centerX = Math.floor(gridCols / 2);
+  const centerY = Math.floor(gridRows / 2);
+
+  sorted.forEach((block, index) => {
+    const size = getCenterSizeFromAmount(block.amount);
+    
+    console.log("CENTER SIZE", {
+  name: block.displayName,
+  amount: block.amount,
+  calculatedSize: size,
+  originalBlockSize: block.size,
+});
+    const seed = hashString(`${block.id}-${index}`);
+
+    const candidates: { x: number; y: number; score: number }[] = [];
+
+    for (let y = 0; y <= gridRows - size; y += 1) {
+      for (let x = 0; x <= gridCols - size; x += 1) {
+        if (!canPlace(occupied, x, y, size)) continue;
+
+        const hasNeighbor =
+          positioned.length === 0 || touchesOccupied(occupied, x, y, size);
+
+        if (!hasNeighbor) continue;
+
+        const blockCenterX = x + size / 2;
+        const blockCenterY = y + size / 2;
+
+        const distance =
+          Math.pow(blockCenterX - centerX, 2) +
+          Math.pow(blockCenterY - centerY, 2);
+
+        const randomness = seededRandom(seed + x * 17 + y * 31) * 12;
+
+        candidates.push({
+          x,
+          y,
+          score: distance + randomness,
+        });
+      }
+    }
+
+    if (candidates.length === 0) return;
+
+    candidates.sort((a, b) => a.score - b.score);
+
+    const topCandidates = candidates.slice(0, Math.min(8, candidates.length));
+    const selected =
+      topCandidates[Math.floor(seededRandom(seed) * topCandidates.length)];
+
+    markOccupied(occupied, selected.x, selected.y, size);
+
+  positioned.push({
+  block,
+  x: selected.x * cellSize,
+  y: selected.y * cellSize,
+  renderSize: size,
+});
+  });
+
+  return positioned;
+}
+
+function touchesOccupied(
+  occupied: boolean[][],
+  x: number,
+  y: number,
+  size: number
+) {
+  for (let row = y; row < y + size; row += 1) {
+    if (occupied[row]?.[x - 1]) return true;
+    if (occupied[row]?.[x + size]) return true;
+  }
+
+  for (let col = x; col < x + size; col += 1) {
+    if (occupied[y - 1]?.[col]) return true;
+    if (occupied[y + size]?.[col]) return true;
+  }
+
+  return false;
+}
+
+function findClosestEmptySquare(
+  occupied: boolean[][],
+  gridCols: number,
+  gridRows: number,
+  size: number,
+  centerX: number,
+  centerY: number
+) {
+  let best:
+    | { x: number; y: number; distance: number }
+    | null = null;
+
+  for (let y = 0; y <= gridRows - size; y += 1) {
+    for (let x = 0; x <= gridCols - size; x += 1) {
+      if (!canPlace(occupied, x, y, size)) {
+        continue;
+      }
+
+      const blockCenterX = x + size / 2;
+      const blockCenterY = y + size / 2;
+
+      const distance =
+        Math.pow(blockCenterX - centerX, 2) +
+        Math.pow(blockCenterY - centerY, 2);
+
+      if (!best || distance < best.distance) {
+        best = { x, y, distance };
+      }
+    }
+  }
+
+  return best;
+}
+
+function canPlace(
+  occupied: boolean[][],
+  x: number,
+  y: number,
+  size: number
+) {
+  for (let row = y; row < y + size; row += 1) {
+    for (let col = x; col < x + size; col += 1) {
+      if (occupied[row]?.[col]) {
+        return false;
+      }
+    }
+  }
+
+  return true;
+}
+
+function markOccupied(
+  occupied: boolean[][],
+  x: number,
+  y: number,
+  size: number
+) {
+  for (let row = y; row < y + size; row += 1) {
+    for (let col = x; col < x + size; col += 1) {
+      occupied[row][col] = true;
+    }
+  }
+}
+
 function getCellSize(
   wallWidth: number,
   density: Density,
   zoom: number
 ) {
-  let base = wallWidth / 28;
+  let base = wallWidth / 48;
 
   if (density === "compact") {
     base *= 1.5;
@@ -436,6 +644,21 @@ function getCellSize(
   base *= zoom;
 
   return Math.max(24, Math.min(base, 160));
+}
+
+function getTrueScaleCellSize(wallWidth: number) {
+  const goalAmount = 3_000_000_000;
+  const unitAmount = 1_000_000;
+  const goalCells = goalAmount / unitAmount;
+
+  const targetFillRatio = 0.8;
+  const canvasArea = wallWidth * WALL_HEIGHT;
+
+  const cellSize = Math.sqrt(
+    (canvasArea * targetFillRatio) / goalCells
+  );
+
+  return Math.max(12, Math.min(cellSize, 28));
 }
 
 function createOverlapLayout(
@@ -541,6 +764,17 @@ function hashString(value: string) {
   }
 
   return Math.abs(hash);
+}
+
+function getCenterSizeFromAmount(amount: number) {
+  // 중앙 모으기 전용: 100만원 = 1칸 기준
+  const unitAmount = 1_000_000;
+  const area = amount / unitAmount;
+
+  // 정사각형 한 변 칸 수
+  const size = Math.round(Math.sqrt(area));
+
+  return Math.max(1, Math.min(size, 18));
 }
 
 function seededRandom(seed: number) {

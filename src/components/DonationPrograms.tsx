@@ -16,7 +16,7 @@ export default function DonationPrograms({ seats }: Props) {
     <>
     <section className="mx-auto mt-24 max-w-[1200px]">
       <div className="mb-10">
-        <h2 className="font-display text-2xl font-bold">
+        <h2 className="font-display text-4xl font-bold">
           기부 프로그램
         </h2>
       </div>
@@ -32,7 +32,7 @@ export default function DonationPrograms({ seats }: Props) {
             />
           </div>
 
-          <h3 className="font-display text-xl font-bold leading-snug">
+          <h3 className=" text-xl font-bold leading-snug">
             공간 네이밍
             <br />
             기부 프로그램
@@ -60,7 +60,7 @@ export default function DonationPrograms({ seats }: Props) {
             />
           </div>
 
-          <h3 className="font-display text-xl font-bold leading-snug">
+          <h3 className=" text-xl font-bold leading-snug">
             강의홀 좌석
             <br />
             기부 프로그램
@@ -102,7 +102,7 @@ export default function DonationPrograms({ seats }: Props) {
             />
           </div>
 
-          <h3 className="font-display text-xl font-bold leading-snug">
+          <h3 className=" text-xl font-bold leading-snug">
             49동 곳곳
             <br />
             기부 프로그램

@@ -1,29 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #b1f2a4;
+        fill: #ff5cf3;
       }
 
       .cls-2 {
-        fill: #7e68ff;
+        stroke: #2234fc;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 15px;
       }
 
       .cls-3 {
-        fill: none;
-        stroke: #b1f2a4;
-        stroke-miterlimit: 10;
-        stroke-width: 6px;
+        stroke: #59b6ef;
+      }
+
+      .cls-4 {
+        fill: #e2d7c5;
       }
     </style>
   </defs>
-  <rect class="cls-2" x="0" y="0" width="512" height="512" transform="translate(512 0) rotate(90)"/>
-  <line class="cls-3" x1="170.67" y1="0" x2="170.67" y2="512"/>
-  <line class="cls-3" x1="341.33" y1="0" x2="341.33" y2="512"/>
-  <rect class="cls-1" y="0" width="6" height="512"/>
-  <line class="cls-3" x1="512" y1="341.33" x2="0" y2="341.33"/>
-  <line class="cls-3" x1="512" y1="170.67" x2="0" y2="170.67"/>
-  <line class="cls-3" x1="512" y1="341.33" x2="0" y2="341.33"/>
-  <rect class="cls-1" x="0" y="505.93" width="512" height="6.07"/>
+  <rect class="cls-4" x="0" y="0" width="512" height="512"/>
+  <g>
+    <line class="cls-2" x1="94.36" y1="512" x2="94.36" y2="0"/>
+    <line class="cls-2" x1="417.64" y1="512" x2="417.64" y2="0"/>
+  </g>
+  <g>
+    <line class="cls-3" x1="512" y1="417.71" x2="0" y2="417.71"/>
+    <rect class="cls-1" x="86.85" y="410.21" width="15" height="15"/>
+    <rect class="cls-1" x="410.14" y="410.21" width="15" height="15"/>
+  </g>
+  <g>
+    <line class="cls-3" x1="-.37" y1="94.92" x2="511.63" y2="94.92"/>
+    <rect class="cls-1" x="409.77" y="87.42" width="15" height="15" transform="translate(834.55 189.84) rotate(180)"/>
+    <rect class="cls-1" x="86.48" y="87.42" width="15" height="15" transform="translate(187.97 189.84) rotate(180)"/>
+  </g>
 </svg>

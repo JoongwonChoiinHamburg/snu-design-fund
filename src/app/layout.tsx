@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Asta_Sans,   Chiron_Sung_HK,} from "next/font/google";
+import { Asta_Sans} from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,11 +24,7 @@ const astaSans = Asta_Sans({
   variable: "--font-asta",
 });
 
-const chiron = Chiron_Sung_HK({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-chiron",
-});
+
 
 export default function RootLayout({
   children,
@@ -43,7 +39,7 @@ export default function RootLayout({
           <body
   className={`
     ${astaSans.variable}
-    ${chiron.variable}
+
     min-h-full flex flex-col
   `}
 >

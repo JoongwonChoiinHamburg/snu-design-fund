@@ -1,22 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #e7761c;
+        fill: #ff5cf3;
       }
 
       .cls-2 {
-        fill: #fffcad;
+        fill: url(#_무제_그라디언트_161-2);
+      }
+
+      .cls-3 {
+        fill: url(#_무제_그라디언트_164-2);
+      }
+
+      .cls-4 {
+        fill: url(#_무제_그라디언트_161);
+      }
+
+      .cls-5 {
+        fill: url(#_무제_그라디언트_164);
       }
     </style>
+    <linearGradient id="_무제_그라디언트_161" data-name="무제 그라디언트 161" x1="-11556.04" y1="-2461.16" x2="-11556.04" y2="-1949.19" gradientTransform="translate(11620.04 2461.16)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ebe92f"/>
+      <stop offset=".47" stop-color="#ebe92f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_164" data-name="무제 그라디언트 164" x1="-10331.81" y1="-2644.28" x2="-10331.81" y2="-2132.31" gradientTransform="translate(10523.81 2644.3)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ebe92f"/>
+      <stop offset=".49" stop-color="#ebe92f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_161-2" data-name="무제 그라디언트 161" x1="-11812.04" x2="-11812.04" gradientTransform="translate(12132.04 2461.16)" xlink:href="#_무제_그라디언트_161"/>
+    <linearGradient id="_무제_그라디언트_164-2" data-name="무제 그라디언트 164" x1="-10075.81" x2="-10075.81" xlink:href="#_무제_그라디언트_164"/>
   </defs>
-  <rect class="cls-2" y="0" width="512" height="512"/>
-  <rect class="cls-1" x="167.67" y="0" width="6" height="512"/>
-  <rect class="cls-1" x="338.33" y="0" width="6" height="512"/>
-  <rect class="cls-1" y="0" width="6" height="512"/>
-  <rect class="cls-1" x="0" y="338.33" width="512" height="6"/>
-  <rect class="cls-1" x="0" y="167.67" width="512" height="6"/>
-  <rect class="cls-1" x="0" y="338.33" width="512" height="6"/>
-  <rect class="cls-1" x="0" y="505.93" width="512" height="6.07"/>
+  <rect class="cls-1" x="0" y="0" width="512" height="512"/>
+  <rect class="cls-4" width="128" height="511.97" transform="translate(128 511.97) rotate(180)"/>
+  <rect class="cls-5" x="128" y=".02" width="128" height="511.97"/>
+  <rect class="cls-2" x="256" width="128" height="511.97" transform="translate(640 511.97) rotate(180)"/>
+  <rect class="cls-3" x="384" y=".02" width="128" height="511.97"/>
 </svg>

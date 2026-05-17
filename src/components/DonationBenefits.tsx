@@ -28,7 +28,7 @@ export default function DonationBenefits() {
   return (
     <section className="mx-auto mt-24 max-w-[980px]">
       <div className="mb-10">
-        <h2 className="font-display text-2xl font-bold">
+        <h2 className="font-display text-4xl font-bold">
           기부자 혜택
         </h2>
       </div>
@@ -41,7 +41,7 @@ export default function DonationBenefits() {
           {columns.map((column) => (
             <div
               key={column}
-              className="py-7 text-center font-display text-lg"
+              className="py-7 text-center text-lg"
             >
               {column}
             </div>
@@ -54,7 +54,7 @@ export default function DonationBenefits() {
             key={row.title}
             className="grid grid-cols-[2.2fr_repeat(4,1fr)] border-b border-black"
           >
-            <div className="flex items-center py-8 pr-8 font-display text-2xl leading-tight">
+            <div className="flex items-center py-6 pr-6 text-xl leading-tight">
               {row.title}
             </div>
 

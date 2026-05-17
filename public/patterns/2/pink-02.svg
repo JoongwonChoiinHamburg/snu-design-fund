@@ -1,47 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: url(#_무제_그라디언트_159-3);
+        fill: #59b6ef;
       }
 
       .cls-2 {
-        fill: url(#_무제_그라디언트_159-2);
-      }
-
-      .cls-3 {
-        fill: url(#_무제_그라디언트_159-4);
-      }
-
-      .cls-4 {
-        fill: #f286df;
-      }
-
-      .cls-5 {
-        fill: url(#_무제_그라디언트_159);
+        fill: #30e593;
       }
     </style>
-    <linearGradient id="_무제_그라디언트_159" data-name="무제 그라디언트 159" x1=".89" y1="129.31" x2="256.99" y2="129.31" gradientTransform="translate(513.81 .69) rotate(90)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#bbfbff" stop-opacity="0"/>
-      <stop offset=".01" stop-color="#bbfbff" stop-opacity=".02"/>
-      <stop offset=".18" stop-color="#bbfbff" stop-opacity=".28"/>
-      <stop offset=".34" stop-color="#bbfbff" stop-opacity=".5"/>
-      <stop offset=".49" stop-color="#bbfbff" stop-opacity=".68"/>
-      <stop offset=".64" stop-color="#bbfbff" stop-opacity=".82"/>
-      <stop offset=".78" stop-color="#bbfbff" stop-opacity=".92"/>
-      <stop offset=".9" stop-color="#bbfbff" stop-opacity=".98"/>
-      <stop offset="1" stop-color="#bbfbff"/>
-    </linearGradient>
-    <linearGradient id="_무제_그라디언트_159-2" data-name="무제 그라디언트 159" x1="256.13" y1="129.31" x2="512.23" y2="129.31" xlink:href="#_무제_그라디언트_159"/>
-    <linearGradient id="_무제_그라디언트_159-3" data-name="무제 그라디언트 159" y1="385.19" y2="385.19" xlink:href="#_무제_그라디언트_159"/>
-    <linearGradient id="_무제_그라디언트_159-4" data-name="무제 그라디언트 159" x1="256.13" y1="385.19" x2="512.23" y2="385.19" xlink:href="#_무제_그라디언트_159"/>
   </defs>
-  <rect class="cls-4" x="-.23" y="1.12" width="512" height="512"/>
+  <rect class="cls-2" width="512" height="512"/>
   <g>
-    <polygon class="cls-5" points="256.56 1.58 256.56 257.68 512.44 1.58 256.56 1.58"/>
-    <polygon class="cls-2" points="512.44 256.82 256.56 256.82 512.44 512.92 512.44 256.82"/>
-    <polygon class="cls-1" points=".69 1.58 .69 257.68 256.56 1.58 .69 1.58"/>
-    <polygon class="cls-3" points="256.56 256.82 .69 256.82 256.56 512.92 256.56 256.82"/>
+    <polygon class="cls-1" points="153.6 512 102.4 512 153.6 0 204.8 0 153.6 512"/>
+    <polygon class="cls-1" points="256 512 204.8 512 256 0 307.2 0 256 512"/>
+    <polygon class="cls-1" points="358.4 512 307.2 512 358.4 0 409.6 0 358.4 512"/>
+    <polygon class="cls-1" points="460.8 512 409.6 512 460.8 0 512 0 460.8 512"/>
+    <polygon class="cls-1" points="51.2 512 0 512 51.2 0 102.4 0 51.2 512"/>
   </g>
 </svg>

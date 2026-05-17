@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
@@ -7,35 +7,234 @@
       }
 
       .cls-2 {
-        fill: url(#_무제_그라디언트_143-2);
+        fill: #212b26;
       }
 
       .cls-3 {
-        fill: #bbfbff;
+        clip-path: url(#clippath-17);
       }
 
       .cls-4 {
-        fill: url(#_무제_그라디언트_143);
+        clip-path: url(#clippath-19);
       }
 
       .cls-5 {
+        clip-path: url(#clippath-11);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-16);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-10);
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath-15);
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath-14);
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath-12);
+      }
+
+      .cls-11 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-12 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-13 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-14 {
+        clip-path: url(#clippath-7);
+      }
+
+      .cls-15 {
+        clip-path: url(#clippath-6);
+      }
+
+      .cls-16 {
+        clip-path: url(#clippath-9);
+      }
+
+      .cls-17 {
+        clip-path: url(#clippath-5);
+      }
+
+      .cls-18 {
+        fill: #294236;
+      }
+
+      .cls-19 {
         clip-path: url(#clippath);
       }
     </style>
     <clipPath id="clippath">
-      <rect class="cls-1" x="-.04" y=".8" width="512.09" height="512.09"/>
+      <rect class="cls-1" y="-.01" width="256" height="255.98"/>
     </clipPath>
-    <linearGradient id="_무제_그라디언트_143" data-name="무제 그라디언트 143" x1="133.06" y1="5374.16" x2="133.06" y2="5886.16" gradientTransform="translate(389.06 5886.16) rotate(-180)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f286df" stop-opacity="0"/>
-      <stop offset="1" stop-color="#f286df"/>
-    </linearGradient>
-    <linearGradient id="_무제_그라디언트_143-2" data-name="무제 그라디언트 143" x1="-836.8" y1="512" x2="-836.8" y2="0" gradientTransform="translate(-632 512) rotate(-180)" xlink:href="#_무제_그라디언트_143"/>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" y="-.01" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-1" y="-.01" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <rect class="cls-1" y="-.01" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <rect class="cls-1" x="256.01" y="-.01" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-6">
+      <rect class="cls-1" x="256.01" y="-.01" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-7">
+      <rect class="cls-1" x="256.01" y="-.01" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-9">
+      <rect class="cls-1" x="256.01" y="-.01" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-10">
+      <rect class="cls-1" y="255.97" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-11">
+      <rect class="cls-1" y="255.97" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-12">
+      <rect class="cls-1" y="255.97" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-14">
+      <rect class="cls-1" y="255.97" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-15">
+      <rect class="cls-1" x="256" y="255.97" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-16">
+      <rect class="cls-1" x="256" y="255.97" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-17">
+      <rect class="cls-1" x="256" y="255.97" width="256" height="255.98"/>
+    </clipPath>
+    <clipPath id="clippath-19">
+      <rect class="cls-1" x="256" y="255.97" width="256" height="255.98"/>
+    </clipPath>
   </defs>
-  <rect class="cls-3" x="0" y="0" width="512" height="512"/>
-  <g class="cls-5">
-    <g>
-      <path class="cls-4" d="M409.6,0h51.2l-51.2,512h-51.2L409.6,0ZM256,512h51.2L358.4,0h-51.2l-51.2,512ZM153.6,512h51.2L256,0h-51.2l-51.2,512ZM51.2,512h51.2L153.6,0h-51.2l-51.2,512ZM460.8,512h51.2L563.2,0h-51.2l-51.2,512ZM-51.2,512H0L51.2,0H0l-51.2,512Z"/>
-      <path class="cls-2" d="M51.2,512H0L51.2,0h51.2l-51.2,512ZM204.8,0h-51.2l-51.2,512h51.2L204.8,0ZM307.2,0h-51.2l-51.2,512h51.2L307.2,0ZM409.6,0h-51.2l-51.2,512h51.2L409.6,0ZM0,0h-51.2l-51.2,512h51.2L0,0ZM512,0h-51.2l-51.2,512h51.2L512,0Z"/>
+  <rect class="cls-2" x="0" y=".02" width="512" height="512.38"/>
+  <g>
+    <g class="cls-19">
+      <g>
+        <circle class="cls-18" cx="168.65" cy="7.09" r="18.95"/>
+        <circle class="cls-18" cx="-11.77" cy="69.68" r="18.95"/>
+        <circle class="cls-18" cx="256" cy="175.94" r="18.95"/>
+        <circle class="cls-18" cx="86.14" cy="-7.84" r="18.95"/>
+        <circle class="cls-18" cx="48.31" cy="94.9" r="18.95"/>
+        <circle class="cls-18" cx="114.47" cy="73.07" r="18.95"/>
+        <circle class="cls-18" cx="70.56" cy="197.64" r="18.95"/>
+        <circle class="cls-18" cx="29.36" cy="38.05" r="18.95"/>
+        <circle class="cls-18" cx="171.45" cy="94.9" r="18.95"/>
+        <circle class="cls-18" cx="138.32" cy="169.59" r="18.95"/>
+        <circle class="cls-18" cx="230.24" cy="230.67" r="18.95"/>
+        <rect class="cls-1" y="-.01" width="256" height="255.98"/>
+        <g class="cls-11">
+          <circle class="cls-18" cx="0" cy="175.94" r="18.95"/>
+        </g>
+        <g class="cls-13">
+          <circle class="cls-18" cx="168.65" cy="263.07" r="18.95"/>
+          <circle class="cls-18" cx="86.14" cy="248.14" r="18.95"/>
+        </g>
+        <g class="cls-12">
+          <circle class="cls-18" cx="244.23" cy="69.68" r="18.95"/>
+        </g>
+      </g>
     </g>
+    <g class="cls-17">
+      <g>
+        <circle class="cls-18" cx="424.65" cy="7.08" r="18.95"/>
+        <circle class="cls-18" cx="244.23" cy="69.68" r="18.95"/>
+        <circle class="cls-18" cx="512.01" cy="175.94" r="18.95"/>
+        <circle class="cls-18" cx="342.15" cy="-7.84" r="18.95"/>
+        <circle class="cls-18" cx="304.31" cy="94.9" r="18.95"/>
+        <circle class="cls-18" cx="350.47" cy="129" r="18.95"/>
+        <circle class="cls-18" cx="384.01" cy="57" r="18.95"/>
+        <circle class="cls-18" cx="326.57" cy="197.64" r="18.95"/>
+        <circle class="cls-18" cx="407.98" cy="161.98" r="18.95"/>
+        <circle class="cls-18" cx="285.36" cy="38.05" r="18.95"/>
+        <circle class="cls-18" cx="427.45" cy="94.9" r="18.95"/>
+        <circle class="cls-18" cx="486.24" cy="230.67" r="18.95"/>
+        <rect class="cls-1" x="256.01" y="-.01" width="256" height="255.98"/>
+        <g class="cls-15">
+          <circle class="cls-18" cx="256.01" cy="175.94" r="18.95"/>
+        </g>
+        <g class="cls-14">
+          <circle class="cls-18" cx="424.65" cy="263.06" r="18.95"/>
+          <circle class="cls-18" cx="342.15" cy="248.14" r="18.95"/>
+        </g>
+        <g class="cls-16">
+          <circle class="cls-18" cx="500.24" cy="69.68" r="18.95"/>
+        </g>
+      </g>
+    </g>
+    <g class="cls-7">
+      <g>
+        <circle class="cls-18" cx="168.65" cy="263.07" r="18.95"/>
+        <circle class="cls-18" cx="-11.77" cy="325.66" r="18.95"/>
+        <circle class="cls-18" cx="256" cy="431.92" r="18.95"/>
+        <circle class="cls-18" cx="86.14" cy="248.14" r="18.95"/>
+        <circle class="cls-18" cx="48.31" cy="350.88" r="18.95"/>
+        <circle class="cls-18" cx="128" cy="312.98" r="18.95"/>
+        <circle class="cls-18" cx="196.67" cy="365.66" r="18.95"/>
+        <circle class="cls-18" cx="70.56" cy="453.62" r="18.95"/>
+        <circle class="cls-18" cx="29.36" cy="294.03" r="18.95"/>
+        <circle class="cls-18" cx="155.38" cy="399.92" r="18.95"/>
+        <circle class="cls-18" cx="230.24" cy="486.65" r="18.95"/>
+        <rect class="cls-1" y="255.97" width="256" height="255.98"/>
+        <g class="cls-5">
+          <circle class="cls-18" cx="0" cy="431.92" r="18.95"/>
+        </g>
+        <g class="cls-10">
+          <circle class="cls-18" cx="168.65" cy="519.05" r="18.95"/>
+          <circle class="cls-18" cx="86.14" cy="504.12" r="18.95"/>
+        </g>
+        <g class="cls-9">
+          <circle class="cls-18" cx="244.23" cy="325.66" r="18.95"/>
+        </g>
+      </g>
+    </g>
+    <g class="cls-8">
+      <g>
+        <circle class="cls-18" cx="424.65" cy="263.07" r="18.95"/>
+        <circle class="cls-18" cx="244.23" cy="325.66" r="18.95"/>
+        <circle class="cls-18" cx="512.01" cy="431.92" r="18.95"/>
+        <circle class="cls-18" cx="342.14" cy="248.14" r="18.95"/>
+        <circle class="cls-18" cx="304.31" cy="350.88" r="18.95"/>
+        <circle class="cls-18" cx="384" cy="312.98" r="18.95"/>
+        <circle class="cls-18" cx="385.7" cy="393.31" r="18.95"/>
+        <circle class="cls-18" cx="326.57" cy="453.62" r="18.95"/>
+        <circle class="cls-18" cx="285.36" cy="294.03" r="18.95"/>
+        <circle class="cls-18" cx="427.45" cy="350.88" r="18.95"/>
+        <circle class="cls-18" cx="447.75" cy="415.99" r="18.95"/>
+        <circle class="cls-18" cx="486.24" cy="486.65" r="18.95"/>
+        <rect class="cls-1" x="256" y="255.97" width="256" height="255.98"/>
+        <g class="cls-6">
+          <circle class="cls-18" cx="256" cy="431.92" r="18.95"/>
+        </g>
+        <g class="cls-3">
+          <circle class="cls-18" cx="424.65" cy="519.05" r="18.95"/>
+          <circle class="cls-18" cx="342.14" cy="504.12" r="18.95"/>
+        </g>
+        <g class="cls-4">
+          <circle class="cls-18" cx="500.23" cy="325.66" r="18.95"/>
+        </g>
+      </g>
+    </g>
+    <ellipse class="cls-18" cx="229.97" cy="127.84" rx="19.02" ry="18.96"/>
   </g>
 </svg>

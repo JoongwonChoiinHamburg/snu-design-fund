@@ -67,7 +67,7 @@ export default function RenderingSlider({
 
       <div className="mt-4 flex items-start justify-between gap-10">
         <div>
-          <h3 className="font-display text-2xl font-bold">
+          <h3 className="text-2xl font-bold">
             {slide.title}
           </h3>
 
@@ -83,7 +83,7 @@ export default function RenderingSlider({
       <div className="mt-10 border-t border-black pt-6">
   <div className="grid gap-8 md:grid-cols-3">
     <div>
-      <h4 className="font-display text-lg font-bold uppercase tracking-wide">
+      <h4 className=" text-lg font-bold uppercase tracking-wide">
         활용 계획
       </h4>
     </div>
