@@ -87,6 +87,30 @@
   }
 }
 
+.pattern-highlight-yellow {
+  display: inline;
+  padding: 0 0.16em;
+
+  background-image: url("/patterns/2/yellow-01.svg");
+  background-size: 90px 90px;
+  background-repeat: repeat;
+  background-position: center;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.pattern-highlight-pink {
+  display: inline;
+  padding: 0 0.16em;
+
+  background-image: url("/patterns/2/pink-03.svg");
+  background-size: 90px 90px;
+  background-repeat: repeat;
+  background-position: center;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
 .animate-float-slow {
   animation-name: float-slow;
   animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);

@@ -74,7 +74,7 @@ const segments = GROUPS.map((group) => {
 
   return (
     <section className="mx-auto my-auto bg-[var(--color-cream)] px-6 pt-10">
-      <div className="mx-auto w-full max-w-[1500px] pb-30">
+      <div className="mx-auto w-full max-w-[1500px] pb-20">
         <div className="mx-auto h-5 w-full max-w-[1500px] bg-white">
           <div className="flex h-full overflow-hidden">
             {segments.map((segment) => (

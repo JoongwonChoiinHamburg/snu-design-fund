@@ -212,7 +212,7 @@ const positionedBlocks = useMemo(() => {
 
   return (
     <>
-      <section className="relative left-1/2 w-screen -translate-x-1/2 space-y-6">
+      <section className="relative left-1/2 w-screen bg-[var(--color-cream)] -translate-x-1/2 space-y-6">
         {/* controls */}
         <div className="mx-auto mb-3 flex max-w-[1800px] justify-end px-6">
   <button

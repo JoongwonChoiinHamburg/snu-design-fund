@@ -11,11 +11,11 @@ export default function LayerPopup({ open, onClose, children }: Props) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4"
       onClick={onClose}
     >
       <div
-          className="w-[820px] rounded-lg bg-white p-6 shadow-lg text-gray-900"
+        className="max-h-[90vh] w-full max-w-[920px] overflow-y-auto rounded-lg bg-white p-6 text-gray-900 shadow-lg"
         onClick={(e) => e.stopPropagation()}
       >
         {children}

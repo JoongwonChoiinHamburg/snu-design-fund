@@ -14,21 +14,21 @@ export default function DonationPrograms({ seats }: Props) {
 
   return (
     <>
-    <section className="mx-auto mt-24 max-w-[1200px]">
+    <section className="mx-auto mt-40 max-w-[1200px]">
       <div className="mb-10">
-        <h2 className="font-display text-4xl ">
+        <h2 className="font-display text-3xl ">
           기부 프로그램
         </h2>
       </div>
 
-      <div className="grid gap-10 md:grid-cols-3">
+      <div className="grid gap-20 md:grid-cols-3">
         {/* 1 */}
         <div>
-          <div className="mb-6 aspect-[4/3] overflow-hidden bg-neutral-100">
+          <div className="mb-6  overflow-hidden bg-neutral-100">
             <img
               src="/donation/naming.jpg"
               alt="공간 네이밍 기부 프로그램"
-              className="h-full w-full object-cover"
+              className="h-full w-full"
             />
           </div>
 
@@ -38,82 +38,65 @@ export default function DonationPrograms({ seats }: Props) {
 
           <div className="mt-5 space-y-3  text-normal  leading-relaxed">
             <p>
-              1층 전시장, 3층 대형 강의홀에
-              이름을 부여합니다.
-              <br />
-              (구 S&amp;D홀)
+              3억원 이상의 기부자를 대상으로 1층 전시장, 3층 대형강의홀, 각종 라운지 공간에 이름을 부여합니다.  
             </p>
-
-            <p>3억 이상의 기부자 대상</p>
+<p>1억원 이상의 기부자를 대상으로 일반강의실 등의 공간에 이름을 부여합니다.</p>
           </div>
         </div>
 
         {/* 2 */}
         <div >
-          <div className="mb-6 aspect-[4/3] overflow-hidden bg-neutral-100">
+          <div className="mb-6  overflow-hidden bg-neutral-100">
             <img
               src="/donation/seat.jpg"
-              alt="강의홀 좌석 기부 프로그램"
-              className="h-full w-full object-cover"
+              alt="도네이션월 네이밍 기부 프로그램"
+              className="h-full w-full "
             />
           </div>
 
           <h3 className=" text-xl font-bold leading-snug">
-            강의홀 좌석 기부 프로그램
+            도네이션월 네이밍 기부 프로그램
+
           </h3>
 
           <div className="mt-5 space-y-3  text-normal  leading-relaxed">
             <p>
-              3층 대형 강의홀 좌석에
-              개인 명패 부착
-            </p>
-
-            <p>
-              100만원 이상의 모든 기부자 대상
-              <br />
-              선착순 104명 참여 가능
-            </p>
-
-            <p>
-              위치 지정과 문구 지정 후
-              명패 제작
+         1천만원 이상 기부하신 분들은 웰컴라운지 벽면에 조성되는 도네이션월에 성함을 남겨드립니다.
             </p>
           </div>
-                      <button
+                      
+        </div>
+
+        {/* 3 */}
+        <div >
+          <div className="mb-6  object-contain overflow-hidden bg-neutral-100">
+            <img
+              src="/donation/furniture.jpg"
+              alt="대형강의홀 좌석 기부 프로그램"
+              className="h-full w-full "
+            />
+          </div>
+
+          <h3 className=" text-xl font-bold leading-snug">
+            대형강의홀 좌석 기부 프로그램
+          </h3>
+
+          <div className="mt-5 space-y-3 text-normal leading-relaxed">
+            <p>
+ 100만원 이상의 모든 기부자를 대상으로 3층 대형강의홀 고정식 좌석에 명패를 부착해 드립니다.
+ </p>
+ <p>
+선착순 104명 참여 가능    </p>
+ <p>
+위치 지정과 문구 지정 후 명패 제작
+            </p>
+<button
   type="button"
   className="mt-5 border border-black bg-white px-4 py-2 text-sm text-black hover:bg-black hover:text-white"
   onClick={() => setOpenSeatMap(true)}
 >
   좌석 보기
 </button>
-        </div>
-
-        {/* 3 */}
-        <div >
-          <div className="mb-6 aspect-[4/3] overflow-hidden bg-neutral-100">
-            <img
-              src="/donation/furniture.jpg"
-              alt="49동 곳곳 기부 프로그램"
-              className="h-full w-full object-cover"
-            />
-          </div>
-
-          <h3 className=" text-xl font-bold leading-snug">
-            49동 곳곳 기부 프로그램
-          </h3>
-
-          <div className="mt-5 space-y-3 text-normal leading-relaxed">
-            <p>
-              기부 금액에 따라
-              49동의 공간과 가구에
-              감사 명패를 부착합니다.
-            </p>
-
-            <p>
-              1000만원 - 1억
-              기부자 대상
-            </p>
-
           </div>
         </div>
       </div>

@@ -45,7 +45,15 @@ export default function DonateFloatingButton() {
 
           <div className="grid gap-10 md:grid-cols-3">
             {/* 1 */}
-            <div className="border-t border-black pt-5">
+            
+            <div >
+                <div className="relative aspect-video overflow-hidden bg-neutral-100">
+                  <img
+                    src="/imgs/icon1.jpg"
+                    alt=""
+                    className=" h-full w-full object-cover"
+                  />
+                </div>
               <h3 className="font-display text-2xl ">
                약정하기
               </h3>
@@ -56,7 +64,14 @@ export default function DonateFloatingButton() {
             </div>
 
             {/* 2 */}
-            <div className="border-t border-black pt-5">
+            <div >
+                <div className="relative aspect-video overflow-hidden bg-neutral-100">
+                  <img
+                    src="/imgs/icon2.jpg"
+                    alt=""
+                    className=" h-full w-full object-cover"
+                  />
+                </div>
               <h3 className="font-display text-2xl ">
                 납입하기
               </h3>
@@ -67,7 +82,14 @@ export default function DonateFloatingButton() {
             </div>
 
             {/* 3 */}
-            <div className="border-t border-black pt-5">
+            <div >
+                  <div className="relative aspect-video overflow-hidden bg-neutral-100">
+                  <img
+                    src="/imgs/icon3.jpg"
+                    alt=""
+                    className=" h-full w-full object-cover"
+                  />
+                </div>
               <h3 className="font-display text-2xl">
                 기부금 영수증 받기
               </h3>
