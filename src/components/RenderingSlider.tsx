@@ -131,15 +131,15 @@ useEffect(() => {
     여러분의 기부는 이렇게 활용됩니다.
   </h2>
 
-  <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-    <div className="rounded-xl border border-black/20 bg-white p-6 shadow-[0_8px_10px_rgba(0,0,0,0.08)]">
+  <div className="relative mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-0">
+    <div className="relative z-40 border border-black bg-white p-12 lg:translate-x-6 lg:translate-y-4">
       <img
-        src="/imgs/icon-wall.svg"
+        src="/imgs/icon5.jpg"
         alt=""
-        className="mb-5 h-16 w-16"
+        className="mb-5 h-25 w-25"
       />
 
-      <h3 className="mb-3 font-display text-xl">
+      <h3 className="mb-3 font-bold text-xl">
         무빙월 설치
       </h3>
 
@@ -149,14 +149,14 @@ useEffect(() => {
       </p>
     </div>
 
-    <div className="rounded-xl border border-black/20 bg-white p-6 shadow-[0_8px_10px_rgba(0,0,0,0.08)]">
+   <div className="relative z-30 border border-black bg-white p-12  lg:rotate-[-1deg] lg:-translate-x-2 lg:-translate-y-3">
       <img
-        src="/imgs/icon-furniture.svg"
+        src="/imgs/icon6.jpg"
         alt=""
-        className="mb-5 h-16 w-16"
+        className="mb-5 h-25 w-25"
       />
 
-      <h3 className="mb-3 font-display text-xl">
+      <h3 className="mb-3 font-bold text-xl">
         가구 및 기자재
       </h3>
 
@@ -166,14 +166,14 @@ useEffect(() => {
       </p>
     </div>
 
-    <div className="rounded-xl border border-black/20 bg-white p-6 shadow-[0_8px_10px_rgba(0,0,0,0.08)]">
+  <div className="relative z-20 border border-black bg-white lg:rotate-[0.7deg] p-12 lg:-translate-x-8 lg:translate-y-6">
       <img
-        src="/imgs/icon-garden.svg"
+        src="/imgs/icon7.jpg"
         alt=""
-        className="mb-5 h-16 w-16"
+       className="mb-5 h-25 w-25"
       />
 
-      <h3 className="mb-3 font-display text-xl">
+      <h3 className="mb-3 font-bold text-xl">
         휴식 공간
       </h3>
 
@@ -183,14 +183,14 @@ useEffect(() => {
       </p>
     </div>
 
-    <div className="rounded-xl border border-black/20 bg-white p-6 shadow-[0_8px_10px_rgba(0,0,0,0.08)]">
+<div className="relative z-10 border border-black bg-white p-12 lg:-translate-x-12 lg:-translate-y-1">
       <img
-        src="/imgs/icon-program.svg"
+        src="/imgs/icon8.jpg"
         alt=""
-        className="mb-5 h-16 w-16"
+        className="mb-5 h-25 w-25"
       />
 
-      <h3 className="mb-3 font-display text-xl">
+      <h3 className="mb-3 font-bold text-xl">
         창의 프로그램
       </h3>
 

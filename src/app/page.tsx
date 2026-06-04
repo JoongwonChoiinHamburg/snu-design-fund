@@ -9,6 +9,7 @@ import DonationBenefits from "@/components/DonationBenefits";
 import Footer from "@/components/Footer";
 import DonateFloatingButton from "@/components/DonateFloatingButton";
 import FundProgressBar from "@/components/FundProgressBar";
+import AnimatedHighlight from "@/components/AnimatedHighlight";
 
 export default async function Home() {
   const donors = await getDonors();
@@ -141,13 +142,52 @@ qa: [
 
       <section className="mx-auto text-lg  max-w-[1200px]">
         <section>
-          <h2 className="font-display text-4xl text-left mt-30 leading-relaxed" >   좋은 디자이너가 되기 위해서는  <span className="pattern-highlight-yellow">오래 고민하고</span>, <span className="pattern-highlight-pink">여러 번 만들어보고</span>, <br></br>때로는 <span className="pattern-highlight-yellow">실패한 것을 다시 꺼내보는 시간</span>이 쌓여야 합니다. <br></br>그 시간을 가능하게 하는 것은, 결국 새로운 시도를 이어갈 수 있는 <br></br> <span className="pattern-highlight-yellow">‘탐험의 환경’</span>입니다.</h2>
+<h2 className="font-display text-4xl text-left mt-30 leading-relaxed">
+  좋은 디자이너가 되기 위해서는{" "}
+  <span className="pattern-highlight-4" >
+    오래 고민하고
+  </span>
+  ,{" "}
+  <span className="pattern-highlight-3" >
+    여러 번 만들어보고
+  </span>
+  ,
+  <br />
+  때로는{" "}
+  <span className="pattern-highlight-2">
+    실패한 것을 다시 꺼내보는 시간
+  </span>
+  이 쌓여야 합니다.
+  <br />
+  그 시간을 가능하게 하는 것은, 결국 새로운 시도를 이어갈 수 있는
+  <br />
+  <span className="pattern-highlight-1" >
+    ‘탐험의 환경’
+  </span>
+  입니다.
+</h2>
         </section>
-           <section className="mt-10">
-            서울대학교 디자인과의 보금자리, 49동이 리모델링을 통해 새롭게 거듭나고자 합니다. <br></br>디자인 교육이 변화하는 지금, 학생들이 오래 머물며 더 깊이 탐구하고 자유롭게 새로운 시도를 이어갈 수 있는 공간을 만들고자 합니다.<br></br>
-    후원금은 창의적 실험과 협업이 가능한 공간, 손에 닿는 가구와 작업 인프라, 결과를 공유하는 전시 시스템, 미래를 탐구하는 첨단 기자재, 그리고 공간을 살아 움직이게 하는 창의 프로그램에 사용됩니다.
-미래의 디자이너가 새로운 가능성을 만들어낼 때, 그 시작에는 오늘 함께해 주신 여러분의 마음이 깊이 남아 있을 것입니다. 이 새로운 변화를 함께해 주시기를 부탁드립니다.
-           </section>
+<section className="relative mt-12 grid gap-6 md:grid-cols-3 md:gap-0">
+  <div className="relative z-30 border border-black bg-white p-10 leading-relaxed shadow-sm md:translate-x-4 md:translate-y-6">
+    <strong>서울대학교 디자인과의 보금자리, 49동이 <br></br>리모델링을 통해
+    새롭게 거듭나고자 합니다. </strong><br></br><br></br>디자인 교육이 변화하는 지금,
+    학생들이 오래 머물며 더 깊이 탐구하고 자유롭게 새로운
+    시도를 이어갈 수 있는 공간을 만들고자 합니다.
+  </div>
+
+  <div className="relative z-20 border border-black bg-white p-10 leading-relaxed shadow-sm md:-translate-x-2 md:-translate-y-2">
+    후원금은 창의적 실험과 협업이 가능한 공간,
+    손에 닿는 가구와 작업 인프라, 결과를 공유하는 전시 시스템,
+    미래를 탐구하는 첨단 기자재, 그리고 공간을 살아 움직이게 하는
+    창의 프로그램에 사용됩니다.
+  </div>
+
+  <div className="relative z-10  border border-black bg-white p-10 leading-relaxed shadow-sm md:-translate-x-8 md:translate-y-10">
+    미래의 디자이너가 새로운 가능성을 만들어낼 때,
+    그 시작에는 오늘 함께해 주신 여러분의 마음이 깊이 남아 있을 것입니다.<br></br><br></br>
+    이 새로운 변화를 함께해 주시기를 부탁드립니다.
+  </div>
+</section>
 
     </section>
 

@@ -2,13 +2,13 @@
   "name": "snu-design-fund",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-"dev:network": "next dev -H 0.0.0.0 --webpack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
+"scripts": {
+  "dev": "next dev --webpack",
+  "dev:network": "next dev --webpack -H 0.0.0.0",
+  "build": "next build",
+  "start": "next start",
+  "lint": "eslint"
+},
   "dependencies": {
     "next": "16.2.4",
     "papaparse": "^5.5.3",

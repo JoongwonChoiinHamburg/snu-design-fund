@@ -106,16 +106,14 @@ export default function DonationPrograms({ seats }: Props) {
   open={openSeatMap}
   onClose={() => setOpenSeatMap(false)}
 >
-  <div className="max-h-[80vh] overflow-auto text-black">
+  <div className="max-h-[80vh]  text-black">
     <div className="mb-6 flex text-center items-start justify-between gap-6">
  <div className="mb-10 w-full text-center">
   <h3 className="font-display text-3xl">
     강의홀 좌석 기부
   </h3>
 
-  <p className="mt-2 text-lg">
-    원하는 좌석을 선택해 상태와 기부 정보를 확인할 수 있습니다.
-  </p>
+
 </div>
 
 

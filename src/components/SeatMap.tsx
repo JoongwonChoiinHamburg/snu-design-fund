@@ -28,9 +28,9 @@ export default function SeatMap({ seats }: Props) {
   const rows = groupByRow(seats);
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-10 ">
       <section>
-        <h3 className="mb-5 font-display text-2xl">
+        <h3 className="mb-5 font-bold text-xl">
           좌석 기부 진행 단계
         </h3>
 
@@ -49,7 +49,7 @@ export default function SeatMap({ seats }: Props) {
                   {step.title}
                 </h4>
 
-                <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-black/65">
+                <p className="mt-2 whitespace-pre-line leading-relaxed text-black/65">
                   {step.description}
                 </p>
               </div>
@@ -58,9 +58,23 @@ export default function SeatMap({ seats }: Props) {
         </div>
       </section>
 
+          <section>
+  <h3 className="mb-5 font-bold text-xl">
+    명패 예시
+  </h3>
+
+  <div >
+    <img
+      src="/imgs/plate.png"
+      alt="좌석 기부 명패 예시"
+      className="mx-auto max-h-[200px] w-full object-contain"
+    />
+  </div>
+</section>
+
       <section>
         <div className="mb-5 flex items-center justify-between gap-4">
-          <h3 className="font-display text-2xl">
+ <h3 className="mb-5 font-bold text-xl">
             좌석 현황
           </h3>
 
@@ -71,7 +85,7 @@ export default function SeatMap({ seats }: Props) {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-2">
+        <div className="pb-30 flex flex-col items-center gap-2">
           {rows.map((row) => (
             <div
               key={row.label}
