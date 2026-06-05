@@ -17,20 +17,57 @@ export default async function Home() {
   const blocks = donorsToBlocks(donors);
 const renderSlides = [
   {
-    image: "/renderings/render-01.jpg",
-    title: "디자인연구동 리모델링 조감도",
-    description: "새롭게 조성될 디자인연구동의 주요 공간 이미지입니다.",
+    image: "/renderings/outside_1.jpg",
+    title: "디자인연구동 외부",
+    description: "리모델링된 디자인연구동의 외부 모습입니다.",
+  },
+    {
+    image: "/renderings/outside_2.jpg",
+    title: "성큰 가든",
+    description: "지하 1층의 디지털라운지와 연결되는 성큰 가든을 조성합니다.",
   },
   {
-    image: "/renderings/render-02.jpg",
-    title: "창의 실험 공간",
-    description: "학생들이 머물고 실험하며 협업할 수 있는 공간을 상상합니다.",
+    image: "/renderings/loby_1.jpg",
+    title: "로비",
+    description: "개방감 있는 로비를 조성합니다.",
   },
   {
-    image: "/renderings/render-03.jpg",
-    title: "전시와 공유의 공간",
-    description: "작업의 결과가 다시 배움으로 이어지는 열린 공간입니다.",
+    image: "/renderings/alounge.jpg",
+    title: "A라운지",
+    description: "로비와 이어지는 개방형 라운지입니다.",
   },
+  {
+    image: "/renderings/digitallounge.jpg",
+    title: "디지털라운지",
+    description: "무빙월을 통해 공간의 확장과 분리가 가능한 디지털라운지입니다.",
+  },
+    {
+    image: "/renderings/mainhall.jpg",
+    title: "중앙 홀",
+    description: "디자인연구동의 중앙에 위치한 홀입니다.",
+  },
+      {
+    image: "/renderings/eventlounge.jpg",
+    title: "이벤트라운지",
+    description: "전시와 이벤트가 열리는 라운지입니다.",
+  },
+        {
+    image: "/renderings/fablab.jpg",
+    title: "FABLAB",
+    description: "첨단 제작 장비가 구비된 FABLAB입니다.",
+  },
+          {
+    image: "/renderings/physicallounge.jpg",
+    title: "피지컬 라운지",
+    description: "피지컬 라운지입니다.",
+  },
+  
+            {
+    image: "/renderings/lecturehall.jpg",
+    title: "대형 강의실",
+    description: "행사, 전시, 강연 등 다양한 용도로 활용 가능한 대형 강의실입니다.",
+  },
+
 ];
 
 const totalAmount = donors.reduce(

@@ -22,7 +22,7 @@ export default function DonateFloatingButton() {
         open={open}
         onClose={() => setOpen(false)}
       >
-        <div className="max-w-[1000px] pb-10 pt-5 px-10 text-black">
+        <div className="max-w-[1000px] pb-10 pt-5 px-5 text-black">
     <div className="relative mb-12">
   <h2 className="text-center font-display pb-5 text-4xl leading-tight">
     기부 안내
