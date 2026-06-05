@@ -14,7 +14,7 @@ export default function DonationPrograms({ seats }: Props) {
 
   return (
     <>
-    <section className="mx-auto mt-40 max-w-[1200px]">
+    <section className="mx-auto mt-40 max-w-[1200px] px-5 md:px-0">
       <div className="mb-10">
         <h2 className="font-display text-3xl ">
           기부 프로그램

@@ -54,11 +54,19 @@ type PositionedBlock = {
  renderSize?: number;
 };
 
-const WALL_HEIGHT = 720;
+  const DEFAULT_WALL_HEIGHT = 720;
+const MOBILE_WALL_MIN_HEIGHT = 240;
+const MOBILE_WALL_MAX_HEIGHT = 320;
+const MOBILE_WALL_VIEWPORT_RATIO = 0.38;
 
 export default function PatternWall({
   blocks,
 }: Props) {
+
+
+
+
+
   const [showDevPanel, setShowDevPanel] = useState(false);
   const [mode, setMode] =
     useState<Mode>("overlap");
@@ -86,30 +94,49 @@ const [tooltipPosition, setTooltipPosition] =
   const [wallWidth, setWallWidth] =
     useState(1400);
 
-  useEffect(() => {
-      setLayoutSeed(Date.now());
-    function updateWidth() {
-      if (!containerRef.current) return;
+    const [wallHeight, setWallHeight] =
+    useState(DEFAULT_WALL_HEIGHT);
 
-      setWallWidth(
-        containerRef.current.offsetWidth
-      );
-    }
+useEffect(() => {
+  setLayoutSeed(Date.now());
 
-    updateWidth();
+  function updateWidth() {
+    if (!containerRef.current) return;
 
-    window.addEventListener(
+    const nextWidth =
+      containerRef.current.offsetWidth;
+
+    setWallWidth(nextWidth);
+
+    const nextHeight =
+      nextWidth < 768
+        ? Math.min(
+            MOBILE_WALL_MAX_HEIGHT,
+            Math.max(
+              MOBILE_WALL_MIN_HEIGHT,
+              window.innerHeight *
+                MOBILE_WALL_VIEWPORT_RATIO
+            )
+          )
+        : DEFAULT_WALL_HEIGHT;
+
+    setWallHeight(Math.round(nextHeight));
+  }
+
+  updateWidth();
+
+  window.addEventListener(
+    "resize",
+    updateWidth
+  );
+
+  return () => {
+    window.removeEventListener(
       "resize",
       updateWidth
     );
-
-    return () => {
-      window.removeEventListener(
-        "resize",
-        updateWidth
-      );
-    };
-  }, []);
+  };
+}, []);
   
 useEffect(() => {
   function handleMouseMove(event: MouseEvent) {
@@ -141,7 +168,7 @@ const zoom = mode === "overlap" ? getZoom(blocks) : 1;
 
 const cellSize =
   mode === "center"
-    ? getTrueScaleCellSize(wallWidth)
+    ? getTrueScaleCellSize(wallWidth, wallHeight)
     : getCellSize(wallWidth, density, zoom);
 
 
@@ -184,6 +211,7 @@ const positionedBlocks = useMemo(() => {
     return createOverlapLayout(
       displayBlocks,
       wallWidth,
+      wallHeight,
       cellSize,
       layoutSeed
     );
@@ -193,13 +221,15 @@ const positionedBlocks = useMemo(() => {
     return createCenterLayout(
       displayBlocks,
       wallWidth,
+      wallHeight,
       cellSize
     );
   }
 
   return createStackLayout(
-    displayBlocks,
+    displayBlocks,  
     wallWidth,
+     wallHeight,
     cellSize
   );
 }, [
@@ -208,6 +238,7 @@ const positionedBlocks = useMemo(() => {
   wallWidth,
   cellSize,
   layoutSeed,
+   wallHeight
 ]);
 
   return (
@@ -337,7 +368,7 @@ onClick={() => {
   className="relative"
   style={{
     width: wallWidth,
-    height: WALL_HEIGHT,
+    height: wallHeight,
     backgroundImage:
       mode === "center"
         ? `
@@ -377,9 +408,9 @@ onClick={() => {
      {/* progress */}
 <div className="mx-auto mt-12 text-center">
 
- <section className="mx-auto pt-30 bg-[var(--color-cream)]">
+ <section className="mx-auto pt-10 md:pt-30 bg-[var(--color-cream)]">
 
-    <div className="mt-4 font-display text-5xl mb-leading-none md:text-5xl">
+    <div className="mt-4 font-display text-3xl mb-leading-none md:text-5xl">
        <span className="mr-5 text-2xl md:text-3xl">
       모금액
     </span>
@@ -457,13 +488,14 @@ onClick={() => {
 function createCenterLayout(
   blocks: DonorBlock[],
   wallWidth: number,
+  wallHeight: number,
   cellSize: number
 ): PositionedBlock[] {
   const sorted = [...blocks].sort((a, b) => b.area - a.area);
   const positioned: PositionedBlock[] = [];
 
   const gridCols = Math.floor(wallWidth / cellSize);
-  const gridRows = Math.floor(WALL_HEIGHT / cellSize);
+  const gridRows = Math.floor(wallHeight / cellSize);
 
   const occupied = Array.from({ length: gridRows }, () =>
     Array(gridCols).fill(false)
@@ -639,13 +671,16 @@ function getCellSize(
   return Math.max(24, Math.min(base, 160));
 }
 
-function getTrueScaleCellSize(wallWidth: number) {
+function getTrueScaleCellSize(
+  wallWidth: number,
+  wallHeight: number
+) {
   const goalAmount = 3_000_000_000;
   const unitAmount = 1_000_000;
   const goalCells = goalAmount / unitAmount;
 
   const targetFillRatio = 0.8;
-  const canvasArea = wallWidth * WALL_HEIGHT;
+  const canvasArea = wallWidth * wallHeight;
 
   const cellSize = Math.sqrt(
     (canvasArea * targetFillRatio) / goalCells
@@ -657,6 +692,7 @@ function getTrueScaleCellSize(wallWidth: number) {
 function createOverlapLayout(
   blocks: DonorBlock[],
   wallWidth: number,
+  wallHeight: number,
   cellSize: number,
   layoutSeed: number
 ): PositionedBlock[] {
@@ -676,7 +712,7 @@ function createOverlapLayout(
 
       y:
         seededRandom(seed + 1000) *
-        Math.max(0, WALL_HEIGHT - sizePx),
+        Math.max(0, wallHeight - sizePx),
     };
   });
 }
@@ -704,6 +740,7 @@ function getBlockDepth(size: number) {
 function createStackLayout(
   blocks: DonorBlock[],
   wallWidth: number,
+  wallHeight: number,
   cellSize: number
 ): PositionedBlock[] {
   const sorted = [...blocks].sort(
@@ -714,7 +751,7 @@ function createStackLayout(
     [];
 
   let cursorX = 0;
-  let cursorY = WALL_HEIGHT;
+  let cursorY = wallHeight;
 
   sorted.forEach((block) => {
     const sizePx =

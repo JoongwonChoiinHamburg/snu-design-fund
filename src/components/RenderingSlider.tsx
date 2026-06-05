@@ -111,7 +111,7 @@ useEffect(() => {
         </button>
       </div>
 
-      <div className="mt-4 flex items-start justify-between gap-10">
+      <div className=" px-5 mt-4 flex items-start justify-between gap-10 md:px-0 ">
         <div>
           <h3 className="text-2xl font-bold">
             {slide.title}
@@ -127,19 +127,19 @@ useEffect(() => {
         </div>
       </div>
 <div className="mt-20 pt-6">
-  <h2 className="mb-10 mt-10 font-display text-3xl">
+  <h2 className="px-5 mb-10 mt-10 font-display text-3xl lg:px-0">
     여러분의 기부는 이렇게 활용됩니다.
   </h2>
 
-  <div className="relative mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-0">
-    <div className="relative z-40 border border-black bg-white p-12 lg:translate-x-6 lg:translate-y-4">
+  <div className="relative p-5 mt-12 grid gap-0 md:grid-cols-2 lg:grid-cols-4 lg:p-0 lg:gap-0">
+    <div className="relative z-40 border border-black bg-white p-8 shadow-sm lg:p-12 lg:translate-x-6 lg:translate-y-4">
       <img
         src="/imgs/icon5.jpg"
         alt=""
-        className="mb-5 h-25 w-25"
+        className="mb-5 h-20 w-20 lg:h-25 lg:w-25"
       />
 
-      <h3 className="mb-3 font-bold text-xl">
+      <h3 className="mb-3 text-lg font-bold lg:text-xl">
         무빙월 설치
       </h3>
 
@@ -149,14 +149,14 @@ useEffect(() => {
       </p>
     </div>
 
-   <div className="relative z-30 border border-black bg-white p-12  lg:rotate-[-1deg] lg:-translate-x-2 lg:-translate-y-3">
+    <div className="relative z-30 -mt-8 ml-6 rotate-[-1deg] border border-black bg-white p-8 shadow-sm md:mt-0 md:ml-0 md:rotate-0 lg:p-12 lg:-translate-x-2 lg:-translate-y-3 lg:rotate-[-1deg]">
       <img
         src="/imgs/icon6.jpg"
         alt=""
-        className="mb-5 h-25 w-25"
+        className="mb-5 h-20 w-20 lg:h-25 lg:w-25"
       />
 
-      <h3 className="mb-3 font-bold text-xl">
+      <h3 className="mb-3 text-lg font-bold lg:text-xl">
         가구 및 기자재
       </h3>
 
@@ -166,14 +166,14 @@ useEffect(() => {
       </p>
     </div>
 
-  <div className="relative z-20 border border-black bg-white lg:rotate-[0.7deg] p-12 lg:-translate-x-8 lg:translate-y-6">
+    <div className="relative z-20 -mt-8 mr-4 rotate-[0.8deg] border border-black bg-white p-8 shadow-sm md:mt-0 md:mr-0 md:rotate-0 lg:p-12 lg:-translate-x-8 lg:translate-y-6 lg:rotate-[0.7deg]">
       <img
         src="/imgs/icon7.jpg"
         alt=""
-       className="mb-5 h-25 w-25"
+        className="mb-5 h-20 w-20 lg:h-25 lg:w-25"
       />
 
-      <h3 className="mb-3 font-bold text-xl">
+      <h3 className="mb-3 text-lg font-bold lg:text-xl">
         휴식 공간
       </h3>
 
@@ -183,14 +183,14 @@ useEffect(() => {
       </p>
     </div>
 
-<div className="relative z-10 border border-black bg-white p-12 lg:-translate-x-12 lg:-translate-y-1">
+    <div className="relative z-10 -mt-8 ml-8 rotate-[-0.6deg] border border-black bg-white p-8 shadow-sm md:mt-0 md:ml-0 md:rotate-0 lg:p-12 lg:-translate-x-12 lg:-translate-y-1">
       <img
         src="/imgs/icon8.jpg"
         alt=""
-        className="mb-5 h-25 w-25"
+        className="mb-5 h-20 w-20 lg:h-25 lg:w-25"
       />
 
-      <h3 className="mb-3 font-bold text-xl">
+      <h3 className="mb-3 text-lg font-bold lg:text-xl">
         창의 프로그램
       </h3>
 

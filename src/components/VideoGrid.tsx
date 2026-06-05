@@ -42,11 +42,20 @@ export default function VideoGrid({ videos }: Props) {
 
   return (
     <>
-      <div className="grid gap-20 md:grid-cols-3">
+      <div className="grid gap-20 md:grid-cols-3 px-5 md:px-0">
         {items.map((item, index) => {
-          if (!item) {
-            return <PlaceholderCard key={`placeholder-${index}`} />;
-          }
+       if (!item) {
+  const placeholderIndex = index - videos.length;
+
+  return (
+    <div
+      key={`placeholder-${index}`}
+      className={placeholderIndex > 0 ? "hidden md:block" : ""}
+    >
+      <PlaceholderCard />
+    </div>
+  );
+}
 
           const video = item as Video;
 

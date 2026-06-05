@@ -73,8 +73,8 @@ const segments = GROUPS.map((group) => {
 }).filter((segment) => segment.amount > 0);
 
   return (
-    <section className="mx-auto my-auto bg-[var(--color-cream)] px-6 pt-10">
-      <div className="mx-auto w-full max-w-[1500px] pb-20">
+    <section className="mx-auto my-auto bg-[var(--color-cream)] px-6 pt-2 md:pt-10">
+      <div className="mx-auto w-full max-w-[1500px] pb-10 md:pb-20">
         <div className="mx-auto h-5 w-full max-w-[1500px] bg-white">
           <div className="flex h-full overflow-hidden">
             {segments.map((segment) => (
