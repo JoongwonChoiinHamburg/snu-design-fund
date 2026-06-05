@@ -24,7 +24,7 @@ export default function DonationPrograms({ seats }: Props) {
       <div className="grid gap-20 md:grid-cols-3">
         {/* 1 */}
         <div>
-          <div className="mb-6  overflow-hidden bg-neutral-100">
+          <div className="mb-6 overflow-hidden w-70 lg:w-100 bg-neutral-100">
             <img
               src="/donation/naming.jpg"
               alt="공간 네이밍 기부 프로그램"
@@ -46,7 +46,7 @@ export default function DonationPrograms({ seats }: Props) {
 
         {/* 2 */}
         <div >
-          <div className="mb-6  overflow-hidden bg-neutral-100">
+          <div className="mb-6  overflow-hidden w-70 lg:w-100 bg-neutral-100">
             <img
               src="/donation/seat.jpg"
               alt="도네이션월 네이밍 기부 프로그램"
@@ -69,11 +69,11 @@ export default function DonationPrograms({ seats }: Props) {
 
         {/* 3 */}
         <div >
-          <div className="mb-6  object-contain overflow-hidden bg-neutral-100">
+          <div className="mb-6  object-contain overflow-hidden w-70 lg:w-100 bg-neutral-100">
             <img
               src="/donation/furniture.jpg"
               alt="대형강의홀 좌석 기부 프로그램"
-              className="h-full w-full "
+              className="h-full w-full"
             />
           </div>
 

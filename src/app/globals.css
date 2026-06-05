@@ -87,6 +87,23 @@
   }
 }
 
+.donate-pattern-button {
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 80px 80px;
+  animation: donate-pattern-move 10s linear infinite;
+}
+
+@keyframes donate-pattern-move {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 80px 80px;
+  }
+}
+
 
 .pattern-highlight-1,
 .pattern-highlight-2,

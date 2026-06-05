@@ -1,22 +1,53 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LayerPopup from "./LayerPopup";
+
+
+const DONATE_PATTERNS = [
+  "light1",
+  "light2",
+  "light3",
+  "light4",
+];
+
 
 export default function DonateFloatingButton() {
   const [open, setOpen] = useState(false);
 
+const [donatePattern, setDonatePattern] = useState<string | null>(null);
+
+useEffect(() => {
+  const randomPattern =
+    DONATE_PATTERNS[
+      Math.floor(Math.random() * DONATE_PATTERNS.length)
+    ];
+
+  setDonatePattern(randomPattern);
+}, []);
+
+
   return (
     <>
       {/* floating button */}
-      <button
-        type="button"
-        onClick={() => setOpen(true)}
-        className="fixed bottom-6 right-6 z-[9999] border border-black bg-[#ff5a00] px-6 py-4 font-display text-lg font-bold text-black shadow-lg transition hover:translate-y-[-2px]"
-      >
-        기부하기
-      </button>
-
+      {!open && (
+<button
+  type="button"
+  onClick={() => setOpen(true)}
+  className="donate-pattern-button lg:aspect-square fixed bottom-3 right-3 md:bottom-6 md:right-6 z-[9999]  border-b-2 border-r-2 overflow-hidden  px-6 py-4 font-display text-lg font-bold text-black shadow-lg transition hover:-translate-y-0.5"
+  style={
+    donatePattern
+      ? {
+          backgroundImage: `url(/patterns/light/${donatePattern}.svg)`,
+        }
+      : {
+          backgroundColor: "#ff5a00",
+        }
+  }
+>
+  <span className="relative z-10">기부하기</span>
+</button>
+      )}
       {/* popup */}
       <LayerPopup
         open={open}
@@ -56,7 +87,7 @@ export default function DonateFloatingButton() {
             모든 온라인 약정은 개인정보 보호법 제15조, 24조에 의거하여 정보주체의 동의 하에 실명인증단계를 거친 후 약정을 진행하실 수 있습니다.
               </p>
 <a
-  href="https://secure.donus.org/snuf/pay/step1?dontype=P060103"
+  href="https://secure.donus.org/snuf/pay/step1?dontype=P240107"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-block border border-black px-4 py-2 mt-3 text-sm"

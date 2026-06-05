@@ -59,8 +59,8 @@ useEffect(() => {
 
   return (
     <div className="w-full">
-      <div className="relative overflow-hidden border border-black bg-neutral-100">
-     <div className="relative overflow-hidden border border-black bg-neutral-100">
+      <div className="relative overflow-hidden   bg-neutral-100">
+     <div className="relative overflow-hidden  border-b-2 bg-neutral-100">
   <div
     className="flex transition-transform duration-700 ease-in-out"
     style={{
@@ -132,7 +132,7 @@ useEffect(() => {
   </h2>
 
   <div className="relative p-5 mt-12 grid gap-0 md:grid-cols-2 lg:grid-cols-4 lg:p-0 lg:gap-0">
-    <div className="relative z-40 border border-black bg-white p-8 shadow-sm lg:p-12 lg:translate-x-6 lg:translate-y-4">
+    <div className="relative z-40 border border-black bg-white p-8 shadow-sm lg:p-12 w-80 lg:w-75  lg:translate-x-6 lg:translate-y-4">
       <img
         src="/imgs/icon5.jpg"
         alt=""
