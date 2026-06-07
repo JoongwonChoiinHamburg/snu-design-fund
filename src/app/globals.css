@@ -118,6 +118,34 @@
   -webkit-box-decoration-break: clone;
   animation: pattern-drift 18s linear infinite;
 }
+body.layer-popup-open .donate-floating-button {
+  display: none;
+}
+.pattern-highlight-quote{
+  display: inline;
+    background-image: url("/patterns/light/light1.svg");
+  padding: 20px;  background-size: 90px 90px;
+  background-repeat: repeat;
+  background-position: 0 0;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  animation: pattern-drift 18s linear infinite;
+}
+.pattern-highlight-question {
+  display: inline;
+
+  background-image: url("/patterns/light/light1.svg");
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 90px 90px;
+
+  padding: 0.18em 0.35em;
+
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+
+  animation: pattern-drift 18s linear infinite;
+}
 
 @keyframes pattern-drift {
   from {

@@ -54,6 +54,17 @@ type PositionedBlock = {
  renderSize?: number;
 };
 
+type EmptyPositionedBlock = {
+  id: string;
+  x: number;
+  y: number;
+  size: number;
+  backgroundColor: string;
+  depth: number;
+  floatDelay: number;
+};
+
+
   const DEFAULT_WALL_HEIGHT = 720;
 const MOBILE_WALL_MIN_HEIGHT = 240;
 const MOBILE_WALL_MAX_HEIGHT = 320;
@@ -65,7 +76,11 @@ export default function PatternWall({
 
 
 
-
+const EMPTY_BLOCK_COLORS = [
+  "#ffffff",
+  "#ededed",
+  "#dddddd",
+];
 
   const [showDevPanel, setShowDevPanel] = useState(false);
   const [mode, setMode] =
@@ -241,6 +256,62 @@ const positionedBlocks = useMemo(() => {
    wallHeight
 ]);
 
+
+const emptyBlocks = useMemo<EmptyPositionedBlock[]>(() => {
+  if (blocks.length > 5 || layoutSeed === null) {
+    return [];
+  }
+
+  // 2~4개 생성
+  const emptyBlockCount =
+    2 + Math.floor(seededRandom(layoutSeed + 5000) * 4);
+
+  return Array.from(
+    { length: emptyBlockCount },
+    (_, index) => {
+      const seed = layoutSeed + 10_000 + index * 7919;
+
+      // 2~4칸 크기
+      const gridSize =
+        2 + Math.floor(seededRandom(seed + 1) * 3);
+
+      const size = Math.min(
+        gridSize * cellSize,
+        wallWidth * 0.24,
+        wallHeight * 0.45
+      );
+
+      const maxX = Math.max(0, wallWidth - size);
+      const maxY = Math.max(0, wallHeight - size);
+
+      const colorIndex =
+        seededRandom(seed + 2) < 0.5 ? 0 : 1;
+
+      return {
+        id: `empty-block-${index}`,
+        x: seededRandom(seed + 3) * maxX,
+        y: seededRandom(seed + 4) * maxY,
+        size,
+        backgroundColor:
+          EMPTY_BLOCK_COLORS[colorIndex],
+            // 박스마다 마우스 반응 강도를 다르게
+  depth:
+    0.25 +
+    seededRandom(seed + 5) * 0.65,
+
+  // 부유 애니메이션 시작 시점도 다르게
+  floatDelay:
+    seededRandom(seed + 6) * -8,
+      };
+    }
+  );
+}, [
+  blocks.length,
+  layoutSeed,
+  wallWidth,
+  wallHeight,
+  cellSize,
+]);
   return (
     <>
       <section className="relative left-1/2 w-screen bg-[var(--color-cream)] -translate-x-1/2 space-y-6">
@@ -382,7 +453,41 @@ onClick={() => {
         : undefined,
   }}
 >
+
+
+{emptyBlocks.map((emptyBlock) => (
+  <EmptyPatternBlock
+    key={emptyBlock.id}
+    emptyBlock={emptyBlock}
+    offsetX={mode === "overlap" ? mouseOffset.x : 0}
+    offsetY={mode === "overlap" ? mouseOffset.y : 0}
+    isFloating={mode === "overlap"}
+  />
+))}
+
+{positionedBlocks.map(({ block, x, y, renderSize }) => (
+  <PatternBlock
+    key={block.id}
+    block={block}
+    renderSize={renderSize}
+    cellSize={cellSize}
+    x={x}
+    y={y}
+    onClick={() => setSelectedBlock(block)}
+    onHover={setHoveredBlock}
+    useVariablePatternSize={useVariablePatternSize}
+    offsetX={mode === "overlap" ? mouseOffset.x : 0}
+    offsetY={mode === "overlap" ? mouseOffset.y : 0}
+    depth={getBlockDepth(block.size)}
+    patternVersion={patternVersion}
+    patternScale={patternScale}
+    isFloating={mode === "overlap"}
+  />
+))}
+
+
        {positionedBlocks.map(({ block, x, y, renderSize }) => (
+        
 <PatternBlock
   key={block.id}
   block={block}
@@ -483,7 +588,78 @@ onClick={() => {
     </>
   );
 }
+type EmptyPatternBlockProps = {
+  emptyBlock: EmptyPositionedBlock;
+  offsetX: number;
+  offsetY: number;
+  isFloating: boolean;
+};
 
+function EmptyPatternBlock({
+  emptyBlock,
+  offsetX,
+  offsetY,
+  isFloating,
+}: EmptyPatternBlockProps) {
+  const translateX = offsetX * emptyBlock.depth;
+  const translateY = offsetY * emptyBlock.depth;
+
+  return (
+    <div
+      className="
+        pointer-events-auto
+        absolute
+        transition-transform
+        duration-700
+        ease-out
+        will-change-transform
+      "
+      style={{
+        left: emptyBlock.x,
+        top: emptyBlock.y,
+        width: emptyBlock.size,
+        height: emptyBlock.size,
+        transform: `translate3d(${translateX}px, ${translateY}px, 0)`,
+      }}
+    >
+      <div
+        tabIndex={0}
+        className={`
+          group
+          relative
+          flex h-full w-full
+          items-center justify-center
+          overflow-hidden
+          border border-black/20
+          transition-transform duration-300
+          hover:z-50 hover:scale-105
+          focus:z-50 focus:scale-105
+          ${isFloating ? "empty-block-floating" : ""}
+        `}
+        style={{
+          backgroundColor: emptyBlock.backgroundColor,
+          animationDelay: `${emptyBlock.floatDelay}s`,
+        }}
+      >
+        <div
+          className="
+            absolute inset-0
+            flex items-center justify-center
+            bg-black/20
+            px-3 text-center
+            text-sm font-bold leading-snug text-grey
+            opacity-0
+            transition-opacity duration-200
+            group-hover:opacity-100
+            group-focus:opacity-100
+          "
+        >
+          후원을 기다립니다
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function createCenterLayout(
   blocks: DonorBlock[],

@@ -17,7 +17,9 @@ type Video = {
   profile: {
     name: string;
     description: string;
+    donationAmount?: string;
     quote: string;
+    introduction?: string;
   };
 
   qa: {
@@ -42,7 +44,7 @@ export default function VideoGrid({ videos }: Props) {
 
   return (
     <>
-      <div className="grid gap-20 md:grid-cols-3 px-5 md:px-0">
+      <div className="grid gap-8 px-5 md:grid-cols-3 md:gap-20 md:px-0">
         {items.map((item, index) => {
        if (!item) {
   const placeholderIndex = index - videos.length;
@@ -101,13 +103,7 @@ export default function VideoGrid({ videos }: Props) {
           </h3>
         </div>
 
-        <button
-          type="button"
-          className="shrink-0 border border-black px-3 py-1 text-sm"
-          onClick={() => setSelectedVideo(null)}
-        >
-          닫기
-        </button>
+
       </div>
 
       <img
@@ -116,37 +112,53 @@ export default function VideoGrid({ videos }: Props) {
         className="max-h-[70vh] w-full object-contain"
       />
 
-      <div className="mt-10 border-t border-black pt-8">
-        <h4 className="font-display text-2xl">
-  {selectedVideo.profile.name}
-</h4>
+      <div >
 
-<p className="mt-2 text-sm leading-relaxed text-black/60">
-  {selectedVideo.profile.description}
-</p>
+<div >
+  <blockquote className="pattern-highlight-quote font-display text-2xl leading-15 md:leading-relaxed md:text-3xl">
+    “{selectedVideo.profile.quote}”
+  </blockquote>
 
-<blockquote className="mt-6 border-l-2 border-black pl-5 text-xl leading-relaxed">
-  “{selectedVideo.profile.quote}”
-</blockquote>
+<div className="mt-8  bg-white p-5 md:p-8">
+  <div className="flex flex-col items-start gap-2 md:flex-row md:items-center md:gap-4">
+    <h4 className="font-display text-2xl leading-none md:text-3xl">
+      {selectedVideo.profile.name}
+    </h4>
+
+    {selectedVideo.profile.donationAmount && (
+      <span className="inline-flex rounded bg-black px-2.5 py-1 text-xs font-bold text-white md:text-sm">
+        {selectedVideo.profile.donationAmount} 기부
+      </span>
+    )}
+  </div>
+
+  <p className="mt-3 max-w-[600px] text-sm leading-6 text-black/60">
+    {selectedVideo.profile.description}
+  </p>
+
+  {selectedVideo.profile.introduction && (
+    <div className="mt-7 max-w-[700px] whitespace-pre-line text-[15px] leading-7 text-black/75 md:mt-9 md:text-base md:leading-8">
+      {selectedVideo.profile.introduction}
+    </div>
+  )}
+</div>
+</div>
       </div>
 
       <div className="mt-10 space-y-8">
         {selectedVideo.qa?.map((item, index) => (
           <div
             key={index}
-            className="border-t border-black pt-6"
+           
           >
-            <div className="mb-3 flex gap-4">
-              <div className="shrink-0 font-display text-xl">
-                Q
-              </div>
+<div className="mb-5 text-lg font-bold leading-[1.9] md:text-xl">
+  <span className="pattern-highlight-question">
+    <span className="mr-2 font-display md:mr-3">Q</span>
+    {item.q}
+  </span>
+</div>
 
-              <div className="text-xl font-bold leading-snug">
-                {item.q}
-              </div>
-            </div>
-
-            <div className="ml-9 whitespace-pre-line leading-relaxed text-black/75">
+            <div className="ml-9 whitespace-pre-line  max-w-[700px] leading-relaxed text-black/75">
               {item.a}
             </div>
           </div>

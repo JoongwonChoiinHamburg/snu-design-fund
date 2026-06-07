@@ -30,32 +30,44 @@ useEffect(() => {
   return (
     <>
       {/* floating button */}
-      {!open && (
-<button
-  type="button"
-  onClick={() => setOpen(true)}
-  className="donate-pattern-button lg:aspect-square fixed bottom-3 right-3 md:bottom-6 md:right-6 z-[9999]  border-b-2 border-r-2 overflow-hidden  px-6 py-4 font-display text-lg font-bold text-black shadow-lg transition hover:-translate-y-0.5"
-  style={
-    donatePattern
-      ? {
-          backgroundImage: `url(/patterns/light/${donatePattern}.svg)`,
-        }
-      : {
-          backgroundColor: "#ff5a00",
-        }
-  }
->
-  <span className="relative z-10">기부하기</span>
-</button>
-      )}
+{!open && (
+  <button
+    type="button"
+    onClick={() => setOpen(true)}
+    className="
+      donate-floating-button
+      donate-pattern-button
+      fixed bottom-3 right-3 z-[9999]
+      overflow-hidden
+      border-b-2 border-r-2
+      px-6 py-4
+      font-display text-lg font-bold text-black
+      shadow-lg transition
+      hover:-translate-y-0.5
+      md:bottom-6 md:right-6
+      lg:aspect-square
+    "
+    style={
+      donatePattern
+        ? {
+            backgroundImage: `url(/patterns/light/${donatePattern}.svg)`,
+          }
+        : {
+            backgroundColor: "#ff5a00",
+          }
+    }
+  >
+    <span className="relative z-10">기부하기</span>
+  </button>
+)}
       {/* popup */}
       <LayerPopup
         open={open}
         onClose={() => setOpen(false)}
       >
-        <div className="max-w-[1000px] pb-10 pt-5 px-5 text-black">
+        <div className="max-w-[1000px]  text-black">
     <div className="relative mb-12">
-  <h2 className="text-center font-display pb-5 text-4xl leading-tight">
+  <h2 className="text-center font-display text-3xl leading-tight">
     기부 안내
   </h2>
 
