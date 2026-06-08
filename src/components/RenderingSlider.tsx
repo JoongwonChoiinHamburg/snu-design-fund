@@ -80,7 +80,7 @@ useEffect(() => {
   <button
     type="button"
     onClick={prev}
-    className="absolute left-4 top-1/2 z-10 -translate-y-1/2 border border-black bg-white px-3 py-2 text-black"
+    className="absolute left-4 top-1/2 z-10 -translate-y-1/2 border border-black bg-white px-3 py-2 text-[var(--color-grey)]"
   >
     ←
   </button>
@@ -88,7 +88,7 @@ useEffect(() => {
   <button
     type="button"
     onClick={next}
-    className="absolute right-4 top-1/2 z-10 -translate-y-1/2 border border-black bg-white px-3 py-2 text-black"
+    className="absolute right-4 top-1/2 z-10 -translate-y-1/2 border border-black bg-white px-3 py-2 text-[var(--color-grey)]"
   >
     →
   </button>
@@ -97,7 +97,7 @@ useEffect(() => {
         <button
           type="button"
           onClick={prev}
-          className="absolute left-4 top-1/2 z-10 -translate-y-1/2 border border-black bg-white px-3 py-2 text-black"
+          className="absolute left-4 top-1/2 z-10 -translate-y-1/2 border border-black bg-white px-3 py-2 text-[var(--color-grey)]"
         >
           ←
         </button>
@@ -105,7 +105,7 @@ useEffect(() => {
         <button
           type="button"
           onClick={next}
-          className="absolute right-4 top-1/2 z-10 -translate-y-1/2 border border-black bg-white px-3 py-2 text-black"
+          className="absolute right-4 top-1/2 z-10 -translate-y-1/2 border border-black bg-white px-3 py-2 text-[var(--color-grey)]"
         >
           →
         </button>
@@ -127,8 +127,8 @@ useEffect(() => {
         </div>
       </div>
 <div className="mt-20 pt-6">
-  <h2 className="px-5 mb-10 mt-10 font-display text-3xl lg:px-0">
-    여러분의 기부는 이렇게 활용됩니다.
+  <h2 className="px-5 mb-10 mt-10 font-display text-3xl lg:px-0 leading-relaxed">
+    여러분의 기부는 <br className="md:hidden" />이렇게 활용됩니다.
   </h2>
 
   <div className="relative p-5 mt-12 grid gap-0 md:grid-cols-2 lg:grid-cols-4 lg:p-0 lg:gap-0">
@@ -143,7 +143,7 @@ useEffect(() => {
         무빙월 설치
       </h3>
 
-      <p className="leading-relaxed text-black/70">
+      <p className="leading-relaxed text-[var(--color-grey)]/70">
         49동 리모델링 이후 다양한 전시와 수업이
         가능한 가변형 공간을 조성합니다.
       </p>
@@ -160,7 +160,7 @@ useEffect(() => {
         가구 및 기자재
       </h3>
 
-      <p className="leading-relaxed text-black/70">
+      <p className="leading-relaxed text-[var(--color-grey)]/70">
         학습과 실험을 위한 가구와
         교육 기자재를 확충합니다.
       </p>
@@ -177,7 +177,7 @@ useEffect(() => {
         휴식 공간
       </h3>
 
-      <p className="leading-relaxed text-black/70">
+      <p className="leading-relaxed text-[var(--color-grey)]/70">
         건물 주변의 쉼터와
         커뮤니티 공간을 조성합니다.
       </p>
@@ -194,7 +194,7 @@ useEffect(() => {
         창의 프로그램
       </h3>
 
-      <p className="leading-relaxed text-black/70">
+      <p className="leading-relaxed text-[var(--color-grey)]/70">
         글로벌 프로그램과 비교과 활동을 통해
         새로운 배움의 기회를 제공합니다.
       </p>

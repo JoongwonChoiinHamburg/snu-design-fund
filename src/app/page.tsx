@@ -155,7 +155,7 @@ qa: [
       <section className="mx-auto text-lg px-5 md:px-0 max-w-[1200px]">
         <section>
 <h2 className="font-display text-2xl mt-15 leading-relaxed  text-left md:text-4xl md:mt-30 ">
-  좋은 디자이너가 되기 위해서는{" "}
+  좋은 디자이너가 되기 위해서는{" "} <br className="md:hidden" />
   <span className="pattern-highlight-4" >
     오래 고민하고
   </span>
@@ -164,14 +164,14 @@ qa: [
     여러 번 만들어보고
   </span>
   ,
-  <br />
+<br className="hidden md:block" />
   때로는{" "}
   <span className="pattern-highlight-2">
     실패한 것을 다시 꺼내보는 시간
   </span>
   이 쌓여야 합니다.
   <br />
-  그 시간을 가능하게 하는 것은, 결국 새로운 시도를 이어갈 수 있는
+  그 시간을 가능하게 하는 것은, <br className="md:hidden" />결국 새로운 시도를 이어갈 수 있는
   <br />
   <span className="pattern-highlight-1" >
     ‘탐험의 환경’
@@ -211,8 +211,8 @@ qa: [
     </section>
 
 <section className="mx-auto mt-40 max-w-[1200px]">
-  <h2 className="p-5 mb-0 font-display text-3xl md:mb-8 mb:p-0 ">
-    서울대학교 디자인과의 "탐험의 환경"이 새롭게 조성됩니다.
+  <h2 className="p-5 mb-0 font-display text-3xl md:mb-8 mb:p-0 leading-relaxed">
+    서울대학교 디자인과의<br className="md:hidden" /> "탐험의 환경"이 새롭게 <br className="md:hidden" />조성됩니다.
   </h2>
 
 <RenderingSlider slides={renderSlides} />
