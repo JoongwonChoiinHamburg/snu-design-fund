@@ -13,7 +13,7 @@ export type Seat = {
   id: string;
   row_label: string;
   seat_number: number;
-  status: "available" | "reserved" | "confirmed";
+  status: "available" | "reserved" | "confirmed" | "unavailable" ;
   display_name: string;
   message: string;
   is_visible: boolean;

@@ -49,7 +49,7 @@ export default function SeatMap({ seats }: Props) {
                   {step.title}
                 </h4>
 
-                <p className="mt-2 whitespace-pre-line leading-relaxed text-black/65">
+                <p className="mt-2 whitespace-pre-line leading-relaxed text-[var(--color-grey)]/65">
                   {step.description}
                 </p>
               </div>
@@ -78,10 +78,11 @@ export default function SeatMap({ seats }: Props) {
             좌석 현황
           </h3>
 
-          <div className="flex gap-4 text-xs text-black/60">
+          <div className="flex gap-4 text-xs text-[var(--color-grey)]/60">
             <Legend color="bg-gray-300" label="선택 가능" />
             <Legend color="bg-yellow-400" label="예약" />
             <Legend color="bg-green-500" label="확정" />
+            <Legend color="bg-gray-500" label="불가능" />
           </div>
         </div>
 
@@ -159,12 +160,14 @@ function groupByRow(seats: Seat[]) {
 function getColor(status: Seat["status"]) {
   switch (status) {
     case "available":
-      return "bg-gray-300 text-black";
+      return "bg-gray-300 text-[var(--color-grey)]";
     case "reserved":
-      return "bg-yellow-400 text-black";
+      return "bg-yellow-400 text-[var(--color-grey)]";
     case "confirmed":
       return "bg-green-500 text-white";
+        case "unavailable":
+      return "bg-gray-500 text-white";
     default:
-      return "bg-gray-200 text-black";
+      return "bg-gray-200 text-[var(--color-grey)]";
   }
 }
