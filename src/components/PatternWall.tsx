@@ -19,6 +19,13 @@ type Props = {
   blocks: DonorBlock[];
 };
 
+const EMPTY_PATTERNS = [
+  "mono1",
+  "mono2",
+  "mono3",
+  "mono4",
+];
+
 const RANDOM_PATTERNS = [
   "red-01",
   "red-02",
@@ -59,7 +66,7 @@ type EmptyPositionedBlock = {
   x: number;
   y: number;
   size: number;
-  backgroundColor: string;
+   patternKey: string;
   depth: number;
   floatDelay: number;
 };
@@ -89,7 +96,7 @@ const [hoveredBlock, setHoveredBlock] =
   useState<DonorBlock | null>(null);
   const [density, setDensity] =
     useState<Density>("spacious");
-const [useRandomPattern, setUseRandomPattern] = useState(false);
+const [useRandomPattern, setUseRandomPattern] = useState(true);
 const [useVariablePatternSize, setUseVariablePatternSize] =
   useState(false);
   const [selectedBlock, setSelectedBlock] =
@@ -113,7 +120,10 @@ const [tooltipPosition, setTooltipPosition] =
     useState(DEFAULT_WALL_HEIGHT);
 
 useEffect(() => {
-  setLayoutSeed(Date.now());
+  const seed = Date.now();
+
+  setPatternSeed(seed);
+  setLayoutSeed(seed);
 
   function updateWidth() {
     if (!containerRef.current) return;
@@ -140,16 +150,10 @@ useEffect(() => {
 
   updateWidth();
 
-  window.addEventListener(
-    "resize",
-    updateWidth
-  );
+  window.addEventListener("resize", updateWidth);
 
   return () => {
-    window.removeEventListener(
-      "resize",
-      updateWidth
-    );
+    window.removeEventListener("resize", updateWidth);
   };
 }, []);
   
@@ -284,25 +288,21 @@ const emptyBlocks = useMemo<EmptyPositionedBlock[]>(() => {
       const maxX = Math.max(0, wallWidth - size);
       const maxY = Math.max(0, wallHeight - size);
 
-      const colorIndex =
-        seededRandom(seed + 2) < 0.5 ? 0 : 1;
+const patternIndex = Math.floor(
+  seededRandom(seed + 2) * EMPTY_PATTERNS.length
+);
 
-      return {
-        id: `empty-block-${index}`,
-        x: seededRandom(seed + 3) * maxX,
-        y: seededRandom(seed + 4) * maxY,
-        size,
-        backgroundColor:
-          EMPTY_BLOCK_COLORS[colorIndex],
-            // 박스마다 마우스 반응 강도를 다르게
+return {
+  id: `empty-block-${index}`,
+  x: seededRandom(seed + 3) * maxX,
+  y: seededRandom(seed + 4) * maxY,
+  size,
+  patternKey: EMPTY_PATTERNS[patternIndex],
   depth:
-    0.25 +
-    seededRandom(seed + 5) * 0.65,
-
-  // 부유 애니메이션 시작 시점도 다르게
+    0.25 + seededRandom(seed + 5) * 0.65,
   floatDelay:
     seededRandom(seed + 6) * -8,
-      };
+};
     }
   );
 }, [
@@ -322,7 +322,7 @@ const emptyBlocks = useMemo<EmptyPositionedBlock[]>(() => {
     onClick={() =>
       setShowDevPanel((prev) => !prev)
     }
-    className="border border-black px-2 py-1 text-[10px] uppercase tracking-wide text-black/60 hover:bg-black hover:text-white"
+    className="border border-[var(--color-grey)] px-2 py-1 text-[10px] uppercase tracking-wide text-[var(--color-grey)]/60 hover:bg-[var(--color-grey)] hover:text-white"
   >
     Dev
   </button> */}
@@ -334,8 +334,8 @@ const emptyBlocks = useMemo<EmptyPositionedBlock[]>(() => {
               type="button"
               className={`rounded px-4 py-2 text-sm ${
                 mode === "overlap"
-                  ? "bg-black text-white"
-                  : "bg-gray-200 text-black"
+                  ? "bg-[var(--color-grey)] text-white"
+                  : "bg-gray-200 text-[var(--color-grey)]"
               }`}
               onClick={() =>
                 setMode("overlap")
@@ -348,8 +348,8 @@ const emptyBlocks = useMemo<EmptyPositionedBlock[]>(() => {
               type="button"
               className={`rounded px-4 py-2 text-sm ${
                 mode === "stack"
-                  ? "bg-black text-white"
-                  : "bg-gray-200 text-black"
+                  ? "bg-[var(--color-grey)] text-white"
+                  : "bg-gray-200 text-[var(--color-grey)]"
               }`}
               onClick={() =>
                 setMode("stack")
@@ -361,8 +361,8 @@ const emptyBlocks = useMemo<EmptyPositionedBlock[]>(() => {
   type="button"
   className={`rounded px-4 py-2 text-sm ${
     mode === "center"
-      ? "bg-black text-white"
-      : "bg-gray-200 text-black"
+      ? "bg-[var(--color-grey)] text-white"
+      : "bg-gray-200 text-[var(--color-grey)]"
   }`}
   onClick={() => setMode("center")}
 >
@@ -372,7 +372,7 @@ const emptyBlocks = useMemo<EmptyPositionedBlock[]>(() => {
 <select
   value={patternVersion}
   onChange={(event) => setPatternVersion(event.target.value)}
-  className="border border-black bg-white px-3 py-2 text-xs text-black"
+  className="border border-[var(--color-grey)] bg-white px-3 py-2 text-xs text-[var(--color-grey)]"
 >
   <option value="1">패턴 1</option>
   <option value="2">패턴 2</option>
@@ -386,8 +386,8 @@ const emptyBlocks = useMemo<EmptyPositionedBlock[]>(() => {
       type="button"
       className={`rounded px-3 py-2 text-xs capitalize ${
         density === item
-          ? "bg-black text-white"
-          : "bg-gray-200 text-black"
+          ? "bg-[var(--color-grey)] text-white"
+          : "bg-gray-200 text-[var(--color-grey)]"
       }`}
       onClick={() => setDensity(item)}
     >
@@ -399,8 +399,8 @@ const emptyBlocks = useMemo<EmptyPositionedBlock[]>(() => {
     type="button"
     className={`rounded px-3 py-2 text-xs ${
       useRandomPattern
-        ? "bg-black text-white"
-        : "bg-gray-200 text-black"
+        ? "bg-[var(--color-grey)] text-white"
+        : "bg-gray-200 text-[var(--color-grey)]"
     }`}
 onClick={() => {
   setUseRandomPattern((prev) => !prev);
@@ -418,8 +418,8 @@ onClick={() => {
   type="button"
   className={`rounded px-3 py-2 text-xs ${
     useVariablePatternSize
-      ? "bg-black text-white"
-      : "bg-gray-200 text-black"
+      ? "bg-[var(--color-grey)] text-white"
+      : "bg-gray-200 text-[var(--color-grey)]"
   }`}
   onClick={() => setUseVariablePatternSize((prev) => !prev)}
 >
@@ -534,7 +534,7 @@ onClick={() => {
   typeof window !== "undefined" &&
   window.innerWidth >= 768 && (
     <div
-      className="pointer-events-none fixed z-[9999] border-2 border-black bg-white px-3 py-2 text-xs leading-tight text-black shadow-sm"
+      className="pointer-events-none fixed z-[9999] border-2 border-[var(--color-grey)] bg-white px-3 py-2 text-base leading-tight text-[var(--color-grey)] shadow-sm"
       style={{
         left: tooltipPosition.x + 14,
         top:
@@ -543,11 +543,11 @@ onClick={() => {
             : tooltipPosition.y + 14,
       }}
     >
-      <div className="font-semibold">
-        {hoveredBlock.displayName}
+      <div className="font-bold text-[var(--color-grey)]">
+        {hoveredBlock.displayName} 동문
       </div>
 
-      <div>
+      <div className=" text-[var(--color-grey)]" >
         {hoveredBlock.amount.toLocaleString()}원
       </div>
     </div>
@@ -628,24 +628,26 @@ function EmptyPatternBlock({
           flex h-full w-full
           items-center justify-center
           overflow-hidden
-          border border-black/20
+          border border-[var(--color-grey)]/50
           transition-transform duration-300
-          hover:z-50 hover:scale-105
-          focus:z-50 focus:scale-105
+
           ${isFloating ? "empty-block-floating" : ""}
         `}
-        style={{
-          backgroundColor: emptyBlock.backgroundColor,
-          animationDelay: `${emptyBlock.floatDelay}s`,
-        }}
+ style={{
+  backgroundImage: `url(/patterns/mono/${emptyBlock.patternKey}.svg)`,
+  backgroundRepeat: "repeat",
+  backgroundPosition: "0 0",
+  backgroundSize: "90px 90px",
+  animationDelay: `${emptyBlock.floatDelay}s`,
+}}
       >
         <div
           className="
             absolute inset-0
             flex items-center justify-center
-            bg-black/20
+            bg-[var(--color-grey)]/20
             px-3 text-center
-            text-sm font-bold leading-snug text-grey
+            text-sm font-bold leading-snug text-[var(--color-grey)] 
             opacity-0
             transition-opacity duration-200
 md:group-hover:opacity-100

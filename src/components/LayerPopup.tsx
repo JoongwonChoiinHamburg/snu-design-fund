@@ -45,7 +45,7 @@ export default function LayerPopup({
   return (
     <div
       className={`
-        fixed inset-0 z-50 bg-black/40
+        fixed inset-0 z-50 bg-[var(--color-grey)]/40
 
         ${
           isBottomSheet
@@ -99,7 +99,7 @@ export default function LayerPopup({
             z-[60]
             flex h-10 w-10
             items-center justify-center
-            border border-black
+            border border-[var(--color-grey)]
             bg-white
             text-2xl leading-none
 

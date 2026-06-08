@@ -76,7 +76,7 @@ export default function VideoGrid({ videos }: Props) {
                 />
 
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full border border-black bg-white text-black">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full border border-black bg-white text-[var(--color-grey)]">
                     +
                   </div>
                 </div>
@@ -95,7 +95,7 @@ export default function VideoGrid({ videos }: Props) {
   onClose={() => setSelectedVideo(null)}
 >
   {selectedVideo && (
-    <div className="max-w-[900px] text-black">
+    <div className="max-w-[900px] text-[var(--color-grey)]">
       <div className="mb-6 flex items-start justify-between gap-6">
         <div>
           <h3 className="font-display text-3xl">
@@ -126,18 +126,19 @@ export default function VideoGrid({ videos }: Props) {
     </h4>
 
     {selectedVideo.profile.donationAmount && (
-      <span className="inline-flex rounded bg-black px-2.5 py-1 text-xs font-bold text-white md:text-sm">
+      <span className="inline-flex rounded bg-[var(--color-grey)] px-2.5 py-1 text-xs font-bold text-white md:text-sm">
         {selectedVideo.profile.donationAmount} 기부
       </span>
     )}
   </div>
 
-  <p className="mt-3 max-w-[600px] text-sm leading-6 text-black/60">
+  <p className="mt-3 max-w-[600px] text-base leading-6 text-[var(--color-grey)]/60">
     {selectedVideo.profile.description}
   </p>
 
   {selectedVideo.profile.introduction && (
-    <div className="mt-7 max-w-[700px] whitespace-pre-line text-[15px] leading-7 text-black/75 md:mt-9 md:text-base md:leading-8">
+    <div className="mt-7 max-w-[700px] whitespace-pre-line leading-7 text-[var(--color-grey)]/75 md:mt-9 md:text-lg
+ md:leading-8">
       {selectedVideo.profile.introduction}
     </div>
   )}
@@ -151,14 +152,14 @@ export default function VideoGrid({ videos }: Props) {
             key={index}
            
           >
-<div className="mb-5 text-lg font-bold leading-[1.9] md:text-xl">
+<div className="mb-5 text-lg font-bold leading-[1.9] md:text-2xl">
   <span className="pattern-highlight-question">
     <span className="mr-2 font-display md:mr-3">Q</span>
     {item.q}
   </span>
 </div>
 
-            <div className="ml-9 whitespace-pre-line  max-w-[700px] leading-relaxed text-black/75">
+            <div className="ml-9 whitespace-pre-line md:text-lg max-w-[700px] leading-relaxed text-[var(--color-grey)]/75">
               {item.a}
             </div>
           </div>
@@ -182,7 +183,7 @@ function PlaceholderCard() {
         />
       </div>
 
-      <h3 className="mt-3 text-xl font-bold text-black/50">
+      <h3 className="mt-3 text-xl font-bold text-[var(--color-grey)]/50">
         당신의 따뜻한 이야기를 기다립니다.
       </h3>
     </div>

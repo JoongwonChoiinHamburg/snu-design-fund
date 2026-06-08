@@ -38,14 +38,19 @@ useEffect(() => {
       donate-floating-button
       donate-pattern-button
       fixed bottom-3 right-3 z-[9999]
+      flex items-center justify-center
       overflow-hidden
       border-b-2 border-r-2
       px-6 py-4
       font-display text-lg font-bold text-black
-      shadow-lg transition
+      shadow-lg
+      transition-transform
       hover:-translate-y-0.5
+
       md:bottom-6 md:right-6
-      lg:aspect-square
+
+      lg:h-[96px] lg:w-[96px]
+      lg:px-0 lg:py-0
     "
     style={
       donatePattern
@@ -57,7 +62,9 @@ useEffect(() => {
           }
     }
   >
-    <span className="relative z-10">기부하기</span>
+    <span className="relative z-10 whitespace-nowrap">
+      기부하기
+    </span>
   </button>
 )}
       {/* popup */}
