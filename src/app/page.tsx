@@ -24,7 +24,7 @@ const renderSlides = [
     {
     image: "/renderings/outside_2.jpg",
     title: "성큰 가든",
-    description: "지하 1층의 디지털라운지와 연결되는 성큰 가든을 조성합니다.",
+    description: "49동 내부와 연결되는 성큰 가든을 조성합니다.",
   },
   {
     image: "/renderings/loby_1.jpg",
@@ -33,13 +33,13 @@ const renderSlides = [
   },
   {
     image: "/renderings/alounge.jpg",
-    title: "주출입구 웰컴라운지",
+    title: "주출입구 웰컴 라운지",
     description: "49동 주출입구에 붙어있는 휴게공간입니다.",
   },
   {
     image: "/renderings/digitallounge.jpg",
-    title: "디지털스튜디오",
-    description: "시각디자인전공 학생들의 메인 스튜디오입니다.",
+    title: "디지털 스튜디오",
+    description: "1층에 위치한 시각디자인전공 학생들의 메인 스튜디오입니다.",
   },
     {
     image: "/renderings/mainhall.jpg",
@@ -48,7 +48,7 @@ const renderSlides = [
   },
       {
     image: "/renderings/eventlounge.jpg",
-    title: "이벤트라운지",
+    title: "이벤트 라운지",
     description: "지하 1층에 위치한 전시와 이벤트가 열리는 라운지입니다. 대형 LED월이 설치됩니다.",
   },
         {
@@ -59,7 +59,7 @@ const renderSlides = [
           {
     image: "/renderings/physicallounge.jpg",
     title: "피지컬 라운지",
-    description: "산업디자인전공 학생들의 메인 스튜디오입니다.",
+    description: "2층에 위치한 산업디자인전공 학생들의 메인 스튜디오입니다.",
   },
   
             {
