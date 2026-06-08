@@ -88,7 +88,7 @@ const segments = GROUPS.map((group) => {
           </div>
         </div>
 
-        <div className="mt-2 flex justify-end text-lg font-medium">
+        <div className="mt-2 flex justify-center md:justify-end text-sm md:text-lg font-medium">
           <span>
             목표 3,000,000,000원 대비{" "}
             <strong>{percent.toFixed(1)}%</strong>

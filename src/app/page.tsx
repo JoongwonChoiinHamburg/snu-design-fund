@@ -129,11 +129,11 @@ qa: [
     
     {/* left */}
     <div>
-      <h1 className="font-display text-3xl leading-snug md:text-5xl md:leading-relaxed">
+      <h1 className="font-display text-xl leading-snug md:text-5xl md:leading-relaxed">
         미래 디자이너를 위한 창의환경 조성기금
       </h1>
 
-      <h3 className="mt-5 mb-8 text-lg md:text-2xl">
+      <h3 className="mt-1 mb-3 text-sm md:text-2xl md:mt-5 md:mb-8">
         미래 디자이너의 탐험 공간,
         여러분과 함께 만들어갑니다.
       </h3>

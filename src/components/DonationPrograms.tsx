@@ -85,10 +85,9 @@ export default function DonationPrograms({ seats }: Props) {
             <p>
  100만원 이상의 모든 기부자를 대상으로 3층 대형강의홀 고정식 좌석에 명패를 부착해 드립니다.
  </p>
- <p>
-선착순 104명 참여 가능    </p>
- <p>
-위치 지정과 문구 지정 후 명패 제작
+ <p className="text-sm">
+ - 선착순 104명 참여 가능 <br></br>
+ - 위치 지정과 문구 지정 후 명패 제작
             </p>
 <button
   type="button"

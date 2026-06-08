@@ -317,7 +317,7 @@ const emptyBlocks = useMemo<EmptyPositionedBlock[]>(() => {
       <section className="relative left-1/2 w-screen bg-[var(--color-cream)] -translate-x-1/2 space-y-6">
         {/* controls */}
         <div className="mx-auto mb-3 flex max-w-[1800px] justify-end px-6">
-  <button
+  {/* <button
     type="button"
     onClick={() =>
       setShowDevPanel((prev) => !prev)
@@ -325,7 +325,7 @@ const emptyBlocks = useMemo<EmptyPositionedBlock[]>(() => {
     className="border border-black px-2 py-1 text-[10px] uppercase tracking-wide text-black/60 hover:bg-black hover:text-white"
   >
     Dev
-  </button>
+  </button> */}
 </div>
 {showDevPanel && (
   <div className="mx-auto flex max-w-[1800px] items-center justify-between px-6">
@@ -515,12 +515,12 @@ onClick={() => {
 
  <section className="mx-auto pt-10 md:pt-30 bg-[var(--color-cream)]">
 
-    <div className="mt-4 font-display text-3xl mb-leading-none md:text-5xl">
-       <span className="mr-5 text-2xl md:text-3xl">
+    <div className="mt-4 font-display text-xl mb-leading-none md:text-5xl">
+       <span className="mr-5 text-xl md:text-3xl">
       모금액
     </span>
     {totalAmount.toLocaleString()}
-    <span className="ml-5 text-2xl md:text-3xl">
+    <span className="ml-5 text-xl md:text-3xl">
       원
     </span>
   </div>
@@ -532,7 +532,7 @@ onClick={() => {
 
 {hoveredBlock && (
   <div
-    className="pointer-events-none fixed z-[9999] border border-black bg-white px-3 py-2 text-xs leading-tight text-black shadow-sm"
+    className="pointer-events-none fixed z-[9999] border-2 border-black bg-white px-3 py-2 text-xs leading-tight text-black shadow-sm"
     style={{
       left: tooltipPosition.x + 14,
       top:
@@ -555,33 +555,28 @@ onClick={() => {
         onClose={() =>
           setSelectedBlock(null)
         }
+         mobileMode="bottom"
       >
         {selectedBlock && (
           <div className="space-y-3 text-sm text-gray-900">
-            <h3 className="text-lg font-bold">
-              {selectedBlock.displayName}
+            <div className="mb-10">           
+              <h3 className="text-lg font-bold ">
+              {selectedBlock.displayName} 동문
             </h3>
 
-            <p>
+            <p >
               {selectedBlock.amount.toLocaleString()}
               원
             </p>
-
+      </div>
+ 
             {selectedBlock.message && (
-              <p>
+              <span className="pattern-highlight-question text-2xl font-semibold">
                 {selectedBlock.message}
-              </p>
+              </span>
             )}
 
-            <button
-              type="button"
-              className="mt-4 w-full rounded bg-black px-4 py-2 text-sm text-white"
-              onClick={() =>
-                setSelectedBlock(null)
-              }
-            >
-              닫기
-            </button>
+ 
           </div>
         )}
       </LayerPopup>
