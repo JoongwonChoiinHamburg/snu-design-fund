@@ -500,27 +500,7 @@ onClick={() => {
 ))}
 
 
-       {positionedBlocks.map(({ block, x, y, renderSize }) => (
-        
-<PatternBlock
-  key={block.id}
-  block={block}
-      renderSize={renderSize}
-  cellSize={cellSize}
-  x={x}
-  y={y}
-  onClick={() => setSelectedBlock(block)}
-  onHover={setHoveredBlock}
-  useVariablePatternSize={useVariablePatternSize}
-  offsetX={mode === "overlap" ? mouseOffset.x : 0}
-  offsetY={mode === "overlap" ? mouseOffset.y : 0}
-  depth={getBlockDepth(block.size)}
-  patternVersion={patternVersion}
-  patternScale={patternScale}
-  isFloating={mode === "overlap"}
-/>
-              )
-            )}
+
           </div>
         </div>
 

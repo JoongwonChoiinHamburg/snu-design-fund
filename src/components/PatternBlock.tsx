@@ -36,7 +36,7 @@ export default function PatternBlock({
   isFloating,
 }: Props) {
   const effectiveSize = renderSize ?? block.size;
-const sizePx = effectiveSize * cellSize;
+const sizePx = Math.ceil(effectiveSize * cellSize);
 const [isHovered, setIsHovered] = useState(false);
 const [time, setTime] = useState(0);
 
@@ -71,27 +71,28 @@ const floating = isFloating
   ? getFloatingOffset(block.id, time)
   : { x: 0, y: 0 };
 
+const safeX = Math.floor(x);
+const safeY = Math.floor(y);
+
+const translateX =
+  offsetX * depth + floating.x;
+
+const translateY =
+  offsetY * depth + floating.y;
+
 
   return (
     <button
 className="group absolute overflow-visible"
-   style={
+style={
   {
-    left: x,
-    top: y,
+    left: safeX,
+    top: safeY,
     width: sizePx,
     height: sizePx,
-  transform: `
-  translate3d(
-    ${offsetX * depth + floating.x}px,
-    ${offsetY * depth + floating.y}px,
-    0
-  )
-`,
-
+    transform: `translate3d(${translateX}px, ${translateY}px, 0)`,
   } as React.CSSProperties
 }
-
 
       onClick={onClick}
       onMouseEnter={() => {
@@ -103,8 +104,8 @@ onMouseLeave={() => {
   onHover(null);
 }}
     >
-     <div
-  className="absolute inset-0 border border-black/10 transition-all duration-150"
+   <div
+  className="absolute -inset-px border border-black/10 transition-all duration-150"
   style={{
     outline: isHovered ? "3px solid black" : "none",
     outlineOffset: "-1px",
