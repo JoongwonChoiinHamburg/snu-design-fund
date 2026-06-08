@@ -530,25 +530,28 @@ onClick={() => {
 </div>
       </section>
 
-{hoveredBlock && (
-  <div
-    className="pointer-events-none fixed z-[9999] border-2 border-black bg-white px-3 py-2 text-xs leading-tight text-black shadow-sm"
-    style={{
-      left: tooltipPosition.x + 14,
-      top:
-        tooltipPosition.y > window.innerHeight - 90
-          ? tooltipPosition.y - 70
-          : tooltipPosition.y + 14,
-    }}
-  >
-    <div className="font-semibold">
-      {hoveredBlock.displayName}
+{hoveredBlock &&
+  typeof window !== "undefined" &&
+  window.innerWidth >= 768 && (
+    <div
+      className="pointer-events-none fixed z-[9999] border-2 border-black bg-white px-3 py-2 text-xs leading-tight text-black shadow-sm"
+      style={{
+        left: tooltipPosition.x + 14,
+        top:
+          tooltipPosition.y > window.innerHeight - 90
+            ? tooltipPosition.y - 70
+            : tooltipPosition.y + 14,
+      }}
+    >
+      <div className="font-semibold">
+        {hoveredBlock.displayName}
+      </div>
+
+      <div>
+        {hoveredBlock.amount.toLocaleString()}원
+      </div>
     </div>
-    <div>
-      {hoveredBlock.amount.toLocaleString()}원
-    </div>
-  </div>
-)}
+  )}
       {/* popup */}
       <LayerPopup
         open={!!selectedBlock}
@@ -645,8 +648,8 @@ function EmptyPatternBlock({
             text-sm font-bold leading-snug text-grey
             opacity-0
             transition-opacity duration-200
-            group-hover:opacity-100
-            group-focus:opacity-100
+md:group-hover:opacity-100
+md:group-focus:opacity-100
           "
         >
           후원을 기다립니다
