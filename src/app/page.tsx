@@ -33,13 +33,13 @@ const renderSlides = [
   },
   {
     image: "/renderings/alounge.jpg",
-    title: "A라운지",
-    description: "로비와 이어지는 개방형 라운지입니다.",
+    title: "주출입구 웰컴라운지",
+    description: "49동 주출입구에 붙어있는 휴게공간입니다.",
   },
   {
     image: "/renderings/digitallounge.jpg",
-    title: "디지털라운지",
-    description: "무빙월을 통해 공간의 확장과 분리가 가능한 디지털라운지입니다.",
+    title: "디지털스튜디오",
+    description: "시각디자인전공 학생들의 메인 스튜디오입니다.",
   },
     {
     image: "/renderings/mainhall.jpg",
@@ -49,23 +49,23 @@ const renderSlides = [
       {
     image: "/renderings/eventlounge.jpg",
     title: "이벤트라운지",
-    description: "전시와 이벤트가 열리는 라운지입니다.",
+    description: "지하 1층에 위치한 전시와 이벤트가 열리는 라운지입니다. 대형 LED월이 설치됩니다.",
   },
         {
     image: "/renderings/fablab.jpg",
     title: "FABLAB",
-    description: "첨단 제작 장비가 구비된 FABLAB입니다.",
+    description: "지하 1층에 위치한 첨단 제작 장비가 구비된 모형제작실입니다.",
   },
           {
     image: "/renderings/physicallounge.jpg",
     title: "피지컬 라운지",
-    description: "피지컬 라운지입니다.",
+    description: "산업디자인전공 학생들의 메인 스튜디오입니다.",
   },
   
             {
     image: "/renderings/lecturehall.jpg",
     title: "대형 강의실",
-    description: "행사, 전시, 강연 등 다양한 용도로 활용 가능한 대형 강의실입니다.",
+    description: "100석 규모의 행사, 전시, 강연 등 다양한 용도로 활용 가능한 대형 강의실입니다.",
   },
 
 ];
@@ -147,10 +147,14 @@ qa: [
 />
   </section>
 </section>
-      <section>
-        <PatternWall blocks={blocks} />
-       <FundProgressBar donors={donors} />
-      </section>
+  <section className="flex min-h-[80dvh] flex-col bg-[var(--color-cream)] md:min-h-0">
+            <div className="flex-1">
+              <PatternWall blocks={blocks} />
+         
+
+            <FundProgressBar donors={donors} />
+               </div>
+          </section>
 
       <section className="mx-auto text-lg px-5 md:px-0 max-w-[1200px]">
         <section>
@@ -211,7 +215,7 @@ qa: [
     </section>
 
 <section className="mx-auto mt-40 max-w-[1200px]">
-  <h2 className="p-5 mb-0 font-display text-3xl md:mb-8 mb:p-0 leading-relaxed">
+  <h2 className="p-5 mb-0 font-display text-3xl md:mb-8 mb:p-0 leading-relaxed lg:px-0">
     서울대학교 디자인과의<br className="md:hidden" /> "탐험의 환경"이 새롭게 <br className="md:hidden" />조성됩니다.
   </h2>
 

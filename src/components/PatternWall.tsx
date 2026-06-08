@@ -73,9 +73,9 @@ type EmptyPositionedBlock = {
 
 
   const DEFAULT_WALL_HEIGHT = 720;
-const MOBILE_WALL_MIN_HEIGHT = 240;
-const MOBILE_WALL_MAX_HEIGHT = 320;
-const MOBILE_WALL_VIEWPORT_RATIO = 0.38;
+const MOBILE_WALL_MIN_HEIGHT = 270;
+const MOBILE_WALL_MAX_HEIGHT = 550;
+const MOBILE_WALL_VIEWPORT_RATIO = 0.42;
 
 export default function PatternWall({
   blocks,
@@ -321,118 +321,9 @@ return {
       <section className="relative left-1/2 w-screen bg-[var(--color-cream)] -translate-x-1/2 space-y-6">
         {/* controls */}
         <div className="mx-auto mb-3 flex max-w-[1800px] justify-end px-6">
-  {/* <button
-    type="button"
-    onClick={() =>
-      setShowDevPanel((prev) => !prev)
-    }
-    className="border border-[var(--color-grey)] px-2 py-1 text-[10px] uppercase tracking-wide text-[var(--color-grey)]/60 hover:bg-[var(--color-grey)] hover:text-white"
-  >
-    Dev
-  </button> */}
-</div>
-{showDevPanel && (
-  <div className="mx-auto flex max-w-[1800px] items-center justify-between px-6">
-          <div className="flex gap-2">
-            <button
-              type="button"
-              className={`rounded px-4 py-2 text-sm ${
-                mode === "overlap"
-                  ? "bg-[var(--color-grey)] text-white"
-                  : "bg-gray-200 text-[var(--color-grey)]"
-              }`}
-              onClick={() =>
-                setMode("overlap")
-              }
-            >
-              겹치기
-            </button>
-
-            <button
-              type="button"
-              className={`rounded px-4 py-2 text-sm ${
-                mode === "stack"
-                  ? "bg-[var(--color-grey)] text-white"
-                  : "bg-gray-200 text-[var(--color-grey)]"
-              }`}
-              onClick={() =>
-                setMode("stack")
-              }
-            >
-              쌓기
-            </button>
-            <button
-  type="button"
-  className={`rounded px-4 py-2 text-sm ${
-    mode === "center"
-      ? "bg-[var(--color-grey)] text-white"
-      : "bg-gray-200 text-[var(--color-grey)]"
-  }`}
-  onClick={() => setMode("center")}
->
-  중앙에 모으기
-</button>
-          </div>
-<select
-  value={patternVersion}
-  onChange={(event) => setPatternVersion(event.target.value)}
-  className="border border-[var(--color-grey)] bg-white px-3 py-2 text-xs text-[var(--color-grey)]"
->
-  <option value="1">패턴 1</option>
-  <option value="2">패턴 2</option>
-  <option value="3">패턴 3</option>
-</select>
-          {/* density */}
-      <div className="flex gap-2">
-  {(["compact", "normal", "spacious"] as Density[]).map((item) => (
-    <button
-      key={item}
-      type="button"
-      className={`rounded px-3 py-2 text-xs capitalize ${
-        density === item
-          ? "bg-[var(--color-grey)] text-white"
-          : "bg-gray-200 text-[var(--color-grey)]"
-      }`}
-      onClick={() => setDensity(item)}
-    >
-      {item}
-    </button>
-  ))}
-
-  <button
-    type="button"
-    className={`rounded px-3 py-2 text-xs ${
-      useRandomPattern
-        ? "bg-[var(--color-grey)] text-white"
-        : "bg-gray-200 text-[var(--color-grey)]"
-    }`}
-onClick={() => {
-  setUseRandomPattern((prev) => !prev);
-
-  const seed = Date.now();
-
-  setPatternSeed(seed);
-  setLayoutSeed(seed);
-}}
-  >
-    패턴 랜덤
-  </button>
-
-<button
-  type="button"
-  className={`rounded px-3 py-2 text-xs ${
-    useVariablePatternSize
-      ? "bg-[var(--color-grey)] text-white"
-      : "bg-gray-200 text-[var(--color-grey)]"
-  }`}
-  onClick={() => setUseVariablePatternSize((prev) => !prev)}
->
-  패턴 크기 {useVariablePatternSize ? "변동" : "고정"}
-</button>
 
 </div>
-        </div>
-)}
+
         {/* wall */}
         <div
           ref={containerRef}
