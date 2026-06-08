@@ -88,7 +88,11 @@ const EMPTY_BLOCK_COLORS = [
   "#ededed",
   "#dddddd",
 ];
+const [hoveredEmptyBlock, setHoveredEmptyBlock] =
+  useState<EmptyPositionedBlock | null>(null);
+  
 
+  
   const [showDevPanel, setShowDevPanel] = useState(false);
   const [mode, setMode] =
     useState<Mode>("overlap");
@@ -462,6 +466,16 @@ onClick={() => {
     offsetX={mode === "overlap" ? mouseOffset.x : 0}
     offsetY={mode === "overlap" ? mouseOffset.y : 0}
     isFloating={mode === "overlap"}
+    onHover={(block, event) => {
+      setHoveredEmptyBlock(block);
+
+      if (event) {
+        setTooltipPosition({
+          x: event.clientX,
+          y: event.clientY,
+        });
+      }
+    }}
   />
 ))}
 
@@ -552,6 +566,35 @@ onClick={() => {
       </div>
     </div>
   )}
+
+{hoveredEmptyBlock && (
+  <div
+    className="
+      pointer-events-none
+      fixed z-[9999]
+      hidden
+      border-1 border-gray-400
+      bg-white
+      px-3 py-2
+      text-semibold
+      text-large leading-tight text-[var(--color-grey)]
+      shadow-sm
+      md:block
+    "
+    style={{
+      left: tooltipPosition.x + 14,
+      top:
+        tooltipPosition.y > window.innerHeight - 90
+          ? tooltipPosition.y - 70
+          : tooltipPosition.y + 14,
+    }}
+  >
+    <div className="font-lg">
+      소중한 후원을 기다립니다
+    </div>
+  </div>
+)}
+
       {/* popup */}
       <LayerPopup
         open={!!selectedBlock}
@@ -561,7 +604,7 @@ onClick={() => {
          mobileMode="bottom"
       >
         {selectedBlock && (
-          <div className="space-y-3 text-sm text-gray-900">
+          <div className="space-y-3 text-sm text-[var(--color-grey)]">
             <div className="mb-10">           
               <h3 className="text-lg font-bold ">
               {selectedBlock.displayName} 동문
@@ -591,6 +634,10 @@ type EmptyPatternBlockProps = {
   offsetX: number;
   offsetY: number;
   isFloating: boolean;
+  onHover: (
+    block: EmptyPositionedBlock | null,
+    event?: React.MouseEvent<HTMLDivElement>
+  ) => void;
 };
 
 function EmptyPatternBlock({
@@ -598,6 +645,7 @@ function EmptyPatternBlock({
   offsetX,
   offsetY,
   isFloating,
+  onHover,
 }: EmptyPatternBlockProps) {
   const translateX = offsetX * emptyBlock.depth;
   const translateY = offsetY * emptyBlock.depth;
@@ -620,42 +668,35 @@ function EmptyPatternBlock({
         transform: `translate3d(${translateX}px, ${translateY}px, 0)`,
       }}
     >
-      <div
-        tabIndex={0}
-        className={`
-          group
-          relative
-          flex h-full w-full
-          items-center justify-center
-          overflow-hidden
-          border border-[var(--color-grey)]/50
-          transition-transform duration-300
+<div
+  tabIndex={0}
+  onMouseEnter={(event) => onHover(emptyBlock, event)}
+  onMouseMove={(event) => onHover(emptyBlock, event)}
+  onMouseLeave={() => onHover(null)}
+  className="
+    group
+    empty-pattern-drift
+    relative
+    flex h-full w-full
+    items-center justify-center
+    overflow-hidden
+    border-2 border-transparent
+    transition-all duration-200
+    hover:z-50
+    hover:scale-105
+    hover:border-gray-400
+    focus:z-50
+    focus:scale-105
+    focus:border-gray-400
+  "
+  style={{
+    backgroundImage: `url(/patterns/mono/${emptyBlock.patternKey}.svg)`,
+    backgroundRepeat: "repeat",
+    backgroundPosition: "0 0",
+    backgroundSize: "90px 90px",
+  }}
+>
 
-          ${isFloating ? "empty-block-floating" : ""}
-        `}
- style={{
-  backgroundImage: `url(/patterns/mono/${emptyBlock.patternKey}.svg)`,
-  backgroundRepeat: "repeat",
-  backgroundPosition: "0 0",
-  backgroundSize: "90px 90px",
-  animationDelay: `${emptyBlock.floatDelay}s`,
-}}
-      >
-        <div
-          className="
-            absolute inset-0
-            flex items-center justify-center
-            bg-[var(--color-grey)]/20
-            px-3 text-center
-            text-sm font-bold leading-snug text-[var(--color-grey)] 
-            opacity-0
-            transition-opacity duration-200
-md:group-hover:opacity-100
-md:group-focus:opacity-100
-          "
-        >
-          후원을 기다립니다
-        </div>
       </div>
     </div>
   );
