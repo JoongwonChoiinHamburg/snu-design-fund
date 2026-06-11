@@ -176,7 +176,7 @@ useEffect(() => {
           <div className="mt-14 border-t border-black pt-6">
             <div className="flex flex-col gap-3 text-sm md:flex-row md:items-center md:justify-between">
               <div>
-                미래디자이너를 위한 <br></br>창의환경 조성기금
+                미래디자이너를 위한 <br></br>창의환경 조성기금<br></br> 
               </div>
 서울특별시 관악구 관악로 1 서울대학교 74동 2층  <br></br>디자인과행정실<br></br>디자인과사무실
               <div className="text-black/70 "> <br></br>
