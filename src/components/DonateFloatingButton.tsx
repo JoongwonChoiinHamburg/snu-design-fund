@@ -181,7 +181,7 @@ useEffect(() => {
 서울특별시 관악구 관악로 1 서울대학교 74동 2층  <br></br>디자인과행정실<br></br>디자인과사무실
               <div className="text-black/70 "> <br></br>
                 02-880-7453 / <br></br>
-                02-880-7512 / tc03011@snu.ac.kr
+                02-880-7512 / design@snu.ac.kr
          
               </div>
             </div>
