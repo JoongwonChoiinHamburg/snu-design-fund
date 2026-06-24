@@ -81,42 +81,73 @@ const translateY =
   offsetY * depth + floating.y;
 
 
-  return (
-    <button
-className="group absolute overflow-visible"
-style={
-  {
-    left: safeX,
-    top: safeY,
-    width: sizePx,
-    height: sizePx,
-    transform: `translate3d(${translateX}px, ${translateY}px, 0)`,
-  } as React.CSSProperties
-}
+return (
+  <button
+    className="group absolute overflow-visible"
+    style={
+      {
+        left: safeX,
+        top: safeY,
+        width: sizePx,
+        height: sizePx,
+        transform: `translate3d(${translateX}px, ${translateY}px, 0)`,
+      } as React.CSSProperties
+    }
+    onClick={onClick}
+    onMouseEnter={() => {
+      setIsHovered(true);
+      onHover(block);
+    }}
+    onMouseLeave={() => {
+      setIsHovered(false);
+      onHover(null);
+    }}
+  >
+    {/* pattern */}
+    <div
+      className="absolute -inset-px border border-black/10 transition-all duration-150"
+      style={{
+        outline: isHovered ? "3px solid black" : "none",
+        outlineOffset: "-1px",
+        backgroundImage: `url('/patterns/${patternVersion}/${block.patternKey}.svg')`,
+        backgroundSize: `${patternTileSize}px ${patternTileSize}px`,
+        backgroundRepeat: "repeat",
+        backgroundPosition: "-1px -1px",
+      }}
+    />
 
-      onClick={onClick}
-      onMouseEnter={() => {
-  setIsHovered(true);
-  onHover(block);
-}}
-onMouseLeave={() => {
-  setIsHovered(false);
-  onHover(null);
-}}
+    {/* name label */}
+    <div
+      className="
+        pointer-events-none
+        absolute
+   right-[-1px]
+top-[-1px]
+        z-10
+        flex
+        items-center
+        justify-center
+        bg-white
+        text-center
+        font-semibold
+        leading-none
+        text-[var(--color-grey)]
+      "
+      style={{
+        width: Math.min(cellSize * 1.1, sizePx),
+        height: Math.min(cellSize * 0.45, sizePx),
+        fontSize: Math.max(
+          8,
+          Math.min(cellSize * 0.35, 18)
+        ),
+      }}
     >
-   <div
-  className="absolute -inset-px border border-black/10 transition-all duration-150"
-  style={{
-    outline: isHovered ? "3px solid black" : "none",
-    outlineOffset: "-1px",
-  backgroundImage: `url('/patterns/${patternVersion}/${block.patternKey}.svg')`,
-    backgroundSize: `${patternTileSize}px ${patternTileSize}px`,
-    backgroundRepeat: "repeat",
-    backgroundPosition: "-1px -1px",
-  }}
-      />
-    </button>
-  );
+      <span className="block w-full truncate">
+        {block.displayName}
+      </span>
+    </div>
+  </button>
+);
 }
 
 function getFloatValue(id: string, salt: number) {

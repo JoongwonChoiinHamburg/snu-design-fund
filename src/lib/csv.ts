@@ -19,6 +19,13 @@ export type Seat = {
   is_visible: boolean;
 };
 
+export type SmallDonor = {
+  id: string;
+  displayName: string;
+  amount: number;
+  is_visible: boolean;
+};
+
 function toBoolean(value: string) {
   return value?.toUpperCase() === "TRUE";
 }
@@ -93,4 +100,24 @@ return rows
     message: row.message,
     is_visible: toBoolean(row.is_visible),
   }));
+}
+
+export async function getSmallDonors(): Promise<SmallDonor[]> {
+  const url = process.env.NEXT_PUBLIC_SMALL_DONATION_SHEET_CSV_URL;
+
+  if (!url) return [];
+
+  const rows = await fetchCsv<Record<string, string>>(url);
+
+  console.log("SMALL DONOR ROWS:", rows);
+
+  return rows
+    .filter((row) => row.id && row.id.trim() !== "")
+    .filter((row) => toBoolean(row.is_visible))
+    .map((row) => ({
+      id: row.id.trim(),
+      displayName: row.displayName,
+      amount: Number(row.amount),
+      is_visible: toBoolean(row.is_visible),
+    }));
 }

@@ -1,7 +1,8 @@
-import { Donor } from "@/lib/csv";
+import { Donor, SmallDonor } from "@/lib/csv";
 
 type Props = {
   donors: Donor[];
+  smallDonors: SmallDonor[];
 };
 
 const GOAL_AMOUNT = 3_000_000_000;
@@ -39,11 +40,21 @@ const GROUPS = [
   },
 ];
 
-export default function FundProgressBar({ donors }: Props) {
-const totalAmount = donors.reduce((sum, donor) => {
-  const amount = Number(donor.amount) || 0;
-  return sum + amount;
-}, 0);
+export default function FundProgressBar({
+  donors,
+  smallDonors = [],
+}: Props) {
+  const mainAmount = donors.reduce((sum, donor) => {
+    const amount = Number(donor.amount) || 0;
+    return sum + amount;
+  }, 0);
+
+  const smallAmount = smallDonors.reduce((sum, donor) => {
+    const amount = Number(donor.amount) || 0;
+    return sum + amount;
+  }, 0);
+
+  const totalAmount = mainAmount + smallAmount;
 
   const percent = Math.min(
     (totalAmount / GOAL_AMOUNT) * 100,
@@ -72,29 +83,46 @@ const segments = GROUPS.map((group) => {
   };
 }).filter((segment) => segment.amount > 0);
 
-  return (
-    <section className="mx-auto w-full max-w-[1200px] my-auto bg-[var(--color-cream)] px-6 pt-2 md:pt-10">
-      <div className="mx-auto w-full max-w-[1500px] pb-10 md:pb-20">
-        <div className="mx-auto h-5 w-full max-w-[1500px] bg-white">
-          <div className="flex h-full overflow-hidden">
-            {segments.map((segment) => (
-              <div
-                key={segment.label}
-                className={`h-full ${segment.color}`}
-                style={{ width: `${segment.width}%` }}
-                title={`${segment.label}: ${segment.amount.toLocaleString()}원`}
-              />
-            ))}
-          </div>
-        </div>
+return (
+  <section className="mx-auto w-full max-w-[1200px] my-auto bg-[var(--color-cream)] px-6 pt-2 md:pt-10">
+    <div className="mx-auto w-full max-w-[1500px] pb-10 md:pb-20">
 
-        <div className="mt-2 flex justify-center md:justify-end text-sm md:text-lg font-medium">
-          <span>
-            목표 3,000,000,000원 대비{" "}
-            <strong>{percent.toFixed(1)}%</strong>
+      {/* current amount */}
+      <div className="mx-auto mb-8 text-center md:mb-10">
+        <div className="font-display text-xl leading-none md:text-5xl">
+          <span className="mr-5 text-xl md:text-3xl">
+            모금액
+          </span>
+
+          {totalAmount.toLocaleString()}
+
+          <span className="ml-5 text-xl md:text-3xl">
+            원
           </span>
         </div>
       </div>
-    </section>
-  );
+
+      {/* progress bar */}
+      <div className="mx-auto h-5 w-full max-w-[1500px] bg-white">
+        <div className="flex h-full overflow-hidden">
+          {segments.map((segment) => (
+            <div
+              key={segment.label}
+              className={`h-full ${segment.color}`}
+              style={{ width: `${segment.width}%` }}
+              title={`${segment.label}: ${segment.amount.toLocaleString()}원`}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-2 flex justify-center text-sm font-medium md:justify-end md:text-lg">
+        <span>
+          목표 3,000,000,000원 대비{" "}
+          <strong>{percent.toFixed(1)}%</strong>
+        </span>
+      </div>
+    </div>
+  </section>
+);
 }

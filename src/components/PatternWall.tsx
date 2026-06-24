@@ -6,6 +6,7 @@ import {
   useRef,
   useState,
 } from "react";
+import { createPortal } from "react-dom";
 
 import PatternBlock from "./PatternBlock";
 import LayerPopup from "./LayerPopup";
@@ -114,6 +115,11 @@ const [layoutSeed, setLayoutSeed] = useState<number | null>(null);
 const [tooltipPosition, setTooltipPosition] =
   useState({ x: 0, y: 0 });
 
+const [isMounted, setIsMounted] = useState(false);
+useEffect(() => {
+  setIsMounted(true);
+}, []);
+  
   const containerRef =
     useRef<HTMLDivElement>(null);
 
@@ -395,76 +401,68 @@ return {
           </div>
         </div>
 
-     {/* progress */}
-<div className="mx-auto mt-12 text-center">
 
- <section className="mx-auto pt-10 md:pt-30 bg-[var(--color-cream)]">
-
-    <div className="mt-4 font-display text-xl mb-leading-none md:text-5xl">
-       <span className="mr-5 text-xl md:text-3xl">
-      모금액
-    </span>
-    {totalAmount.toLocaleString()}
-    <span className="ml-5 text-xl md:text-3xl">
-      원
-    </span>
-  </div>
-
- </section>
-
-</div>
       </section>
 
-{hoveredBlock &&
-  typeof window !== "undefined" &&
-  window.innerWidth >= 768 && (
-    <div
-      className="pointer-events-none fixed z-[9999] border-2 border-[var(--color-grey)] bg-white px-3 py-2 text-base leading-tight text-[var(--color-grey)] shadow-sm"
-      style={{
-        left: tooltipPosition.x + 14,
-        top:
-          tooltipPosition.y > window.innerHeight - 90
-            ? tooltipPosition.y - 70
-            : tooltipPosition.y + 14,
-      }}
-    >
-      <div className="font-bold text-[var(--color-grey)]">
-        {hoveredBlock.displayName} 동문
-      </div>
+{isMounted &&
+  createPortal(
+    <>
+      {hoveredBlock &&
+        window.innerWidth >= 768 && (
+          <div
+            className="pointer-events-none fixed z-[9999] border-2 border-[var(--color-grey)] bg-white px-3 py-2 text-base leading-tight text-[var(--color-grey)] shadow-sm"
+            style={{
+              left: tooltipPosition.x + 14,
+              top:
+                tooltipPosition.y >
+                window.innerHeight - 90
+                  ? tooltipPosition.y - 70
+                  : tooltipPosition.y + 14,
+            }}
+          >
+            <div className="font-bold text-[var(--color-grey)]">
+              {hoveredBlock.displayName} 님
+            </div>
 
-      <div className=" text-[var(--color-grey)]" >
-        {hoveredBlock.amount.toLocaleString()}원
-      </div>
-    </div>
+            <div className="text-[var(--color-grey)]">
+              {hoveredBlock.amount.toLocaleString()}원
+            </div>
+          </div>
+        )}
+
+      {hoveredEmptyBlock && (
+        <div
+          className="
+            pointer-events-none
+            fixed z-[9999]
+            hidden
+            border-1 border-gray-400
+            bg-white
+            px-3 py-2
+            text-semibold
+            text-large leading-tight text-[var(--color-grey)]
+            shadow-sm
+            md:block
+          "
+          style={{
+            left: tooltipPosition.x + 14,
+            top:
+              tooltipPosition.y >
+              window.innerHeight - 90
+                ? tooltipPosition.y - 70
+                : tooltipPosition.y + 14,
+          }}
+        >
+          <div className="font-lg">
+            소중한 후원을 기다립니다
+          </div>
+        </div>
+      )}
+    </>,
+    document.body
   )}
 
-{hoveredEmptyBlock && (
-  <div
-    className="
-      pointer-events-none
-      fixed z-[9999]
-      hidden
-      border-1 border-gray-400
-      bg-white
-      px-3 py-2
-      text-semibold
-      text-large leading-tight text-[var(--color-grey)]
-      shadow-sm
-      md:block
-    "
-    style={{
-      left: tooltipPosition.x + 14,
-      top:
-        tooltipPosition.y > window.innerHeight - 90
-          ? tooltipPosition.y - 70
-          : tooltipPosition.y + 14,
-    }}
-  >
-    <div className="font-lg">
-      소중한 후원을 기다립니다
-    </div>
-  </div>
-)}
+
 
       {/* popup */}
       <LayerPopup
@@ -478,7 +476,7 @@ return {
           <div className="space-y-3 text-sm text-[var(--color-grey)]">
             <div className="mb-10">           
               <h3 className="text-lg font-bold ">
-              {selectedBlock.displayName} 동문
+              {selectedBlock.displayName} 님
             </h3>
 
             <p >

@@ -1,6 +1,6 @@
-import { getDonors, getSeats } from "@/lib/csv";
+import { getDonors, getSeats, getSmallDonors } from "@/lib/csv";
 import { donorsToBlocks } from "@/lib/pattern";
-import PatternWall from "@/components/PatternWall";
+import DonationWallSlider from "@/components/DonationWallSlider";
 import SeatMap from "@/components/SeatMap";
 import RenderingSlider from "@/components/RenderingSlider";
 import VideoGrid from "@/components/VideoGrid";
@@ -12,9 +12,10 @@ import FundProgressBar from "@/components/FundProgressBar";
 import AnimatedHighlight from "@/components/AnimatedHighlight";
 
 export default async function Home() {
-  const donors = await getDonors();
-  const seats = await getSeats();
-  const blocks = donorsToBlocks(donors);
+const donors = await getDonors();
+const seats = await getSeats();
+const smallDonors = await getSmallDonors();
+const blocks = donorsToBlocks(donors);
 const renderSlides = [
   {
     image: "/renderings/outside_1.jpg",
@@ -147,14 +148,16 @@ qa: [
 />
   </section>
 </section>
-  <section className="flex min-h-[80dvh] flex-col bg-[var(--color-cream)] md:min-h-0">
-            <div className="flex-1">
-              <PatternWall blocks={blocks} />
-         
+<section className="flex min-h-[80dvh] flex-col bg-[var(--color-cream)] md:min-h-0">
+  <div className="flex-1">
+    <DonationWallSlider blocks={blocks} />
 
-            <FundProgressBar donors={donors} />
-               </div>
-          </section>
+    <FundProgressBar
+  donors={donors}
+  smallDonors={smallDonors}
+/>
+  </div>
+</section>
 
       <section className="mx-auto text-lg px-5 md:px-0 max-w-[1200px]">
         <section>
