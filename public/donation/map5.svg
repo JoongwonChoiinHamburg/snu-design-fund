@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" width="262.26" height="189.93" viewBox="0 0 262.26 189.93">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #494648;
+        font-family: WantedSans-Bold-KSCpc-EUC-H, 'Wanted Sans';
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #f7c963;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        stroke: #595959;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-linejoin: bevel;
+      }
+
+      .cls-4 {
+        fill: #d6d3ce;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        stroke: #565656;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_1-2" data-name="레이어 1">
+    <g>
+      <rect class="cls-3" x=".5" y=".5" width="121" height="121"/>
+      <rect class="cls-5" x=".5" y="128.93" width="121" height="60.5"/>
+      <rect class="cls-5" x="128.27" y="128.93" width="58.86" height="60.5"/>
+      <rect class="cls-6" x="191.56" y="128.93" width="57.71" height="27.3"/>
+      <rect class="cls-5" x="191.56" y="162.13" width="57.71" height="27.3"/>
+      <rect class="cls-4" x="128.27" y=".5" width="121" height="121"/>
+      <text class="cls-2" transform="translate(9.97 22.16)"><tspan x="0" y="0">3억원 이상</tspan></text>
+      <text class="cls-2" transform="translate(8.56 147.92)"><tspan x="0" y="0">5000만원</tspan></text>
+      <text class="cls-1" transform="translate(130.66 147.64) scale(.97 1)"><tspan x="0" y="0">3000만원</tspan></text>
+      <text class="cls-1" transform="translate(194.46 146.93) scale(.97 1)"><tspan x="0" y="0">1000만원</tspan></text>
+      <text class="cls-2" transform="translate(136.05 22.16)"><tspan x="0" y="0">1억원 이상 </tspan></text>
+    </g>
+  </g>
+</svg>

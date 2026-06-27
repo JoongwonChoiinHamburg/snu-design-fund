@@ -3,11 +3,18 @@
 :root {
   --color-orange: #ff5a00;
   --color-black: #111111;
-  --color-grey: #665c53;
+  --color-grey: #474747;
   --color-cream: #efeee8;
 
 }
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
 @font-face {
   font-family: "Cafe24ProSlim";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/Cafe24PROSlim-Light.woff2")

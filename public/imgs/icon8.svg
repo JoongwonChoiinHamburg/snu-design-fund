@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" width="252.27" height="95.09" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 252.27 95.09">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #a8a2a0;
+      }
+
+      .cls-6 {
+        font-family: WantedSans-Black-KSCpc-EUC-H, 'Wanted Sans';
+        font-size: 15.6px;
+        font-weight: 800;
+        letter-spacing: -.02em;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #474747;
+      }
+
+      .cls-2 {
+        stroke: #d2cccb;
+        stroke-width: .76px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #a8a2a0;
+        stroke-width: 1.01px;
+      }
+
+      .cls-8 {
+        fill: #0e7;
+      }
+
+      .cls-9 {
+        fill: #17c675;
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-4 {
+        stroke: #474747;
+        stroke-width: 1.5px;
+      }
+
+      .cls-11 {
+        fill: #d2cccb;
+      }
+
+      .cls-7 {
+        font-family: WantedSans-SemiBold-KSCpc-EUC-H, 'Wanted Sans';
+        font-size: 19.2px;
+        font-weight: 600;
+        letter-spacing: -.02em;
+      }
+    </style>
+    <clipPath id="clippath">
+      <polygon class="cls-1" points="43.2 70.84 41.58 66.92 36.65 67.65 32.77 63.77 23.16 63.77 19.27 67.65 14.34 66.92 12.73 70.84 14.34 74.76 16.36 75.06 16.36 80.18 23.16 86.98 32.77 86.98 39.57 80.18 39.57 75.06 41.58 74.76 43.2 70.84"/>
+    </clipPath>
+  </defs>
+  <g id="_레이어_1-2" data-name="레이어 1">
+    <g>
+      <g>
+        <g>
+          <rect class="cls-8" x="78.5" y="14.22" width="15.63" height="15.63" transform="translate(64.28 108.35) rotate(-90)"/>
+          <rect class="cls-9" x="48.31" y="29.85" width="30.22" height="30.22" transform="translate(18.45 108.38) rotate(-90)"/>
+          <rect class="cls-8" x="48.31" y="44.96" width="15.11" height="15.11" transform="translate(3.34 108.38) rotate(-90)"/>
+          <rect class="cls-8" x="63.42" y="29.85" width="15.11" height="15.11" transform="translate(33.56 108.38) rotate(-90)"/>
+        </g>
+        <g>
+          <polygon class="cls-5" points="14.34 66.92 27.96 64.88 41.58 66.92 27.96 68.95 14.34 66.92"/>
+          <polygon class="cls-11" points="39.55 3.1 16.38 3.1 0 19.48 0 42.64 16.38 59.02 39.55 59.02 55.93 42.64 55.93 19.48 39.55 3.1"/>
+          <polygon class="cls-5" points="32.77 63.77 23.16 63.77 16.36 70.57 16.36 80.18 23.16 86.98 32.77 86.98 39.57 80.18 39.57 70.57 32.77 63.77"/>
+          <rect class="cls-11" x="16.36" y="58.9" width="23.21" height="10.52"/>
+          <polygon class="cls-5" points="41.58 74.76 27.96 76.79 14.34 74.76 12.73 70.84 14.34 66.92 27.96 68.95 41.58 66.92 43.2 70.84 41.58 74.76"/>
+          <path class="cls-5" d="M30.27,46.92l-1.36-1.16h-1.9l-1.36,1.16v23.87h4.61v-23.87Z"/>
+          <polyline class="cls-3" points="27.2 48.73 16.54 35.83 16.54 31.06"/>
+          <polyline class="cls-3" points="29.01 48.73 39.67 35.83 39.67 31.06"/>
+          <line class="cls-3" x1="16.54" y1="33.87" x2="39.67" y2="33.87"/>
+          <g class="cls-10">
+            <line class="cls-2" x1="15.25" y1="75.34" x2="27.96" y2="77.24"/>
+          </g>
+        </g>
+      </g>
+      <text class="cls-7" transform="translate(117.74 61.21) scale(.97 1)"><tspan x="0" y="0">첨단기자재 설치와</tspan><tspan x="0" y="28.8">창의프로그램 운영 </tspan></text>
+      <text class="cls-6" transform="translate(123.46 18.3) scale(.97 1)"><tspan x="0" y="0">3차 모금 </tspan></text>
+      <rect class="cls-4" x="115.42" y=".75" width="66.31" height="24.62" rx="8.57" ry="8.57"/>
+    </g>
+  </g>
+</svg>

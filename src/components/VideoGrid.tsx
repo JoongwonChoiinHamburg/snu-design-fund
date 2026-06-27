@@ -68,7 +68,7 @@ export default function VideoGrid({ videos }: Props) {
               onClick={() => setSelectedVideo(video)}
               className="group block text-left"
             >
-              <div className="relative aspect-video overflow-hidden border border-black bg-neutral-100">
+              <div className="relative aspect-video overflow-hidden border-b-2 border-black bg-neutral-100">
                 <img
                   src={video.coverImage}
                   alt={video.title}
@@ -76,9 +76,7 @@ export default function VideoGrid({ videos }: Props) {
                 />
 
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full border border-black bg-white text-[var(--color-grey)]">
-                    +
-                  </div>
+  
                 </div>
               </div>
 

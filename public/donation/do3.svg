@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" width="736.65" height="746.83" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 736.65 746.83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #00c2f5;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-5 {
+        fill: #b7b7b7;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        fill: #aaff7b;
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-7 {
+        stroke: #a0a0a0;
+        stroke-linejoin: bevel;
+        stroke-width: 3px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="510.91" y="372.32" width="73.7" height="73.7" transform="translate(138.59 956.92) rotate(-90)"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="530.91" y="298.62" width="73.7" height="73.7" transform="translate(903.22 -232.29) rotate(90)"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-1" x="551.23" y="225.24" width="73.05" height="73.7" transform="translate(325.67 849.85) rotate(-90)"/>
+    </clipPath>
+  </defs>
+  <g id="_레이어_1-2" data-name="레이어 1">
+    <g>
+      <rect class="cls-6" width="736.65" height="746.83"/>
+      <polygon class="cls-7" points="682.14 363.09 681.94 474.64 339.01 568.22 337.91 667.36 681.76 571.41 705.89 564.57 705.89 358.53 682.14 363.09"/>
+      <polygon class="cls-7" points="452.15 298.1 279.66 169.12 279.44 298.1 452.22 410.27 452.15 298.1"/>
+      <polygon class="cls-7" points="682.14 474.59 682.14 363.09 452.15 298.1 452.15 410.4 682.14 474.59"/>
+      <polygon class="cls-7" points="50.97 329.31 51.06 536.65 280.56 601.9 280.57 395 50.97 329.31"/>
+      <polygon class="cls-7" points="109.14 570.95 337.9 635.27 396.1 619.24 167.32 554.92 109.14 570.95"/>
+      <polygon class="cls-7" points="109.14 570.95 337.9 635.27 337.91 667.36 109.13 603.04 109.14 570.95"/>
+      <polygon class="cls-7" points="166.26 522.77 395.02 587.08 453.22 571.06 224.44 506.74 166.26 522.77"/>
+      <polygon class="cls-7" points="166.26 522.77 395.02 587.08 395.03 619.17 166.25 554.86 166.26 522.77"/>
+      <polygon class="cls-7" points="223.38 474.59 452.14 538.9 452.15 570.99 223.37 506.67 223.38 474.59"/>
+      <polygon class="cls-7" points="452.22 378.18 223.45 442.5 165.25 426.47 394.03 362.15 452.22 378.18"/>
+      <polygon class="cls-7" points="452.22 378.18 223.45 442.5 223.44 474.59 452.22 410.27 452.22 378.18"/>
+      <polygon class="cls-7" points="395.1 330 166.33 394.32 108.14 378.29 336.91 313.97 395.1 330"/>
+      <polygon class="cls-7" points="395.1 330 166.33 394.32 166.32 426.4 395.1 362.09 395.1 330"/>
+      <polygon class="cls-7" points="337.98 281.82 109.21 346.13 51.02 330.1 279.79 265.79 337.98 281.82"/>
+      <polygon class="cls-7" points="337.98 281.82 109.21 346.13 109.2 378.22 337.98 313.9 337.98 281.82"/>
+      <polygon class="cls-7" points="452.89 410.4 224.12 474.43 452.9 538.75 682.14 474.59 452.89 410.4"/>
+      <polygon class="cls-5" points="399.21 532.18 399.21 551.78 435.02 561.64 435.02 542.1 399.21 532.18"/>
+      <polygon class="cls-5" points="345.25 580.36 345.25 599.96 381.06 609.83 381.06 590.28 345.25 580.36"/>
+      <polygon class="cls-5" points="291.29 628.54 291.29 648.14 327.1 658.01 327.1 638.46 291.29 628.54"/>
+      <polygon class="cls-5" points="156.19 338.89 156.19 358.49 120.38 368.36 120.38 348.81 156.19 338.89"/>
+      <polygon class="cls-5" points="210.15 387.07 210.15 406.67 174.34 416.54 174.34 396.99 210.15 387.07"/>
+      <polygon class="cls-5" points="266.53 436.27 266.53 455.87 230.72 465.73 230.72 446.19 266.53 436.27"/>
+      <polygon class="cls-7" points="279.66 169.12 293.75 166.45 465 292.42 705.89 358.68 682.14 363.09 452.15 298.1 279.66 169.12"/>
+      <g>
+        <rect class="cls-2" x="510.91" y="372.32" width="73.7" height="73.7" transform="translate(138.59 956.92) rotate(-90)"/>
+        <g class="cls-9">
+          <g>
+            <g>
+              <circle class="cls-8" cx="586.13" cy="434.9" r="3.96"/>
+              <circle class="cls-8" cx="586.13" cy="414.14" r="3.96"/>
+              <circle class="cls-8" cx="586.13" cy="393.38" r="3.96"/>
+              <circle class="cls-8" cx="586.13" cy="372.62" r="3.96"/>
+              <circle class="cls-8" cx="560.45" cy="435.1" r="3.96"/>
+              <circle class="cls-8" cx="560.45" cy="414.34" r="3.96"/>
+              <circle class="cls-8" cx="560.45" cy="393.58" r="3.96"/>
+              <circle class="cls-8" cx="560.45" cy="372.82" r="3.96"/>
+              <circle class="cls-8" cx="598.89" cy="445.51" r="3.96"/>
+              <circle class="cls-8" cx="598.89" cy="424.75" r="3.96"/>
+              <circle class="cls-8" cx="598.89" cy="403.99" r="3.96"/>
+              <circle class="cls-8" cx="598.89" cy="383.23" r="3.96"/>
+              <circle class="cls-8" cx="573.21" cy="445.71" r="3.96"/>
+              <circle class="cls-8" cx="573.21" cy="424.95" r="3.96"/>
+              <circle class="cls-8" cx="573.21" cy="404.19" r="3.96"/>
+              <circle class="cls-8" cx="573.21" cy="383.43" r="3.96"/>
+            </g>
+            <g>
+              <circle class="cls-8" cx="535.65" cy="434.9" r="3.96"/>
+              <circle class="cls-8" cx="535.65" cy="414.14" r="3.96"/>
+              <circle class="cls-8" cx="535.65" cy="393.38" r="3.96"/>
+              <circle class="cls-8" cx="535.65" cy="372.62" r="3.96"/>
+              <circle class="cls-8" cx="509.97" cy="435.1" r="3.96"/>
+              <circle class="cls-8" cx="509.97" cy="414.34" r="3.96"/>
+              <circle class="cls-8" cx="509.97" cy="393.58" r="3.96"/>
+              <circle class="cls-8" cx="509.97" cy="372.82" r="3.96"/>
+              <circle class="cls-8" cx="548.41" cy="445.51" r="3.96"/>
+              <circle class="cls-8" cx="548.41" cy="424.75" r="3.96"/>
+              <circle class="cls-8" cx="548.41" cy="403.99" r="3.96"/>
+              <circle class="cls-8" cx="548.41" cy="383.23" r="3.96"/>
+              <circle class="cls-8" cx="522.73" cy="445.71" r="3.96"/>
+              <circle class="cls-8" cx="522.73" cy="424.95" r="3.96"/>
+              <circle class="cls-8" cx="522.73" cy="404.19" r="3.96"/>
+              <circle class="cls-8" cx="522.73" cy="383.43" r="3.96"/>
+            </g>
+          </g>
+        </g>
+        <rect class="cls-2" x="530.91" y="298.62" width="73.7" height="73.7" transform="translate(903.22 -232.29) rotate(90)"/>
+        <g class="cls-3">
+          <polygon class="cls-8" points="530.91 298.62 530.91 372.32 604.61 372.32 530.91 298.62"/>
+        </g>
+        <rect class="cls-8" x="551.23" y="225.24" width="73.05" height="73.7" transform="translate(325.67 849.85) rotate(-90)"/>
+        <g class="cls-4">
+          <g>
+            <g>
+              <ellipse class="cls-2" cx="626.13" cy="287.59" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="626.13" cy="267.02" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="626.13" cy="246.44" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="626.13" cy="225.87" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="600.45" cy="287.79" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="600.45" cy="267.22" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="600.45" cy="246.64" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="600.45" cy="226.06" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="638.89" cy="298.11" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="638.89" cy="277.53" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="638.89" cy="256.96" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="638.89" cy="236.38" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="613.21" cy="298.31" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="613.21" cy="277.73" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="613.21" cy="257.16" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="613.21" cy="236.58" rx="3.96" ry="3.92"/>
+            </g>
+            <g>
+              <ellipse class="cls-2" cx="575.65" cy="287.59" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="575.65" cy="267.02" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="575.65" cy="246.44" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="575.65" cy="225.87" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="549.97" cy="287.79" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="549.97" cy="267.22" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="549.97" cy="246.64" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="549.97" cy="226.06" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="588.41" cy="298.11" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="588.41" cy="277.53" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="588.41" cy="256.96" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="588.41" cy="236.38" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="562.73" cy="298.31" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="562.73" cy="277.73" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="562.73" cy="257.16" rx="3.96" ry="3.92"/>
+              <ellipse class="cls-2" cx="562.73" cy="236.58" rx="3.96" ry="3.92"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

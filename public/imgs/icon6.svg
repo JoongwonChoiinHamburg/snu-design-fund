@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" width="291.4" height="95.09" viewBox="0 0 291.4 95.09">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a8a2a0;
+      }
+
+      .cls-2 {
+        font-family: WantedSans-Black-KSCpc-EUC-H, 'Wanted Sans';
+        font-size: 15.6px;
+        font-weight: 800;
+        letter-spacing: -.02em;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #474747;
+      }
+
+      .cls-4 {
+        fill: #ff86b5;
+      }
+
+      .cls-5 {
+        fill: #ff5b91;
+      }
+
+      .cls-6 {
+        fill: none;
+        stroke: #474747;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+
+      .cls-7 {
+        fill: #d2cccb;
+      }
+
+      .cls-3 {
+        font-family: WantedSans-SemiBold-KSCpc-EUC-H, 'Wanted Sans';
+        font-size: 19.2px;
+        font-weight: 600;
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_1-2" data-name="레이어 1">
+    <g>
+      <g>
+        <g>
+          <path class="cls-1" d="M57.14,83.33h-22.96c-.43-.49-.63-.71-1.06-1.21l4.82-22.54h15.44l4.82,22.54-1.06,1.21Z"/>
+          <path class="cls-7" d="M59.82,83.33h-22.96l-1.06-1.21,4.82-22.54h15.44l4.82,22.54c-.43.49-.63.71-1.06,1.21Z"/>
+          <path class="cls-1" d="M87.42,62.24H3.91l-3.91-3.91V6.96l3.91-3.91h83.51l3.91,3.91v51.37l-3.91,3.91Z"/>
+          <path class="cls-7" d="M90.09,62.24H6.58l-3.91-3.91V6.96l3.91-3.91h83.51l3.91,3.91v51.37l-3.91,3.91Z"/>
+          <polygon class="cls-1" points="90.09 62.24 6.57 62.24 2.67 58.34 2.67 51.34 94 51.34 94 58.34 90.09 62.24"/>
+          <rect class="cls-7" x="46.32" y="54.75" width="4" height="4" transform="translate(54.28 -17.55) rotate(45)"/>
+          <path class="cls-1" d="M76.26,89.46H20.41l-.61-.61v-7.54l.61-.61h55.86l.61.61v7.54l-.61.61Z"/>
+          <path class="cls-7" d="M76.26,89.46H22.56l-.61-.61v-7.54l.61-.61h53.7l.61.61v7.54l-.61.61Z"/>
+          <rect class="cls-1" x="35.61" y="79.49" width="19.41" height="1.2"/>
+        </g>
+        <g>
+          <g>
+            <rect class="cls-5" x="73.59" y="15.87" width="29.04" height="29.04" transform="translate(176.22 60.78) rotate(180)"/>
+            <rect class="cls-4" x="79.43" y="15.87" width="4.51" height="29"/>
+            <rect class="cls-4" x="92.28" y="15.87" width="4.51" height="29"/>
+          </g>
+          <rect class="cls-5" x="102.63" y="4.09" width="11.78" height="11.78" transform="translate(217.04 19.96) rotate(180)"/>
+        </g>
+      </g>
+      <text class="cls-3" transform="translate(141.15 61.21) scale(.97 1)"><tspan x="0" y="0">가구, 집기,</tspan><tspan x="0" y="28.8">사이니지 시스템 구축</tspan></text>
+      <text class="cls-2" transform="translate(147.22 18.44) scale(.97 1)"><tspan x="0" y="0">2차 모금 </tspan></text>
+      <rect class="cls-6" x="139.34" y=".75" width="66.31" height="24.62" rx="8.57" ry="8.57"/>
+    </g>
+  </g>
+</svg>
