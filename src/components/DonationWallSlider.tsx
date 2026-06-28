@@ -4,6 +4,7 @@ import {
   useEffect,
   useRef,
   useState,
+  type TouchEvent,
 } from "react";
 
 import PatternWall from "@/components/PatternWall";
@@ -48,6 +49,11 @@ const autoSlideTimerRef =
   useRef<ReturnType<typeof setTimeout> | null>(
     null
   );
+
+const touchStartXRef = useRef<number | null>(null);
+const touchStartYRef = useRef<number | null>(null);
+
+const SWIPE_THRESHOLD = 50;
 
 const lastActivityRef = useRef(0);
 
@@ -110,6 +116,49 @@ useEffect(() => {
   };
 }, [activeIndex, lastActivityAt]);
 
+function handleTouchStart(
+  event: TouchEvent<HTMLElement>
+) {
+  resetAutoSlideTimer();
+
+  const touch = event.touches[0];
+
+  touchStartXRef.current = touch.clientX;
+  touchStartYRef.current = touch.clientY;
+}
+
+function handleTouchEnd(
+  event: TouchEvent<HTMLElement>
+) {
+  const startX = touchStartXRef.current;
+  const startY = touchStartYRef.current;
+
+  if (startX === null || startY === null) return;
+
+  const touch = event.changedTouches[0];
+
+  const diffX = touch.clientX - startX;
+  const diffY = touch.clientY - startY;
+
+  touchStartXRef.current = null;
+  touchStartYRef.current = null;
+
+  const isHorizontalSwipe =
+    Math.abs(diffX) > Math.abs(diffY) * 1.2;
+
+  const isLongEnough =
+    Math.abs(diffX) > SWIPE_THRESHOLD;
+
+  if (!isHorizontalSwipe || !isLongEnough) return;
+
+  if (diffX < 0) {
+    goNext();
+  } else {
+    goPrev();
+  }
+}
+
+
 function goPrev() {
   if (!canGoPrev) return;
 
@@ -122,14 +171,29 @@ function goNext() {
   goTo(activeIndex + 1);
 }
 return (
-  <section
-    className="relative w-full overflow-hidden"
-    onPointerMove={resetAutoSlideTimer}
-    onPointerDown={resetAutoSlideTimer}
-    onTouchStart={resetAutoSlideTimer}
-    onWheel={resetAutoSlideTimer}
-    onFocusCapture={resetAutoSlideTimer}
-  >
+<section
+  className="relative w-full overflow-hidden"
+  onPointerMove={resetAutoSlideTimer}
+  onPointerDown={resetAutoSlideTimer}
+  onTouchStart={handleTouchStart}
+  onTouchEnd={handleTouchEnd}
+  onWheel={resetAutoSlideTimer}
+  onFocusCapture={resetAutoSlideTimer}
+>
+
+  {/* background grid */}
+  <div
+    className="pointer-events-none absolute inset-0 z-0"
+    style={{
+      backgroundImage: `
+        linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px)
+      `,
+      backgroundSize: "100px 100px",
+    }}
+  />
+
+
       {/* toast */}
       {toastMessage && (
         <div

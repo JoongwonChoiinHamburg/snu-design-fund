@@ -99,6 +99,7 @@ const nameLabelMaxWidth = Math.max(
   sizePx - 2
 );
 
+
 return (
   <button
     className="group absolute overflow-visible border-0 p-0"
