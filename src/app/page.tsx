@@ -126,7 +126,7 @@ qa: [
   return (
     <main className="min-h-screen bg-white px-0 text-[var(--color-grey)]">
   <section className="mx-auto ">
-<section className="mx-auto flex max-w-[1200px] items-start justify-between pt-5 gap-10 px-4 lg:pt-20 pb-0 md:px-0 md:pb-10">
+<section className="mx-auto flex max-w-[1200px] items-start justify-between pt-6 gap-10 px-6 lg:pt-20 pb-3 md:px-0 md:pb-10">
     
     {/* left */}
     <div>

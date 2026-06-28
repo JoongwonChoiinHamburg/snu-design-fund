@@ -91,7 +91,7 @@ return (
       <div className="mx-auto mb-3 text-center md:mb-10">
         <div className="font-display text-xl leading-none md:text-5xl">
           <span className="mr-5 text-xl md:text-3xl">
-            모금액
+            현재 모금액
           </span>
 
           {totalAmount.toLocaleString()}
@@ -117,10 +117,13 @@ return (
       </div>
 
       <div className="mt-2 flex justify-center text-sm font-medium md:justify-end md:text-lg">
-        <span>
-          목표 3,000,000,000원 대비{" "}
-          <strong>{percent.toFixed(1)}%</strong>
-        </span>
+     <span>
+  <span className="hidden md:inline">
+    1차 모금 기간: 2026년 6월 - 12월 |{" "}
+  </span>
+  목표 3,000,000,000원 대비{" "}
+  <strong>{percent.toFixed(1)}%</strong>
+</span>
       </div>
     </div>
   </section>
