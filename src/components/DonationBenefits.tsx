@@ -1,3 +1,35 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+
+const RANDOM_PATTERNS = [
+  "red-01",
+  "red-02",
+  "red-03",
+  "red-04",
+  "blue-01",
+  "blue-02",
+  "blue-03",
+  "blue-04",
+  "pink-01",
+  "pink-02",
+  "pink-03",
+  "pink-04",
+  "yellow-01",
+  "yellow-02",
+  "yellow-03",
+  "yellow-04",
+];
+
+function getRandomPattern() {
+  return RANDOM_PATTERNS[
+    Math.floor(Math.random() * RANDOM_PATTERNS.length)
+  ];
+}
+
+
+
 const columns = [
   "1백만원",
   "1백만원",
@@ -46,6 +78,13 @@ const rows = [
 ];
 
 export default function DonationBenefits() {
+
+const [activePattern, setActivePattern] = useState("red1");
+
+useEffect(() => {
+  setActivePattern(getRandomPattern());
+}, []);
+
   return (
     <section className="mx-auto mt-24 max-w-[1200px] px-5 md:px-0">
       <div className="mb-10">
@@ -84,20 +123,30 @@ export default function DonationBenefits() {
                 const active = row.active?.[index];
                 const text = row.texts?.[index];
 
-                return (
-                  <div
-                    key={index}
-                    className="flex min-h-[72px] items-center justify-center px-2 text-center"
-                  >
-                    {text ? (
-                      <span className="whitespace-pre-line text-[10px] leading-snug md:text-sm">
-                        {text}
-                      </span>
-                    ) : active ? (
-                      <div className="h-4 w-4 rounded-full bg-[#ff5a00] md:h-5 md:w-5" />
-                    ) : null}
-                  </div>
-                );
+               
+
+return (
+  <div
+    key={index}
+    className="flex min-h-[72px] items-center justify-center px-2 text-center"
+  >
+    {text ? (
+      <span className="whitespace-pre-line text-[10px] leading-snug md:text-sm">
+        {text}
+      </span>
+    ) : active ? (
+      <div
+        className="h-5 w-5 border border-black md:h-6 md:w-6"
+        style={{
+          backgroundImage: `url('/patterns/2/${activePattern}.svg')`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "26px 26px",
+          backgroundPosition: "center",
+        }}
+      />
+    ) : null}
+  </div>
+);
               })}
             </div>
           ))}

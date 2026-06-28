@@ -88,7 +88,7 @@ return (
     <div className="mx-auto w-full max-w-[1500px] pb-10 md:pb-20">
 
       {/* current amount */}
-      <div className="mx-auto mb-8 text-center md:mb-10">
+      <div className="mx-auto mb-3 text-center md:mb-10">
         <div className="font-display text-xl leading-none md:text-5xl">
           <span className="mr-5 text-xl md:text-3xl">
             모금액

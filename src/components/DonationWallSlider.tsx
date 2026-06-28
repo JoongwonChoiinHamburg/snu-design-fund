@@ -140,15 +140,15 @@ return (
             top-6
             z-[80]
             -translate-x-1/2
-            border-2
+            border-b
             border-black
-            bg-white
+            bg-[var(--color-cream)]
             px-5
             py-3
             text-sm
             font-semibold
             text-[var(--color-grey)]
-            shadow-sm
+            shadow-xl
             md:text-base
           "
         >
@@ -172,7 +172,7 @@ return (
       -translate-y-1/2
       items-center
       justify-center
-      border-2
+      border
       border-black
       bg-white
       text-xl
@@ -207,7 +207,7 @@ return (
       -translate-y-1/2
       items-center
       justify-center
-      border-2
+      border
       border-black
       bg-white
       text-xl

@@ -94,21 +94,7 @@ useEffect(() => {
   </button>
 </div>
 
-        <button
-          type="button"
-          onClick={prev}
-          className="absolute left-4 top-1/2 z-10 -translate-y-1/2 border border-black bg-white px-3 py-2 text-[var(--color-grey)]"
-        >
-          ←
-        </button>
-
-        <button
-          type="button"
-          onClick={next}
-          className="absolute right-4 top-1/2 z-10 -translate-y-1/2 border border-black bg-white px-3 py-2 text-[var(--color-grey)]"
-        >
-          →
-        </button>
+   
       </div>
 
       <div className=" px-5 mt-4 flex items-start justify-between gap-10 md:px-0 ">
@@ -131,7 +117,7 @@ useEffect(() => {
     여러분의 기부는 <br className="md:hidden" />이렇게 활용됩니다.
   </h2>
 
-  <div className="relative p-5 mt-12 grid gap-0 md:grid-cols-2 lg:grid-cols-3 lg:p-0 lg:gap-0">
+  <div className="relative mt-12 grid gap-y-5 p-5 md:grid-cols-2 md:gap-0 lg:grid-cols-3 lg:p-0">
     <div className="relative z-40 border border-black bg-white p-8 shadow-sm lg:p-12 lg:translate-x-6 lg:translate-y-4">
       <img
         src="/imgs/icon5.svg"
@@ -147,7 +133,7 @@ useEffect(() => {
       </p>
     </div>
 
-    <div className="relative z-30 -mt-8 ml-6 rotate-[-1deg] border border-black bg-white p-8 shadow-sm md:mt-0 md:ml-0 md:rotate-0 lg:p-12 lg:-translate-x-2 lg:-translate-y-3 lg:rotate-[-1deg]">
+    <div className="relative z-30 -mt-8 ml-6 rotate-[-3deg] border border-black bg-white p-8 shadow-sm md:mt-0 md:ml-0 md:rotate-0 lg:p-12 lg:-translate-x-2 lg:-translate-y-3 lg:rotate-[-1deg]">
       <img
         src="/imgs/icon6.svg"
         alt=""

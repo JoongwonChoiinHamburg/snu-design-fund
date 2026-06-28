@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import LayerPopup from "./LayerPopup";
+import PopupScrollArea from "./PopupScrollArea";
+
 
 type InterviewQA = {
   q: string;
@@ -92,79 +94,76 @@ export default function VideoGrid({ videos }: Props) {
   open={!!selectedVideo}
   onClose={() => setSelectedVideo(null)}
 >
-  {selectedVideo && (
-    <div className="max-w-[900px] text-[var(--color-grey)]">
-      <div className="mb-6 flex items-start justify-between gap-6">
-        <div>
-          <h3 className="font-display text-3xl">
-            {selectedVideo.title}
-          </h3>
+  <PopupScrollArea>
+    {selectedVideo && (
+      <div className="max-w-[900px] text-[var(--color-grey)]">
+   
+         <div className="mb-6 text-center">
+            <h3 className="font-display text-4xl">
+              {selectedVideo.title}
+            </h3>
+        
         </div>
 
+        <img
+          src={selectedVideo.interviewImage}
+          alt={selectedVideo.title}
+          className="max-h-[70vh] w-full object-contain"
+        />
 
-      </div>
+        <div>
+          <div>
+            <blockquote className="pattern-highlight-quote font-display text-2xl leading-15 md:leading-relaxed md:text-3xl">
+              “{selectedVideo.profile.quote}”
+            </blockquote>
 
-      <img
-        src={selectedVideo.interviewImage}
-        alt={selectedVideo.title}
-        className="max-h-[70vh] w-full object-contain"
-      />
+            <div className="mt-8 bg-white p-5 md:p-8">
+              <div className="flex flex-col items-start gap-2 md:flex-row md:items-center md:gap-4">
+                <h4 className="font-display text-2xl leading-none md:text-3xl">
+                  {selectedVideo.profile.name}
+                </h4>
 
-      <div >
+                {selectedVideo.profile.donationAmount && (
+                  <span className="inline-flex rounded bg-[var(--color-grey)] px-2.5 py-1 text-xs font-bold text-white md:text-sm">
+                    {selectedVideo.profile.donationAmount} 기부
+                  </span>
+                )}
+              </div>
 
-<div >
-  <blockquote className="pattern-highlight-quote font-display text-2xl leading-15 md:leading-relaxed md:text-3xl">
-    “{selectedVideo.profile.quote}”
-  </blockquote>
+              <p className="mt-3 max-w-[600px] text-base leading-6 text-[var(--color-grey)]/60">
+                {selectedVideo.profile.description}
+              </p>
 
-<div className="mt-8  bg-white p-5 md:p-8">
-  <div className="flex flex-col items-start gap-2 md:flex-row md:items-center md:gap-4">
-    <h4 className="font-display text-2xl leading-none md:text-3xl">
-      {selectedVideo.profile.name}
-    </h4>
-
-    {selectedVideo.profile.donationAmount && (
-      <span className="inline-flex rounded bg-[var(--color-grey)] px-2.5 py-1 text-xs font-bold text-white md:text-sm">
-        {selectedVideo.profile.donationAmount} 기부
-      </span>
-    )}
-  </div>
-
-  <p className="mt-3 max-w-[600px] text-base leading-6 text-[var(--color-grey)]/60">
-    {selectedVideo.profile.description}
-  </p>
-
-  {selectedVideo.profile.introduction && (
-    <div className="mt-7 max-w-[700px] whitespace-pre-line leading-7 text-[var(--color-grey)]/75 md:mt-9 md:text-lg
- md:leading-8">
-      {selectedVideo.profile.introduction}
-    </div>
-  )}
-</div>
-</div>
-      </div>
-
-      <div className="mt-10 space-y-8">
-        {selectedVideo.qa?.map((item, index) => (
-          <div
-            key={index}
-           
-          >
-<div className="mb-5 text-lg font-bold leading-[1.9] md:text-2xl">
-  <span className="pattern-highlight-question">
-    <span className="mr-2 font-display md:mr-3">Q</span>
-    {item.q}
-  </span>
-</div>
-
-            <div className="ml-9 whitespace-pre-line md:text-lg max-w-[700px] leading-relaxed text-[var(--color-grey)]/75">
-              {item.a}
+              {selectedVideo.profile.introduction && (
+                <div className="mt-7 max-w-[700px] whitespace-pre-line leading-7 text-[var(--color-grey)]/75 md:mt-9 md:text-lg md:leading-8">
+                  {selectedVideo.profile.introduction}
+                </div>
+              )}
             </div>
           </div>
-        ))}
+        </div>
+
+        <div className="mt-10 space-y-8">
+          {selectedVideo.qa?.map((item, index) => (
+            <div key={index}>
+              <div className="mb-5 text-lg font-bold leading-[1.9] md:text-2xl">
+                <span className="pattern-highlight-question">
+                  <span className="mr-2 font-display md:mr-3">
+                    Q
+                  </span>
+                  {item.q}
+                </span>
+              </div>
+
+              <div className="ml-9 max-w-[700px] whitespace-pre-line leading-relaxed text-[var(--color-grey)]/75 md:text-lg">
+                {item.a}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-  )}
+    )}
+  </PopupScrollArea>
 </LayerPopup>
     </>
   );

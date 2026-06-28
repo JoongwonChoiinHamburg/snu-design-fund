@@ -47,9 +47,9 @@ const RANDOM_PATTERNS = [
 ];
 
 const DEFAULT_WALL_HEIGHT = 720;
-const MOBILE_WALL_MIN_HEIGHT = 270;
-const MOBILE_WALL_MAX_HEIGHT = 550;
-const MOBILE_WALL_VIEWPORT_RATIO = 0.42;
+const MOBILE_WALL_MIN_HEIGHT = 480;
+const MOBILE_WALL_MAX_HEIGHT = 780;
+const MOBILE_WALL_VIEWPORT_RATIO = 0.62;
 
 export default function SmallDonationPatternWall({
   sheetCsvUrl = process.env

@@ -81,9 +81,27 @@ const translateY =
   offsetY * depth + floating.y;
 
 
+const nameLabelFontSize = Math.max(
+  7,
+  Math.min(cellSize * 0.45, 14)
+);
+
+const nameLabelHeight = Math.min(
+  sizePx,
+  Math.max(
+    nameLabelFontSize + 7,
+    cellSize * 0.42
+  )
+);
+
+const nameLabelMaxWidth = Math.max(
+  nameLabelHeight,
+  sizePx - 2
+);
+
 return (
   <button
-    className="group absolute overflow-visible"
+    className="group absolute overflow-visible border-0 p-0"
     style={
       {
         left: safeX,
@@ -91,6 +109,7 @@ return (
         width: sizePx,
         height: sizePx,
         transform: `translate3d(${translateX}px, ${translateY}px, 0)`,
+        zIndex: isHovered ? 100 : Math.round(depth * 10),
       } as React.CSSProperties
     }
     onClick={onClick}
@@ -105,10 +124,8 @@ return (
   >
     {/* pattern */}
     <div
-      className="absolute -inset-px border border-black/10 transition-all duration-150"
+      className="absolute -inset-px z-0 border border-black/10 transition-all duration-150"
       style={{
-        outline: isHovered ? "3px solid black" : "none",
-        outlineOffset: "-1px",
         backgroundImage: `url('/patterns/${patternVersion}/${block.patternKey}.svg')`,
         backgroundSize: `${patternTileSize}px ${patternTileSize}px`,
         backgroundRepeat: "repeat",
@@ -118,34 +135,50 @@ return (
 
     {/* name label */}
     <div
+  className="
+    pointer-events-none
+    absolute
+    right-[-1px]
+    top-[-1px]
+    z-10
+    flex
+    w-fit
+    items-center
+    justify-center
+    bg-white
+    px-2
+    text-center
+    font-semibold
+    leading-none
+    text-[var(--color-grey)]
+  "
+  style={{
+    height: nameLabelHeight,
+    maxWidth: nameLabelMaxWidth,
+    fontSize: nameLabelFontSize,
+  }}
+>
+  <span className="block max-w-full truncate whitespace-nowrap">
+    {block.displayName}
+  </span>
+</div>
+
+    {/* hover outline */}
+    <div
       className="
         pointer-events-none
         absolute
-   right-[-1px]
-top-[-1px]
-        z-10
-        flex
-        items-center
-        justify-center
-        bg-white
-        text-center
-        font-semibold
-        leading-none
-        text-[var(--color-grey)]
+        -inset-px
+        z-20
+        transition-all
+        duration-150
       "
       style={{
-        width: Math.min(cellSize * 1.1, sizePx),
-        height: Math.min(cellSize * 0.45, sizePx),
-        fontSize: Math.max(
-          8,
-          Math.min(cellSize * 0.35, 18)
-        ),
+        boxShadow: isHovered
+          ? "0 0 0 3px black"
+          : "none",
       }}
-    >
-      <span className="block w-full truncate">
-        {block.displayName}
-      </span>
-    </div>
+    />
   </button>
 );
 }

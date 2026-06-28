@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 type Props = {
   open: boolean;
@@ -16,6 +17,12 @@ export default function LayerPopup({
   mobileMode = "fullscreen",
 }: Props) {
   const isBottomSheet = mobileMode === "bottom";
+
+const [mounted, setMounted] = useState(false);
+
+useEffect(() => {
+  setMounted(true);
+}, []);
 
   useEffect(() => {
     if (!open) return;
@@ -40,84 +47,116 @@ export default function LayerPopup({
     };
   }, [open, onClose]);
 
-  if (!open) return null;
+  if (!mounted || !open) return null;
 
-  return (
+return createPortal(
+  <div
+    className={`
+      fixed inset-0 z-[9999] bg-[var(--color-grey)]/40
+
+      ${
+        isBottomSheet
+          ? "flex items-end"
+          : "flex items-stretch"
+      }
+
+      md:items-center
+      md:justify-center
+      md:p-4
+    `}
+    onClick={onClose}
+  >
     <div
+      role="dialog"
+      aria-modal="true"
       className={`
-        fixed inset-0 z-50 bg-[var(--color-grey)]/40
+        relative
+        w-full
+        overflow-y-auto
+        bg-white
+        text-gray-900
+        shadow-lg
 
         ${
           isBottomSheet
-            ? "flex items-end"
-            : "flex items-stretch"
+            ? `
+              h-[35dvh]
+              rounded-t-2xl
+              px-5 pb-10 pt-7
+            `
+            : `
+              h-[100dvh]
+              px-5 pb-10 pt-16
+            `
         }
 
-        md:items-center
-        md:justify-center
-        md:p-4
+        md:h-auto
+        md:max-h-[90vh]
+        md:max-w-[920px]
+        md:rounded-lg
+        md:p-10
       `}
-      onClick={onClose}
+      onClick={(event) => event.stopPropagation()}
     >
-      <div
-        role="dialog"
-        aria-modal="true"
+      <button
+        type="button"
+        aria-label="팝업 닫기"
+        onClick={onClose}
         className={`
-          relative
-          w-full
-          overflow-y-auto
+          group
+          z-[60]
+          flex h-8 w-8
+          items-center justify-center
           bg-white
-          text-gray-900
-          shadow-lg
+          transition
+          hover:bg-[var(--color-grey)]
 
           ${
             isBottomSheet
-              ? `
-                h-[35dvh]
-                rounded-t-2xl
-                px-5 pb-10 pt-7
-              `
-              : `
-                h-[100dvh]
-                px-5 pb-10 pt-16
-              `
+              ? "absolute right-4 top-4"
+              : "fixed right-4 top-4 md:absolute"
           }
 
-          md:h-auto
-          md:max-h-[90vh]
-          md:max-w-[920px]
-          md:rounded-lg
-          md:p-10
+          md:right-5
+          md:top-5
         `}
-        onClick={(event) => event.stopPropagation()}
       >
-        <button
-          type="button"
-          aria-label="팝업 닫기"
-          onClick={onClose}
-          className={`
-            z-[60]
-            flex h-10 w-10
-            items-center justify-center
-            border border-[var(--color-grey)]
-            bg-white
-            text-2xl leading-none
+        <span
+          className="
+            relative
+            block
+            h-6
+            w-6
 
-            ${
-              isBottomSheet
-                ? "absolute right-4 top-4"
-                : "fixed right-4 top-4 md:absolute"
-            }
+            before:absolute
+            before:left-1/2
+            before:top-0
+            before:h-full
+            before:w-px
+            before:-translate-x-1/2
+            before:rotate-45
+            before:bg-[var(--color-grey)]
+            before:transition
 
-            md:right-4
-            md:top-4
-          `}
-        >
-          ×
-        </button>
+            after:absolute
+            after:left-1/2
+            after:top-0
+            after:h-full
+            after:w-px
+            after:-translate-x-1/2
+            after:-rotate-45
+            after:bg-[var(--color-grey)]
+            after:transition
 
-        {children}
-      </div>
+            group-hover:before:bg-white
+            group-hover:after:bg-white
+          "
+        />
+      </button>
+
+      {children}
     </div>
-  );
+  </div>,
+  document.body
+);
 }

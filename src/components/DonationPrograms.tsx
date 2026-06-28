@@ -27,11 +27,11 @@ const [openDonorStep, setOpenDonorStep] = useState(false);
       <div className="grid gap-20 md:grid-cols-4">
         {/* 1 */}
         <div>
-           <div className="mb-6 flex  items-end overflow-hidden lg:h-70 lg:w-70">
+          <div className="mb-6 flex h-62 w-62 items-end overflow-hidden  lg:h-70 lg:w-70">
             <img
               src="/donation/do1.svg"
               alt="공간 네이밍 기부 프로그램"
-              className="h-full w-full"
+              className="h-full w-full object-contain"
             />
           </div>
 
@@ -56,11 +56,11 @@ const [openDonorStep, setOpenDonorStep] = useState(false);
 
         {/* 2 */}
         <div >
-           <div className="mb-6 flex  items-end overflow-hidden lg:h-70 lg:w-70">
+           <div className="mb-6 flex h-62 w-62 items-end overflow-hidden lg:h-70 lg:w-70">
             <img
               src="/donation/do2.svg"
               alt="도네이션월 네이밍 기부 프로그램"
-              className="h-full w-full "
+              className="h-full w-full object-contain"
             />
           </div>
 
@@ -87,11 +87,11 @@ const [openDonorStep, setOpenDonorStep] = useState(false);
 
         {/* 3 */}
         <div >
-           <div className="mb-6 flex  items-end overflow-hidden lg:h-70 lg:w-70">
+           <div className="mb-6 flex h-62 w-62 items-end overflow-hidden  lg:h-70 lg:w-70">
             <img
               src="/donation/do3.svg"
               alt="대형강의홀 좌석 "
-              className="h-full w-full"
+              className="h-full w-full object-contain"
             />
           </div>
 
@@ -118,13 +118,13 @@ const [openDonorStep, setOpenDonorStep] = useState(false);
 </button>
           </div>
         </div>
-
+      {/* 4 */}
                 <div >
-          <div className="mb-6 flex  items-end overflow-hidden lg:h-70 lg:w-70">
+          <div className="mb-6 flex h-62 w-62 items-end overflow-hidden lg:h-70 lg:w-70">
             <img
               src="/donation/do4.svg"
               alt="대형강의홀 좌석 네이밍 기부"
-              className="h-full w-full"
+              className="h-full w-full object-contain"
             />
           </div>
 
