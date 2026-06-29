@@ -294,11 +294,13 @@ const floating = getFloatingOffset(
   time
 );
 
-const translateX =
-  offsetX * depth + floating.x;
+const translateX = Math.round(
+  offsetX * depth + floating.x
+);
 
-const translateY =
-  offsetY * depth + floating.y;
+const translateY = Math.round(
+  offsetY * depth + floating.y
+);
 
   const itemWidth = cellSize * 3;
   const itemHeight = cellSize;
@@ -312,11 +314,8 @@ const translateY =
     <div
       className="
         pointer-events-auto
-        absolute
-        transition-transform
-        duration-700
-        ease-out
-        will-change-transform
+  absolute
+  will-change-transform
       "
       style={{
         left: x,

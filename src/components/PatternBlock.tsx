@@ -49,10 +49,11 @@ const randomDensityScale = useVariablePatternSize
   ? getRandomDensityScale(block.id)
   : 1;
 
-const patternTileSize =
+const patternTileSize = Math.round(
   basePatternTileSize *
-  randomDensityScale *
-  patternScale;
+    randomDensityScale *
+    patternScale
+);
 
 useEffect(() => {
   let frame: number;
@@ -74,11 +75,13 @@ const floating = isFloating
 const safeX = Math.floor(x);
 const safeY = Math.floor(y);
 
-const translateX =
-  offsetX * depth + floating.x;
+const translateX = Math.round(
+  offsetX * depth + floating.x
+);
 
-const translateY =
-  offsetY * depth + floating.y;
+const translateY = Math.round(
+  offsetY * depth + floating.y
+);
 
 
 const nameLabelFontSize = Math.max(
@@ -109,7 +112,7 @@ return (
         top: safeY,
         width: sizePx,
         height: sizePx,
-        transform: `translate3d(${translateX}px, ${translateY}px, 0)`,
+        transform: `translate(${translateX}px, ${translateY}px)`,
         zIndex: isHovered ? 100 : Math.round(depth * 10),
       } as React.CSSProperties
     }
@@ -124,15 +127,18 @@ return (
     }}
   >
     {/* pattern */}
-    <div
-      className="absolute -inset-px z-0 border border-black/10 transition-all duration-150"
-      style={{
-        backgroundImage: `url('/patterns/${patternVersion}/${block.patternKey}.svg')`,
-        backgroundSize: `${patternTileSize}px ${patternTileSize}px`,
-        backgroundRepeat: "repeat",
-        backgroundPosition: "-1px -1px",
-      }}
-    />
+{/* pattern */}
+<div className="absolute -inset-px z-0 overflow-hidden border border-black/10">
+  <div
+    className="absolute -inset-[10px]"
+    style={{
+      backgroundImage: `url('/patterns/${patternVersion}/${block.patternKey}.svg')`,
+      backgroundSize: `${patternTileSize}px ${patternTileSize}px`,
+      backgroundRepeat: "round",
+      backgroundPosition: "0 0",
+    }}
+  />
+</div>
 
     {/* name label */}
     <div
@@ -165,21 +171,21 @@ return (
 </div>
 
     {/* hover outline */}
-    <div
-      className="
-        pointer-events-none
-        absolute
-        -inset-px
-        z-20
-        transition-all
-        duration-150
-      "
-      style={{
-        boxShadow: isHovered
-          ? "0 0 0 3px black"
-          : "none",
-      }}
-    />
+<div
+  className="
+    pointer-events-none
+    absolute
+    z-20
+    transition-all
+    duration-150
+  "
+  style={{
+    inset: 0.2,
+    border: isHovered
+      ? "3px solid black"
+      : "3px solid transparent",
+  }}
+/>
   </button>
 );
 }
