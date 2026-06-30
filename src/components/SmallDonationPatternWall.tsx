@@ -10,7 +10,7 @@ import {
 type Props = {
   sheetCsvUrl?: string;
 };
-
+type LayoutMode = "random" | "sorted";
 type SmallDonationItem = {
   id: string;
   displayName: string;
@@ -75,6 +75,11 @@ const [time, setTime] = useState(0);
   const [hoveredId, setHoveredId] =
     useState<string | null>(null);
 
+    const [pageIndex, setPageIndex] = useState(0);
+
+const [layoutMode, setLayoutMode] =
+  useState<LayoutMode>("random");
+
   useEffect(() => {
     const seed = Date.now();
 
@@ -112,6 +117,7 @@ const [time, setTime] = useState(0);
       window.removeEventListener("resize", updateSize);
     };
   }, []);
+
 
 useEffect(() => {
   let frame: number;
@@ -203,61 +209,170 @@ useEffect(() => {
     });
   }, [items, patternSeed]);
 
-  const positionedItems =
-    useMemo<PositionedSmallDonationItem[]>(() => {
-      if (layoutSeed === null) return [];
-
-      return createSmallDonationOverlapLayout(
-        displayItems,
-        wallWidth,
-        wallHeight,
-        cellSize,
-        layoutSeed
-      );
-    }, [
-      displayItems,
-      wallWidth,
-      wallHeight,
-      cellSize,
-      layoutSeed,
-    ]);
-
-  return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 ]">
-      <div
-        ref={containerRef}
-        className="mx-auto w-full max-w-[1800px] overflow-hidden"
-      >
-        <div
-          className="relative"
-          style={{
-            width: wallWidth,
-            height: wallHeight,
-          }}
-        >
-          {positionedItems.map(
-            ({ item, x, y, depth, floatDelay }) => (
-              <SmallDonationBlock
-                key={item.id}
-                item={item}
-                x={x}
-                y={y}
-                cellSize={cellSize}
-                depth={depth}
-                floatDelay={floatDelay}
-                offsetX={mouseOffset.x}
-                offsetY={mouseOffset.y}
-                patternScale={patternScale}
-                isHovered={hoveredId === item.id}
-                onHover={setHoveredId}
-                time={time}
-              />
-            )
-          )}
-        </div>
-      </div>
-    </section>
+const sortedItems = useMemo(() => {
+  return [...displayItems].sort((a, b) =>
+    a.displayName.localeCompare(
+      b.displayName,
+      "ko-KR",
+      {
+        numeric: true,
+        sensitivity: "base",
+      }
+    )
   );
+}, [displayItems]);
+
+const gridMetrics = useMemo(() => {
+  return getSmallDonationGridMetrics(
+    wallWidth,
+    wallHeight,
+    cellSize
+  );
+}, [wallWidth, wallHeight, cellSize]);
+
+const pageCount = Math.max(
+  1,
+  Math.ceil(
+    sortedItems.length / gridMetrics.itemsPerPage
+  )
+);
+
+useEffect(() => {
+  setPageIndex((current) =>
+    Math.min(current, pageCount - 1)
+  );
+}, [pageCount]);
+
+const currentPageIndex = Math.min(
+  pageIndex,
+  pageCount - 1
+);
+
+const pagedItems = useMemo(() => {
+  const start =
+    currentPageIndex * gridMetrics.itemsPerPage;
+
+  return sortedItems.slice(
+    start,
+    start + gridMetrics.itemsPerPage
+  );
+}, [
+  sortedItems,
+  currentPageIndex,
+  gridMetrics.itemsPerPage,
+]);
+
+const positionedItems =
+  useMemo<PositionedSmallDonationItem[]>(() => {
+    return createSmallDonationSortedLayout(
+      pagedItems,
+      gridMetrics
+    );
+  }, [pagedItems, gridMetrics]);
+
+
+function goPrevPage() {
+  setPageIndex((current) =>
+    Math.max(0, current - 1)
+  );
+}
+
+function goNextPage() {
+  setPageIndex((current) =>
+    Math.min(pageCount - 1, current + 1)
+  );
+}
+
+return (
+  <section className="relative left-1/2 w-screen -translate-x-1/2">
+    {pageCount > 1 && (
+      <div
+        className="
+          absolute
+          right-4
+          top-4
+          z-[80]
+          flex
+          items-center
+          gap-2
+          bg-white
+          px-2
+          py-1.5
+          text-xs
+          font-semibold
+          text-[var(--color-grey)]
+          md:right-8
+          md:top-8
+          md:text-sm
+        "
+      >
+        <button
+          type="button"
+          onClick={goPrevPage}
+          disabled={currentPageIndex === 0}
+          className="
+            px-2
+            disabled:opacity-30
+          "
+          aria-label="이전 소액기부자 페이지"
+        >
+          ←
+        </button>
+
+        <span>
+          {currentPageIndex + 1} / {pageCount}
+        </span>
+
+        <button
+          type="button"
+          onClick={goNextPage}
+          disabled={currentPageIndex === pageCount - 1}
+          className="
+            px-2
+            disabled:opacity-30
+          "
+          aria-label="다음 소액기부자 페이지"
+        >
+          →
+        </button>
+      </div>
+    )}
+
+    <div
+      ref={containerRef}
+      className="mx-auto w-full max-w-[1800px] overflow-hidden"
+    >
+      <div
+        className="relative"
+        style={{
+          width: wallWidth,
+          height: wallHeight,
+        }}
+      >
+        {positionedItems.map(
+          ({ item, x, y, depth, floatDelay }) => (
+            <SmallDonationBlock
+              key={`${item.id}-${currentPageIndex}`}
+              item={item}
+              x={x}
+              y={y}
+              cellSize={cellSize}
+              depth={depth}
+              floatDelay={floatDelay}
+              offsetX={0}
+              offsetY={0}
+              patternScale={patternScale}
+              isHovered={hoveredId === item.id}
+              onHover={setHoveredId}
+              time={time}
+              isFloating={false}
+            />
+          )
+        )}
+      </div>
+    </div>
+  </section>
+);
 }
 
 type SmallDonationBlockProps = {
@@ -273,6 +388,7 @@ type SmallDonationBlockProps = {
   isHovered: boolean;
   onHover: (id: string | null) => void;
   time: number;
+    isFloating: boolean;
 };
 
 function SmallDonationBlock({
@@ -288,18 +404,18 @@ function SmallDonationBlock({
   isHovered,
   onHover,
     time,
+      isFloating,
 }: SmallDonationBlockProps) {
-const floating = getFloatingOffset(
-  item.id,
-  time
-);
+const floating = isFloating
+  ? getFloatingOffset(item.id, time)
+  : { x: 0, y: 0 };
 
 const translateX = Math.round(
-  offsetX * depth + floating.x
+  (isFloating ? offsetX * depth : 0) + floating.x
 );
 
 const translateY = Math.round(
-  offsetY * depth + floating.y
+  (isFloating ? offsetY * depth : 0) + floating.y
 );
 
   const itemWidth = cellSize * 3;
@@ -422,6 +538,80 @@ function createSmallDonationOverlapLayout(
 
       floatDelay:
         seededRandom(seed + 3000) * -8,
+    };
+  });
+}
+function getSmallDonationGridMetrics(
+  wallWidth: number,
+  wallHeight: number,
+  cellSize: number
+) {
+  const itemWidth = cellSize * 3;
+  const itemHeight = cellSize;
+
+  const paddingX = cellSize * 0.8;
+  const paddingY = cellSize * 0.9;
+
+  const gapX = cellSize * 0.55;
+  const gapY = cellSize * 0.6;
+
+  const columnCount = Math.max(
+    1,
+    Math.floor(
+      (wallWidth - paddingX * 2 + gapX) /
+        (itemWidth + gapX)
+    )
+  );
+
+  const rowCount = Math.max(
+    1,
+    Math.floor(
+      (wallHeight - paddingY * 2 + gapY) /
+        (itemHeight + gapY)
+    )
+  );
+
+  return {
+    itemWidth,
+    itemHeight,
+    paddingX,
+    paddingY,
+    gapX,
+    gapY,
+    columnCount,
+    rowCount,
+    itemsPerPage: columnCount * rowCount,
+  };
+}
+
+function createSmallDonationSortedLayout(
+  items: SmallDonationItem[],
+  metrics: ReturnType<
+    typeof getSmallDonationGridMetrics
+  >
+): PositionedSmallDonationItem[] {
+  return items.map((item, index) => {
+    const column =
+      index % metrics.columnCount;
+
+    const row = Math.floor(
+      index / metrics.columnCount
+    );
+
+    return {
+      item,
+      x:
+        metrics.paddingX +
+        column *
+          (metrics.itemWidth + metrics.gapX),
+
+      y:
+        metrics.paddingY +
+        row *
+          (metrics.itemHeight + metrics.gapY),
+
+      depth: 1,
+      floatDelay: 0,
     };
   });
 }

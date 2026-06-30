@@ -31,7 +31,7 @@ function getRandomPattern() {
 
 
 const columns = [
-  "1백만원",
+  "1백만원 미만",
   "1백만원",
   "1/3/5천만원",
   "1억원 이상",
