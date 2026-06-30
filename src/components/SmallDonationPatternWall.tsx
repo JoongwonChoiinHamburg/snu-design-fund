@@ -287,24 +287,24 @@ return (
   <section className="relative left-1/2 w-screen -translate-x-1/2">
     {pageCount > 1 && (
       <div
-        className="
-          absolute
-          right-4
-          top-4
-          z-[80]
-          flex
-          items-center
-          gap-2
-          bg-white
-          px-2
-          py-1.5
-          text-xs
-          font-semibold
-          text-[var(--color-grey)]
-          md:right-8
-          md:top-8
-          md:text-sm
-        "
+ className="
+  absolute
+  left-1/2
+  top-4
+  z-[80]
+  flex
+  -translate-x-1/2
+  items-center
+  gap-2
+  bg-white
+  px-2
+  py-1.5
+  text-xs
+  font-semibold
+  text-[var(--color-grey)]
+  md:top-8
+  md:text-sm
+"
       >
         <button
           type="button"
@@ -546,14 +546,26 @@ function getSmallDonationGridMetrics(
   wallHeight: number,
   cellSize: number
 ) {
+  const isMobile = wallWidth < 768;
+
   const itemWidth = cellSize * 3;
   const itemHeight = cellSize;
 
-  const paddingX = cellSize * 0.8;
-  const paddingY = cellSize * 0.9;
+  const paddingX = isMobile
+    ? cellSize * 0.35
+    : cellSize * 0.8;
 
-  const gapX = cellSize * 0.55;
-  const gapY = cellSize * 0.6;
+  const paddingY = isMobile
+    ? cellSize * 2.2
+    : cellSize * 2.2;
+
+  const gapX = isMobile
+    ? cellSize * 0.25
+    : cellSize * 0.55;
+
+  const gapY = isMobile
+    ? cellSize * 0.45
+    : cellSize * 0.6;
 
   const columnCount = Math.max(
     1,
