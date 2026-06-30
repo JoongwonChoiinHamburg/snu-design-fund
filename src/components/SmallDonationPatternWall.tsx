@@ -287,10 +287,10 @@ return (
   <section className="relative left-1/2 w-screen -translate-x-1/2">
     {pageCount > 1 && (
       <div
- className="
+className="
   absolute
   left-1/2
-  top-4
+  bottom-4
   z-[80]
   flex
   -translate-x-1/2
@@ -302,7 +302,7 @@ return (
   text-xs
   font-semibold
   text-[var(--color-grey)]
-  md:top-8
+  md:bottom-8
   md:text-sm
 "
       >
@@ -555,30 +555,45 @@ function getSmallDonationGridMetrics(
     ? cellSize * 0.35
     : cellSize * 0.8;
 
-  const paddingY = isMobile
-    ? cellSize * 2.2
+  const paddingTop = isMobile
+    ? cellSize * 1.1
     : cellSize * 2.2;
 
+  const paddingBottom = isMobile
+    ? cellSize * 2.6
+    : cellSize * 2.4;
+
+  const columnCount = isMobile
+    ? 3
+    : Math.max(
+        1,
+        Math.floor(
+          (wallWidth - paddingX * 2) /
+            (itemWidth + cellSize * 0.55)
+        )
+      );
+
   const gapX = isMobile
-    ? cellSize * 0.25
+    ? Math.max(
+        0,
+        (wallWidth -
+          paddingX * 2 -
+          itemWidth * columnCount) /
+          Math.max(1, columnCount - 1)
+      )
     : cellSize * 0.55;
 
   const gapY = isMobile
-    ? cellSize * 0.45
+    ? cellSize * 0.5
     : cellSize * 0.6;
-
-  const columnCount = Math.max(
-    1,
-    Math.floor(
-      (wallWidth - paddingX * 2 + gapX) /
-        (itemWidth + gapX)
-    )
-  );
 
   const rowCount = Math.max(
     1,
     Math.floor(
-      (wallHeight - paddingY * 2 + gapY) /
+      (wallHeight -
+        paddingTop -
+        paddingBottom +
+        gapY) /
         (itemHeight + gapY)
     )
   );
@@ -587,7 +602,8 @@ function getSmallDonationGridMetrics(
     itemWidth,
     itemHeight,
     paddingX,
-    paddingY,
+    paddingTop,
+    paddingBottom,
     gapX,
     gapY,
     columnCount,
@@ -618,7 +634,7 @@ function createSmallDonationSortedLayout(
           (metrics.itemWidth + metrics.gapX),
 
       y:
-        metrics.paddingY +
+        metrics.paddingTop +
         row *
           (metrics.itemHeight + metrics.gapY),
 
