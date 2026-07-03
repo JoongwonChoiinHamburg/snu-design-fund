@@ -34,6 +34,11 @@ const WALLS = [
 export default function DonationWallSlider({
   blocks,
 }: Props) {
+
+
+  const [isPatternPopupOpen, setIsPatternPopupOpen] =
+  useState(false);
+  
   const [activeIndex, setActiveIndex] =
     useState(0);
 
@@ -101,6 +106,10 @@ useEffect(() => {
     clearTimeout(autoSlideTimerRef.current);
   }
 
+  if (isPatternPopupOpen) {
+    return;
+  }
+
   autoSlideTimerRef.current = setTimeout(() => {
     const nextIndex =
       activeIndex === 0 ? 1 : 0;
@@ -114,7 +123,7 @@ useEffect(() => {
       clearTimeout(autoSlideTimerRef.current);
     }
   };
-}, [activeIndex, lastActivityAt]);
+}, [activeIndex, lastActivityAt, isPatternPopupOpen]);
 
 function handleTouchStart(
   event: TouchEvent<HTMLElement>
@@ -307,7 +316,10 @@ return (
         }}
       >
         <div className="min-w-full">
-          <PatternWall blocks={blocks} />
+          <PatternWall
+  blocks={blocks}
+  onPopupOpenChange={setIsPatternPopupOpen}
+/>
         </div>
 
         <div className="min-w-full">

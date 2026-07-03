@@ -254,73 +254,305 @@ const SPACE_NAMING_ITEMS = [
   },
 ];
 
+type SpaceNamingSpace = {
+  title: string;
+  amount: string;
+  description: string[];
+  mapImage?: string;
+  renderingImage: string;
+};
+
+type SpaceNamingTab = {
+  id: string;
+  label: string;
+  spaces: SpaceNamingSpace[];
+};
+
+const SPACE_NAMING_TABS: SpaceNamingTab[] = [
+  {
+    id: "tab-1",
+    label: "주요 공간 (3-5억)",
+    spaces: [
+      {
+        title: "대형 강의홀",
+        amount: "1억원",
+         description: [
+      "3층",
+      "100석 규모의 계단식 대형 강의실",
+      "강연 및 학술세미나 개최",
+      "대외 네이밍 홍보 효과",
+    ],
+        mapImage: "/donation/space-map-1.svg",
+        renderingImage: "/donation/space-render-1.jpg",
+      },
+      {
+        title: "디자인갤러리 (구 삼원S&D홀)",
+        amount: "1억원",
+    description: [
+      "1층",
+      "높은 천정고의 디자인과 메인 전시공간",
+      "리모델링으로 높아진 접근성",
+
+    ],
+        mapImage: "/donation/space-map-2.svg",
+        renderingImage: "/donation/space-render-2.jpg",
+      },
+    ],
+  },
+  {
+    id: "tab-2",
+    label: "주요 공간 (3억)",
+    spaces: [
+            {
+        title: "이벤트 라운지",
+        amount: "1억원",
+    description: [
+      "지하1층",
+      "졸업전시 오프닝 등 각종 이벤트 및 파티 개최",
+      "대형 LED월",
+    ],
+        mapImage: "/donation/space-map-3.svg",
+        renderingImage: "/donation/space-render-3.jpg",
+      },
+    
+      {
+        title: "주출입구 웰컴라운지",
+        amount: "5천만원",
+    description: [
+      "1층",
+      "49동 주출입구 휴게공간",
+      "가장 높은 노출도 ",
+
+    ],
+        mapImage: "/donation/space-map-6.svg",
+        renderingImage: "/donation/space-render-6.jpg",
+      },
+       {
+        title: "Fab Lab",
+        amount: "5천만원",
+    description: [
+      "지하 1층",
+      "첨단기술기반 모형제작공간",
+    ],
+        mapImage: "/donation/space-map-5.svg",
+        renderingImage: "/donation/space-render-5.jpg",
+      },
+    ],
+  },
+  {
+    id: "tab-3",
+    label: "일반 공간 (1억)",
+    spaces: [
+      {
+        title: "디지털 스튜디오",
+        amount: "3천만원",
+    description: [
+      "1층",
+      "시각디자인 전공 학생들의 메인 스튜디오",
+    ],
+        mapImage: "/donation/space-map-7.svg",
+        renderingImage: "/donation/space-render-7.jpg",
+      },
+      {
+        title: "피지컬 스튜디오",
+        amount: "3천만원",
+    description: [
+      "2층",
+      "산업디자인 전공 학생들의 메인 스튜디오",
+
+    ],
+        mapImage: "/donation/space-map-8.svg",
+        renderingImage: "/donation/space-render-8.jpg",
+      },
+      {
+        title: "전망 라운지",
+        amount: "3천만원",
+    description: [
+      "2층",
+      "채광이 좋은 연결공간",
+      "소규모 전시 및 휴게 라운지",
+
+    ],
+        mapImage: "/donation/space-map-9.svg",
+        renderingImage: "/donation/space-render-9.jpg",
+      },
+    ],
+  },
+];
+
 function SpaceNamingPopupContent() {
+  const [activeTabId, setActiveTabId] = useState(
+    SPACE_NAMING_TABS[0].id
+  );
+
+  const activeTab =
+    SPACE_NAMING_TABS.find(
+      (tab) => tab.id === activeTabId
+    ) ?? SPACE_NAMING_TABS[0];
+
   return (
-   <div className="text-[var(--color-grey)]">
-      <div className="mb-14 text-center">
-        <h3 className="font-display text-3xl leading-snug md:text-4xl">
-          공간네이밍 기부 프로그램
+    <div className="w-full max-w-[1100px] text-[var(--color-grey)]">
+      <div className="mb-8 text-center md:mb-10">
+        <h3 className="font-display text-4xl leading-tight md:text-5xl">
+          공간 네이밍 기부
         </h3>
+
+        <p className="mx-auto mt-4 max-w-[620px] text-sm leading-relaxed md:text-base">
+          디자인학부의 주요 공간에 기부자의 이름을 남기는
+          프로그램입니다.
+        </p>
       </div>
 
-      <div className="space-y-16">
-        {SPACE_NAMING_ITEMS.map((item, index) => (
-          <section
-            key={item.title}
-            className="
-              grid
-              gap-8
-              border-b
-              border-black
-              pb-14
-              last:border-b-0
-              last:pb-0
-              md:grid-cols-[250px_1fr]
-              md:gap-14
-            "
-          >
-            {/* left text + map */}
-            <div className="flex flex-col">
-              <div>
-                <h4 className="text-lg font-bold leading-snug md:text-xl">
-                  {item.title}{" "}
-                  <span className="font-bold">
-                    ({item.amount})
-                  </span>
-                </h4>
+     <div
+  className="
+    sticky
+    top-0
+    z-20
+    -mx-5
+    mb-8
+    overflow-x-auto
+    bg-white/95
+    px-5
+    py-3
+    backdrop-blur
 
-                <div className="mt-8 space-y-1 text-base leading-relaxed md:text-sm">
-                  {item.description.map((line) => (
-                    <p key={line}>
-                      · {line}
-                    </p>
-                  ))}
-                </div>
-              </div>
+    md:mx-0
+    md:mb-10
+    md:overflow-visible
+    md:px-0
+  "
+>
+  <div
+    className="
+      flex
+      min-w-max
+      items-center
+      justify-center
+      gap-6
 
-              <div className="mt-10 md:mt-auto md:pt-16">
-                <img
-                  src={item.mapImage}
-                  alt={item.mapAlt}
-                  className="w-full"
-                />
-              </div>
-            </div>
+      md:min-w-0
+      md:gap-10
+    "
+  >
+    {SPACE_NAMING_TABS.map((tab) => {
+      const active = tab.id === activeTabId;
 
-            {/* right render image */}
-            <div>
-              <img
-                src={item.renderImage}
-                alt={item.renderAlt}
-                className="w-full object-cover"
-              />
-            </div>
-          </section>
+      return (
+        <button
+          key={tab.id}
+          type="button"
+          onClick={() => setActiveTabId(tab.id)}
+          className={`
+            relative
+            py-2
+            text-sm
+            font-semibold
+            transition
+
+            md:text-base
+
+            ${
+              active
+                ? "text-[var(--color-grey)]"
+                : "text-[var(--color-grey)]/45 hover:text-[var(--color-grey)]"
+            }
+          `}
+        >
+          {tab.label}
+
+          {active && (
+            <span
+              className="
+                absolute
+                bottom-0
+                left-0
+                h-px
+                w-full
+                bg-[var(--color-grey)]
+              "
+            />
+          )}
+        </button>
+      );
+    })}
+  </div>
+</div>
+
+      <div className="space-y-10 md:space-y-14">
+        {activeTab.spaces.map((space) => (
+          <SpaceNamingSection
+            key={space.title}
+            space={space}
+          />
         ))}
       </div>
     </div>
   );
 }
+
+
+function SpaceNamingSection({
+  space,
+}: {
+  space: SpaceNamingSpace;
+}) {
+  return (
+    <section
+      className="
+        border-t
+        border-black
+        pt-6
+
+        md:grid
+        md:grid-cols-[250px_1fr]
+        md:gap-8
+        md:pt-8
+      "
+    >
+      <div className="mb-5 md:mb-0">
+        <h4 className="text-2xl font-bold leading-tight">
+          {space.title}
+        </h4>
+
+
+  <ul className="mt-4 space-y-1 text-sm leading-relaxed">
+  {space.description.map((item) => (
+    <li
+      key={item}
+      className="flex gap-2"
+    >
+      <span aria-hidden="true">·</span>
+      <span>{item}</span>
+    </li>
+  ))}
+</ul>
+
+        {space.mapImage && (
+          <img
+            src={space.mapImage}
+            alt=""
+            className="mt-5 w-full max-w-[220px]"
+          />
+        )}
+      </div>
+
+      <div className="overflow-hidden border border-black bg-neutral-100">
+        <img
+          src={space.renderingImage}
+          alt=""
+          className="
+            aspect-[4/3]
+            w-full
+            object-cover
+
+            md:aspect-[16/9]
+          "
+        />
+      </div>
+    </section>
+  );
+}
+
 
 const DONOR_WALL_ITEM = {
   title: "도너스월",

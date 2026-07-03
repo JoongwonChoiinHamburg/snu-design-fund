@@ -18,6 +18,7 @@ import {
 
 type Props = {
   blocks: DonorBlock[];
+  onPopupOpenChange?: (open: boolean) => void;
 };
 
 const EMPTY_PATTERNS = [
@@ -80,6 +81,7 @@ const MOBILE_WALL_VIEWPORT_RATIO = 0.62;
 
 export default function PatternWall({
   blocks,
+  onPopupOpenChange,
 }: Props) {
 
 
@@ -108,6 +110,10 @@ const [useVariablePatternSize, setUseVariablePatternSize] =
     useState<DonorBlock | null>(null);
     const [patternVersion, setPatternVersion] =
   useState("2");
+
+  useEffect(() => {
+  onPopupOpenChange?.(!!selectedBlock);
+}, [selectedBlock, onPopupOpenChange]);
 const [patternSeed, setPatternSeed] = useState(0);
 const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 });
 
@@ -472,28 +478,39 @@ return {
         }
          mobileMode="bottom"
       >
-        {selectedBlock && (
-          <div className="space-y-3 text-sm text-[var(--color-grey)]">
-            <div className="mb-10">           
-              <h3 className="text-lg font-bold ">
-              {selectedBlock.displayName} 님
-            </h3>
+{selectedBlock && (
+  <div className="space-y-3 text-center text-sm text-[var(--color-grey)]">
+    <div className="mb-10 text-center">
+      <h3 className="text-lg font-bold">
+        {selectedBlock.displayName} 님
+      </h3>
 
-            <p >
-              {selectedBlock.amount.toLocaleString()}
-              원
-            </p>
-      </div>
- 
-            {selectedBlock.message && (
-              <span className="pattern-highlight-question text-2xl font-semibold">
-                {selectedBlock.message}
-              </span>
-            )}
+      <p>
+        {selectedBlock.amount.toLocaleString()}
+        원
+      </p>
+    </div>
 
- 
-          </div>
-        )}
+    {selectedBlock.message && (
+      <span
+        className="inline-block text-xl font-bold leading-relaxed md:text-3xl"
+        style={{
+          backgroundImage: `url('/patterns/${patternVersion}/${selectedBlock.patternKey}.svg')`,
+          backgroundSize: "48px 48px",
+          backgroundRepeat: "repeat",
+          backgroundPosition: "0 0",
+          WebkitBackgroundClip: "text",
+          backgroundClip: "text",
+          color: "transparent",
+          WebkitTextFillColor: "transparent",
+          textShadow: "0 0 1px rgba(0,0,0,0.15)",
+        }}
+      >
+        {selectedBlock.message}
+      </span>
+    )}
+  </div>
+)}
       </LayerPopup>
     </>
   );
@@ -898,4 +915,33 @@ function seededRandom(seed: number) {
     Math.sin(seed) * 10000;
 
   return x - Math.floor(x);
+}
+
+const PATTERN_TEXT_COLORS: Record<string, string> = {
+  red1: "white",
+  red2: "white",
+  red3: "var(--color-grey)",
+  red4: "white",
+
+  blue1: "white",
+  blue2: "white",
+  blue3: "var(--color-grey)",
+  blue4: "white",
+
+  pink1: "var(--color-grey)",
+  pink2: "var(--color-grey)",
+  pink3: "white",
+  pink4: "var(--color-grey)",
+
+  yellow1: "var(--color-grey)",
+  yellow2: "var(--color-grey)",
+  yellow3: "white",
+  yellow4: "var(--color-grey)",
+};
+
+function getTextColorForPattern(patternKey: string) {
+  return (
+    PATTERN_TEXT_COLORS[patternKey] ??
+    "var(--color-grey)"
+  );
 }

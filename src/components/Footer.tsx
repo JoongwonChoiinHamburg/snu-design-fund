@@ -12,7 +12,7 @@ export default function Footer() {
         </div>
 
         {/* center */}
-        <div className="space-y-3 text-sm leading-relaxed text-black/70">
+        <div className="space-y-3 text-sm leading-relaxed text-[var(--color-grey)]/70">
           <p>
             서울대학교 디자인학부
             <br />
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
 
         {/* right */}
-        <div className="space-y-3 text-sm leading-relaxed text-black/70">
+        <div className="space-y-3 text-sm leading-relaxed text-[var(--color-grey)]/70">
           <p>
             © 2026 Seoul National University
             Department of Design
