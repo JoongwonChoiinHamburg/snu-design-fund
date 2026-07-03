@@ -3,6 +3,7 @@ import Papa from "papaparse";
 export type Donor = {
   id: string;
   display_name: string;
+    position: string;
   amount: number;
   message: string;
   pattern_key: string;
@@ -69,14 +70,15 @@ export async function getDonors(): Promise<Donor[]> {
 return rows
   .filter((row) => row.id && row.id.trim() !== "")
   .filter((row) => toBoolean(row.is_visible))
-  .map((row) => ({
-    id: row.id.trim(),
-    display_name: row.display_name,
-    amount: Number(row.amount),
-    message: row.message,
-    pattern_key: row.pattern_key,
-    is_visible: toBoolean(row.is_visible),
-  }));
+.map((row) => ({
+  id: row.id.trim(),
+  display_name: row.display_name?.trim() ?? "",
+  position: row.position?.trim() ?? "",
+  amount: Number(row.amount),
+  message: row.message?.trim() ?? "",
+  pattern_key: row.pattern_key?.trim() ?? "",
+  is_visible: toBoolean(row.is_visible),
+}));
 }
 
 export async function getSeats(): Promise<Seat[]> {

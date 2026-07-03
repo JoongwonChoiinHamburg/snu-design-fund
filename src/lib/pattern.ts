@@ -5,6 +5,7 @@ export type BlockSize = 1 | 2 | 3 | 4 | 6 | 8;
 export type DonorBlock = {
   id: string;
   displayName: string;
+  position: string;
   amount: number;
   message: string;
   size: BlockSize;
@@ -77,6 +78,7 @@ export function donorsToBlocks(donors: Donor[]): DonorBlock[] {
       displayName: donor.display_name,
       amount: donor.amount,
       message: donor.message,
+      position: donor.position,
       size,
       area: size * size,
       patternKey: getStablePattern(donor.id, donor.pattern_key),

@@ -413,28 +413,34 @@ return {
 {isMounted &&
   createPortal(
     <>
-      {hoveredBlock &&
-        window.innerWidth >= 768 && (
-          <div
-            className="pointer-events-none fixed z-[9999] border-2 border-[var(--color-grey)] bg-white px-3 py-2 text-base leading-tight text-[var(--color-grey)] shadow-sm"
-            style={{
-              left: tooltipPosition.x + 14,
-              top:
-                tooltipPosition.y >
-                window.innerHeight - 90
-                  ? tooltipPosition.y - 70
-                  : tooltipPosition.y + 14,
-            }}
-          >
-            <div className="font-bold text-[var(--color-grey)]">
-              {hoveredBlock.displayName} 님
-            </div>
+   {hoveredBlock &&
+  window.innerWidth >= 768 && (
+    <div
+      className="pointer-events-none fixed z-[9999] border-2 border-[var(--color-grey)] bg-white px-3 py-2 text-base leading-tight text-[var(--color-grey)] shadow-sm"
+      style={{
+        left: tooltipPosition.x + 14,
+        top:
+          tooltipPosition.y >
+          window.innerHeight - 110
+            ? tooltipPosition.y - 90
+            : tooltipPosition.y + 14,
+      }}
+    >
+      <div className="font-bold text-[var(--color-grey)]">
+        {hoveredBlock.displayName} 님
+      </div>
 
-            <div className="text-[var(--color-grey)]">
-              {hoveredBlock.amount.toLocaleString()}원
-            </div>
-          </div>
-        )}
+      {hoveredBlock.position && (
+        <div className="mt-1 text-sm text-[var(--color-grey)]/75">
+          {hoveredBlock.position}
+        </div>
+      )}
+
+      <div className="mt-1 text-[var(--color-grey)]">
+        {hoveredBlock.amount.toLocaleString()}원
+      </div>
+    </div>
+  )}
 
       {hoveredEmptyBlock && (
         <div
@@ -485,6 +491,11 @@ return {
         {selectedBlock.displayName} 님
       </h3>
 
+    {selectedBlock.position && (
+    <p className="mt-1 text-sm text-[var(--color-grey)]/75">
+      {selectedBlock.position}
+    </p>
+  )}
       <p>
         {selectedBlock.amount.toLocaleString()}
         원

@@ -102,6 +102,15 @@ const nameLabelMaxWidth = Math.max(
   sizePx - 2
 );
 
+const sizeLayer =
+  Math.max(0, 20 - effectiveSize) * 10000;
+
+const hoverLayer = isHovered ? 100 : 0;
+
+const blockZIndex =
+  sizeLayer +
+  Math.round(depth * 10) +
+  hoverLayer;
 
 return (
   <button
@@ -113,7 +122,7 @@ return (
         width: sizePx,
         height: sizePx,
         transform: `translate(${translateX}px, ${translateY}px)`,
-        zIndex: isHovered ? 100 : Math.round(depth * 10),
+        zIndex: blockZIndex,
       } as React.CSSProperties
     }
     onClick={onClick}

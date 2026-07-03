@@ -5,7 +5,10 @@ import {
   useMemo,
   useRef,
   useState,
+  type PointerEvent,
 } from "react";
+
+import { createPortal } from "react-dom";
 
 type Props = {
   sheetCsvUrl?: string;
@@ -17,6 +20,7 @@ type SmallDonationItem = {
   amount: number;
   isVisible: boolean;
   patternKey?: string;
+  isPlaceholder?: boolean;
 };
 
 type PositionedSmallDonationItem = {
@@ -27,6 +31,12 @@ type PositionedSmallDonationItem = {
   floatDelay: number;
 };
 
+const EMPTY_PATTERNS = [
+  "mono1",
+  "mono2",
+  "mono3",
+  "mono4",
+];
 const RANDOM_PATTERNS = [
   "red-01",
   "red-02",
@@ -72,10 +82,23 @@ export default function SmallDonationPatternWall({
 
 const [time, setTime] = useState(0);
 
-  const [hoveredId, setHoveredId] =
-    useState<string | null>(null);
+const [hoveredId, setHoveredId] =
+  useState<string | null>(null);
 
-    const [pageIndex, setPageIndex] = useState(0);
+const [tooltip, setTooltip] = useState<{
+  id: string;
+  text: string;
+  x: number;
+  y: number;
+} | null>(null);
+
+const [mounted, setMounted] = useState(false);
+
+useEffect(() => {
+  setMounted(true);
+}, []);
+
+const [pageIndex, setPageIndex] = useState(0);
 
 const [layoutMode, setLayoutMode] =
   useState<LayoutMode>("random");
@@ -222,6 +245,33 @@ const sortedItems = useMemo(() => {
   );
 }, [displayItems]);
 
+
+const MIN_SMALL_DONATION_SLOTS = 10;
+
+const slotItems = useMemo(() => {
+  if (sortedItems.length >= MIN_SMALL_DONATION_SLOTS) {
+    return sortedItems;
+  }
+
+  const emptyCount =
+    MIN_SMALL_DONATION_SLOTS - sortedItems.length;
+
+const placeholders: SmallDonationItem[] =
+  Array.from({ length: emptyCount }).map(
+    (_, index) => ({
+      id: `small-donation-placeholder-${index}`,
+      displayName: "",
+      amount: 0,
+      isVisible: true,
+      isPlaceholder: true,
+      patternKey:
+        EMPTY_PATTERNS[index % EMPTY_PATTERNS.length],
+    })
+  );
+
+  return [...sortedItems, ...placeholders];
+}, [sortedItems]);
+
 const gridMetrics = useMemo(() => {
   return getSmallDonationGridMetrics(
     wallWidth,
@@ -233,7 +283,7 @@ const gridMetrics = useMemo(() => {
 const pageCount = Math.max(
   1,
   Math.ceil(
-    sortedItems.length / gridMetrics.itemsPerPage
+    slotItems.length / gridMetrics.itemsPerPage
   )
 );
 
@@ -252,12 +302,12 @@ const pagedItems = useMemo(() => {
   const start =
     currentPageIndex * gridMetrics.itemsPerPage;
 
-  return sortedItems.slice(
+  return slotItems.slice(
     start,
     start + gridMetrics.itemsPerPage
   );
 }, [
-  sortedItems,
+  slotItems,
   currentPageIndex,
   gridMetrics.itemsPerPage,
 ]);
@@ -364,6 +414,7 @@ className="
               patternScale={patternScale}
               isHovered={hoveredId === item.id}
               onHover={setHoveredId}
+                onTooltipChange={setTooltip}
               time={time}
               isFloating={false}
             />
@@ -371,6 +422,37 @@ className="
         )}
       </div>
     </div>
+
+    {mounted &&
+      tooltip &&
+      createPortal(
+        <div
+          className="
+            pointer-events-none
+            fixed
+            z-[9999]
+            border
+            border-black
+            bg-white
+            px-3
+            py-2
+            text-xs
+            font-semibold
+            leading-tight
+            text-[var(--color-grey)]
+            shadow-sm
+            md:text-sm
+          "
+          style={{
+            left: tooltip.x,
+            top: tooltip.y,
+            transform: "translate(14px, 14px)",
+          }}
+        >
+          {tooltip.text}
+        </div>,
+        document.body
+      )}
   </section>
 );
 }
@@ -387,8 +469,16 @@ type SmallDonationBlockProps = {
   patternScale: number;
   isHovered: boolean;
   onHover: (id: string | null) => void;
+  onTooltipChange: (
+    tooltip: {
+      id: string;
+      text: string;
+      x: number;
+      y: number;
+    } | null
+  ) => void;
   time: number;
-    isFloating: boolean;
+  isFloating: boolean;
 };
 
 function SmallDonationBlock({
@@ -403,8 +493,9 @@ function SmallDonationBlock({
   patternScale,
   isHovered,
   onHover,
-    time,
-      isFloating,
+  onTooltipChange,
+  time,
+  isFloating,
 }: SmallDonationBlockProps) {
 const floating = isFloating
   ? getFloatingOffset(item.id, time)
@@ -426,84 +517,130 @@ const translateY = Math.round(
     90 * patternScale
   );
 
-  return (
+const tooltipText = item.isPlaceholder
+  ? "소중한 후원을 기다립니다"
+  : `${item.amount.toLocaleString()}원`;
+
+function showTooltip(
+  event: PointerEvent<HTMLDivElement>
+) {
+  onHover(item.id);
+
+  onTooltipChange({
+    id: item.id,
+    text: tooltipText,
+    x: event.clientX,
+    y: event.clientY,
+  });
+}
+
+function moveTooltip(
+  event: PointerEvent<HTMLDivElement>
+) {
+  onTooltipChange({
+    id: item.id,
+    text: tooltipText,
+    x: event.clientX,
+    y: event.clientY,
+  });
+}
+
+function hideTooltip() {
+  onHover(null);
+  onTooltipChange(null);
+}
+
+return (
+  <div
+    className="
+      pointer-events-auto
+      absolute
+      will-change-transform
+    "
+    style={{
+      left: x,
+      top: y,
+      width: itemWidth,
+      height: itemHeight,
+      transform: `translate3d(${translateX}px, ${translateY}px, 0)`,
+      zIndex: isHovered ? 50 : Math.round(depth * 10),
+    }}
+  >
     <div
+      tabIndex={0}
+      onPointerEnter={showTooltip}
+      onPointerMove={moveTooltip}
+      onPointerLeave={hideTooltip}
+      onPointerDown={showTooltip}
+      onFocus={() => onHover(item.id)}
+      onBlur={hideTooltip}
       className="
-        pointer-events-auto
-  absolute
-  will-change-transform
+        flex
+        h-full
+        w-full
+        overflow-hidden
+        bg-white
+        transition-all
+        duration-200
+        hover:scale-105
+        hover:shadow-[0_0_0_2px_#000]
       "
       style={{
-        left: x,
-        top: y,
-        width: itemWidth,
-        height: itemHeight,
-        transform: `translate3d(${translateX}px, ${translateY}px, 0)`,
-        zIndex: isHovered ? 50 : Math.round(depth * 10),
+        animationDelay: `${floatDelay}s`,
       }}
     >
-      <div
-        tabIndex={0}
-        onMouseEnter={() => onHover(item.id)}
-        onMouseLeave={() => onHover(null)}
-        onFocus={() => onHover(item.id)}
-        onBlur={() => onHover(null)}
-        className="
-          flex
-          h-full
-          w-full
-          overflow-hidden
-
-          bg-white
-          transition-all
-          duration-200
-          hover:scale-105
-          hover:shadow-[0_0_0_2px_#000]
-
-        "
-        style={{
-          animationDelay: `${floatDelay}s`,
-        }}
-      >
+      {item.isPlaceholder ? (
         <div
-          className="h-full shrink-0"
+          className="h-full w-full"
           style={{
-            width: cellSize,
-            backgroundImage: `url(/patterns/2/${item.patternKey}.svg)`,
+            backgroundImage: `url(/patterns/mono/${item.patternKey}.svg)`,
             backgroundRepeat: "repeat",
             backgroundPosition: "0 0",
             backgroundSize: `${patternSize}px ${patternSize}px`,
           }}
         />
+      ) : (
+        <>
+          <div
+            className="h-full shrink-0"
+            style={{
+              width: cellSize,
+              backgroundImage: `url(/patterns/2/${item.patternKey}.svg)`,
+              backgroundRepeat: "repeat",
+              backgroundPosition: "0 0",
+              backgroundSize: `${patternSize}px ${patternSize}px`,
+            }}
+          />
 
-        <div
-          className="
-            flex
-            h-full
-            items-center
-            justify-center
-
-            px-2
-            text-center
-            font-semibold
-            leading-none
-            text-[var(--color-grey)]
-          "
-          style={{
-            width: cellSize * 2,
-            fontSize: Math.max(
-              11,
-              Math.min(cellSize * 0.34, 18)
-            ),
-          }}
-        >
-          <span className="block w-full truncate">
-            {item.displayName}
-          </span>
-        </div>
-      </div>
+          <div
+            className="
+              flex
+              h-full
+              items-center
+              justify-center
+              px-2
+              text-center
+              font-semibold
+              leading-none
+              text-[var(--color-grey)]
+            "
+            style={{
+              width: cellSize * 2,
+              fontSize: Math.max(
+                11,
+                Math.min(cellSize * 0.34, 18)
+              ),
+            }}
+          >
+            <span className="block w-full truncate">
+              {item.displayName}
+            </span>
+          </div>
+        </>
+      )}
     </div>
-  );
+  </div>
+);
 }
 
 function createSmallDonationOverlapLayout(

@@ -33,6 +33,7 @@ function getRandomPattern() {
 const columns = [
   "1백만원 미만",
   "1백만원",
+   "2백5십만원",
   "1/3/5천만원",
   "1억원 이상",
   "3억원 이상",
@@ -41,28 +42,28 @@ const columns = [
 
 const rows = [
   {
-    title: "디지털 도너월 네이밍 기부",
-    active: [true, false, false, false, false, false],
+    title: "웹사이트 디지털 도너월 네이밍 기부",
+    active: [true, false, false, false, false, false,false],
   },
   {
     title: "대형강의홀 좌석 명패",
-    active: [false, true, false, false, false, false],
+    active: [false, true, false, false, false, false,false],
   },
   {
     title: "도너스텝 네이밍 기부",
-    active: [false, false, true, false, false, false],
+    active: [false, false, true, false, false, false,false],
   },
   {
     title: "도너월 네이밍 기부",
-    active: [false, false, true, true, true, true],
+    active: [false,false, false, true, true, true, true],
   },
   {
     title: "공간 네이밍 (일반 강의실)",
-    active: [false, false, false, true, false, false],
+    active: [false,false, false, false, true, false, false],
   },
   {
     title: "공간 네이밍 (주요 공간)",
-    active: [false, false, false, false, true, true],
+    active: [false,false, false, false, false, true, true],
   },
   {
     title: "발전재단 예우*",
@@ -70,6 +71,7 @@ const rows = [
       "SNU\nSponser",
        "SNU\nSponser",
        "SNU\nSponser",
+        "SNU\nSponser",
        "SNU\nHonor",
       "SNU\nHonor",
       "SNU\nGold Honor",
@@ -96,7 +98,7 @@ useEffect(() => {
       <div className="overflow-x-auto">
         <div className="min-w-[820px] border-t border-black md:min-w-0">
           {/* header */}
-          <div className="grid grid-cols-[2.2fr_repeat(6,1fr)] border-b border-black">
+          <div className="grid grid-cols-[2.2fr_repeat(7,1fr)] border-b border-black">
             <div />
 
             {columns.map((column, index) => (
@@ -113,7 +115,7 @@ useEffect(() => {
           {rows.map((row) => (
             <div
               key={row.title}
-              className="grid grid-cols-[2.2fr_repeat(6,1fr)] border-b border-black"
+              className="grid grid-cols-[2.2fr_repeat(7,1fr)] border-b border-black"
             >
               <div className="flex items-center py-6 pr-6 text-xs leading-tight md:text-lg">
                 {row.title}
