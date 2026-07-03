@@ -1,5 +1,7 @@
 "use client";
 
+import { Black_Han_Sans, Orbit } from "next/font/google";
+
 import {
   useEffect,
   useMemo,

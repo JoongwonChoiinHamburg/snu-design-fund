@@ -126,27 +126,69 @@ qa: [
   return (
     <main className="min-h-screen bg-white px-0 text-[var(--color-grey)]">
   <section className="mx-auto ">
-<section className="mx-auto flex max-w-[1200px] items-start justify-between pt-6 gap-10 px-6 lg:pt-20 pb-3 md:px-0 md:pb-10">
-    
-    {/* left */}
-    <div>
-      <h1 className="font-display text-xl leading-snug md:text-5xl md:leading-relaxed">
-        미래 디자이너를 위한 창의환경 조성기금
-      </h1>
+<section
+  className="
+    mx-auto
+    flex
+    max-w-[1200px]
+    flex-col
+    items-start
+    gap-6
+    px-6
+    pt-6
+    pb-3
 
-      <h3 className="mt-1 mb-3 text-sm md:text-2xl md:mt-5 md:mb-8">
-        미래 디자이너의 탐험 공간,
-        여러분과 함께 만들어갑니다.
-      </h3>
-    </div>
+    md:flex-row
+    md:items-start
+    md:justify-between
+    md:gap-10
+    md:px-0
+    md:pt-20
+    md:pb-10
+  "
+>
+  {/* mobile top / desktop right */}
+{/* mobile logo */}
+<img
+  src="/imgs/logo_hori.svg"
+  alt="서울대학교 디자인학부"
+  className="
+    order-1
+    block
+    w-[500px]
+    shrink-0
+    ml-0
+    md:hidden
+  "
+/>
 
-    {/* right */}
+{/* desktop logo */}
 <img
   src="/imgs/logo.svg"
   alt="서울대학교 디자인학부"
-  className="hidden w-[240px] shrink-0 md:block"
+  className="
+    order-1
+    hidden
+    w-[240px]
+    shrink-0
+
+    md:order-2
+    md:block
+  "
 />
-  </section>
+
+  {/* title */}
+  <div className="order-2 md:order-1">
+    <h1 className="font-display text-xl leading-snug md:text-5xl md:leading-relaxed">
+      미래 디자이너를 위한 창의환경 조성기금
+    </h1>
+
+    <h3 className="mt-1 mb-3 text-sm md:mt-5 md:mb-8 md:text-2xl">
+      미래 디자이너의 탐험 공간,
+      여러분과 함께 만들어갑니다.
+    </h3>
+  </div>
+</section>
 </section>
 <section className="flex min-h-[80dvh] flex-col bg-[var(--color-cream)] md:min-h-0">
   <div className="flex-1">
