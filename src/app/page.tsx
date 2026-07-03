@@ -157,8 +157,8 @@ const interviewVideos = [
         q: "질문 3",
         a: "답변 3",
       },
-    ]
-  }
+    ],
+  },
 ];
 
 
