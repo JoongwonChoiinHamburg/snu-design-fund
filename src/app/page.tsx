@@ -133,9 +133,9 @@ const interviewVideos = [
       name: "김권봉",
 
       description:
-        "여기에 설명",
+        "2007학번, 미술대학 시각디자인과 전공 / 주식회사 모트모트 대표",
 
-      donationAmount: "여기에 기부금",
+      donationAmount: "3억 원",
 
       quote:
         "여기에 한 줄 인용",
