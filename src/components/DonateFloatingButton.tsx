@@ -180,7 +180,7 @@ useEffect(() => {
               </div>
               <div>
                 서울특별시 관악구 관악로 1 서울대학교 50동 2층
-              <br></br>미술대학 행정실 이수현 선생님
+              <br></br>미술대학 행정실 이수현 주무관
               <br></br>
               <span className="text-black/70">
                 02-880-7453 / @snu.ac.kr
