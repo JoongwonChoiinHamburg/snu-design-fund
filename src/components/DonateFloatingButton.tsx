@@ -178,10 +178,12 @@ useEffect(() => {
               <div>
                 미래디자이너를 위한 <br></br>창의환경 조성기금<br></br> 
               </div>
-서울특별시 관악구 관악로 1 서울대학교 50동 2층  <br></br>미술대학 행정실 이수현 선생님<br></br>
-              <div className="text-black/70">
+서울특별시 관악구 관악로 1 서울대학교 50동 2층
+              <br></br>미술대학 행정실 이수현 선생님
+              <br></br>
+              <span className="text-black/70">
                 02-880-7453 / @snu.ac.kr
-              </div>
+              </span>
               <div className="text-black/70"> <br></br>
                 02-880-7453 / <br></br>
                 02-880-7512 / design@snu.ac.kr
