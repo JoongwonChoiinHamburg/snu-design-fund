@@ -22,7 +22,13 @@ export default function Footer() {
           <p>
             후원 및 기부 문의
             <br />
-            design@snu.ac.kr
+            서울특별시 관악구 관악로 1 서울대학교 50동 2층
+            <br />
+            미술대학 행정실 이수현 주무관 / 02 880 7453 / @snu.ac.kr
+            <br />
+            서울특별시 관악구 관악로 1 서울대학교 74동 2층
+            <br />
+            디자인과 사무실 김민철 조교 / 02 880 7512 / design@snu.ac.kr
           </p>
         </div>
 
