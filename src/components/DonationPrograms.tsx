@@ -213,45 +213,7 @@ const [openDonorStep, setOpenDonorStep] = useState(false);
 }
 
 const SPACE_NAMING_ITEMS = [
-  {
-    title: "대형강의홀",
-    amount: "3억원 ~ 5억원",
-    description: [
-      "3층",
-      "100석 규모의 계단식 대형 강의실",
-      "강연 및 학술세미나 개최",
-      "대외 네이밍 홍보 효과",
-    ],
-    mapImage: "/donation/space-naming/hall-map.svg",
-    renderImage: "/donation/render1.png",
-    mapAlt: "대형강의홀 위치도",
-    renderAlt: "대형강의홀 렌더링",
-  },
-  {
-    title: "주출입구 웰컴 라운지",
-    amount: "3억원",
-    description: [
-      "1층",
-      "49동 주출입구 휴게공간",
-      "가장 높은 노출도",
-    ],
-    mapImage: "/donation/space-naming/welcome-lounge-map.svg",
-   renderImage: "/donation/render2.png",
-    mapAlt: "주출입구 웰컴 라운지 위치도",
-    renderAlt: "주출입구 웰컴 라운지 렌더링",
-  },
-  {
-    title: "디지털 스튜디오",
-    amount: "1억원",
-    description: [
-      "1층",
-      "시각디자인 전공 학생들의 메인 스튜디오",
-    ],
-    mapImage: "/donation/space-naming/event-lounge-map.svg",
-    renderImage: "/donation/render3.png",
-    mapAlt: "디지털 스튜디오 위치도",
-    renderAlt: "디지털 스튜디오 렌더링",
-  },
+
 ];
 
 type SpaceNamingSpace = {
@@ -282,8 +244,8 @@ const SPACE_NAMING_TABS: SpaceNamingTab[] = [
       "강연 및 학술세미나 개최",
       "대외 네이밍 홍보 효과",
     ],
-        mapImage: "/donation/space-map-1.svg",
-        renderingImage: "/donation/space-render-1.jpg",
+        mapImage: "/donation/plan1.svg",
+        renderingImage: "/donation/donation-render1.png",
       },
       {
         title: "디자인갤러리 (구 삼원S&D홀)",
@@ -294,8 +256,8 @@ const SPACE_NAMING_TABS: SpaceNamingTab[] = [
       "리모델링으로 높아진 접근성",
 
     ],
-        mapImage: "/donation/space-map-2.svg",
-        renderingImage: "/donation/space-render-2.jpg",
+        mapImage: "/donation/plan2.svg",
+        renderingImage: "/donation/donation-render2.png",
       },
     ],
   },
@@ -308,11 +270,11 @@ const SPACE_NAMING_TABS: SpaceNamingTab[] = [
         amount: "1억원",
     description: [
       "지하1층",
-      "졸업전시 오프닝 등 각종 이벤트 및 파티 개최",
+      "졸업전시 오프닝 등 이벤트 및 파티 개최",
       "대형 LED월",
     ],
-        mapImage: "/donation/space-map-3.svg",
-        renderingImage: "/donation/space-render-3.jpg",
+        mapImage: "/donation/plan3.svg",
+        renderingImage: "/donation/donation-render3.png",
       },
     
       {
@@ -324,8 +286,8 @@ const SPACE_NAMING_TABS: SpaceNamingTab[] = [
       "가장 높은 노출도 ",
 
     ],
-        mapImage: "/donation/space-map-6.svg",
-        renderingImage: "/donation/space-render-6.jpg",
+        mapImage: "/donation/plan4.svg",
+        renderingImage: "/donation/donation-render4.png",
       },
        {
         title: "Fab Lab",
@@ -334,8 +296,8 @@ const SPACE_NAMING_TABS: SpaceNamingTab[] = [
       "지하 1층",
       "첨단기술기반 모형제작공간",
     ],
-        mapImage: "/donation/space-map-5.svg",
-        renderingImage: "/donation/space-render-5.jpg",
+        mapImage: "/donation/plan5.svg",
+        renderingImage: "/donation/donation-render5.png",
       },
     ],
   },
@@ -350,8 +312,8 @@ const SPACE_NAMING_TABS: SpaceNamingTab[] = [
       "1층",
       "시각디자인 전공 학생들의 메인 스튜디오",
     ],
-        mapImage: "/donation/space-map-7.svg",
-        renderingImage: "/donation/space-render-7.jpg",
+        mapImage: "/donation/plan6.svg",
+        renderingImage: "/donation/donation-render6.png",
       },
       {
         title: "피지컬 스튜디오",
@@ -361,8 +323,8 @@ const SPACE_NAMING_TABS: SpaceNamingTab[] = [
       "산업디자인 전공 학생들의 메인 스튜디오",
 
     ],
-        mapImage: "/donation/space-map-8.svg",
-        renderingImage: "/donation/space-render-8.jpg",
+        mapImage: "/donation/plan7.svg",
+        renderingImage: "/donation/donation-render7.png",
       },
       {
         title: "전망 라운지",
@@ -373,8 +335,8 @@ const SPACE_NAMING_TABS: SpaceNamingTab[] = [
       "소규모 전시 및 휴게 라운지",
 
     ],
-        mapImage: "/donation/space-map-9.svg",
-        renderingImage: "/donation/space-render-9.jpg",
+        mapImage: "/donation/plan8.svg",
+        renderingImage: "/donation/donation-render8.png",
       },
     ],
   },
@@ -397,10 +359,7 @@ function SpaceNamingPopupContent() {
           공간 네이밍 기부
         </h3>
 
-        <p className="mx-auto mt-4 max-w-[620px] text-sm leading-relaxed md:text-base">
-          디자인학부의 주요 공간에 기부자의 이름을 남기는
-          프로그램입니다.
-        </p>
+
       </div>
 
      <div
@@ -501,6 +460,7 @@ function SpaceNamingSection({
       className="
         border-t
         border-black
+         first:border-t-0
         pt-6
 
         md:grid
@@ -536,19 +496,30 @@ function SpaceNamingSection({
         )}
       </div>
 
-      <div className="overflow-hidden border border-black bg-neutral-100">
-        <img
-          src={space.renderingImage}
-          alt=""
-          className="
-            aspect-[4/3]
-            w-full
-            object-cover
+<div
+  className="
+    aspect-[4/3]
+    overflow-hidden
+    border-b
+    border-black
+    bg-neutral-100
 
-            md:aspect-[16/9]
-          "
-        />
-      </div>
+    md:aspect-auto
+    md:h-full
+    md:min-h-[320px]
+  "
+>
+  <img
+    src={space.renderingImage}
+    alt=""
+    className="
+      h-full
+      w-full
+      object-cover
+      object-center
+    "
+  />
+</div>
     </section>
   );
 }

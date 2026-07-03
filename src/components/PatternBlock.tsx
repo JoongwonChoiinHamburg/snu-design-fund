@@ -179,7 +179,7 @@ return (
   </span>
 </div>
 
-    {/* hover outline */}
+{/* hover outline */}
 <div
   className="
     pointer-events-none
@@ -189,7 +189,7 @@ return (
     duration-150
   "
   style={{
-    inset: 0.2,
+    inset: -3,
     border: isHovered
       ? "3px solid black"
       : "3px solid transparent",
