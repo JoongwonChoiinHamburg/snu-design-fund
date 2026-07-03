@@ -128,8 +128,8 @@ const interviewVideos = [
       "/interviews/interview-02-cover.jpg",
 
     interviewImage:
-      //"/interviews/interview-02.jpg",
-
+      "/interviews/interview-02-cover.jpg",
+      
     profile: {
       name: "김권봉",
 
