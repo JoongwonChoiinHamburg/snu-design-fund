@@ -137,14 +137,14 @@ return (
   >
     {/* pattern */}
 {/* pattern */}
-<div className="absolute -inset-px z-0 overflow-hidden border border-black/10">
+<div className="absolute inset-0 z-0 overflow-hidden border border-black/10">
   <div
-    className="absolute -inset-[10px]"
+    className="absolute -inset-[2px]"
     style={{
       backgroundImage: `url('/patterns/${patternVersion}/${block.patternKey}.svg')`,
-      backgroundSize: `${patternTileSize}px ${patternTileSize}px`,
-      backgroundRepeat: "round",
-      backgroundPosition: "0 0",
+      backgroundSize: `${patternTileSize + 4}px ${patternTileSize + 4}px`,
+      backgroundRepeat: "repeat",
+      backgroundPosition: "-2px -2px",
     }}
   />
 </div>

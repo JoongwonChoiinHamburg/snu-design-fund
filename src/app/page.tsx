@@ -219,7 +219,18 @@ const interviewVideos = [
 
   {/* title */}
   <div className="order-2 md:order-1">
-    <h1 className="font-display text-xl leading-snug md:text-5xl md:leading-relaxed">
+    <h1
+  className="
+    font-display
+    whitespace-nowrap
+    text-[clamp(14px,4.1vw,20px)]
+    leading-snug
+
+    md:whitespace-normal
+    md:text-5xl
+    md:leading-relaxed
+  "
+>
       미래 디자이너를 위한 창의환경 조성기금
     </h1>
 
