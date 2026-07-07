@@ -92,8 +92,8 @@ const nameLabelFontSize = Math.max(
 const nameLabelHeight = Math.min(
   sizePx,
   Math.max(
-    nameLabelFontSize + 7,
-    cellSize * 0.42
+    nameLabelFontSize + 10,
+    cellSize * 0.5
   )
 );
 
@@ -150,7 +150,7 @@ return (
 </div>
 
     {/* name label */}
-    <div
+<div
   className="
     pointer-events-none
     absolute
@@ -165,7 +165,7 @@ return (
     px-2
     text-center
     font-semibold
-    leading-none
+    leading-[1.15]
     text-[var(--color-grey)]
   "
   style={{
