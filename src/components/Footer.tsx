@@ -26,7 +26,7 @@ export default function Footer() {
             <br />
             &nbsp;&nbsp;미술대학 행정실 이수현 주무관 
             <br />
-            &nbsp;&nbsp;02 880 7453 / @snu.ac.kr
+            &nbsp;&nbsp;02 880 7453 / artfund@snu.ac.kr
           </p>
             
           <p>
