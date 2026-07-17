@@ -68,10 +68,10 @@ const rows = [
   {
     title: "발전재단 예우*",
     texts: [
-      "SNU\nSponser",
-       "SNU\nSponser",
-       "SNU\nSponser",
-        "SNU\nSponser",
+      "SNU\nSponsor",
+       "SNU\nSponsor",
+       "SNU\nSponsor",
+        "SNU\nSponsor",
        "SNU\nHonor",
       "SNU\nHonor",
       "SNU\nGold Honor",

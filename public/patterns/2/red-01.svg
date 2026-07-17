@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<svg id="_레이어_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
   <defs>
     <style>
-      .cls-1 {
+      .st0 {
         fill: none;
         stroke: #86b28c;
         stroke-miterlimit: 10;
         stroke-width: 8px;
       }
 
-      .cls-2 {
+      .st1 {
         fill: #ff485a;
       }
     </style>
   </defs>
-  <rect class="cls-2" x="-.23" y="-.02" width="512" height="512"/>
+  <rect class="st1" x="-.23" y="-.02" width="512" height="512"/>
   <g>
     <g>
-      <line class="cls-1" x1="73.72" y1="1.1" x2="73.72" y2="513.1"/>
-      <line class="cls-1" x1="438.28" y1="1.1" x2="438.28" y2="513.1"/>
+      <line class="st0" x1="73.72" y1="1.1" x2="73.72" y2="513.1"/>
+      <line class="st0" x1="438.28" y1="1.1" x2="438.28" y2="513.1"/>
     </g>
     <g>
-      <line class="cls-1" x1="0" y1="439.38" x2="512" y2="439.38"/>
-      <line class="cls-1" x1="0" y1="74.82" x2="512" y2="74.82"/>
+      <line class="st0" y1="439.38" x2="512" y2="439.38"/>
+      <line class="st0" y1="74.82" x2="512" y2="74.82"/>
     </g>
   </g>
 </svg>

@@ -78,7 +78,7 @@ const totalAmount = donors.reduce(
 
 const interviewVideos = [
   {
-    title: "김하나 동문 인터뷰",
+    title: "김하나 작가 인터뷰",
 
     coverImage:
       "/interviews/interview-01-cover.jpg",
@@ -121,7 +121,7 @@ const interviewVideos = [
   },
 
   {
-    title: "김권봉 동문 인터뷰",
+    title: "김권봉 대표 인터뷰",
 
     coverImage:
       "/interviews/interview-02-cover.jpg",

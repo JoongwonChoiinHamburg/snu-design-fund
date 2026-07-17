@@ -1,62 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+<svg id="_레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 512 512">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
   <defs>
     <style>
-      .cls-1 {
-        fill: url(#_무제_그라디언트_159-3);
+      .st0 {
+        fill: url(#_무제_그라디언트);
       }
 
-      .cls-2 {
-        fill: url(#_무제_그라디언트_159-2);
+      .st1 {
+        fill: url(#_무제_그라디언트_6);
       }
 
-      .cls-3 {
-        fill: url(#_무제_그라디언트_159-9);
+      .st2 {
+        fill: url(#_무제_그라디언트_4);
       }
 
-      .cls-4 {
-        fill: url(#_무제_그라디언트_159-7);
+      .st3 {
+        fill: url(#_무제_그라디언트_7);
       }
 
-      .cls-5 {
-        fill: url(#_무제_그라디언트_159-6);
+      .st4 {
+        fill: url(#_무제_그라디언트_5);
       }
 
-      .cls-6 {
-        fill: url(#_무제_그라디언트_159-8);
+      .st5 {
+        fill: url(#_무제_그라디언트_8);
       }
 
-      .cls-7 {
-        fill: url(#_무제_그라디언트_159-5);
+      .st6 {
+        fill: url(#_무제_그라디언트_9);
       }
 
-      .cls-8 {
-        fill: url(#_무제_그라디언트_159-4);
+      .st7 {
+        fill: url(#_무제_그라디언트_2);
       }
 
-      .cls-9 {
-        fill: url(#_무제_그라디언트_159);
+      .st8 {
+        fill: url(#_무제_그라디언트_3);
       }
 
-      .cls-10 {
+      .st9 {
         fill: #e58bda;
       }
 
-      .cls-11 {
-        fill: url(#_무제_그라디언트_159-12);
+      .st10 {
+        fill: url(#_무제_그라디언트_11);
       }
 
-      .cls-12 {
-        fill: url(#_무제_그라디언트_159-11);
+      .st11 {
+        fill: url(#_무제_그라디언트_12);
       }
 
-      .cls-13 {
-        fill: url(#_무제_그라디언트_159-10);
+      .st12 {
+        fill: url(#_무제_그라디언트_10);
       }
     </style>
-    <linearGradient id="_무제_그라디언트_159" data-name="무제 그라디언트 159" x1="76.8" y1="256" x2="128" y2="256" gradientUnits="userSpaceOnUse">
+    <linearGradient id="_무제_그라디언트" data-name="무제 그라디언트" x1="76.8" y1="257.99" x2="128" y2="257.99" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
-      <stop offset="0" stop-color="#c7f8fd" stop-opacity=".01"/>
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
       <stop offset=".17" stop-color="#c7f8fd" stop-opacity=".27"/>
       <stop offset=".33" stop-color="#c7f8fd" stop-opacity=".49"/>
       <stop offset=".49" stop-color="#c7f8fd" stop-opacity=".67"/>
@@ -65,29 +66,139 @@
       <stop offset=".9" stop-color="#c7f8fd" stop-opacity=".98"/>
       <stop offset="1" stop-color="#c7f8fd"/>
     </linearGradient>
-    <linearGradient id="_무제_그라디언트_159-2" data-name="무제 그라디언트 159" x1="0" y1="21.33" x2="76.8" y2="21.33" xlink:href="#_무제_그라디언트_159"/>
-    <linearGradient id="_무제_그라디언트_159-3" data-name="무제 그라디언트 159" x1="0" y1="490.67" x2="76.8" y2="490.67" xlink:href="#_무제_그라디언트_159"/>
-    <linearGradient id="_무제_그라디언트_159-4" data-name="무제 그라디언트 159" x1="204.8" x2="256" xlink:href="#_무제_그라디언트_159"/>
-    <linearGradient id="_무제_그라디언트_159-5" data-name="무제 그라디언트 159" x1="128" y1="21.33" x2="204.8" y2="21.33" xlink:href="#_무제_그라디언트_159"/>
-    <linearGradient id="_무제_그라디언트_159-6" data-name="무제 그라디언트 159" x1="128" y1="490.67" x2="204.8" y2="490.67" xlink:href="#_무제_그라디언트_159"/>
-    <linearGradient id="_무제_그라디언트_159-7" data-name="무제 그라디언트 159" x1="332.8" x2="384" xlink:href="#_무제_그라디언트_159"/>
-    <linearGradient id="_무제_그라디언트_159-8" data-name="무제 그라디언트 159" x1="256" y1="21.33" x2="332.8" y2="21.33" xlink:href="#_무제_그라디언트_159"/>
-    <linearGradient id="_무제_그라디언트_159-9" data-name="무제 그라디언트 159" x1="256" y1="490.67" x2="332.8" y2="490.67" xlink:href="#_무제_그라디언트_159"/>
-    <linearGradient id="_무제_그라디언트_159-10" data-name="무제 그라디언트 159" x1="460.8" x2="512" xlink:href="#_무제_그라디언트_159"/>
-    <linearGradient id="_무제_그라디언트_159-11" data-name="무제 그라디언트 159" x1="384" y1="21.33" x2="460.8" y2="21.33" xlink:href="#_무제_그라디언트_159"/>
-    <linearGradient id="_무제_그라디언트_159-12" data-name="무제 그라디언트 159" x1="384" y1="490.67" x2="460.8" y2="490.67" xlink:href="#_무제_그라디언트_159"/>
+    <linearGradient id="_무제_그라디언트_2" data-name="무제 그라디언트 2" x1="0" y1="492.67" x2="76.8" y2="492.67" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset=".17" stop-color="#c7f8fd" stop-opacity=".27"/>
+      <stop offset=".33" stop-color="#c7f8fd" stop-opacity=".49"/>
+      <stop offset=".49" stop-color="#c7f8fd" stop-opacity=".67"/>
+      <stop offset=".64" stop-color="#c7f8fd" stop-opacity=".82"/>
+      <stop offset=".78" stop-color="#c7f8fd" stop-opacity=".92"/>
+      <stop offset=".9" stop-color="#c7f8fd" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#c7f8fd"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_3" data-name="무제 그라디언트 3" x1="0" y1="23.34" x2="76.8" y2="23.34" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset=".17" stop-color="#c7f8fd" stop-opacity=".27"/>
+      <stop offset=".33" stop-color="#c7f8fd" stop-opacity=".49"/>
+      <stop offset=".49" stop-color="#c7f8fd" stop-opacity=".67"/>
+      <stop offset=".64" stop-color="#c7f8fd" stop-opacity=".82"/>
+      <stop offset=".78" stop-color="#c7f8fd" stop-opacity=".92"/>
+      <stop offset=".9" stop-color="#c7f8fd" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#c7f8fd"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_4" data-name="무제 그라디언트 4" x1="204.8" y1="257.99" x2="256" y2="257.99" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset=".17" stop-color="#c7f8fd" stop-opacity=".27"/>
+      <stop offset=".33" stop-color="#c7f8fd" stop-opacity=".49"/>
+      <stop offset=".49" stop-color="#c7f8fd" stop-opacity=".67"/>
+      <stop offset=".64" stop-color="#c7f8fd" stop-opacity=".82"/>
+      <stop offset=".78" stop-color="#c7f8fd" stop-opacity=".92"/>
+      <stop offset=".9" stop-color="#c7f8fd" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#c7f8fd"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_5" data-name="무제 그라디언트 5" x1="128" y1="492.67" x2="204.8" y2="492.67" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset=".17" stop-color="#c7f8fd" stop-opacity=".27"/>
+      <stop offset=".33" stop-color="#c7f8fd" stop-opacity=".49"/>
+      <stop offset=".49" stop-color="#c7f8fd" stop-opacity=".67"/>
+      <stop offset=".64" stop-color="#c7f8fd" stop-opacity=".82"/>
+      <stop offset=".78" stop-color="#c7f8fd" stop-opacity=".92"/>
+      <stop offset=".9" stop-color="#c7f8fd" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#c7f8fd"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_6" data-name="무제 그라디언트 6" x1="128" y1="23.34" x2="204.8" y2="23.34" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset=".17" stop-color="#c7f8fd" stop-opacity=".27"/>
+      <stop offset=".33" stop-color="#c7f8fd" stop-opacity=".49"/>
+      <stop offset=".49" stop-color="#c7f8fd" stop-opacity=".67"/>
+      <stop offset=".64" stop-color="#c7f8fd" stop-opacity=".82"/>
+      <stop offset=".78" stop-color="#c7f8fd" stop-opacity=".92"/>
+      <stop offset=".9" stop-color="#c7f8fd" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#c7f8fd"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_7" data-name="무제 그라디언트 7" x1="332.8" y1="257.99" x2="384" y2="257.99" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset=".17" stop-color="#c7f8fd" stop-opacity=".27"/>
+      <stop offset=".33" stop-color="#c7f8fd" stop-opacity=".49"/>
+      <stop offset=".49" stop-color="#c7f8fd" stop-opacity=".67"/>
+      <stop offset=".64" stop-color="#c7f8fd" stop-opacity=".82"/>
+      <stop offset=".78" stop-color="#c7f8fd" stop-opacity=".92"/>
+      <stop offset=".9" stop-color="#c7f8fd" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#c7f8fd"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_8" data-name="무제 그라디언트 8" x1="256" y1="492.67" x2="332.8" y2="492.67" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset=".17" stop-color="#c7f8fd" stop-opacity=".27"/>
+      <stop offset=".33" stop-color="#c7f8fd" stop-opacity=".49"/>
+      <stop offset=".49" stop-color="#c7f8fd" stop-opacity=".67"/>
+      <stop offset=".64" stop-color="#c7f8fd" stop-opacity=".82"/>
+      <stop offset=".78" stop-color="#c7f8fd" stop-opacity=".92"/>
+      <stop offset=".9" stop-color="#c7f8fd" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#c7f8fd"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_9" data-name="무제 그라디언트 9" x1="256" y1="23.34" x2="332.8" y2="23.34" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset=".17" stop-color="#c7f8fd" stop-opacity=".27"/>
+      <stop offset=".33" stop-color="#c7f8fd" stop-opacity=".49"/>
+      <stop offset=".49" stop-color="#c7f8fd" stop-opacity=".67"/>
+      <stop offset=".64" stop-color="#c7f8fd" stop-opacity=".82"/>
+      <stop offset=".78" stop-color="#c7f8fd" stop-opacity=".92"/>
+      <stop offset=".9" stop-color="#c7f8fd" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#c7f8fd"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_10" data-name="무제 그라디언트 10" x1="460.8" y1="257.99" x2="512" y2="257.99" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset=".17" stop-color="#c7f8fd" stop-opacity=".27"/>
+      <stop offset=".33" stop-color="#c7f8fd" stop-opacity=".49"/>
+      <stop offset=".49" stop-color="#c7f8fd" stop-opacity=".67"/>
+      <stop offset=".64" stop-color="#c7f8fd" stop-opacity=".82"/>
+      <stop offset=".78" stop-color="#c7f8fd" stop-opacity=".92"/>
+      <stop offset=".9" stop-color="#c7f8fd" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#c7f8fd"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_11" data-name="무제 그라디언트 11" x1="384" y1="492.67" x2="460.8" y2="492.67" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset=".17" stop-color="#c7f8fd" stop-opacity=".27"/>
+      <stop offset=".33" stop-color="#c7f8fd" stop-opacity=".49"/>
+      <stop offset=".49" stop-color="#c7f8fd" stop-opacity=".67"/>
+      <stop offset=".64" stop-color="#c7f8fd" stop-opacity=".82"/>
+      <stop offset=".78" stop-color="#c7f8fd" stop-opacity=".92"/>
+      <stop offset=".9" stop-color="#c7f8fd" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#c7f8fd"/>
+    </linearGradient>
+    <linearGradient id="_무제_그라디언트_12" data-name="무제 그라디언트 12" x1="384" y1="23.34" x2="460.8" y2="23.34" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset="0" stop-color="#c7f8fd" stop-opacity="0"/>
+      <stop offset=".17" stop-color="#c7f8fd" stop-opacity=".27"/>
+      <stop offset=".33" stop-color="#c7f8fd" stop-opacity=".49"/>
+      <stop offset=".49" stop-color="#c7f8fd" stop-opacity=".67"/>
+      <stop offset=".64" stop-color="#c7f8fd" stop-opacity=".82"/>
+      <stop offset=".78" stop-color="#c7f8fd" stop-opacity=".92"/>
+      <stop offset=".9" stop-color="#c7f8fd" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#c7f8fd"/>
+    </linearGradient>
   </defs>
-  <rect class="cls-10" x="0" y="0" width="512" height="512"/>
-  <rect class="cls-9" x="76.8" y="42.67" width="51.2" height="426.67"/>
-  <rect class="cls-2" width="76.8" height="42.67"/>
-  <rect class="cls-1" y="469.33" width="76.8" height="42.67"/>
-  <rect class="cls-8" x="204.8" y="42.67" width="51.2" height="426.67"/>
-  <rect class="cls-7" x="128" width="76.8" height="42.67"/>
-  <rect class="cls-5" x="128" y="469.33" width="76.8" height="42.67"/>
-  <rect class="cls-4" x="332.8" y="42.67" width="51.2" height="426.67"/>
-  <rect class="cls-6" x="256" width="76.8" height="42.67"/>
-  <rect class="cls-3" x="256" y="469.33" width="76.8" height="42.67"/>
-  <rect class="cls-13" x="460.8" y="42.67" width="51.2" height="426.67"/>
-  <rect class="cls-12" x="384" width="76.8" height="42.67"/>
-  <rect class="cls-11" x="384" y="469.33" width="76.8" height="42.67"/>
+  <rect class="st9" width="512" height="512"/>
+  <rect class="st0" x="76.8" y="42.67" width="51.2" height="426.67"/>
+  <rect class="st7" width="76.8" height="42.67"/>
+  <rect class="st8" y="469.33" width="76.8" height="42.67"/>
+  <rect class="st2" x="204.8" y="42.67" width="51.2" height="426.67"/>
+  <rect class="st4" x="128" width="76.8" height="42.67"/>
+  <rect class="st1" x="128" y="469.33" width="76.8" height="42.67"/>
+  <rect class="st3" x="332.8" y="42.67" width="51.2" height="426.67"/>
+  <rect class="st5" x="256" width="76.8" height="42.67"/>
+  <rect class="st6" x="256" y="469.33" width="76.8" height="42.67"/>
+  <rect class="st12" x="460.8" y="42.67" width="51.2" height="426.67"/>
+  <rect class="st10" x="384" width="76.8" height="42.67"/>
+  <rect class="st11" x="384" y="469.33" width="76.8" height="42.67"/>
 </svg>

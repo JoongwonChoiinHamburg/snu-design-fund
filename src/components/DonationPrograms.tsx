@@ -114,7 +114,7 @@ const [openDonorStep, setOpenDonorStep] = useState(false);
   className="mt-5 border border-black bg-white px-4 py-2 text-sm text-[var(--color-grey)] hover:bg-black hover:text-white"
   onClick={() => setOpenDonorStep(true)}
 >
-  도너스 스텝 보기
+  도너스텝 보기
 </button>
           </div>
         </div>
@@ -134,7 +134,7 @@ const [openDonorStep, setOpenDonorStep] = useState(false);
 
           <div className="mt-5 space-y-3 text-normal leading-relaxed">
             <p>
- 100만원 이상의 모든 기부자를 대상으로 3층 대형강의홀 고정식 좌석에 명패를 부착해 드립니다.
+ 100만원을 기부하신 분들을 대상으로 3층 대형강의홀 고정식 좌석에 명패를 부착해 드립니다.
  </p>
  <p className="text-sm">
 · 선착순 94명 참여 가능 <br></br>
