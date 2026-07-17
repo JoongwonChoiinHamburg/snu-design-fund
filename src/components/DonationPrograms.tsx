@@ -71,7 +71,7 @@ const [openDonorStep, setOpenDonorStep] = useState(false);
 
           <div className="mt-5 space-y-3  text-normal  leading-relaxed">
             <p>
-         1천만원 이상 기부하신 분들은 웰컴라운지 벽면에 조성되는 도네이션월에 성함을 남겨드립니다.
+         1천만원 이상 기부하신 분들은 웰컴라운지 벽면에 조성되는 도너스월에 성함을 남겨드립니다.
             </p>
 
             <button
