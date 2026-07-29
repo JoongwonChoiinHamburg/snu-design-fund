@@ -35,8 +35,16 @@ export default function PatternBlock({
   renderSize,
   isFloating,
 }: Props) {
-  const effectiveSize = renderSize ?? block.size;
+
+const MIN_RENDER_SIZE = 1.35;
+
+const effectiveSize = Math.max(
+  renderSize ?? block.size,
+  MIN_RENDER_SIZE
+);
+
 const sizePx = Math.ceil(effectiveSize * cellSize);
+
 const [isHovered, setIsHovered] = useState(false);
 const [time, setTime] = useState(0);
 
@@ -97,10 +105,20 @@ const nameLabelHeight = Math.min(
   )
 );
 
-const nameLabelMaxWidth = Math.max(
-  nameLabelHeight,
-  sizePx - 2
-);
+const isSmallBlock = effectiveSize < 2;
+
+const estimatedNameWidth =
+  block.displayName.length * nameLabelFontSize + 32;
+
+const nameLabelMaxWidth = isSmallBlock
+  ? Math.min(
+      220,
+      Math.max(sizePx, estimatedNameWidth)
+    )
+  : Math.max(
+      nameLabelHeight,
+      sizePx - 2
+    );
 
 const sizeLayer =
   Math.max(0, 20 - effectiveSize) * 10000;
@@ -174,9 +192,17 @@ return (
     fontSize: nameLabelFontSize,
   }}
 >
-  <span className="block max-w-full truncate whitespace-nowrap">
-    {block.displayName}
-  </span>
+<span
+  className={`
+    block
+    max-w-full
+    whitespace-nowrap
+
+    ${isSmallBlock ? "" : "truncate"}
+  `}
+>
+  {block.displayName}
+</span>
 </div>
 
 {/* hover outline */}
