@@ -103,12 +103,10 @@ function SeatButton({
     <button
       type="button"
       onClick={openSeat}
-      onPointerUp={(event) => {
-        if (event.pointerType === "mouse") return;
-
-        event.preventDefault();
-        openSeat();
-      }}
+  onTouchEnd={(event) => {
+  event.preventDefault();
+  openSeat();
+}}
       className={`
         flex
         aspect-square
