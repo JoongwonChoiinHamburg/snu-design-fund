@@ -72,6 +72,7 @@ const maxSeatsPerRow = Math.max(
           <SeatButton
             key={seat.id}
             seat={seat}
+             onSeatClick={onSeatClick}
           />
         ))}
       </div>
@@ -93,22 +94,36 @@ function SeatButton({
   const hasPopupContent =
     !!seat.display_name || !!seat.message;
 
+  function openSeat() {
+    if (!hasPopupContent) return;
+    onSeatClick?.(seat);
+  }
+
   return (
     <button
       type="button"
-      onClick={() => {
-        if (!hasPopupContent) return;
-        onSeatClick?.(seat);
+      onClick={openSeat}
+      onPointerUp={(event) => {
+        if (event.pointerType === "mouse") return;
+
+        event.preventDefault();
+        openSeat();
       }}
       className={`
         flex
-        h-10
-        w-10
+        aspect-square
+        w-full
         items-center
         justify-center
-        rounded
-        text-xs
+        rounded-sm
+        text-[8px]
+        leading-none
         transition
+        touch-manipulation
+        select-none
+
+        md:rounded
+        md:text-xs
 
         ${getColor(seat.status)}
 
