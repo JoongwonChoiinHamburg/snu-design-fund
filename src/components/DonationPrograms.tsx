@@ -70,17 +70,14 @@ const [selectedSeat, setSelectedSeat] =
     <div className="md:col-span-2">
 
 
-      <div className="overflow-x-auto">
-        <div className="min-w-[680px] md:min-w-0">
-          <SeatMap
-  seats={seats}
-  onSeatClick={(seat) => {
-    if (!seat.display_name && !seat.message) return;
-    setSelectedSeat(seat);
-  }}
-/>
-        </div>
-      </div>
+ <div className="w-full overflow-visible">
+  <SeatMap
+    seats={seats}
+    onSeatClick={(seat) => {
+      setSelectedSeat(seat);
+    }}
+  />
+</div>
     </div>
 
     {/* right 2 columns: supporting information */}

@@ -52,29 +52,28 @@ const maxSeatsPerRow = Math.max(
           </div>
         </div>
 
-      <div className="pb-30 flex flex-col items-center gap-2">
+      <div className="flex w-full flex-col items-center gap-1.5 pb-16 md:gap-2 md:pb-30">
   {rows.map((row) => (
     <div
       key={row.label}
-      className="flex items-center gap-2"
+      className="flex w-full items-center gap-1 md:gap-2"
     >
-      <div className="w-6 shrink-0 text-xs text-gray-500">
+      <div className="w-4 shrink-0 text-[10px] text-gray-500 md:w-6 md:text-xs">
         {row.label}
       </div>
 
       <div
-        className="grid gap-1.5"
+        className="grid flex-1 gap-0.5 md:gap-1.5"
         style={{
-          gridTemplateColumns: `repeat(${maxSeatsPerRow}, 2.5rem)`,
+          gridTemplateColumns: `repeat(${maxSeatsPerRow}, minmax(0, 1fr))`,
         }}
       >
         {row.seats.map((seat) => (
-  <SeatButton
-    key={seat.id}
-    seat={seat}
-    onSeatClick={onSeatClick}
-  />
-))}
+          <SeatButton
+            key={seat.id}
+            seat={seat}
+          />
+        ))}
       </div>
     </div>
   ))}
