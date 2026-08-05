@@ -31,41 +31,42 @@ useEffect(() => {
     <>
       {/* floating button */}
 {!open && (
-  <button
-    type="button"
-    onClick={() => setOpen(true)}
-    className="
-      donate-floating-button
-      donate-pattern-button
-      fixed bottom-3 right-3 z-[9999]
-      flex items-center justify-center
-      overflow-hidden
-      border-b-2 border-r-2
-      px-6 py-4
-      font-display text-lg font-bold text-black
-      shadow-lg
-      transition-transform
-      hover:-translate-y-0.5
+<a
+  href="https://secure.donus.org/snuf/pay/step1?dontype=P240107"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    donate-floating-button
+    donate-pattern-button
+    fixed bottom-3 right-3 z-[9999]
+    flex items-center justify-center
+    overflow-hidden
+    border-b-2 border-r-2
+    px-6 py-4
+    font-display text-lg font-bold text-black
+    shadow-lg
+    transition-transform
+    hover:-translate-y-0.5
 
-      md:bottom-6 md:right-6
+    md:bottom-6 md:right-6
 
-      lg:h-[96px] lg:w-[96px]
-      lg:px-0 lg:py-0
-    "
-    style={
-      donatePattern
-        ? {
-            backgroundImage: `url(/patterns/light/${donatePattern}.svg)`,
-          }
-        : {
-            backgroundColor: "#ff5a00",
-          }
-    }
-  >
-    <span className="relative z-10 whitespace-nowrap">
-      기부하기
-    </span>
-  </button>
+    lg:h-[96px] lg:w-[96px]
+    lg:px-0 lg:py-0
+  "
+  style={
+    donatePattern
+      ? {
+          backgroundImage: `url(/patterns/light/${donatePattern}.svg)`,
+        }
+      : {
+          backgroundColor: "#ff5a00",
+        }
+  }
+>
+  <span className="relative z-10 whitespace-nowrap">
+    기부하기
+  </span>
+</a>
 )}
       {/* popup */}
       <LayerPopup

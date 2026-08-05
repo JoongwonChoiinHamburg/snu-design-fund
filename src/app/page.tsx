@@ -317,7 +317,7 @@ const interviewVideos = [
 
 <RenderingSlider slides={renderSlides} />
 </section>
-
+<DonationPrograms seats={seats} />
 <section className="mx-auto mt-40 max-w-[1200px]">
   
   <h2 className="px-5 mb-8 font-display text-3xl lg:px-0">
@@ -326,7 +326,7 @@ const interviewVideos = [
 
     <VideoGrid videos={interviewVideos} />
 </section>
-<DonationPrograms seats={seats} />
+
 <DonationBenefits />
 <Footer />
 <DonateFloatingButton />

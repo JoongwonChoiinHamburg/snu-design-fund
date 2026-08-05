@@ -11,147 +11,276 @@ type Props = {
 };
 
 export default function DonationPrograms({ seats }: Props) {
-const [openSeatMap, setOpenSeatMap] = useState(false);
+
 const [openSpaceNaming, setOpenSpaceNaming] = useState(false);
 const [openDonorWall, setOpenDonorWall] = useState(false);
 const [openDonorStep, setOpenDonorStep] = useState(false);
+
+const [selectedSeat, setSelectedSeat] =
+  useState<Seat | null>(null);
   return (
     <>
-    <section className="mx-auto mt-40 max-w-[1200px] px-5 md:px-0">
-      <div className="mb-10">
-        <h2 className="font-display text-3xl ">
-          기부 프로그램
-        </h2>
+<section className="mx-auto mt-40 max-w-[1200px] px-5 md:px-0">
+  {/* full-width title + intro */}
+  <div className="mb-12">
+    <h2 className="font-display text-3xl">
+      대형강의홀 좌석 네이밍 기부
+    </h2>
+
+    <div className="mt-8 max-w-[860px]">
+      <p className="text-lg leading-relaxed md:text-xl">
+        100만원을 기부하신 분들을 대상으로 3층 대형강의홀
+        고정식 좌석에 명패를 부착해 드립니다.
+      </p>
+
+      <div
+        className="
+          mt-1
+          flex
+          flex-wrap
+          gap-x-5
+          gap-y-2
+          text-sm
+          leading-relaxed
+          text-[var(--color-grey)]/75
+          md:text-base
+        "
+      >
+          기부금액 1000만원, 선착순 94명, 복수후원 불가
+        
       </div>
+    </div>
+  </div>
 
-      <div className="grid gap-20 md:grid-cols-4">
-        {/* 1 */}
-        <div>
-          <div className="mb-6 flex h-62 w-62 items-end overflow-hidden  lg:h-70 lg:w-70">
-            <img
-              src="/donation/do1.svg"
-              alt="공간 네이밍 기부 프로그램"
-              className="h-full w-full object-contain"
-            />
-          </div>
+  {/* 4-column content area */}
+  <div
+    className="
+      grid
+      gap-12
+      border-t
+      border-black
+      pt-10
 
-          <h3 className=" text-xl font-bold leading-snug">
-            공간 네이밍 기부
-          </h3>
+      md:grid-cols-4
+      md:gap-10
+      md:pt-12
+    "
+  >
+    {/* left 2 columns: seat map */}
+    <div className="md:col-span-2">
 
-          <div className="mt-5 space-y-3  text-normal  leading-relaxed">
-            <p>
-              3억원 이상의 기부자를 대상으로 1층 전시장, 3층 대형강의홀, 각종 라운지 공간에 이름을 부여합니다.  
-            </p>
-<p>1억원 이상의 기부자를 대상으로 일반강의실 등의 공간에 이름을 부여합니다.</p>
-<button
-  type="button"
-  className="mt-5 border border-black bg-white px-4 py-2 text-sm text-[var(--color-grey)] hover:bg-black hover:text-white"
-  onClick={() => setOpenSpaceNaming(true)}
->
-  공간 보기
-</button>
-          </div>
-        </div>
 
-        {/* 2 */}
-        <div >
-           <div className="mb-6 flex h-62 w-62 items-end overflow-hidden lg:h-70 lg:w-70">
-            <img
-              src="/donation/do2.svg"
-              alt="도네이션월 네이밍 기부 프로그램"
-              className="h-full w-full object-contain"
-            />
-          </div>
-
-          <h3 className=" text-xl font-bold leading-snug">
-            도너스월 네이밍 기부
-
-          </h3>
-
-          <div className="mt-5 space-y-3  text-normal  leading-relaxed">
-            <p>
-         1천만원 이상 기부하신 분들은 웰컴라운지 벽면에 조성되는 도너스월에 성함을 남겨드립니다.
-            </p>
-
-            <button
-  type="button"
-  className="mt-5 border border-black bg-white px-4 py-2 text-sm text-[var(--color-grey)] hover:bg-black hover:text-white"
-  onClick={() => setOpenDonorWall(true)}
->
-  도너스 월 보기
-</button>
-          </div>
-                      
-        </div>
-
-        {/* 3 */}
-        <div >
-           <div className="mb-6 flex h-62 w-62 items-end overflow-hidden  lg:h-70 lg:w-70">
-            <img
-              src="/donation/do3.svg"
-              alt="대형강의홀 좌석 "
-              className="h-full w-full object-contain"
-            />
-          </div>
-
-          <h3 className=" text-xl font-bold leading-snug">
-            도너스텝 네이밍 기부
-          </h3>
-
-          <div className="mt-5 space-y-3 text-normal leading-relaxed">
-            <p>
- 250만원을 기부하신 분들은 디자인 연구동의 계단 한 칸에 성함을 남겨드립니다.
- </p>
- <p className="text-sm">
- · 선착순 77명 참여 가능 <br></br>
-  · 복수 후원 가능<br></br>
-  · 계단 칸과 문구 지정후 표기
- 
-            </p>
-<button
-  type="button"
-  className="mt-5 border border-black bg-white px-4 py-2 text-sm text-[var(--color-grey)] hover:bg-black hover:text-white"
-  onClick={() => setOpenDonorStep(true)}
->
-  도너스텝 보기
-</button>
-          </div>
-        </div>
-      {/* 4 */}
-                <div >
-          <div className="mb-6 flex h-62 w-62 items-end overflow-hidden lg:h-70 lg:w-70">
-            <img
-              src="/donation/do4.svg"
-              alt="대형강의홀 좌석 네이밍 기부"
-              className="h-full w-full object-contain"
-            />
-          </div>
-
-          <h3 className=" text-xl font-bold leading-snug">
-            대형강의홀 좌석 네이밍 기부
-          </h3>
-
-          <div className="mt-5 space-y-3 text-normal leading-relaxed">
-            <p>
- 100만원을 기부하신 분들을 대상으로 3층 대형강의홀 고정식 좌석에 명패를 부착해 드립니다.
- </p>
- <p className="text-sm">
-· 선착순 94명 참여 가능 <br></br>
-· 복수 후원 불가  <br></br>
-· 위치와 문구 지정 후 명패 제작
-            </p>
-<button
-  type="button"
-  className="mt-5 border border-black bg-white px-4 py-2 text-sm text-[var(--color-grey)] hover:bg-black hover:text-white"
-  onClick={() => setOpenSeatMap(true)}
->
-  좌석 보기
-</button>
-          </div>
+      <div className="overflow-x-auto">
+        <div className="min-w-[680px] md:min-w-0">
+          <SeatMap
+  seats={seats}
+  onSeatClick={(seat) => {
+    if (!seat.display_name && !seat.message) return;
+    setSelectedSeat(seat);
+  }}
+/>
         </div>
       </div>
-    </section>
+    </div>
+
+    {/* right 2 columns: supporting information */}
+    <aside
+      className="
+        md:col-span-2
+        md:border-l
+        md:border-black/25
+        md:pl-10
+      "
+    >
+      <div>
+        <h3 className="text-xl font-bold">
+        신청 절차
+        </h3>
+
+        <div className="mt-8 space-y-7">
+          <div className="grid grid-cols-[32px_1fr] gap-4">
+            <div className="font-display text-2xl leading-none">
+              1
+            </div>
+
+            <div>
+              <h3 className="font-bold">
+                좌석 기부 신청
+              </h3>
+
+              <p className="mt-2 leading-relaxed text-[var(--color-grey)]/70">
+                좌석 배치도를 확인한 뒤 희망 좌석을 정해
+                디자인학부 과사무실로 문의합니다. 신청이 접수되면
+                해당 좌석은 예약 상태로 표시됩니다.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-[32px_1fr] gap-4">
+            <div className="font-display text-2xl leading-none">
+              2
+            </div>
+
+            <div>
+              <h4 className="font-bold">
+                기부금 납입 및 명패 설치
+              </h4>
+
+              <p className="mt-2 leading-relaxed text-[var(--color-grey)]/70">
+                서울대학교 발전재단을 통해 기부금을 납입합니다.
+                기부 확인 후 좌석 명패 문구를 확정하고 제작·설치가
+                진행됩니다.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-[32px_1fr] gap-4">
+            <div className="font-display text-2xl leading-none">
+              3
+            </div>
+
+            <div>
+              <h4 className="font-bold">
+                기부자 예우
+              </h4>
+
+              <p className="mt-2  leading-relaxed text-[var(--color-grey)]/70">
+                기부가 확정된 좌석은 배치도에 반영되며 기부자 정보가
+                관리됩니다. 기부자는 서울대학교 발전재단 기준에 따른
+                예우를 받게 됩니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-14">
+        <h3 className="mb-5 text-xl font-bold">
+          명패 예시
+        </h3>
+
+        <div className="max-w-[420px] overflow-hidden">
+          <img
+                src="/imgs/plate.png"
+            alt="좌석 명패 예시"
+            className="w-full object-contain"
+          />
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section className="mx-auto mt-40 max-w-[1200px] px-5 md:px-0">
+  <div className="mb-10">
+    <h2 className="font-display text-3xl">
+      다른 기부 프로그램
+    </h2>
+  </div>
+
+  <div className="grid gap-20 md:grid-cols-3">
+    {/* 도너스텝 */}
+    <div>
+      <div className="mb-6 flex h-62 w-62 items-end overflow-hidden lg:h-70 lg:w-70">
+        <img
+          src="/donation/do3.svg"
+          alt="대형강의홀 좌석 "
+          className="h-full w-full object-contain"
+        />
+      </div>
+
+      <h3 className="text-xl font-bold leading-snug">
+        도너스텝 네이밍 기부
+      </h3>
+
+      <div className="mt-5 space-y-3 text-normal leading-relaxed">
+        <p>
+          250만원을 기부하신 분들은 디자인 연구동의 계단 한 칸에
+          성함을 남겨드립니다.
+        </p>
+
+        <p className="text-sm">
+          · 선착순 77명 참여 가능 <br />
+          · 복수 후원 가능 <br />
+          · 계단 칸과 문구 지정후 표기
+        </p>
+
+        <button
+          type="button"
+          className="mt-5 border border-black bg-white px-4 py-2 text-sm text-[var(--color-grey)] hover:bg-black hover:text-white"
+          onClick={() => setOpenDonorStep(true)}
+        >
+          도너스텝 보기
+        </button>
+      </div>
+    </div>
+
+    {/* 도너스월 */}
+    <div>
+      <div className="mb-6 flex h-62 w-62 items-end overflow-hidden lg:h-70 lg:w-70">
+        <img
+          src="/donation/do2.svg"
+          alt="도네이션월 네이밍 기부 프로그램"
+          className="h-full w-full object-contain"
+        />
+      </div>
+
+      <h3 className="text-xl font-bold leading-snug">
+        도너스월 네이밍 기부
+      </h3>
+
+      <div className="mt-5 space-y-3 text-normal leading-relaxed">
+        <p>
+          1천만원 이상 기부하신 분들은 웰컴라운지 벽면에 조성되는
+          도너스월에 성함을 남겨드립니다.
+        </p>
+
+        <button
+          type="button"
+          className="mt-5 border border-black bg-white px-4 py-2 text-sm text-[var(--color-grey)] hover:bg-black hover:text-white"
+          onClick={() => setOpenDonorWall(true)}
+        >
+          도너스 월 보기
+        </button>
+      </div>
+    </div>
+
+    {/* 공간 네이밍 */}
+    <div>
+      <div className="mb-6 flex h-62 w-62 items-end overflow-hidden lg:h-70 lg:w-70">
+        <img
+          src="/donation/do1.svg"
+          alt="공간 네이밍 기부 프로그램"
+          className="h-full w-full object-contain"
+        />
+      </div>
+
+      <h3 className="text-xl font-bold leading-snug">
+        공간 네이밍 기부
+      </h3>
+
+      <div className="mt-5 space-y-3 text-normal leading-relaxed">
+        <p>
+          3억원 이상의 기부자를 대상으로 1층 전시장, 3층 대형강의홀,
+          각종 라운지 공간에 이름을 부여합니다.
+        </p>
+
+        <p>
+          1억원 이상의 기부자를 대상으로 일반강의실 등의 공간에 이름을
+          부여합니다.
+        </p>
+
+        <button
+          type="button"
+          className="mt-5 border border-black bg-white px-4 py-2 text-sm text-[var(--color-grey)] hover:bg-black hover:text-white"
+          onClick={() => setOpenSpaceNaming(true)}
+        >
+          공간 보기
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
 <LayerPopup
   open={openSpaceNaming}
@@ -183,27 +312,34 @@ const [openDonorStep, setOpenDonorStep] = useState(false);
   />
 </LayerPopup>
 
-    <LayerPopup
-  open={openSeatMap}
-  onClose={() => setOpenSeatMap(false)}
+
+<LayerPopup
+  open={!!selectedSeat}
+  onClose={() => setSelectedSeat(null)}
+  mobileMode="bottom"
 >
-    <PopupScrollArea>
-  <div className="max-h-[80vh]  text-[var(--color-grey)]">
-    <div className="mb-6 flex text-center items-start justify-between gap-6">
- <div className="mb-10 w-full text-center">
-    <h3 className="font-display text-3xl leading-snug md:text-4xl">
-    강의홀 좌석 기부
-  </h3>
+  {selectedSeat && (
+    <div className="text-center text-[var(--color-grey)]">
+      <div className="mb-8">
+        <p className="text-sm text-[var(--color-grey)]/60">
+          {selectedSeat.row_label}
+          {selectedSeat.seat_number} 좌석
+        </p>
 
+        {selectedSeat.display_name && (
+          <h3 className="mt-2 text-xl font-bold">
+            {selectedSeat.display_name} 님
+          </h3>
+        )}
+      </div>
 
-</div>
+      {selectedSeat.message && (
+        <p className="whitespace-pre-line text-2xl font-bold leading-relaxed md:text-3xl">
+          {selectedSeat.message}
+        </p>
+      )}
     </div>
-
-    <SeatMap seats={seats} />
-  </div>
-
-    </PopupScrollArea>
-
+  )}
 </LayerPopup>
 
 
