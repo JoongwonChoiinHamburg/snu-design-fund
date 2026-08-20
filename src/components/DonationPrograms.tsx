@@ -46,7 +46,7 @@ const [selectedSeat, setSelectedSeat] =
           md:text-base
         "
       >
-          기부금액 1000만원, 선착순 94명, 복수후원 불가
+          기부금액 1000만원, 선착순 94명, 한 명당 최대 1좌석 기부 가능, 공동 좌석 기부 가능.
         
       </div>
     </div>

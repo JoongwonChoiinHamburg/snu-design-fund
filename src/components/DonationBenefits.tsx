@@ -42,7 +42,7 @@ const columns = [
 
 const rows = [
   {
-    title: "웹사이트 디지털 도너월 네이밍 기부",
+    title: "웹사이트 디지털 도너스월 네이밍 기부",
     active: [true, false, false, false, false, false,false],
   },
   {
@@ -54,7 +54,7 @@ const rows = [
     active: [false, false, true, false, false, false,false],
   },
   {
-    title: "도너월 네이밍 기부",
+    title: "도너스월 네이밍 기부",
     active: [false,false, false, true, true, true, true],
   },
   {
