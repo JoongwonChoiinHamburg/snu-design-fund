@@ -167,7 +167,7 @@ return (
   />
 </div>
 
-    {/* name label */}
+  {/* name label */}
 <div
   className="
     pointer-events-none
@@ -179,6 +179,7 @@ return (
     w-fit
     items-center
     justify-center
+    whitespace-nowrap
     bg-white
     px-2
     text-center
@@ -188,21 +189,12 @@ return (
   "
   style={{
     height: nameLabelHeight,
-    maxWidth: nameLabelMaxWidth,
     fontSize: nameLabelFontSize,
   }}
 >
-<span
-  className={`
-    block
-    max-w-full
-    whitespace-nowrap
-
-    ${isSmallBlock ? "" : "truncate"}
-  `}
->
-  {block.displayName}
-</span>
+  <span>
+    {block.displayName}
+  </span>
 </div>
 
 {/* hover outline */}
@@ -210,15 +202,15 @@ return (
   className="
     pointer-events-none
     absolute
-    z-20
+   z-[5]
     transition-all
     duration-150
   "
   style={{
-    inset: -3,
+    inset: -1,
     border: isHovered
-      ? "3px solid black"
-      : "3px solid transparent",
+      ? "2px solid black"
+      : "2px solid transparent",
   }}
 />
   </button>

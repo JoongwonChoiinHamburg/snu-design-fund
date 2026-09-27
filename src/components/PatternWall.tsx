@@ -221,14 +221,25 @@ const patternScale = wallWidth / 1200;
   const progressPercent =
     (totalAmount / goalAmount) * 100;
 
-const displayBlocks = useMemo(() => {
-  if (!useRandomPattern) return blocks;
+const visibleBlocks = useMemo(
+  () => blocks.filter((block) => block.amount >= 0),
+  [blocks]
+);
 
-  return blocks.map((block, index) => {
+const displayBlocks = useMemo(() => {
+  // 음수 금액은 패턴월에서 표시하지 않음
+  const visibleBlocks = blocks.filter(
+    (block) => block.amount >= 0
+  );
+
+  if (!useRandomPattern) return visibleBlocks;
+
+  return visibleBlocks.map((block, index) => {
     const seed =
-  patternSeed +
-  hashString(block.id) +
-  index * 999;
+      patternSeed +
+      hashString(block.id) +
+      index * 999;
+
     const patternIndex = Math.floor(
       seededRandom(seed) * RANDOM_PATTERNS.length
     );

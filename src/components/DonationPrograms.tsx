@@ -46,7 +46,7 @@ const [selectedSeat, setSelectedSeat] =
           md:text-base
         "
       >
-          선착순 94명, 한 명당 최대 1좌석 기부 가능, 공동 좌석 기부 가능.
+        선착순 94명, 한 명당 최대 1좌석 기부 가능, 공동 좌석 기부 가능.
         
       </div>
     </div>
@@ -193,7 +193,9 @@ const [selectedSeat, setSelectedSeat] =
       <div className="mt-5 space-y-3 text-normal leading-relaxed">
         <p>
           250만원을 기부하신 분들은 디자인 연구동의 계단 한 칸에
-          성함을 남겨드립니다.
+          성함을 남겨드립니다.</p>
+          <p>
+          500만원 기부시 계단 벽면에 성함을 남겨드립니다. 
         </p>
 
         <p className="text-sm">
@@ -228,7 +230,7 @@ const [selectedSeat, setSelectedSeat] =
 
       <div className="mt-5 space-y-3 text-normal leading-relaxed">
         <p>
-          1천만원 이상 기부하신 분들은 웰컴라운지 벽면에 조성되는
+          1,000만원 이상 기부하신 분들은 웰컴라운지 벽면에 조성되는
           도너스월에 성함을 남겨드립니다.
         </p>
 
@@ -660,11 +662,12 @@ function SpaceNamingSection({
 
 const DONOR_WALL_ITEM = {
   title: "도너스월",
-  amount: "1천만원 이상",
+  amount: "1,000만원 이상",
   description: [
     "1층 웰컴라운지 벽면에 조성되는 도너스월",
     "기부자의 성함을 공간 안에 남기는 프로그램",
-    "49동을 방문하는 학생, 동문, 외부 방문객에게 높은 노출 효과",
+    "49동을 방문하는 사람들에게 높은 노출 효과",
+    "500-700만원 신설도 가능하니 문의 바랍니다."
   ],
   mapImage: "/donation/map5.svg",
   renderImage: "/donation/render5.jpg",
@@ -674,22 +677,33 @@ const DONOR_WALL_ITEM = {
 
 const DONOR_STEP_ITEM = {
   title: "도너스텝",
-  amount: "250만원",
+  amounts: [
+    {
+      amount: "250만원",
+      description: "계단 한 칸에 성함 표기",
+    },
+    {
+      amount: "500만원",
+      description: "계단 벽면에 성함 표기",
+    },
+  ],
   description: [
-    "계단 한 칸에 성함을 남기는 프로그램",
     "선착순 77명 참여 가능",
     "복수 후원 가능",
     "계단 칸과 문구 지정 후 표기",
   ],
   mapImage: "/donation/map4.svg",
-   renderImage: "/donation/render4.jpg",
+  renderImage: "/donation/render4.jpg",
   mapAlt: "도너스텝 위치도",
   renderAlt: "도너스텝 렌더링",
 };
-
 type SingleProgramItem = {
   title: string;
-  amount: string;
+  amount?: string;
+  amounts?: {
+    amount: string;
+    description: string;
+  }[];
   description: string[];
   mapImage: string;
   renderImage: string;
@@ -723,12 +737,35 @@ function SingleProgramPopupContent({
         {/* left text + map */}
         <div className="flex flex-col">
           <div>
-            <h4 className="text-lg font-bold leading-snug md:text-xl">
-              {item.title}{" "}
-              <span className="font-bold">
-                ({item.amount})
-              </span>
-            </h4>
+           <h4 className="text-lg font-bold leading-snug md:text-xl">
+  {item.title}
+  {item.amount && (
+    <>
+      {" "}
+      <span className="font-bold">
+        ({item.amount})
+      </span>
+    </>
+  )}
+</h4>
+
+{item.amounts && (
+  <div className="mt-4 space-y-1">
+    {item.amounts.map((amountItem) => (
+      <div
+        key={amountItem.amount}
+        className="flex items-baseline gap-3"
+      >
+        <span className="font-bold">
+          {amountItem.amount}
+        </span>
+        <span>
+          {amountItem.description}
+        </span>
+      </div>
+    ))}
+  </div>
+)}
 
             <div className="mt-8 space-y-1 text-base leading-relaxed md:text-sm">
               {item.description.map((line, index) => (
